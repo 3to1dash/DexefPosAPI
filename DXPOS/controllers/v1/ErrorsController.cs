@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DXPOS.controllers.v1;
+namespace DXPOS.Controllers.v1;
 
 [ApiController]
 [ApiVersion("1")]

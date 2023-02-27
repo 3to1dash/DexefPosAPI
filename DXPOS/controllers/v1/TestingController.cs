@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Reflection;
 
-namespace DXPOS.controllers.v1;
+namespace DXPOS.Controllers.v1;
 
 [ApiController]
 [ApiVersion("1")]
@@ -10,7 +10,7 @@ namespace DXPOS.controllers.v1;
 public class TestingController : ControllerBase
 {
     [HttpGet("search")]
-    public IResult Search(SearchCriteria criteria)
+    public IResult Search([FromQuery]SearchCriteria criteria)
     {
         return Results.Ok($"Author: {criteria.Author}, Year published: {criteria.YearPublished}");
     }
@@ -21,7 +21,7 @@ public class SearchCriteria
     public string? Author { get; set; }
     public int YearPublished { get; set; }
 
-    public static ValueTask<SearchCriteria?> BindAsync(HttpContext context, ParameterInfo parameter)
+    protected static ValueTask<SearchCriteria?> BindAsync(HttpContext context, ParameterInfo parameter)
     {
         string author = context.Request.Query["Author"];
         int.TryParse(context.Request.Query["YearPublished"], out var year);

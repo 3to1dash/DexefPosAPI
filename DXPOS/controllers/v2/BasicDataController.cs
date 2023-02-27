@@ -1,7 +1,7 @@
 ﻿using DataAccess.Data;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DXPOS.controllers.v2;
+namespace DXPOS.Controllers.v2;
 
 [ApiController]
 [ApiVersion("2")]
