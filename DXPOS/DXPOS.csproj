@@ -21,10 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Helpers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <EditorConfigFiles Remove="C:\Users\zeusf\OneDrive\Desktop\code\DXAPI\DXPOS\.editorconfig" />
   </ItemGroup>
 
