@@ -51,6 +51,7 @@ app.UseSwaggerUI(opts =>
     opts.SwaggerEndpoint("/swagger/v1/swagger.json", "DXPOS API Version 1");
     opts.SwaggerEndpoint("/swagger/v2/swagger.json", "DXPOS API Version 2");
 
+    opts.DefaultModelsExpandDepth(-1);
     //opts.ConfigObject.AdditionalItems["syntaxHighlight"] = new Dictionary<string, object>
     //{
     //    ["activated"] = false

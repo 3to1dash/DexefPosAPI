@@ -1,4 +1,5 @@
 ﻿using DataAccess.Data;
+using DXPOS.DTOs;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DXPOS.controllers.v1;
@@ -19,6 +20,7 @@ public class BasicDataController : ControllerBase
     /// <response code="404">Branches not found</response>
     /// <response code="500">Oops! Can't lookup user branches right now</response>
     [HttpGet]
+    [Produces(typeof(UserDTO))]
     public IResult GetBranches(
         [FromQuery] string ip,
         [FromQuery] string database,
@@ -26,6 +28,11 @@ public class BasicDataController : ControllerBase
         [FromServices] UsersData userData)
     {
         var user = userData.GetUserByUserName(userName);
-        return Results.Ok(user);
+        var userDTO = new UserDTO
+        {
+            Name = user.Name,
+            Type = user.Type
+        };
+        return Results.Ok(userDTO);
     }
 }
