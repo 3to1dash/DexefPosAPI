@@ -7,10 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DXPOS", "DXPOS\DXPOS.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{0A368A3E-85C3-4FA7-AAF3-C8F70384B6CC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F16192B6-3980-46B9-9C25-B6839E0698FC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.UnitTests", "DataAccess.UnitTests\DataAccess.UnitTests.csproj", "{34BB0DB9-4B6D-4149-BDD4-32EBA86008B9}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,16 +21,9 @@ Global
 		{0A368A3E-85C3-4FA7-AAF3-C8F70384B6CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A368A3E-85C3-4FA7-AAF3-C8F70384B6CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A368A3E-85C3-4FA7-AAF3-C8F70384B6CC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{34BB0DB9-4B6D-4149-BDD4-32EBA86008B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{34BB0DB9-4B6D-4149-BDD4-32EBA86008B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{34BB0DB9-4B6D-4149-BDD4-32EBA86008B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{34BB0DB9-4B6D-4149-BDD4-32EBA86008B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{34BB0DB9-4B6D-4149-BDD4-32EBA86008B9} = {F16192B6-3980-46B9-9C25-B6839E0698FC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B5413111-45D1-475F-B6F1-E42D0F72EF5F}
