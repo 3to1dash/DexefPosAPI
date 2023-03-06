@@ -16,6 +16,9 @@ public static class ServiceCollectionExtension
             opts.ConfigureWarnings(w => w.Ignore(SqlServerEventId.DecimalTypeKeyWarning));
         });
         service.AddScoped<ILoadMethods, LoadMethods>();
+        service.AddScoped<IAddMethods, AddMethods>();
+        service.AddScoped<IUpdateMethods, UpdateMethods>();
+        service.AddScoped<ISoftDeleteMethods, SoftDeleteMethods>();
         service.AddScoped<UsersData>();
         return service;
     }
