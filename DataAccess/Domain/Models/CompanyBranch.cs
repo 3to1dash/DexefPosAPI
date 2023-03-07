@@ -1,4 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace DataAccess.Domain.Models;
 
 public partial class CompanyBranch
 {
@@ -42,14 +44,24 @@ public partial class CompanyBranch
     public int? CompanyId { get; set; }
     public string? TaxBranchId { get; set; }
     public string? ActivityId { get; set; }
-    public string? PostalNumber { get; set; }
-    public bool? IsMasterBranch { get; set; }
-    public string? AppNumber { get; set; }
-    public string? AdditionalNumber { get; set; }
-    public string? Field { get; set; }
-    public string? Tax { get; set; }
-    public string? Trade { get; set; }
-    public byte[]? Logo { get; set; }
+    [NotMapped]
+    public List<KindStock> KindStocks { get; set; }
+    //[NotMapped]
+    //public string? PostalNumber { get; set; }
+    //[NotMapped]
+    //public bool? IsMasterBranch { get; set; }
+    //[NotMapped]
+    //public string? AppNumber { get; set; }
+    //[NotMapped]
+    //public string? AdditionalNumber { get; set; }
+    //[NotMapped]
+    //public string? Field { get; set; }
+    //[NotMapped]
+    //public string? Tax { get; set; }
+    //[NotMapped]
+    //public string? Trade { get; set; }
+    //[NotMapped]
+    //public byte[]? Logo { get; set; }
 
     public virtual Company? Company { get; set; }
     public virtual CurrencyTable? CountryNavigation { get; set; }

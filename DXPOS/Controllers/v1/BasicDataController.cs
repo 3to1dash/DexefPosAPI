@@ -11,21 +11,23 @@ namespace DXPOS.Controllers.v1;
 public class BasicDataController : ControllerBase
 {
     [HttpGet]
-    [Produces(typeof(UserDTO))]
+    [Produces(typeof(ResultDto<IEnumerable<BranchDto>>))]
     public IActionResult GetBranches(
         [FromQuery] string ip,
         [FromQuery] string database,
         [FromQuery] string userName,
-        [FromServices] UsersData userData)
+        [FromServices] BranchesData branchesData)
     {
-        var user = userData.GetUserByUserName(userName);
-        var userDTO = new UserDTO
-        {
-            Name = user.Name,
-            Type = user.Type
-        };
+        var branches = branchesData.GetUserBranches(true, userName)
+            .Select(b => new BranchDto 
+            {
+                Id = b.Id,
+                Num = b.Num,
+                Name = b.Name,
+                Currency = b.Currency
+            });
 
-        var resultGenerator = new ResultGenerator<UserDTO>(true, userDTO, new List<ErrorMessage>());
+        var resultGenerator = new ResultGenerator<IEnumerable<BranchDto>>(true, branches, new List<ErrorMessage>());
 
         return new JsonResult(resultGenerator.SelectingMethods());
     }

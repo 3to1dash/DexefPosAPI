@@ -19,6 +19,7 @@ public static class ServiceCollectionExtension
         service.AddScoped<IAddMethods, AddMethods>();
         service.AddScoped<IUpdateMethods, UpdateMethods>();
         service.AddScoped<ISoftDeleteMethods, SoftDeleteMethods>();
+        service.AddScoped<BranchesData>();
         service.AddScoped<UsersData>();
         return service;
     }

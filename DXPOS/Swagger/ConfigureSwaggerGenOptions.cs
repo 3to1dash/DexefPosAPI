@@ -32,11 +32,6 @@ public class ConfigureSwaggerGenOptions : IConfigureOptions<SwaggerGenOptions>
                 : this.GetType().Assembly.GetCustomAttribute<AssemblyDescriptionAttribute>()?.Description
         };
 
-        //if (description.IsDeprecated)
-        //{
-        //    info.Description += " (deprecated)";
-        //}
-
         return info;
     }
 }

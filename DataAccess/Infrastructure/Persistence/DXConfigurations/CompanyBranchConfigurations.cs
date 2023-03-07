@@ -21,9 +21,9 @@ public class CompanyBranchConfiguration : IEntityTypeConfiguration<CompanyBranch
             .HasColumnName("ActivityID")
             .HasDefaultValueSql("((0))");
 
-        builder.Property(e => e.AdditionalNumber).HasMaxLength(50);
+        //builder.Property(e => e.AdditionalNumber).HasMaxLength(50);
 
-        builder.Property(e => e.AppNumber).HasMaxLength(50);
+        //builder.Property(e => e.AppNumber).HasMaxLength(50);
 
         builder.Property(e => e.BuildingNumber).HasMaxLength(50);
 
@@ -48,15 +48,15 @@ public class CompanyBranchConfiguration : IEntityTypeConfiguration<CompanyBranch
             .IsUnicode(false)
             .IsFixedLength();
 
-        builder.Property(e => e.Field)
-            .HasMaxLength(250)
-            .HasColumnName("field");
+        //builder.Property(e => e.Field)
+        //    .HasMaxLength(250)
+        //    .HasColumnName("field");
 
         builder.Property(e => e.Governorate).HasMaxLength(50);
 
         builder.Property(e => e.Landmark).HasMaxLength(250);
 
-        builder.Property(e => e.Logo).HasColumnName("logo");
+        //builder.Property(e => e.Logo).HasColumnName("logo");
 
         builder.Property(e => e.Mail)
             .HasMaxLength(50)
@@ -82,7 +82,7 @@ public class CompanyBranchConfiguration : IEntityTypeConfiguration<CompanyBranch
             .HasMaxLength(50)
             .HasColumnName("num");
 
-        builder.Property(e => e.PostalNumber).HasMaxLength(50);
+        //builder.Property(e => e.PostalNumber).HasMaxLength(50);
 
         builder.Property(e => e.PurchaseCycle)
             .HasMaxLength(10)
@@ -111,15 +111,15 @@ public class CompanyBranchConfiguration : IEntityTypeConfiguration<CompanyBranch
             .HasColumnName("subcurrency")
             .HasDefaultValueSql("('')");
 
-        builder.Property(e => e.Tax)
-            .HasMaxLength(50)
-            .HasColumnName("tax");
+        //builder.Property(e => e.Tax)
+        //    .HasMaxLength(50)
+        //    .HasColumnName("tax");
 
         builder.Property(e => e.TaxBranchId)
             .HasMaxLength(50)
             .HasColumnName("TaxBranchID");
 
-        builder.Property(e => e.Trade).HasMaxLength(50);
+        //builder.Property(e => e.Trade).HasMaxLength(50);
 
         builder.Property(e => e.TransferCycle)
             .HasMaxLength(10)
@@ -142,5 +142,9 @@ public class CompanyBranchConfiguration : IEntityTypeConfiguration<CompanyBranch
             .WithMany(p => p.CompanyBranches)
             .HasForeignKey(d => d.CountryId)
             .HasConstraintName("FK_Company_Branch_Currency_Table");
+
+        builder.HasMany(e => e.KindStocks)
+            .WithOne()
+            .HasForeignKey(e => e.BranchId);
     }
 }
