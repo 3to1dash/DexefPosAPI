@@ -55,4 +55,6 @@ public partial class User
     public virtual ICollection<UserAnyDeskSetting> UserAnyDeskSettings { get; set; }
     [NotMapped]
     public virtual ICollection<UsersLog> UsersLogs { get; set; }
+    [NotMapped]
+    public virtual List<UsersResource> UsersResources { get; set; }
 }

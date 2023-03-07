@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class UserConfiguration : IEntityTypeConfiguration<User>
 {
-
-
     public void Configure(EntityTypeBuilder<User> builder)
     {
         builder.HasKey(e => e.Name);
@@ -104,5 +102,10 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
             .WithMany(p => p.Users)
             .HasForeignKey(d => d.ShiftId)
             .HasConstraintName("FK_Users_Hr_WorkTime");
+
+        builder.HasMany<UsersResource>()
+            .WithOne()
+            .HasForeignKey(e => e.UserName)
+            .HasPrincipalKey(e => e.Name);
     }
 }
