@@ -144,7 +144,7 @@ public class CompanyBranchConfiguration : IEntityTypeConfiguration<CompanyBranch
             .HasConstraintName("FK_Company_Branch_Currency_Table");
 
         builder.HasMany(e => e.KindStocks)
-            .WithOne()
+            .WithOne(e => e.CompanyBranch)
             .HasForeignKey(e => e.BranchId);
     }
 }

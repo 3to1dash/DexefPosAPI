@@ -1,4 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace DataAccess.Domain.Models;
 
 public partial class KindStock
 {
@@ -16,4 +18,8 @@ public partial class KindStock
     public int? Countkind { get; set; }
     public DateTime? Dt { get; set; }
     public Guid Rowguid { get; set; }
+    [NotMapped] 
+    public string Branch { get; set; }
+    [NotMapped]
+    public CompanyBranch CompanyBranch { get; set; }      
 }

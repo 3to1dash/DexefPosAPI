@@ -31,4 +31,27 @@ public class BasicDataController : ControllerBase
 
         return new JsonResult(resultGenerator.SelectingMethods());
     }
+
+    [HttpGet]
+    [Produces(typeof(ResultDto<List<StoreDto>>))]
+    public IActionResult GetStores(
+        [FromQuery] string ip,
+        [FromQuery] string database,
+        [FromQuery] string userName,
+        [FromQuery] string branchesList,
+        [FromServices] BranchesData branchesData)
+    {
+        var stores = branchesData.GetBranchesStores(true, userName, branchesList)
+            .Select(b => new StoreDto
+             {
+                 Id = b.Id,
+                 Num = b.Num,
+                 Name = b.Stock,
+                 branch = b.CompanyBranch.Name
+            });
+
+        var resultGenerator = new ResultGenerator<IEnumerable<StoreDto>>(true, stores, new List<ErrorMessage>());
+
+        return new JsonResult(resultGenerator.SelectingMethods());
+    }
 }
