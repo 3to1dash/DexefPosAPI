@@ -4,6 +4,7 @@ using DataAccess.IDataAccess;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Data;
+
 public class BranchesData
 {
     private readonly ILoadMethods _loadMethods;
@@ -31,9 +32,11 @@ public class BranchesData
                 return _loadMethods.LoadMultiple<CompanyBranch>(false, b => b.Active == isActive);
             default:
                 var userBranchesResource =
-                    _loadMethods.LoadSingle<UsersResource>(false, usr => usr.Module == "Branch" && usr.UserName == userName)?.Ids;
+                    _loadMethods
+                        .LoadSingle<UsersResource>(false, usr => usr.Module == "Branch" && usr.UserName == userName)
+                        ?.Ids;
 
-                if (userBranchesResource == null) 
+                if (userBranchesResource == null)
                     return new List<CompanyBranch>();
 
                 if (userBranchesResource == "*")
@@ -41,7 +44,8 @@ public class BranchesData
 
                 var branchesIds = userBranchesResource.Split(',').Select(int.Parse);
 
-                return _loadMethods.LoadMultiple<CompanyBranch>(false, b => b.Active == isActive && branchesIds.Contains(b.Id));
+                return _loadMethods.LoadMultiple<CompanyBranch>(false,
+                    b => b.Active == isActive && branchesIds.Contains(b.Id));
         }
     }
 
@@ -62,7 +66,9 @@ public class BranchesData
                 return stores.ToList();
             default:
                 var userStoresResource =
-                    _loadMethods.LoadSingle<UsersResource>(false, usr => usr.Module == "Stores" && usr.UserName == userName)?.Ids;
+                    _loadMethods
+                        .LoadSingle<UsersResource>(false, usr => usr.Module == "Stores" && usr.UserName == userName)
+                        ?.Ids;
 
                 if (userStoresResource == null)
                     return new List<KindStock>();
@@ -74,5 +80,10 @@ public class BranchesData
 
                 return stores.Where(s => storesIds.Contains(s.Id)).ToList();
         }
+    }
+
+    public List<Taxes> GetTaxes(bool isActive)
+    {
+        return _loadMethods.LoadMultiple<Taxes>(true, t => t.Active == isActive).ToList();
     }
 }

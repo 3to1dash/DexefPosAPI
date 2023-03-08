@@ -54,4 +54,29 @@ public class BasicDataController : ControllerBase
 
         return new JsonResult(resultGenerator.SelectingMethods());
     }
+
+    [HttpGet]
+    [Produces(typeof(ResultDto<List<TaxesDto>>))]
+    public IActionResult GetTaxes(
+        [FromQuery] string ip,
+        [FromQuery] string database,
+        [FromServices] BranchesData branchesData,
+        [FromQuery] bool isSale = true)
+    {
+        var stores = branchesData.GetTaxes(true)
+            .Select(b => new TaxesDto
+            {
+                TaxId = b.TaxId,
+                TaxName = b.Name,
+                DATPerc = b.Datperc,
+                DATID = b.Datid,
+                DATMinInvoice = b.DatminInvoice,
+                EntryTaxId = b.TaxId,
+                TaxPerc = isSale ? b.SaleTax : b.PurchaseTax
+            });
+
+        var resultGenerator = new ResultGenerator<IEnumerable<TaxesDto>>(true, stores, new List<ErrorMessage>());
+
+        return new JsonResult(resultGenerator.SelectingMethods());
+    }
 }

@@ -4,11 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
-public class TaxisConfiguration : IEntityTypeConfiguration<Taxis>
+public class TaxesConfiguration : IEntityTypeConfiguration<Taxes>
 {
-
-
-    public void Configure(EntityTypeBuilder<Taxis> builder)
+    public void Configure(EntityTypeBuilder<Taxes> builder)
     {
         builder.Property(e => e.Id).HasColumnName("id");
 

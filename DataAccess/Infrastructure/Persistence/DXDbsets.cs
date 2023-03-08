@@ -763,7 +763,7 @@ public partial class DxdbContext : DbContext
     public virtual DbSet<TaxesGroup> TaxesGroups { get; set; } = null!;
     public virtual DbSet<TaxesPay> TaxesPays { get; set; } = null!;
     public virtual DbSet<TaxesSubGroup> TaxesSubGroups { get; set; } = null!;
-    public virtual DbSet<Taxis> Taxes { get; set; } = null!;
+    public virtual DbSet<Taxes> Taxes { get; set; } = null!;
     public virtual DbSet<Technician> Technicians { get; set; } = null!;
     public virtual DbSet<TechniciansEntry> TechniciansEntries { get; set; } = null!;
     public virtual DbSet<TeleSalesRevision> TeleSalesRevisions { get; set; } = null!;

@@ -4,7 +4,7 @@ public partial class TaxesGroup
 {
     public TaxesGroup()
     {
-        Taxes = new HashSet<Taxis>();
+        Taxes = new HashSet<Taxes>();
         TaxesDats = new HashSet<TaxesDat>();
         TaxesSubGroups = new HashSet<TaxesSubGroup>();
     }
@@ -22,7 +22,7 @@ public partial class TaxesGroup
     public bool? Active { get; set; }
     public bool? IsDefault { get; set; }
 
-    public virtual ICollection<Taxis> Taxes { get; set; }
+    public virtual ICollection<Taxes> Taxes { get; set; }
     public virtual ICollection<TaxesDat> TaxesDats { get; set; }
     public virtual ICollection<TaxesSubGroup> TaxesSubGroups { get; set; }
 }

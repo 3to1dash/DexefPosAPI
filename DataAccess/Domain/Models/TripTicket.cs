@@ -114,7 +114,7 @@ public partial class TripTicket
 
     public virtual CompanyBranch? Branch { get; set; }
     public virtual Cust? Cust { get; set; }
-    public virtual Taxis? Tax { get; set; }
+    public virtual Taxes? Tax { get; set; }
     public virtual TripGd? TripGds { get; set; }
     public virtual TripUser? TripUsers { get; set; }
     public virtual Cust? Vendor { get; set; }

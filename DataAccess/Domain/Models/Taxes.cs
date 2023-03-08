@@ -1,8 +1,8 @@
 ﻿namespace DataAccess.Domain.Models;
 
-public partial class Taxis
+public partial class Taxes
 {
-    public Taxis()
+    public Taxes()
     {
         TripTickets = new HashSet<TripTicket>();
     }

@@ -822,7 +822,7 @@ public partial class DxdbContext : DbContext
         modelBuilder.ApplyConfiguration(new TaxesGroupConfiguration());
         modelBuilder.ApplyConfiguration(new TaxesPayConfiguration());
         modelBuilder.ApplyConfiguration(new TaxesSubGroupConfiguration());
-        modelBuilder.ApplyConfiguration(new TaxisConfiguration());
+        modelBuilder.ApplyConfiguration(new TaxesConfiguration());
         modelBuilder.ApplyConfiguration(new TechnicianConfiguration());
         modelBuilder.ApplyConfiguration(new TechniciansEntryConfiguration());
         modelBuilder.ApplyConfiguration(new TeleSalesRevisionConfiguration());
