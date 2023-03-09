@@ -13,8 +13,6 @@ public class BasicDataController : ControllerBase
     [HttpGet]
     [Produces(typeof(ResultDto<IEnumerable<BranchDto>>))]
     public IActionResult GetBranches(
-        [FromQuery] string ip,
-        [FromQuery] string database,
         [FromQuery] string userName,
         [FromServices] BranchesData branchesData)
     {

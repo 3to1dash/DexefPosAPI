@@ -6,6 +6,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using Microsoft.Net.Http.Headers;
 
 namespace DataAccess.Infrastructure.Persistence;
 
@@ -44,13 +49,18 @@ public partial class DxdbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-
         var dbSecrets = _configuration.GetSection("DBSecrets").GetChildren().ToDictionary(k => k.Key, v => v.Value);
+
+        var principal = ExtractJwtPayload();
+        if (principal == null)
+            throw new UnauthorizedAccessException("Please send JWT token in the request");
+
+        var ip = principal.FindFirstValue("ip");
+        var database = principal.FindFirstValue("database");
 
         if (!optionsBuilder.IsConfigured)
         {
-            var connectionString = ConnStringBuilder(_httpContextAccessor.HttpContext.Request.Query["ip"],
-                _httpContextAccessor.HttpContext.Request.Query["database"],
+            var connectionString = ConnStringBuilder(ip, database,
                 dbSecrets.GetValueOrDefault("Username"),
                 dbSecrets.GetValueOrDefault("Password"));
 
@@ -1070,5 +1080,40 @@ public partial class DxdbContext : DbContext
         string connString = string.Format("Server={0};Database={1};User Id={2};Password={3};MultipleActiveResultSets=true;Integrated Security = false;TrustServerCertificate=True;", ip, dbName, userName, password);
 
         return connString;
+    }
+
+    /// <summary>
+    /// Extract JWT payload from the HttpContext request
+    /// </summary>
+    /// <returns><see cref="ClaimsPrincipal"/></returns>
+    /// <exception cref="ApplicationException"></exception>
+    private ClaimsPrincipal? ExtractJwtPayload()
+    {
+        var secret = _configuration["Jwt:Key"];
+        var issuer = _configuration["Jwt:Issuer"];
+        if (secret == null || issuer == null)
+            throw new ApplicationException("Jwt's secret and issuer in appsettings are not to be found");
+
+        var token = _httpContextAccessor.HttpContext.Request.Headers[HeaderNames.Authorization].ToString()
+            .Replace("Bearer ", "");
+
+        if (string.IsNullOrEmpty(token))
+            return null;
+
+        var mySecret = Encoding.UTF8.GetBytes(secret);
+        var mySecurityKey = new SymmetricSecurityKey(mySecret);
+        var tokenHandler = new JwtSecurityTokenHandler();
+        var principal = tokenHandler.ValidateToken(token, new TokenValidationParameters
+        {
+            ValidateIssuerSigningKey = true,
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidIssuer = issuer,
+            ValidAudience = issuer,
+            IssuerSigningKey = mySecurityKey,
+        }, out SecurityToken validatedToken);
+
+        return principal;
     }
 }

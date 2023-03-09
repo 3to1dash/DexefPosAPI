@@ -2,12 +2,6 @@
 
 public partial class Company
 {
-    public Company()
-    {
-        CompanyBranches = new HashSet<CompanyBranch>();
-        CompanyTaxTokens = new HashSet<CompanyTaxToken>();
-    }
-
     public int Id { get; set; }
     public string? Name { get; set; }
     public string? Field { get; set; }
@@ -35,6 +29,8 @@ public partial class Company
     public string? AppNumber { get; set; }
     public string? AdditionalNumber { get; set; }
 
-    public virtual ICollection<CompanyBranch> CompanyBranches { get; set; }
-    public virtual ICollection<CompanyTaxToken> CompanyTaxTokens { get; set; }
+    public virtual List<CompanyBranch> CompanyBranches { get; set; }
+    public virtual List<CompanyTaxToken> CompanyTaxTokens { get; set; }
+    public virtual CurrencyTable CurrencyTable { get; set; }
+
 }

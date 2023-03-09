@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CompanyConfiguration : IEntityTypeConfiguration<Company>
 {
-
-
     public void Configure(EntityTypeBuilder<Company> builder)
     {
         builder.ToTable("Company");
@@ -97,5 +95,15 @@ public class CompanyConfiguration : IEntityTypeConfiguration<Company>
             .HasColumnName("tax");
 
         builder.Property(e => e.Trade).HasMaxLength(50);
+
+        //builder.HasOne(e => e.CurrencyTable)
+        //    .WithOne()
+        //    .HasPrincipalKey<Company>(e => e.Currency)
+        //    .HasForeignKey<CurrencyTable>(e => e.Shortcut);
+
+        builder.HasOne(c => c.CurrencyTable)
+            .WithMany()
+            .HasForeignKey(c => c.Currency)
+            .HasPrincipalKey(ct => ct.Shortcut);
     }
 }

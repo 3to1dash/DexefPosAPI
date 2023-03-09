@@ -1,19 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace DataAccess.Domain.Models;
+﻿namespace DataAccess.Domain.Models;
 
 public partial class CompanyBranch
 {
-    public CompanyBranch()
-    {
-        TripAirLineCommissions = new HashSet<TripAirLineCommission>();
-        TripCommissions = new HashSet<TripCommission>();
-        TripContracts = new HashSet<TripContract>();
-        TripIata = new HashSet<TripIatum>();
-        TripTickets = new HashSet<TripTicket>();
-        TripUsers = new HashSet<TripUser>();
-    }
-
     public int Id { get; set; }
     public string Num { get; set; } = null!;
     public string? Name { get; set; }
@@ -44,31 +32,22 @@ public partial class CompanyBranch
     public int? CompanyId { get; set; }
     public string? TaxBranchId { get; set; }
     public string? ActivityId { get; set; }
-    [NotMapped]
-    public List<KindStock> KindStocks { get; set; }
-    //[NotMapped]
-    //public string? PostalNumber { get; set; }
-    //[NotMapped]
-    //public bool? IsMasterBranch { get; set; }
-    //[NotMapped]
-    //public string? AppNumber { get; set; }
-    //[NotMapped]
-    //public string? AdditionalNumber { get; set; }
-    //[NotMapped]
-    //public string? Field { get; set; }
-    //[NotMapped]
-    //public string? Tax { get; set; }
-    //[NotMapped]
-    //public string? Trade { get; set; }
-    //[NotMapped]
-    //public byte[]? Logo { get; set; }
+    public string? PostalNumber { get; set; }
+    public bool? IsMasterBranch { get; set; }
+    public string? AppNumber { get; set; }
+    public string? AdditionalNumber { get; set; }
+    public string? Field { get; set; }
+    public string? Tax { get; set; }
+    public string? Trade { get; set; }
+    public byte[]? Logo { get; set; }
 
+    public List<KindStock> KindStocks { get; set; }
     public virtual Company? Company { get; set; }
     public virtual CurrencyTable? CountryNavigation { get; set; }
-    public virtual ICollection<TripAirLineCommission> TripAirLineCommissions { get; set; }
-    public virtual ICollection<TripCommission> TripCommissions { get; set; }
-    public virtual ICollection<TripContract> TripContracts { get; set; }
-    public virtual ICollection<TripIatum> TripIata { get; set; }
-    public virtual ICollection<TripTicket> TripTickets { get; set; }
-    public virtual ICollection<TripUser> TripUsers { get; set; }
+    public virtual List<TripAirLineCommission> TripAirLineCommissions { get; set; }
+    public virtual List<TripCommission> TripCommissions { get; set; }
+    public virtual List<TripContract> TripContracts { get; set; }
+    public virtual List<TripIatum> TripIata { get; set; }
+    public virtual List<TripTicket> TripTickets { get; set; }
+    public virtual List<TripUser> TripUsers { get; set; }
 }

@@ -21,6 +21,7 @@ public static class ServiceCollectionExtension
         service.AddScoped<ISoftDeleteMethods, SoftDeleteMethods>();
         service.AddScoped<BranchesData>();
         service.AddScoped<UsersData>();
+        service.AddScoped<CompanyData>();
         return service;
     }
 }
