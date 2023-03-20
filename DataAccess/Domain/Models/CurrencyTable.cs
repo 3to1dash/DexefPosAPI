@@ -1,12 +1,9 @@
-﻿namespace DataAccess.Domain.Models;
+﻿using System.Text.Json.Serialization;
+
+namespace DataAccess.Domain.Models;
 
 public partial class CurrencyTable
 {
-    public CurrencyTable()
-    {
-        CompanyBranches = new HashSet<CompanyBranch>();
-    }
-
     public decimal Id { get; set; }
     public string? ArNameCountry { get; set; }
     public string? ArName { get; set; }
@@ -36,5 +33,6 @@ public partial class CurrencyTable
     public Guid Rowguid { get; set; }
     public string? CountryCode { get; set; }
 
-    public virtual ICollection<CompanyBranch> CompanyBranches { get; set; }
+    [JsonIgnore]
+    public virtual List<CompanyBranch> CompanyBranches { get; set; }
 }

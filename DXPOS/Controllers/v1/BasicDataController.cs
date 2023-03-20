@@ -21,8 +21,7 @@ public class BasicDataController : ControllerBase
             {
                 Id = b.Id,
                 Num = b.Num,
-                Name = b.Name,
-                Currency = b.Currency
+                Name = b.Name
             });
 
         var resultGenerator = new ResultGenerator<IEnumerable<BranchDto>>(true, branches, new List<ErrorMessage>());
@@ -33,8 +32,6 @@ public class BasicDataController : ControllerBase
     [HttpGet]
     [Produces(typeof(ResultDto<List<StoreDto>>))]
     public IActionResult GetStores(
-        [FromQuery] string ip,
-        [FromQuery] string database,
         [FromQuery] string userName,
         [FromQuery] string branchesList,
         [FromServices] BranchesData branchesData)
@@ -44,8 +41,7 @@ public class BasicDataController : ControllerBase
              {
                  Id = b.Id,
                  Num = b.Num,
-                 Name = b.Stock,
-                 branch = b.CompanyBranch.Name
+                 Name = b.Stock
             });
 
         var resultGenerator = new ResultGenerator<IEnumerable<StoreDto>>(true, stores, new List<ErrorMessage>());
@@ -56,15 +52,13 @@ public class BasicDataController : ControllerBase
     [HttpGet]
     [Produces(typeof(ResultDto<List<TaxesDto>>))]
     public IActionResult GetTaxes(
-        [FromQuery] string ip,
-        [FromQuery] string database,
         [FromServices] BranchesData branchesData,
         [FromQuery] bool isSale = true)
     {
         var stores = branchesData.GetTaxes(true)
             .Select(b => new TaxesDto
             {
-                TaxId = b.TaxId,
+                TaxId = b.Id,
                 TaxName = b.Name,
                 DATPerc = b.Datperc,
                 DATID = b.Datid,

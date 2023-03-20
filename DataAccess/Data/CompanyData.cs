@@ -13,34 +13,59 @@ public class CompanyData
         _loadMethods = loadMethods;
     }
 
-    public Company GetCompany(string userName)
+    public List<Company> GetCompanies(string userName)
     {
         var userBranchesResource =
             _loadMethods
                 .LoadSingle<UsersResource>(false, usr => usr.Module == "Branch" && usr.UserName == userName)
                 ?.Ids ?? "";
 
-        var company = _loadMethods.GetQueryable<Company>().Include(e => e.CurrencyTable).Include(e => e.CompanyBranches)
-            .ThenInclude(e => e.KindStocks);
+        var companiesWithCurrencies = _loadMethods.GetQueryable<Company>()
+            .Include(e => e.CurrencyTable).ToList();
+
+        var branchesWithStores = _loadMethods.GetQueryable<CompanyBranch>()
+            .Include(e => e.KindStocks).ToList();
+
         switch (userBranchesResource)
         {
             case "*":
             case "":
+                var AllCompaniesQueryable = from company in companiesWithCurrencies
+                                            join branch in branchesWithStores on company.Id equals branch.CompanyId into gj
+                                            let a = gj.DefaultIfEmpty()
+                                            select new Company
+                                            {
+                                                Id = company.Id,
+                                                Name = company.Name,
+                                                Field = company.Field,
+                                                Phone = company.Phone,
+                                                CurrencyTable = company.CurrencyTable,
+                                                CompanyBranches = a.ToList()
+                                            };
+
+                return AllCompaniesQueryable.ToList();
             default:
-
                 var branchesIds = userBranchesResource.Split(',').Select(int.Parse);
-                //var w = company.Where(e => e.CompanyBranches.Where(r => branchesIds.Contains(r.Id)).Any());
 
-                var w = company.FirstOrDefault(c => c.CompanyBranches.Any(b => branchesIds.Contains(b.Id)));
-                break;
+                var companiesQueryable = from company in companiesWithCurrencies
+                                         join branch in branchesWithStores.Where(b => branchesIds.Contains(b.Id)) on company.Id equals branch.CompanyId into gj
+                                         let a = gj.DefaultIfEmpty()
+                                         select new Company
+                                         {
+                                             Id = company.Id,
+                                             Name = company.Name,
+                                             Field = company.Field,
+                                             Phone = company.Phone,
+                                             CurrencyTable = company.CurrencyTable,
+                                             CompanyBranches = a.ToList()
+                                         };
+
+                return companiesQueryable.ToList();
         }
+    }
 
-
-        //if (userBranchesResource == null)
-        //return new List<CompanyBranch>();
-
-        //if (userBranchesResource == "*")
-        //return _loadMethods.LoadMultiple<CompanyBranch>(false, b => b.Active == isActive);
-        return new Company();
+    public User? GetUserVerification(string userName)
+    {
+        return _loadMethods.LoadSingle<User>(false, u => u.Name == userName);
     }
 }

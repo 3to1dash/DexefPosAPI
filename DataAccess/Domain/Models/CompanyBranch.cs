@@ -1,7 +1,12 @@
-﻿namespace DataAccess.Domain.Models;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
+
+namespace DataAccess.Domain.Models;
 
 public partial class CompanyBranch
 {
+    [NotMapped]
+    private int? _companyId;
     public int Id { get; set; }
     public string Num { get; set; } = null!;
     public string? Name { get; set; }
@@ -29,7 +34,13 @@ public partial class CompanyBranch
     public string? Landmark { get; set; }
     public string? Mail { get; set; }
     public int? ReportTemplateId { get; set; }
-    public int? CompanyId { get; set; }
+
+    public int? CompanyId
+    {
+        get => _companyId ?? 1;
+        set => _companyId = value;
+    }
+
     public string? TaxBranchId { get; set; }
     public string? ActivityId { get; set; }
     public string? PostalNumber { get; set; }
@@ -41,7 +52,8 @@ public partial class CompanyBranch
     public string? Trade { get; set; }
     public byte[]? Logo { get; set; }
 
-    public List<KindStock> KindStocks { get; set; }
+    public virtual List<KindStock> KindStocks { get; set; }
+    [JsonIgnore]
     public virtual Company? Company { get; set; }
     public virtual CurrencyTable? CountryNavigation { get; set; }
     public virtual List<TripAirLineCommission> TripAirLineCommissions { get; set; }

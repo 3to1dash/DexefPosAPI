@@ -96,10 +96,10 @@ public class CompanyConfiguration : IEntityTypeConfiguration<Company>
 
         builder.Property(e => e.Trade).HasMaxLength(50);
 
-        //builder.HasOne(e => e.CurrencyTable)
-        //    .WithOne()
-        //    .HasPrincipalKey<Company>(e => e.Currency)
-        //    .HasForeignKey<CurrencyTable>(e => e.Shortcut);
+        builder.HasOne(e => e.CurrencyTable)
+            .WithOne()
+            .HasPrincipalKey<Company>(e => e.Currency)
+            .HasForeignKey<CurrencyTable>(e => e.Shortcut);
 
         builder.HasOne(c => c.CurrencyTable)
             .WithMany()

@@ -37,7 +37,7 @@ public class DatabaseLogin : ControllerBase
 
         var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret));
         var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256Signature);
-        var tokenDescriptor = new JwtSecurityToken(issuer: issuer, audience: issuer, claims: dataBaseClaims, expires: DateTime.Now.AddDays(1), signingCredentials: credentials);
+        var tokenDescriptor = new JwtSecurityToken(issuer: issuer, audience: issuer, claims: dataBaseClaims, expires: DateTime.Now.AddDays(30), signingCredentials: credentials);
 
         var token = new JwtSecurityTokenHandler().WriteToken(tokenDescriptor);
 
