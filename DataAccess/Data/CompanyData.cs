@@ -1,4 +1,6 @@
-﻿using DataAccess.Domain.Models;
+﻿using System.Security.Cryptography;
+using DataAccess.Domain.Models;
+using DataAccess.Helpers;
 using DataAccess.IDataAccess;
 using Microsoft.EntityFrameworkCore;
 
@@ -64,8 +66,13 @@ public class CompanyData
         }
     }
 
-    public User? GetUserVerification(string userName)
+    public bool UserVerification(string userName, string password)
     {
-        return _loadMethods.LoadSingle<User>(false, u => u.Name == userName);
+        var md5Hash = MD5.Create();
+        var user = _loadMethods.LoadSingle<User>(false, u => u.Name == userName);
+        if (user == null)
+            return false;
+
+        return MD5UserPasswordVerification.VerifyMd5Hash(md5Hash, password, user.Passward ?? "") && password != user.Passward;
     }
 }

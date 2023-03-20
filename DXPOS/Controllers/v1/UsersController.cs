@@ -1,6 +1,7 @@
 ﻿using DataAccess.Data;
 using DataAccess.Domain.Models;
 using DXPOS.DTOs;
+using DXPOS.Helpers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DXPOS.Controllers.v1;
@@ -14,19 +15,22 @@ public class UsersController : ControllerBase
     [Produces(typeof(ResultDto<IEnumerable<CompanyDto>>))]
     public IActionResult GetUsersData(
         [FromQuery] string userName,
+        [FromQuery] string password,
         [FromServices] CompanyData companyData)
     {
-        var user = companyData.GetUserVerification(userName);
-        var userVerification = new UserDto
+        var isUserVerify = companyData.UserVerification(userName, password);
+
+        ResultGenerator<IEnumerable<CompanyDto>> resultGenerator;
+
+        if (!isUserVerify)
         {
-            Password = user.Passward,
-            SerialNumber = user.Sn,
-            UserType = user.Type,
-            ShowMyReportOnly = user.ShowMyReportOnly ?? false,
-            Permission = user.Permission,
-            PrivilegeID = user.PrivilegeId,
-            BranchID = user.BranchId
-        };
+            resultGenerator = new ResultGenerator<IEnumerable<CompanyDto>>(false, new List<CompanyDto>(), new List<ErrorMessage>
+            {
+                new() { Code = "401", Message = "User is not authorized", Title = "Login error message"}
+            });
+
+            return new JsonResult(resultGenerator.SelectingMethods());
+        }
 
         var companies = companyData.GetCompanies(userName);
         var companiesDto = companies.Select(c =>
@@ -60,6 +64,8 @@ public class UsersController : ControllerBase
             };
         });
 
-        return new JsonResult(companiesDto);
+        resultGenerator = new ResultGenerator<IEnumerable<CompanyDto>>(true, companiesDto, new List<ErrorMessage>());
+
+        return new JsonResult(resultGenerator.SelectingMethods());
     }
 }
