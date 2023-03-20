@@ -13,6 +13,9 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 var configurations = builder.Configuration;
 
+if (builder.Environment.IsDevelopment())
+    configurations.AddJsonFile("appsettings.Debug.json");
+
 // Add services to the container.
 builder.Services.AddHealthChecks();
 builder.Host.AddSerilog();

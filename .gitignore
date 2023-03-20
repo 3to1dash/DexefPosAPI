@@ -363,3 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 
 DataAccess.UnitTests/
+/DXPOS/appsettings.Debug.json
