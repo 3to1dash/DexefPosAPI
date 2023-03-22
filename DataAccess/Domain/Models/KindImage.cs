@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class KindImage
+public class KindImage
 {
     public decimal Id { get; set; }
     public long? KindId { get; set; }

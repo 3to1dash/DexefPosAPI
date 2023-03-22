@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class FactoreItemPrice
+public class FactoreItemPrice
 {
     public decimal Id { get; set; }
     public decimal? StageId { get; set; }

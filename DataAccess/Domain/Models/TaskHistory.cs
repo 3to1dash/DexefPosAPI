@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TaskHistory
+public class TaskHistory
 {
     public decimal TaskId { get; set; }
     public decimal? Num { get; set; }

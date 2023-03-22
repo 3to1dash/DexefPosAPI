@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class CustDailyBalance
+public class CustDailyBalance
 {
     public decimal Id { get; set; }
     public bool? ForAdjust { get; set; }

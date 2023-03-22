@@ -1,8 +1,8 @@
-﻿using System.Text.Json.Serialization;
+using System.Text.Json.Serialization;
 
 namespace DataAccess.Domain.Models;
 
-public partial class CurrencyTable
+public class CurrencyTable
 {
     public decimal Id { get; set; }
     public string? ArNameCountry { get; set; }

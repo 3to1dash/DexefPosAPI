@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class RepPercEntry
+public class RepPercEntry
 {
     public int Id { get; set; }
     public int? RepPercId { get; set; }

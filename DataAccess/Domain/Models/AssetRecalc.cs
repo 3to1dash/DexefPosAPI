@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class AssetRecalc
+public class AssetRecalc
 {
     public decimal Id { get; set; }
     public decimal? Distroyid { get; set; }

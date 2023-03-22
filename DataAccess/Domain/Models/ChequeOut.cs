@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class ChequeOut
+public class ChequeOut
 {
     public int Id { get; set; }
     public int? Num { get; set; }

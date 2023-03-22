@@ -1,9 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
 namespace DataAccess.Domain.Models;
 
-public partial class CompanyBranch
+public class CompanyBranch
 {
     [NotMapped]
     private int? _companyId;

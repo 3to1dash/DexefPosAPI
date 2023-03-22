@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class ItemStyleSearch
+public class ItemStyleSearch
 {
     public string? ItemCode { get; set; }
     public string? ArName { get; set; }

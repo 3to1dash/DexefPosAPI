@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class HrSalariesEquation
+public class HrSalariesEquation
 {
     public decimal Id { get; set; }
     public int? SalaryId { get; set; }

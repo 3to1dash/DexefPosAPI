@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class ItemSearch
+public class ItemSearch
 {
     public int? Id { get; set; }
     public int? StoreId { get; set; }

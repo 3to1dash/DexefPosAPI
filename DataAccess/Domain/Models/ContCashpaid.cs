@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class ContCashpaid
+public class ContCashpaid
 {
     public DateTime? Dt { get; set; }
     public string? Dafter { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TripTicket
+public class TripTicket
 {
     public int Id { get; set; }
     public string? Prefix { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class WorkAttendance
+public class WorkAttendance
 {
     public DateTime? Dt { get; set; }
     public string? Period { get; set; }

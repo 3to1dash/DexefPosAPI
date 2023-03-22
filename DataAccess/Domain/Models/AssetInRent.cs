@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class AssetInRent
+public class AssetInRent
 {
     public decimal Id { get; set; }
     public decimal? Assetid { get; set; }

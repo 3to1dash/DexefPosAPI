@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Dailydat
+public class Dailydat
 {
     public decimal? Fromid { get; set; }
     public decimal? Toid { get; set; }

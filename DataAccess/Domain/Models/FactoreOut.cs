@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class FactoreOut
+public class FactoreOut
 {
     public decimal Id { get; set; }
     public int? Dafter { get; set; }

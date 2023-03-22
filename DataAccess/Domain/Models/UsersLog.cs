@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class UsersLog
+public class UsersLog
 {
     public long Id { get; set; }
     public string? UserName { get; set; }

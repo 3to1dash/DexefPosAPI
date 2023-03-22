@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TahselBill
+public class TahselBill
 {
     public decimal Id { get; set; }
     public decimal? Billid { get; set; }

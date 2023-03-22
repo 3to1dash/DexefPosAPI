@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Dealing
+public class Dealing
 {
     public string DealingId { get; set; } = null!;
     public string? ArName { get; set; }

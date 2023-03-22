@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Grouplayout
+public class Grouplayout
 {
     public string? Frm { get; set; }
     public string? Name { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class RefreshToken
+public class RefreshToken
 {
     public int Id { get; set; }
     public int CustomerId { get; set; }

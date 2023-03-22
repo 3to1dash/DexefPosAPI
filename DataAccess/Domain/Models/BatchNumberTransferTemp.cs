@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class BatchNumberTransferTemp
+public class BatchNumberTransferTemp
 {
     public int Id { get; set; }
     public int? RowId { get; set; }

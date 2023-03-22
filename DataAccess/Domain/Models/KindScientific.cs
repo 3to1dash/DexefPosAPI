@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class KindScientific
+public class KindScientific
 {
     public decimal Id { get; set; }
     public int? Code { get; set; }

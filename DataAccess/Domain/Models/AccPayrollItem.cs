@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class AccPayrollItem
+public class AccPayrollItem
 {
     public int Id { get; set; }
     public int? ParentId { get; set; }

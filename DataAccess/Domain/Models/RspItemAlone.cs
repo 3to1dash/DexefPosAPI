@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class RspItemAlone
+public class RspItemAlone
 {
     public int Id { get; set; }
     public string? Code { get; set; }

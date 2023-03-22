@@ -1,9 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
 namespace DataAccess.Domain.Models;
 
-public partial class KindStock
+public class KindStock
 {
     public int Id { get; set; }
     public string Num { get; set; } = null!;
@@ -20,7 +20,6 @@ public partial class KindStock
     public DateTime? Dt { get; set; }
     public Guid Rowguid { get; set; }
 
-    //[JsonIgnore]
     [NotMapped]
     public virtual string Branch { get; set; }
     [JsonIgnore]

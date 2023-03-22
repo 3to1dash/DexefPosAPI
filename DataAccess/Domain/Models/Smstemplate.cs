@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Smstemplate
+public class Smstemplate
 {
     public int Id { get; set; }
     public string? Name { get; set; }

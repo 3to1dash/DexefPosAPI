@@ -1,13 +1,7 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TripCommission
+public class TripCommission
 {
-    public TripCommission()
-    {
-        TripCommissionEntries = new HashSet<TripCommissionEntry>();
-        TripContracts = new HashSet<TripContract>();
-    }
-
     public int Id { get; set; }
     public int? BranchId { get; set; }
     public bool? IsSale { get; set; }
@@ -24,6 +18,6 @@ public partial class TripCommission
     public int? PercType { get; set; }
 
     public virtual CompanyBranch? Branch { get; set; }
-    public virtual ICollection<TripCommissionEntry> TripCommissionEntries { get; set; }
-    public virtual ICollection<TripContract> TripContracts { get; set; }
+    public virtual List<TripCommissionEntry> TripCommissionEntries { get; set; }
+    public virtual List<TripContract> TripContracts { get; set; }
 }

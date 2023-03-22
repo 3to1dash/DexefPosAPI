@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class FinalDatum
+public class FinalDatum
 {
     public long? KindId { get; set; }
     public decimal? TaskId { get; set; }

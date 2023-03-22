@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class KindColor
+public class KindColor
 {
     public int Id { get; set; }
     public string? Num { get; set; }

@@ -1,13 +1,7 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class DiscountQty
+public class DiscountQty
 {
-    public DiscountQty()
-    {
-        DiscountQtyItems = new HashSet<DiscountQtyItem>();
-        DiscountQtySlices = new HashSet<DiscountQtySlice>();
-    }
-
     public int Id { get; set; }
     public long? Num { get; set; }
     public string? Name { get; set; }
@@ -21,6 +15,6 @@ public partial class DiscountQty
     public bool? IsperSlice { get; set; }
     public Guid Rowguid { get; set; }
 
-    public virtual ICollection<DiscountQtyItem> DiscountQtyItems { get; set; }
-    public virtual ICollection<DiscountQtySlice> DiscountQtySlices { get; set; }
+    public virtual List<DiscountQtyItem> DiscountQtyItems { get; set; }
+    public virtual List<DiscountQtySlice> DiscountQtySlices { get; set; }
 }

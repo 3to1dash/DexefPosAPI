@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TripDateRange
+public class TripDateRange
 {
     public long Id { get; set; }
     public bool? IsVendor { get; set; }

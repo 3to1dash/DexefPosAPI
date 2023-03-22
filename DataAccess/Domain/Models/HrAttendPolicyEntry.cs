@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class HrAttendPolicyEntry
+public class HrAttendPolicyEntry
 {
     public int Id { get; set; }
     public int? PolicyId { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class ShBranchDailyAction
+public class ShBranchDailyAction
 {
     public decimal Id { get; set; }
     public decimal? BranchId { get; set; }

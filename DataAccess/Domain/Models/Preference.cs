@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Preference
+public class Preference
 {
     public int Id { get; set; }
     public int? CustId { get; set; }

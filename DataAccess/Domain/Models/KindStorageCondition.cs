@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class KindStorageCondition
+public class KindStorageCondition
 {
     public int Id { get; set; }
     public int? Code { get; set; }

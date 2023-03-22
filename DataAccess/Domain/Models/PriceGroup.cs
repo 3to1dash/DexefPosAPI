@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class PriceGroup
+public class PriceGroup
 {
     public DateTime? StDate { get; set; }
     public string? Name { get; set; }

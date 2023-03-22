@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class CustPatient
+public class CustPatient
 {
     public decimal Id { get; set; }
     public DateTime? Dt { get; set; }

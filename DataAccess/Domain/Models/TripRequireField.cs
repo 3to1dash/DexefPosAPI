@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TripRequireField
+public class TripRequireField
 {
     public int Id { get; set; }
     public string? Ticket { get; set; }

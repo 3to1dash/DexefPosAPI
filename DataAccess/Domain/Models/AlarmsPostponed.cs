@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class AlarmsPostponed
+public class AlarmsPostponed
 {
     public int Id { get; set; }
     public string? AlarmType { get; set; }

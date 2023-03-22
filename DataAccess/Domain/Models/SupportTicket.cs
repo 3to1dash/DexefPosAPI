@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class SupportTicket
+public class SupportTicket
 {
     public decimal Id { get; set; }
     public decimal? Num { get; set; }

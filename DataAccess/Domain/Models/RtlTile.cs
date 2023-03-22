@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class RtlTile
+public class RtlTile
 {
     public decimal Id { get; set; }
     public string Ar { get; set; } = null!;

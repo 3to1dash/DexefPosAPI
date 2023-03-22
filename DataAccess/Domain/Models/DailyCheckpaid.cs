@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class DailyCheckpaid
+public class DailyCheckpaid
 {
     public decimal Id { get; set; }
     public bool? Idcheck { get; set; }

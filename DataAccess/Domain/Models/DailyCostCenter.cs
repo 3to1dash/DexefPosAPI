@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class DailyCostCenter
+public class DailyCostCenter
 {
     public long Id { get; set; }
     public DateTime? Dt { get; set; }

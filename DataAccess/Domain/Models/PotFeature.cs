@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class PotFeature
+public class PotFeature
 {
     public decimal Id { get; set; }
     public decimal? Custid { get; set; }

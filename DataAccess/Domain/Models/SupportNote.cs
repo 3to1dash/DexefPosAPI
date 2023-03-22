@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class SupportNote
+public class SupportNote
 {
     public decimal Id { get; set; }
     public string? Note { get; set; }

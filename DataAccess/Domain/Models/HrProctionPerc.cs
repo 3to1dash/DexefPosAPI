@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class HrProctionPerc
+public class HrProctionPerc
 {
     public int Id { get; set; }
     public string? ArName { get; set; }

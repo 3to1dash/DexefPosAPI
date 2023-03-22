@@ -1,9 +1,9 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
 /// <summary>
 /// اسماء و بيانات الموظفين
 /// </summary>
-public partial class Work
+public class Work
 {
     public int Id { get; set; }
     public int? Num { get; set; }

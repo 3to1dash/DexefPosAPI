@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class DiscountShipping
+public class DiscountShipping
 {
     public int Id { get; set; }
     public int? Num { get; set; }

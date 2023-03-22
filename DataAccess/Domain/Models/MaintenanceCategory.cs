@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class MaintenanceCategory
+public class MaintenanceCategory
 {
     public int Id { get; set; }
     public int? Num { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class UserOption
+public class UserOption
 {
     public decimal MyId { get; set; }
     public decimal? PermissionId { get; set; }

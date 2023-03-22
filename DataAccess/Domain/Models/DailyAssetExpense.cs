@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class DailyAssetExpense
+public class DailyAssetExpense
 {
     public int Id { get; set; }
     public bool? IsValue { get; set; }

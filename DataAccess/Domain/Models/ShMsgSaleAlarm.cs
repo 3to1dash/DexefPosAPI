@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class ShMsgSaleAlarm
+public class ShMsgSaleAlarm
 {
     public decimal Id { get; set; }
     public decimal? MsgId { get; set; }

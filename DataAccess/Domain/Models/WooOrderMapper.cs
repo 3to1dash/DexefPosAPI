@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class WooOrderMapper
+public class WooOrderMapper
 {
     public int Id { get; set; }
     public decimal TaskId { get; set; }

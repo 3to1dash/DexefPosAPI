@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class DiscountTrade
+public class DiscountTrade
 {
     public decimal Id { get; set; }
     public int? BranchId { get; set; }

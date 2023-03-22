@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class StorageTransform
+public class StorageTransform
 {
     public decimal Id { get; set; }
     public int? BranchId { get; set; }

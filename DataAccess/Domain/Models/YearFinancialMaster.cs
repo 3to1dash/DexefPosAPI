@@ -1,12 +1,7 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class YearFinancialMaster
+public class YearFinancialMaster
 {
-    public YearFinancialMaster()
-    {
-        YearFinancials = new HashSet<YearFinancial>();
-    }
-
     public int Id { get; set; }
     public string? Name { get; set; }
     public DateTime? FromDt { get; set; }
@@ -19,5 +14,5 @@ public partial class YearFinancialMaster
     public string? Password { get; set; }
     public int? UpdateAfterCloseDays { get; set; }
 
-    public virtual ICollection<YearFinancial> YearFinancials { get; set; }
+    public virtual List<YearFinancial> YearFinancials { get; set; }
 }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class PointsCardSetting
+public class PointsCardSetting
 {
     public int Id { get; set; }
     public decimal? Minimum { get; set; }

@@ -1,15 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DataAccess.Domain.Models;
 
-public partial class User
+public class User
 {
-    public User()
-    {
-        UserAnyDeskSettings = new HashSet<UserAnyDeskSetting>();
-        UsersLogs = new HashSet<UsersLog>();
-    }
-
     public string Name { get; set; } = null!;
     public string? Type { get; set; }
     public int? PrivilegeId { get; set; }
@@ -50,11 +44,13 @@ public partial class User
     [NotMapped]
     public virtual UsersPrivilege? Privilege { get; set; }
     [NotMapped]
+    public virtual List<UsersPrivilegesEntry> UsersPrivilegesEntries { get; set; }
+    [NotMapped]
     public virtual HrWorkTime? Shift { get; set; }
     [NotMapped]
-    public virtual ICollection<UserAnyDeskSetting> UserAnyDeskSettings { get; set; }
+    public virtual List<UserAnyDeskSetting> UserAnyDeskSettings { get; set; }
     [NotMapped]
-    public virtual ICollection<UsersLog> UsersLogs { get; set; }
+    public virtual List<UsersLog> UsersLogs { get; set; }
     [NotMapped]
     public virtual List<UsersResource> UsersResources { get; set; }
 }

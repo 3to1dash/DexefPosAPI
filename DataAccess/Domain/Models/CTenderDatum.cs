@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class CTenderDatum
+public class CTenderDatum
 {
     public decimal Id { get; set; }
     public decimal? TenderId { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class HrTimeOffPolicyEntry
+public class HrTimeOffPolicyEntry
 {
     public long Id { get; set; }
     public int? PolicyId { get; set; }

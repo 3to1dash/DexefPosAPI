@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class SalariesRepeatMethod
+public class SalariesRepeatMethod
 {
     public int Id { get; set; }
     public string? ItemType { get; set; }

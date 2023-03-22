@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class CompanyActivity
+public class CompanyActivity
 {
     public string Code { get; set; } = null!;
     public string? ArName { get; set; }

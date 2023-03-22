@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Savedoc
+public class Savedoc
 {
     public string? Name { get; set; }
     public string? Path { get; set; }

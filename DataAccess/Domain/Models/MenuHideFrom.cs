@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class MenuHideFrom
+public class MenuHideFrom
 {
     public int Id { get; set; }
     public int? DataId { get; set; }

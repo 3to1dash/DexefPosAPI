@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TempSellAvg
+public class TempSellAvg
 {
     public long? SellId { get; set; }
     public long? Itemid { get; set; }

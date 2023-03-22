@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class FinalDayReport
+public class FinalDayReport
 {
     public decimal Id { get; set; }
     public string? BranchName { get; set; }

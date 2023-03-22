@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class InstallmentEntry
+public class InstallmentEntry
 {
     public decimal Id { get; set; }
     public bool? IsCredit { get; set; }

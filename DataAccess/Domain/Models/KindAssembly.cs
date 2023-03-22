@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class KindAssembly
+public class KindAssembly
 {
     public int Id { get; set; }
     public int? MainId { get; set; }

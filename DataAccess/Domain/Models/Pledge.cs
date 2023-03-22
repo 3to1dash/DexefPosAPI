@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Pledge
+public class Pledge
 {
     public int Id { get; set; }
     public decimal? Num { get; set; }

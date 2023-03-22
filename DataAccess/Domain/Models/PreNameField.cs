@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class PreNameField
+public class PreNameField
 {
     public decimal Id { get; set; }
     public string? Type { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class ShMsgSetting
+public class ShMsgSetting
 {
     public decimal Id { get; set; }
     public decimal? MsgId { get; set; }

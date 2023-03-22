@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Contractitem
+public class Contractitem
 {
     public decimal? Num { get; set; }
     public string? Name { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class FixedAssetDeprecationMethodGroup
+public class FixedAssetDeprecationMethodGroup
 {
     public long Id { get; set; }
     public string? ArName { get; set; }

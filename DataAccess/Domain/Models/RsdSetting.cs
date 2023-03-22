@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class RsdSetting
+public class RsdSetting
 {
     public int Id { get; set; }
     public int? PrescriptionId { get; set; }

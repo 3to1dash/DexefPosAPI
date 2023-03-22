@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class KindBounesEntry
+public class KindBounesEntry
 {
     public int Id { get; set; }
     public int? BounesId { get; set; }

@@ -1,13 +1,7 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class WooOrderShippingLine
+public class WooOrderShippingLine
 {
-    public WooOrderShippingLine()
-    {
-        WooOrderMeta = new HashSet<WooOrderMetum>();
-        WooTaxItems = new HashSet<WooTaxItem>();
-    }
-
     public decimal Id { get; set; }
     public string MethodTitle { get; set; } = null!;
     public string MethodId { get; set; } = null!;
@@ -17,6 +11,6 @@ public partial class WooOrderShippingLine
     public decimal? WooOrderid { get; set; }
 
     public virtual WooOrder? WooOrder { get; set; }
-    public virtual ICollection<WooOrderMetum> WooOrderMeta { get; set; }
-    public virtual ICollection<WooTaxItem> WooTaxItems { get; set; }
+    public virtual List<WooOrderMetum> WooOrderMeta { get; set; }
+    public virtual List<WooTaxItem> WooTaxItems { get; set; }
 }

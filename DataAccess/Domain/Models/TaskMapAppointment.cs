@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TaskMapAppointment
+public class TaskMapAppointment
 {
     public int UniqueId { get; set; }
     public int? Type { get; set; }

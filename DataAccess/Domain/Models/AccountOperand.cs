@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class AccountOperand
+public class AccountOperand
 {
     public string Operand { get; set; } = null!;
     public int? AccountId { get; set; }

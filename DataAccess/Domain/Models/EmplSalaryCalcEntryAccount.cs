@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class EmplSalaryCalcEntryAccount
+public class EmplSalaryCalcEntryAccount
 {
     public int Id { get; set; }
     public int? SaleryId { get; set; }

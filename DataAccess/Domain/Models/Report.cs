@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Report
+public class Report
 {
     public int Id { get; set; }
     public bool? IsVisible { get; set; }

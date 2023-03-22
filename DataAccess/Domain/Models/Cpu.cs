@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Cpu
+public class Cpu
 {
     public int Id { get; set; }
     public decimal? Cpu1 { get; set; }

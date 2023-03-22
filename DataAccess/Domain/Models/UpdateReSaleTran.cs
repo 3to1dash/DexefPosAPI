@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class UpdateReSaleTran
+public class UpdateReSaleTran
 {
     public int? KindId { get; set; }
     public int? AccountId { get; set; }

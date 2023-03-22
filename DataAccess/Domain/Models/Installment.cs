@@ -1,12 +1,7 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Installment
+public class Installment
 {
-    public Installment()
-    {
-        InstallmentEntries = new HashSet<InstallmentEntry>();
-    }
-
     public long Id { get; set; }
     public DateTime? Dt { get; set; }
     public string? Num { get; set; }
@@ -38,5 +33,5 @@ public partial class Installment
     public decimal? BaseTaskId { get; set; }
     public Guid Rowguid { get; set; }
 
-    public virtual ICollection<InstallmentEntry> InstallmentEntries { get; set; }
+    public virtual List<InstallmentEntry> InstallmentEntries { get; set; }
 }

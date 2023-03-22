@@ -1,12 +1,7 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class WooOrderShipping
+public class WooOrderShipping
 {
-    public WooOrderShipping()
-    {
-        WooOrders = new HashSet<WooOrder>();
-    }
-
     public int Id { get; set; }
     public string FirstName { get; set; } = null!;
     public string LastName { get; set; } = null!;
@@ -18,5 +13,5 @@ public partial class WooOrderShipping
     public string Postcode { get; set; } = null!;
     public string Country { get; set; } = null!;
 
-    public virtual ICollection<WooOrder> WooOrders { get; set; }
+    public virtual List<WooOrder> WooOrders { get; set; }
 }

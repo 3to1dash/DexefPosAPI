@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class BuyPhoto
+public class BuyPhoto
 {
     public string? Dafter { get; set; }
     public decimal? Num { get; set; }

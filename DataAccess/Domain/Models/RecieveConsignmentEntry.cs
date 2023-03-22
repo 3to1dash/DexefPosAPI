@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class RecieveConsignmentEntry
+public class RecieveConsignmentEntry
 {
     public decimal Id { get; set; }
     public int? BillIndex { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class RsdBillMapping
+public class RsdBillMapping
 {
     public int Id { get; set; }
     public decimal? TaskId { get; set; }

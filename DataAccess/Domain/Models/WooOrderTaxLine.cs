@@ -1,12 +1,7 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class WooOrderTaxLine
+public class WooOrderTaxLine
 {
-    public WooOrderTaxLine()
-    {
-        WooOrderMeta = new HashSet<WooOrderMetum>();
-    }
-
     public int Id { get; set; }
     public string RateCode { get; set; } = null!;
     public string RateId { get; set; } = null!;
@@ -18,5 +13,5 @@ public partial class WooOrderTaxLine
     public decimal? RatePercent { get; set; }
 
     public virtual WooOrder? WooOrder { get; set; }
-    public virtual ICollection<WooOrderMetum> WooOrderMeta { get; set; }
+    public virtual List<WooOrderMetum> WooOrderMeta { get; set; }
 }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class InstallmentSetting
+public class InstallmentSetting
 {
     public int Id { get; set; }
     public bool? UseMultipleInstall { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class YearFinancialRole
+public class YearFinancialRole
 {
     public long Id { get; set; }
     public string? Name { get; set; }

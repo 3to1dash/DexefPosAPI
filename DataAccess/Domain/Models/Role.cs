@@ -1,12 +1,7 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Role
+public class Role
 {
-    public Role()
-    {
-        UsersPrivilegesEntries = new HashSet<UsersPrivilegesEntry>();
-    }
-
     public int Id { get; set; }
     public string? System { get; set; }
     public int? ParentId { get; set; }
@@ -16,5 +11,5 @@ public partial class Role
     public Guid Rowguid { get; set; }
 
     public virtual UserPermission? RoleNavigation { get; set; }
-    public virtual ICollection<UsersPrivilegesEntry> UsersPrivilegesEntries { get; set; }
+    public virtual List<UsersPrivilegesEntry> UsersPrivilegesEntries { get; set; }
 }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TransGo
+public class TransGo
 {
     public string? Dealing { get; set; }
     public DateTime? Dt { get; set; }

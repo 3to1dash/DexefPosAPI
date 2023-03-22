@@ -1,15 +1,7 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class UserPermission
+public class UserPermission
 {
-    public UserPermission()
-    {
-        Menus = new HashSet<Menu>();
-        Reports = new HashSet<Report>();
-        Roles = new HashSet<Role>();
-        UsersPrivilegesEntries = new HashSet<UsersPrivilegesEntry>();
-    }
-
     public decimal Id { get; set; }
     public decimal? ParentId { get; set; }
     public string Permission { get; set; } = null!;
@@ -34,8 +26,8 @@ public partial class UserPermission
     public Guid Rowguid { get; set; }
     public string? EditorType { get; set; }
 
-    public virtual ICollection<Menu> Menus { get; set; }
-    public virtual ICollection<Report> Reports { get; set; }
-    public virtual ICollection<Role> Roles { get; set; }
-    public virtual ICollection<UsersPrivilegesEntry> UsersPrivilegesEntries { get; set; }
+    public virtual List<Menu> Menus { get; set; }
+    public virtual List<Report> Reports { get; set; }
+    public virtual List<Role> Roles { get; set; }
+    public virtual List<UsersPrivilegesEntry> UsersPrivilegesEntries { get; set; }
 }

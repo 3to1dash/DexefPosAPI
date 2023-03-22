@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class StorePackingEntry
+public class StorePackingEntry
 {
     public int Id { get; set; }
     public int? BillIndex { get; set; }

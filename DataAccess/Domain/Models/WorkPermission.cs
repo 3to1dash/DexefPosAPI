@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class WorkPermission
+public class WorkPermission
 {
     public int Id { get; set; }
     public decimal? BranchId { get; set; }

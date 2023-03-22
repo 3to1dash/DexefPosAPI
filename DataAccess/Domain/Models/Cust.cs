@@ -1,19 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DataAccess.Domain.Models;
 
-public partial class Cust
+public class Cust
 {
-    public Cust()
-    {
-        CustAddresses = new HashSet<CustAddress>();
-        TripContracts = new HashSet<TripContract>();
-        TripIata = new HashSet<TripIatum>();
-        TripTicketCusts = new HashSet<TripTicket>();
-        TripTicketVendors = new HashSet<TripTicket>();
-        TripUsers = new HashSet<TripUser>();
-    }
-
     public int Id { get; set; }
     public int? BranchId { get; set; }
     public decimal Debit { get; set; }
@@ -119,15 +109,15 @@ public partial class Cust
     public decimal? CurrencyId { get; set; }
 
     [NotMapped]
-    public virtual ICollection<CustAddress> CustAddresses { get; set; }
+    public virtual List<CustAddress> CustAddresses { get; set; }
     [NotMapped]
-    public virtual ICollection<TripContract> TripContracts { get; set; }
+    public virtual List<TripContract> TripContracts { get; set; }
     [NotMapped]
-    public virtual ICollection<TripIatum> TripIata { get; set; }
+    public virtual List<TripIatum> TripIata { get; set; }
     [NotMapped]
-    public virtual ICollection<TripTicket> TripTicketCusts { get; set; }
+    public virtual List<TripTicket> TripTicketCusts { get; set; }
     [NotMapped]
-    public virtual ICollection<TripTicket> TripTicketVendors { get; set; }
+    public virtual List<TripTicket> TripTicketVendors { get; set; }
     [NotMapped]
-    public virtual ICollection<TripUser> TripUsers { get; set; }
+    public virtual List<TripUser> TripUsers { get; set; }
 }

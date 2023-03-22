@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class FixedAssetGroup
+public class FixedAssetGroup
 {
     public long Id { get; set; }
     public string? ArName { get; set; }

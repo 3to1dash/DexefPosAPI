@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class KindLocal
+public class KindLocal
 {
     public decimal Id { get; set; }
     public int? Code { get; set; }

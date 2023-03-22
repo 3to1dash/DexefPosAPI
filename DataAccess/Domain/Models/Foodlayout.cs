@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Foodlayout
+public class Foodlayout
 {
     public decimal Id { get; set; }
     public decimal? Reid { get; set; }

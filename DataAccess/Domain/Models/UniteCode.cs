@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class UniteCode
+public class UniteCode
 {
     public string Code { get; set; } = null!;
     public string? EnName { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Dbdatum
+public class Dbdatum
 {
     public decimal Id { get; set; }
     public string? Dbname { get; set; }

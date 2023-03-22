@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class IncomesEntry
+public class IncomesEntry
 {
     public decimal Id { get; set; }
     public DateTime? Dt { get; set; }

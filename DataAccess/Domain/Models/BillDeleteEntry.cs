@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class BillDeleteEntry
+public class BillDeleteEntry
 {
     public int? Id { get; set; }
     public string? Deal { get; set; }

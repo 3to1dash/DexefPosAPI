@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class DailyStorage
+public class DailyStorage
 {
     public long Id { get; set; }
     public DateTime? Dt { get; set; }

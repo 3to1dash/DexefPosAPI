@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class UserAnyDeskSetting
+public class UserAnyDeskSetting
 {
     public int Id { get; set; }
     public string? UserName { get; set; }

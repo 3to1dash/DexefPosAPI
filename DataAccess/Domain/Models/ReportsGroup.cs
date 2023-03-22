@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class ReportsGroup
+public class ReportsGroup
 {
     public string Id { get; set; } = null!;
     public string? ArName { get; set; }

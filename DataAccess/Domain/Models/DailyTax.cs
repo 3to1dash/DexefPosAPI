@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class DailyTax
+public class DailyTax
 {
     public int Id { get; set; }
     public string? Num { get; set; }

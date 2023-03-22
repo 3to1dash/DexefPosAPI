@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class WorkGroup
+public class WorkGroup
 {
     public decimal Id { get; set; }
     public decimal? Num { get; set; }

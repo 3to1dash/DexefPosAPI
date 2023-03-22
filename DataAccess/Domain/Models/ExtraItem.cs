@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class ExtraItem
+public class ExtraItem
 {
     public decimal Id { get; set; }
     public int? BranchId { get; set; }

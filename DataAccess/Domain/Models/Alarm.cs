@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Alarm
+public class Alarm
 {
     public long Id { get; set; }
     public string? AccountType { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TempError01
+public class TempError01
 {
     public decimal Id { get; set; }
     public decimal? TaskId { get; set; }

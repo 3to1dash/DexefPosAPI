@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class EstimateEntry
+public class EstimateEntry
 {
     public int Id { get; set; }
     public int? EstimateId { get; set; }

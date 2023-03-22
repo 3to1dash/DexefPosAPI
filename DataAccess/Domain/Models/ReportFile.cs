@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class ReportFile
+public class ReportFile
 {
     public decimal Id { get; set; }
     public string? Type { get; set; }

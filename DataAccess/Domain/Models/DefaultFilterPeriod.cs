@@ -1,15 +1,10 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class DefaultFilterPeriod
+public class DefaultFilterPeriod
 {
-    public DefaultFilterPeriod()
-    {
-        Preferences = new HashSet<Preference>();
-    }
-
     public int Id { get; set; }
     public string? Name { get; set; }
     public int? DaysCount { get; set; }
 
-    public virtual ICollection<Preference> Preferences { get; set; }
+    public virtual List<Preference> Preferences { get; set; }
 }

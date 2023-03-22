@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Favorite
+public class Favorite
 {
     public string? Dealing { get; set; }
     public decimal? F1 { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class WorkDiscount
+public class WorkDiscount
 {
     public decimal Id { get; set; }
     public decimal? Workid { get; set; }

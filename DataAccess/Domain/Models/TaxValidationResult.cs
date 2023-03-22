@@ -1,12 +1,7 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TaxValidationResult
+public class TaxValidationResult
 {
-    public TaxValidationResult()
-    {
-        TaxValidationResultErrors = new HashSet<TaxValidationResultError>();
-    }
-
     public int Id { get; set; }
     public int? TaxValidtionId { get; set; }
     public int? StepId { get; set; }
@@ -19,5 +14,5 @@ public partial class TaxValidationResult
     public string? PropertyPath { get; set; }
 
     public virtual TaxValidation? TaxValidtion { get; set; }
-    public virtual ICollection<TaxValidationResultError> TaxValidationResultErrors { get; set; }
+    public virtual List<TaxValidationResultError> TaxValidationResultErrors { get; set; }
 }

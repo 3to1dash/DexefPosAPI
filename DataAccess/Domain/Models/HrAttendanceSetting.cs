@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class HrAttendanceSetting
+public class HrAttendanceSetting
 {
     public int Id { get; set; }
     public string? ArName { get; set; }

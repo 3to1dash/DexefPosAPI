@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class WorkSalaryPerc
+public class WorkSalaryPerc
 {
     public decimal Id { get; set; }
     public string? Arb { get; set; }

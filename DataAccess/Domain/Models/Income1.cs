@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Income1
+public class Income1
 {
     public int Id { get; set; }
     public int? TypeIndex { get; set; }

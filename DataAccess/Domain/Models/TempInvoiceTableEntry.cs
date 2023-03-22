@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TempInvoiceTableEntry
+public class TempInvoiceTableEntry
 {
     public int? Optkind { get; set; }
     public int? PricingMode { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class ResTableOrder
+public class ResTableOrder
 {
     public int Id { get; set; }
     public int TableId { get; set; }

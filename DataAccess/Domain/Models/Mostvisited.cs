@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Mostvisited
+public class Mostvisited
 {
     public decimal Id { get; set; }
     public string? WrittenBy { get; set; }

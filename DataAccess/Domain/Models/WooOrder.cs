@@ -1,18 +1,7 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class WooOrder
+public class WooOrder
 {
-    public WooOrder()
-    {
-        WooOrderCouponLines = new HashSet<WooOrderCouponLine>();
-        WooOrderFeeLines = new HashSet<WooOrderFeeLine>();
-        WooOrderLineItems = new HashSet<WooOrderLineItem>();
-        WooOrderMeta = new HashSet<WooOrderMetum>();
-        WooOrderRefundLines = new HashSet<WooOrderRefundLine>();
-        WooOrderShippingLines = new HashSet<WooOrderShippingLine>();
-        WooOrderTaxLines = new HashSet<WooOrderTaxLine>();
-    }
-
     public decimal Id { get; set; }
     public decimal? ParentId { get; set; }
     public string Number { get; set; } = null!;
@@ -51,11 +40,11 @@ public partial class WooOrder
 
     public virtual WooOrderBilling Billing { get; set; } = null!;
     public virtual WooOrderShipping Shipping { get; set; } = null!;
-    public virtual ICollection<WooOrderCouponLine> WooOrderCouponLines { get; set; }
-    public virtual ICollection<WooOrderFeeLine> WooOrderFeeLines { get; set; }
-    public virtual ICollection<WooOrderLineItem> WooOrderLineItems { get; set; }
-    public virtual ICollection<WooOrderMetum> WooOrderMeta { get; set; }
-    public virtual ICollection<WooOrderRefundLine> WooOrderRefundLines { get; set; }
-    public virtual ICollection<WooOrderShippingLine> WooOrderShippingLines { get; set; }
-    public virtual ICollection<WooOrderTaxLine> WooOrderTaxLines { get; set; }
+    public virtual List<WooOrderCouponLine> WooOrderCouponLines { get; set; }
+    public virtual List<WooOrderFeeLine> WooOrderFeeLines { get; set; }
+    public virtual List<WooOrderLineItem> WooOrderLineItems { get; set; }
+    public virtual List<WooOrderMetum> WooOrderMeta { get; set; }
+    public virtual List<WooOrderRefundLine> WooOrderRefundLines { get; set; }
+    public virtual List<WooOrderShippingLine> WooOrderShippingLines { get; set; }
+    public virtual List<WooOrderTaxLine> WooOrderTaxLines { get; set; }
 }

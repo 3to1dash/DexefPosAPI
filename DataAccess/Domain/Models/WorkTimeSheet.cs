@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class WorkTimeSheet
+public class WorkTimeSheet
 {
     public long Id { get; set; }
     public int EmplId { get; set; }

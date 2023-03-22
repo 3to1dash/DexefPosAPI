@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class ResTransactionLog
+public class ResTransactionLog
 {
     public decimal Id { get; set; }
     public decimal? TaskId { get; set; }

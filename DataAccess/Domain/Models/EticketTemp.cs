@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class EticketTemp
+public class EticketTemp
 {
     public string? Vendor { get; set; }
     public string? Customer { get; set; }

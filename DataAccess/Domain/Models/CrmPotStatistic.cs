@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class CrmPotStatistic
+public class CrmPotStatistic
 {
     public decimal Id { get; set; }
     public decimal? ParentId { get; set; }

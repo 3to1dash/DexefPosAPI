@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class WorkFactore
+public class WorkFactore
 {
     public decimal Id { get; set; }
     public DateTime? Dt { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Favoriteform
+public class Favoriteform
 {
     public string? Name { get; set; }
     public string? Memo { get; set; }

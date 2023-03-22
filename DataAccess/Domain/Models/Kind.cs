@@ -1,12 +1,7 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Kind
+public class Kind
 {
-    public Kind()
-    {
-        KindUnites = new HashSet<KindUnite>();
-    }
-
     public int Id { get; set; }
     public DateTime? Dt { get; set; }
     public int? ParentId { get; set; }
@@ -86,5 +81,5 @@ public partial class Kind
     public DateTime? ActiveFrom { get; set; }
     public bool? IsPrescription { get; set; }
 
-    public virtual ICollection<KindUnite> KindUnites { get; set; }
+    public virtual List<KindUnite> KindUnites { get; set; }
 }

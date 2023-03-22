@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class HrTrainingCourse
+public class HrTrainingCourse
 {
     public int Id { get; set; }
     public int? EmplId { get; set; }

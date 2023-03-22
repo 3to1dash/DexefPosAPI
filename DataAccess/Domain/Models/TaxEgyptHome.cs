@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TaxEgyptHome
+public class TaxEgyptHome
 {
     public int Id { get; set; }
     public string? Name { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class AccountMonthly
+public class AccountMonthly
 {
     public int Id { get; set; }
     public string? AccountNumber { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TaxEgyptSetting
+public class TaxEgyptSetting
 {
     public int Id { get; set; }
     public int? MaxPeriod { get; set; }

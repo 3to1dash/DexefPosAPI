@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class AlarmEndUser
+public class AlarmEndUser
 {
     public long Id { get; set; }
     public string? UserName { get; set; }

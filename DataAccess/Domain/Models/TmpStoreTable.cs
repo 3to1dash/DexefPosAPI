@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TmpStoreTable
+public class TmpStoreTable
 {
     public int? ItemIds { get; set; }
     public int? KindIds { get; set; }

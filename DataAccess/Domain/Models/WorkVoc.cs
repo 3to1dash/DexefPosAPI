@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class WorkVoc
+public class WorkVoc
 {
     public string? Name { get; set; }
     public string? Groups { get; set; }

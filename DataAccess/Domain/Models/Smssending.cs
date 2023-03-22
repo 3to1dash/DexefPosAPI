@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Smssending
+public class Smssending
 {
     public int Id { get; set; }
     public int? Smsid { get; set; }

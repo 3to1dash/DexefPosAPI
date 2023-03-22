@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Buytemp
+public class Buytemp
 {
     public decimal? Fromnum { get; set; }
     public string? Fromaccount { get; set; }

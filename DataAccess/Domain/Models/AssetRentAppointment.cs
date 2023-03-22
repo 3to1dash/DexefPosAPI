@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class AssetRentAppointment
+public class AssetRentAppointment
 {
     public int UniqueId { get; set; }
     public int? Type { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class WJob
+public class WJob
 {
     public decimal Id { get; set; }
     public string? Job { get; set; }

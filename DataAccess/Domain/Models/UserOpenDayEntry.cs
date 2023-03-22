@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class UserOpenDayEntry
+public class UserOpenDayEntry
 {
     public int Id { get; set; }
     public int? DayId { get; set; }
