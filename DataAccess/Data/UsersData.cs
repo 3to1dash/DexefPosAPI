@@ -8,7 +8,7 @@ public class UsersData
     private readonly ILoadMethods _loadMethods;
 
     public UsersData(ILoadMethods loadMethods)
-	{
+    {
         _loadMethods = loadMethods;
     }
 
@@ -29,5 +29,13 @@ public class UsersData
             u => u.UserName == userName && u.Module == module);
 
         return userResources;
+    }
+
+    public IEnumerable<UsersPrivilege> GetPermissionLastUpdate(string userName)
+    {
+        var Users_Privileges = _loadMethods.LoadMultiple<UsersPrivilege>(false);
+        var User = GetUserByUserName(userName);
+        var resualt = Users_Privileges.Where(p => p.Id == User.PrivilegeId);
+        return resualt;
     }
 }
