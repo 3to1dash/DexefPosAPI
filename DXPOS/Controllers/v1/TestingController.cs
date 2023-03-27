@@ -10,7 +10,7 @@ namespace DXPOS.Controllers.v1;
 public class TestingController : ControllerBase
 {
     [HttpGet("search")]
-    public IResult Search([FromQuery]SearchCriteria criteria)
+    public IResult Search([FromQuery] SearchCriteria criteria)
     {
         return Results.Ok($"Author: {criteria.Author}, Year published: {criteria.YearPublished}");
     }

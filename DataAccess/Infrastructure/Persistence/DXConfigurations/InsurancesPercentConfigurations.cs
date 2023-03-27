@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class InsurancesPercentConfiguration : IEntityTypeConfiguration<InsurancesPercent>
 {
-
-
     public void Configure(EntityTypeBuilder<InsurancesPercent> builder)
     {
         builder.ToTable("InsurancesPercent");

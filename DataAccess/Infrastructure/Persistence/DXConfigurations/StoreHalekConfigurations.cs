@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class StoreHalekConfiguration : IEntityTypeConfiguration<StoreHalek>
 {
-
-
     public void Configure(EntityTypeBuilder<StoreHalek> builder)
     {
         builder.ToTable("StoreHalek");

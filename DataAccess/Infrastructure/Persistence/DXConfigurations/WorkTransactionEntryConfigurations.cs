@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkTransactionEntryConfiguration : IEntityTypeConfiguration<WorkTransactionEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkTransactionEntry> builder)
     {
         builder.ToTable("WorkTransaction_Entry");

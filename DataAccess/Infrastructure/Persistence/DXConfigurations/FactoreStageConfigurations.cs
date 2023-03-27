@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FactoreStageConfiguration : IEntityTypeConfiguration<FactoreStage>
 {
-
-
     public void Configure(EntityTypeBuilder<FactoreStage> builder)
     {
         builder.ToTable("Factore_Stage");

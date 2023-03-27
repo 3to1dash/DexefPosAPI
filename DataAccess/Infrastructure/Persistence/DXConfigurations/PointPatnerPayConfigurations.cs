@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PointPatnerPayConfiguration : IEntityTypeConfiguration<PointPatnerPay>
 {
-
-
     public void Configure(EntityTypeBuilder<PointPatnerPay> builder)
     {
         builder.ToTable("Point_PatnerPay");

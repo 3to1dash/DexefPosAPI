@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TaskMapAppointmentConfiguration : IEntityTypeConfiguration<TaskMapAppointment>
 {
-
-
     public void Configure(EntityTypeBuilder<TaskMapAppointment> builder)
     {
         builder.HasKey(e => e.UniqueId);

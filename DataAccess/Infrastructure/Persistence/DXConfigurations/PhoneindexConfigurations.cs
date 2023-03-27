@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PhoneindexConfiguration : IEntityTypeConfiguration<Phoneindex>
 {
-
-
     public void Configure(EntityTypeBuilder<Phoneindex> builder)
     {
         builder.HasNoKey();

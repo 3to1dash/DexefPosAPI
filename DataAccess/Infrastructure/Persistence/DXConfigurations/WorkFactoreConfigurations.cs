@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkFactoreConfiguration : IEntityTypeConfiguration<WorkFactore>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkFactore> builder)
     {
         builder.ToTable("Work_Factore");

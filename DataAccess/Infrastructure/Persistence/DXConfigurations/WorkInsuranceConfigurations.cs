@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkInsuranceConfiguration : IEntityTypeConfiguration<WorkInsurance>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkInsurance> builder)
     {
         builder.ToTable("Work_Insurance");

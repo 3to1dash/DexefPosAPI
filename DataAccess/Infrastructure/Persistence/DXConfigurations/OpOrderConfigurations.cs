@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class OpOrderConfiguration : IEntityTypeConfiguration<OpOrder>
 {
-
-
     public void Configure(EntityTypeBuilder<OpOrder> builder)
     {
         builder.ToTable("op_order");

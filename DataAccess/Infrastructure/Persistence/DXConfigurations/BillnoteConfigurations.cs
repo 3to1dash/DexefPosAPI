@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class BillnoteConfiguration : IEntityTypeConfiguration<Billnote>
 {
-
-
     public void Configure(EntityTypeBuilder<Billnote> builder)
     {
         builder.ToTable("billnote");

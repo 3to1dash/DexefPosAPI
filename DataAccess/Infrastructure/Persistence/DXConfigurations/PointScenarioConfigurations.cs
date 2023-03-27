@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PointScenarioConfiguration : IEntityTypeConfiguration<PointScenario>
 {
-
-
     public void Configure(EntityTypeBuilder<PointScenario> builder)
     {
         builder.ToTable("Point_Scenario");

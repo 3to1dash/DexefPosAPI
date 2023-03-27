@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CustDiscountConfiguration : IEntityTypeConfiguration<CustDiscount>
 {
-
-
     public void Configure(EntityTypeBuilder<CustDiscount> builder)
     {
         builder.ToTable("Cust_Discount");

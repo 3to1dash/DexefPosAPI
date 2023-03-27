@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class AssetRecalcConfiguration : IEntityTypeConfiguration<AssetRecalc>
 {
-
-
     public void Configure(EntityTypeBuilder<AssetRecalc> builder)
     {
         builder.ToTable("Asset_Recalc");

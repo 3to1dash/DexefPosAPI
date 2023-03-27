@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class StoreItemIdStyleConfiguration : IEntityTypeConfiguration<StoreItemIdStyle>
 {
-
-
     public void Configure(EntityTypeBuilder<StoreItemIdStyle> builder)
     {
         builder.ToTable("StoreItemID_Style");

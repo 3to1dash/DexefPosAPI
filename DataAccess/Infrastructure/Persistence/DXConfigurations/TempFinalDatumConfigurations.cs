@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TempFinalDatumConfiguration : IEntityTypeConfiguration<TempFinalDatum>
 {
-
-
     public void Configure(EntityTypeBuilder<TempFinalDatum> builder)
     {
         builder.HasNoKey();

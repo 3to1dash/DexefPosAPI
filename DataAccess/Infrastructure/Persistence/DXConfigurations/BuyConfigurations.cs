@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class BuyConfiguration : IEntityTypeConfiguration<Buy>
 {
-
-
     public void Configure(EntityTypeBuilder<Buy> builder)
     {
         builder.ToTable("buy");

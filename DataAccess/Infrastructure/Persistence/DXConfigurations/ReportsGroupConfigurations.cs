@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ReportsGroupConfiguration : IEntityTypeConfiguration<ReportsGroup>
 {
-
-
     public void Configure(EntityTypeBuilder<ReportsGroup> builder)
     {
         builder.ToTable("Reports_Groups");

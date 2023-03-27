@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PriceGroupConfiguration : IEntityTypeConfiguration<PriceGroup>
 {
-
-
     public void Configure(EntityTypeBuilder<PriceGroup> builder)
     {
         builder.HasNoKey();

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FixedAssetDeprecationMethodFileConfiguration : IEntityTypeConfiguration<FixedAssetDeprecationMethodFile>
 {
-
-
     public void Configure(EntityTypeBuilder<FixedAssetDeprecationMethodFile> builder)
     {
         builder.ToTable("FixedAssetDeprecationMethod_Files");

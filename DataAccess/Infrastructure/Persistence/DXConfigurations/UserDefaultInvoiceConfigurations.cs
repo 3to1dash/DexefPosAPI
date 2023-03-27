@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class UserDefaultInvoiceConfiguration : IEntityTypeConfiguration<UserDefaultInvoice>
 {
-
-
     public void Configure(EntityTypeBuilder<UserDefaultInvoice> builder)
     {
         builder.ToTable("User_DefaultInvoice");

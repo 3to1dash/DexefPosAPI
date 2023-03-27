@@ -6,35 +6,34 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyItemCostConfiguration : IEntityTypeConfiguration<DailyItemCost>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyItemCost> builder)
     {
         builder.ToTable("Daily_ItemCost");
 
-        builder.HasIndex(e => new { e.BranchId, e.Num, e.Dealing }, "IX_Daily_ItemCost_BranchID_Num_Dealing_B9F32");
+        builder.HasIndex(e => new {e.BranchId, e.Num, e.Dealing}, "IX_Daily_ItemCost_BranchID_Num_Dealing_B9F32");
 
         builder.HasIndex(e => e.Dealing, "IX_Daily_ItemCost_Dealing_702B6");
 
-        builder.HasIndex(e => new { e.Dealing, e.ItemCost }, "IX_Daily_ItemCost_Dealing_ItemCost_EC772");
+        builder.HasIndex(e => new {e.Dealing, e.ItemCost}, "IX_Daily_ItemCost_Dealing_ItemCost_EC772");
 
-        builder.HasIndex(e => new { e.Dealing, e.TranCode }, "IX_Daily_ItemCost_Dealing_TranCode_4DA94");
+        builder.HasIndex(e => new {e.Dealing, e.TranCode}, "IX_Daily_ItemCost_Dealing_TranCode_4DA94");
 
-        builder.HasIndex(e => new { e.Dealing, e.TranCode }, "IX_Daily_ItemCost_Dealing_TranCode_602BD");
+        builder.HasIndex(e => new {e.Dealing, e.TranCode}, "IX_Daily_ItemCost_Dealing_TranCode_602BD");
 
-        builder.HasIndex(e => new { e.Dealing, e.TranCode }, "IX_Daily_ItemCost_Dealing_TranCode_69B39");
+        builder.HasIndex(e => new {e.Dealing, e.TranCode}, "IX_Daily_ItemCost_Dealing_TranCode_69B39");
 
         builder.HasIndex(e => e.Dt, "IX_Daily_ItemCost_Dt_4C275");
 
         builder.HasIndex(e => e.ItemId, "IX_Daily_ItemCost_ItemID_0BFCB");
 
-        builder.HasIndex(e => new { e.ItemId, e.Dt, e.TranCode, e.TaskId }, "IX_Daily_ItemCost_ItemID_Dt_TranCode_TaskID_CFFFD");
+        builder.HasIndex(e => new {e.ItemId, e.Dt, e.TranCode, e.TaskId},
+            "IX_Daily_ItemCost_ItemID_Dt_TranCode_TaskID_CFFFD");
 
-        builder.HasIndex(e => new { e.ItemId, e.TranCode }, "IX_Daily_ItemCost_ItemID_TranCode_4C0CE");
+        builder.HasIndex(e => new {e.ItemId, e.TranCode}, "IX_Daily_ItemCost_ItemID_TranCode_4C0CE");
 
-        builder.HasIndex(e => new { e.ItemId, e.TranCode }, "IX_Daily_ItemCost_ItemID_TranCode_93EB3");
+        builder.HasIndex(e => new {e.ItemId, e.TranCode}, "IX_Daily_ItemCost_ItemID_TranCode_93EB3");
 
-        builder.HasIndex(e => new { e.ItemId, e.TranCode }, "IX_Daily_ItemCost_ItemID_TranCode_ADE94");
+        builder.HasIndex(e => new {e.ItemId, e.TranCode}, "IX_Daily_ItemCost_ItemID_TranCode_ADE94");
 
         builder.HasIndex(e => e.NetPrice, "IX_Daily_ItemCost_NetPrice_2B48B");
 
@@ -44,11 +43,11 @@ public class DailyItemCostConfiguration : IEntityTypeConfiguration<DailyItemCost
 
         builder.HasIndex(e => e.TranCode, "IX_Daily_ItemCost_TranCode_A3ACD");
 
-        builder.HasIndex(e => new { e.TranCode, e.Dealing }, "IX_Daily_ItemCost_TranCode_Dealing_9FAD4");
+        builder.HasIndex(e => new {e.TranCode, e.Dealing}, "IX_Daily_ItemCost_TranCode_Dealing_9FAD4");
 
-        builder.HasIndex(e => new { e.StoreId, e.Dt }, "missing_index_1107_1106_Daily_ItemCost");
+        builder.HasIndex(e => new {e.StoreId, e.Dt}, "missing_index_1107_1106_Daily_ItemCost");
 
-        builder.HasIndex(e => new { e.BranchId, e.Dt, e.TranCode }, "missing_index_3443_3442_Daily_ItemCost");
+        builder.HasIndex(e => new {e.BranchId, e.Dt, e.TranCode}, "missing_index_3443_3442_Daily_ItemCost");
 
         builder.Property(e => e.Id).HasColumnName("id");
 

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class StoreItemIdConfiguration : IEntityTypeConfiguration<StoreItemId>
 {
-
-
     public void Configure(EntityTypeBuilder<StoreItemId> builder)
     {
         builder.ToTable("StoreItemID");
@@ -22,11 +20,11 @@ public class StoreItemIdConfiguration : IEntityTypeConfiguration<StoreItemId>
 
         builder.HasIndex(e => e.StoreId, "IX_StoreItemID_StoreID_B2300");
 
-        builder.HasIndex(e => new { e.StoreId, e.KindId }, "NonClusteredIndex-20200113-222147");
+        builder.HasIndex(e => new {e.StoreId, e.KindId}, "NonClusteredIndex-20200113-222147");
 
-        builder.HasIndex(e => new { e.StoreId, e.TotalVal }, "missing_index_5461_5460_StoreItemID");
+        builder.HasIndex(e => new {e.StoreId, e.TotalVal}, "missing_index_5461_5460_StoreItemID");
 
-        builder.HasIndex(e => new { e.StoreId, e.Id }, "missing_index_68_67_StoreItemID");
+        builder.HasIndex(e => new {e.StoreId, e.Id}, "missing_index_68_67_StoreItemID");
 
         builder.Property(e => e.Id).HasColumnName("id");
 

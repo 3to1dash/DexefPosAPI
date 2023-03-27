@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindUseWayConfiguration : IEntityTypeConfiguration<KindUseWay>
 {
-
-
     public void Configure(EntityTypeBuilder<KindUseWay> builder)
     {
         builder.ToTable("Kind_UseWay");

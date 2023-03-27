@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PaymentLogConfiguration : IEntityTypeConfiguration<PaymentLog>
 {
-
-
     public void Configure(EntityTypeBuilder<PaymentLog> builder)
     {
         builder.ToTable("PaymentLog");

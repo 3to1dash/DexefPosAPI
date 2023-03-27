@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailySmConfiguration : IEntityTypeConfiguration<DailySm>
 {
-
-
     public void Configure(EntityTypeBuilder<DailySm> builder)
     {
         builder.ToTable("DailySMS");

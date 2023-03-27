@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class StoreInConfiguration : IEntityTypeConfiguration<StoreIn>
 {
-
-
     public void Configure(EntityTypeBuilder<StoreIn> builder)
     {
         builder.ToTable("StoreIN");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkEserviceReceiveConfiguration : IEntityTypeConfiguration<WorkEserviceReceive>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkEserviceReceive> builder)
     {
         builder.ToTable("Work_EServiceReceive");

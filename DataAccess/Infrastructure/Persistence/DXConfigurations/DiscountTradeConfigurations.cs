@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DiscountTradeConfiguration : IEntityTypeConfiguration<DiscountTrade>
 {
-
-
     public void Configure(EntityTypeBuilder<DiscountTrade> builder)
     {
         builder.ToTable("DiscountTrade");

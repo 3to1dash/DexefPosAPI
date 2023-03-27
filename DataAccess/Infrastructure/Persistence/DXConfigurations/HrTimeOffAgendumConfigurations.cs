@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class HrTimeOffAgendumConfiguration : IEntityTypeConfiguration<HrTimeOffAgendum>
 {
-
-
     public void Configure(EntityTypeBuilder<HrTimeOffAgendum> builder)
     {
         builder.ToTable("Hr_TimeOffAgenda");

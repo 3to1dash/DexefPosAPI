@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class LogHistoryConfiguration : IEntityTypeConfiguration<LogHistory>
 {
-
-
     public void Configure(EntityTypeBuilder<LogHistory> builder)
     {
         builder.ToTable("LogHistory");

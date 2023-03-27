@@ -6,13 +6,11 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SalePaymentConfiguration : IEntityTypeConfiguration<SalePayment>
 {
-
-
     public void Configure(EntityTypeBuilder<SalePayment> builder)
     {
         builder.ToTable("Sale_Payment");
 
-        builder.HasIndex(e => new { e.AccountId, e.PayTaskId }, "IX_Sale_Payment_AccountID_PayTaskID_2839B");
+        builder.HasIndex(e => new {e.AccountId, e.PayTaskId}, "IX_Sale_Payment_AccountID_PayTaskID_2839B");
 
         builder.HasIndex(e => e.BranchId, "IX_Sale_Payment_BranchID_7ACFB");
 

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TripDemanding1Configuration : IEntityTypeConfiguration<TripDemanding1>
 {
-
-
     public void Configure(EntityTypeBuilder<TripDemanding1> builder)
     {
         builder.HasNoKey();

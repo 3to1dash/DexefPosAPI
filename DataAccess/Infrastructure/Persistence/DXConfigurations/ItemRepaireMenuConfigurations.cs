@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ItemRepaireMenuConfiguration : IEntityTypeConfiguration<ItemRepaireMenu>
 {
-
-
     public void Configure(EntityTypeBuilder<ItemRepaireMenu> builder)
     {
         builder.ToTable("item_repaire_menu");

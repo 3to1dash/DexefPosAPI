@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ItemsRequestLogConfiguration : IEntityTypeConfiguration<ItemsRequestLog>
 {
-
-
     public void Configure(EntityTypeBuilder<ItemsRequestLog> builder)
     {
         builder.ToTable("ItemsRequest_Log");

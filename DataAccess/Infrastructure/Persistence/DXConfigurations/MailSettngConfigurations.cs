@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class MailSettngConfiguration : IEntityTypeConfiguration<MailSettng>
 {
-
-
     public void Configure(EntityTypeBuilder<MailSettng> builder)
     {
         builder.Property(e => e.Id).HasColumnName("id");

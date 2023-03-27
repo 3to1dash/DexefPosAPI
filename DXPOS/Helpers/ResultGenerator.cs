@@ -31,7 +31,7 @@ public class ResultGenerator<T>
             },
             Errors = new List<Error>()
             {
-                new Error() { Domain = "", Messages = _errorMessages}
+                new Error() {Domain = "", Messages = _errorMessages}
             }
         };
 
@@ -54,12 +54,13 @@ public class ResultGenerator<T>
             },
             Errors = new List<Error>()
             {
-                new Error() { Domain = "", Messages = _errorMessages}
+                new Error() {Domain = "", Messages = _errorMessages}
             }
         };
 
         return Result;
     }
+
     public ResultDto<T> UpdatingMethods()
     {
         var Result = new ResultDto<T>
@@ -76,12 +77,13 @@ public class ResultGenerator<T>
             },
             Errors = new List<Error>()
             {
-                new Error() { Domain = "", Messages = _errorMessages}
+                new Error() {Domain = "", Messages = _errorMessages}
             }
         };
 
         return Result;
     }
+
     public ResultDto<T> SelectingMethods()
     {
         var Result = new ResultDto<T>
@@ -98,7 +100,7 @@ public class ResultGenerator<T>
             },
             Errors = new List<Error>()
             {
-                new Error() { Domain = "", Messages = _errorMessages}
+                new Error() {Domain = "", Messages = _errorMessages}
             }
         };
 

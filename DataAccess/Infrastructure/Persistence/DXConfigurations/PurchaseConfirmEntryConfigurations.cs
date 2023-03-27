@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PurchaseConfirmEntryConfiguration : IEntityTypeConfiguration<PurchaseConfirmEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<PurchaseConfirmEntry> builder)
     {
         builder.ToTable("PurchaseConfirm_Entry");

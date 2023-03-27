@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TmpStoreTableConfiguration : IEntityTypeConfiguration<TmpStoreTable>
 {
-
-
     public void Configure(EntityTypeBuilder<TmpStoreTable> builder)
     {
         builder.HasNoKey();

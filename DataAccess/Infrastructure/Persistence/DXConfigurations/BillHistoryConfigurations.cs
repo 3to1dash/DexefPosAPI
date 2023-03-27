@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class BillHistoryConfiguration : IEntityTypeConfiguration<BillHistory>
 {
-
-
     public void Configure(EntityTypeBuilder<BillHistory> builder)
     {
         builder.ToTable("Bill_History");

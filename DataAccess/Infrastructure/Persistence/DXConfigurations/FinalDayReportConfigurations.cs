@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FinalDayReportConfiguration : IEntityTypeConfiguration<FinalDayReport>
 {
-
-
     public void Configure(EntityTypeBuilder<FinalDayReport> builder)
     {
         builder.ToTable("FinalDayReport");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PosSaleConfiguration : IEntityTypeConfiguration<PosSale>
 {
-
-
     public void Configure(EntityTypeBuilder<PosSale> builder)
     {
         builder.ToTable("PosSale");

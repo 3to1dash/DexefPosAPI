@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SalaryItemDefTypeConfiguration : IEntityTypeConfiguration<SalaryItemDefType>
 {
-
-
     public void Configure(EntityTypeBuilder<SalaryItemDefType> builder)
     {
         builder.HasKey(e => e.Name)

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CustImageConfiguration : IEntityTypeConfiguration<CustImage>
 {
-
-
     public void Configure(EntityTypeBuilder<CustImage> builder)
     {
         builder.ToTable("Cust_Image");

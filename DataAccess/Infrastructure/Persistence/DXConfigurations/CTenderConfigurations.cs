@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CTenderConfiguration : IEntityTypeConfiguration<CTender>
 {
-
-
     public void Configure(EntityTypeBuilder<CTender> builder)
     {
         builder.ToTable("C_Tender");

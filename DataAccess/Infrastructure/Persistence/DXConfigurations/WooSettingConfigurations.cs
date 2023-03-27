@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WooSettingConfiguration : IEntityTypeConfiguration<WooSetting>
 {
-
-
     public void Configure(EntityTypeBuilder<WooSetting> builder)
     {
         builder.Property(e => e.Id).HasColumnName("id");

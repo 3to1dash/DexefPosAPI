@@ -35,22 +35,13 @@ public class User
     public int? JobId { get; set; }
     public int? ReportTemplateId { get; set; }
 
-    [NotMapped]
-    public virtual UserDepartment? Department { get; set; }
-    [NotMapped]
-    public virtual UserJob? Job { get; set; }
-    [NotMapped]
-    public virtual UserNotification? Notification { get; set; }
-    [NotMapped]
-    public virtual UsersPrivilege? Privilege { get; set; }
-    [NotMapped]
-    public virtual List<UsersPrivilegesEntry> UsersPrivilegesEntries { get; set; }
-    [NotMapped]
-    public virtual HrWorkTime? Shift { get; set; }
-    [NotMapped]
-    public virtual List<UserAnyDeskSetting> UserAnyDeskSettings { get; set; }
-    [NotMapped]
-    public virtual List<UsersLog> UsersLogs { get; set; }
-    [NotMapped]
-    public virtual List<UsersResource> UsersResources { get; set; }
+    [NotMapped] public virtual UserDepartment? Department { get; set; }
+    [NotMapped] public virtual UserJob? Job { get; set; }
+    [NotMapped] public virtual UserNotification? Notification { get; set; }
+    [NotMapped] public virtual UsersPrivilege? Privilege { get; set; }
+    [NotMapped] public virtual List<UsersPrivilegesEntry> UsersPrivilegesEntries { get; set; }
+    [NotMapped] public virtual HrWorkTime? Shift { get; set; }
+    [NotMapped] public virtual List<UserAnyDeskSetting> UserAnyDeskSettings { get; set; }
+    [NotMapped] public virtual List<UsersLog> UsersLogs { get; set; }
+    [NotMapped] public virtual List<UsersResource> UsersResources { get; set; }
 }

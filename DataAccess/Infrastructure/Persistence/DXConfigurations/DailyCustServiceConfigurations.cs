@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyCustServiceConfiguration : IEntityTypeConfiguration<DailyCustService>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyCustService> builder)
     {
         builder.ToTable("DailyCustService");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkAlarmConfiguration : IEntityTypeConfiguration<WorkAlarm>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkAlarm> builder)
     {
         builder.ToTable("Work_Alarm");

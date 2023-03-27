@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SupportLevelConfiguration : IEntityTypeConfiguration<SupportLevel>
 {
-
-
     public void Configure(EntityTypeBuilder<SupportLevel> builder)
     {
         builder.ToTable("Support_Level");

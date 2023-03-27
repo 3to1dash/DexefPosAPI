@@ -6,17 +6,15 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class StoreAdjustmentEntryConfiguration : IEntityTypeConfiguration<StoreAdjustmentEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<StoreAdjustmentEntry> builder)
     {
         builder.ToTable("StoreAdjustment_Entry");
 
-        builder.HasIndex(e => new { e.TaskId, e.DiffCost }, "IX_StoreAdjustment_Entry_TaskID_DiffCost_154A2");
+        builder.HasIndex(e => new {e.TaskId, e.DiffCost}, "IX_StoreAdjustment_Entry_TaskID_DiffCost_154A2");
 
-        builder.HasIndex(e => new { e.TaskId, e.DiffQty1 }, "IX_StoreAdjustment_Entry_TaskID_DiffQty1_620EF");
+        builder.HasIndex(e => new {e.TaskId, e.DiffQty1}, "IX_StoreAdjustment_Entry_TaskID_DiffQty1_620EF");
 
-        builder.HasIndex(e => new { e.TaskId, e.DiffQty2 }, "IX_StoreAdjustment_Entry_TaskID_DiffQty2_D0EE3");
+        builder.HasIndex(e => new {e.TaskId, e.DiffQty2}, "IX_StoreAdjustment_Entry_TaskID_DiffQty2_D0EE3");
 
         builder.Property(e => e.Id).HasColumnName("id");
 

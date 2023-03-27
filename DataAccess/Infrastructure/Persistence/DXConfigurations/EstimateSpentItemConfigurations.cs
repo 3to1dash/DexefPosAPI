@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class EstimateSpentItemConfiguration : IEntityTypeConfiguration<EstimateSpentItem>
 {
-
-
     public void Configure(EntityTypeBuilder<EstimateSpentItem> builder)
     {
         builder.ToTable("EstimateSpent_Item");

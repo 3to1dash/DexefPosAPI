@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class MaintenanceTaskConfiguration : IEntityTypeConfiguration<MaintenanceTask>
 {
-
-
     public void Configure(EntityTypeBuilder<MaintenanceTask> builder)
     {
         builder.Property(e => e.Id).HasColumnName("id");

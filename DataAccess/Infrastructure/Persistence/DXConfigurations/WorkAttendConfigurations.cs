@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkAttendConfiguration : IEntityTypeConfiguration<WorkAttend>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkAttend> builder)
     {
         builder.ToTable("Work_Attend");

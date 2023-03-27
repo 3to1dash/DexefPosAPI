@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkSalaryStopConfiguration : IEntityTypeConfiguration<WorkSalaryStop>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkSalaryStop> builder)
     {
         builder.ToTable("Work_SalaryStop");

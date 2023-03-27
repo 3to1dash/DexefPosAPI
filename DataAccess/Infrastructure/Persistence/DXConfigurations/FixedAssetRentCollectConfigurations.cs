@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FixedAssetRentCollectConfiguration : IEntityTypeConfiguration<FixedAssetRentCollect>
 {
-
-
     public void Configure(EntityTypeBuilder<FixedAssetRentCollect> builder)
     {
         builder.ToTable("FixedAssetRentCollect");

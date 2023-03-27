@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class UsersPrivilegesEntryConfiguration : IEntityTypeConfiguration<UsersPrivilegesEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<UsersPrivilegesEntry> builder)
     {
         builder.HasKey(e => e.MyId);

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkInoutTempConfiguration : IEntityTypeConfiguration<WorkInoutTemp>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkInoutTemp> builder)
     {
         builder.ToTable("work_inout_temp");

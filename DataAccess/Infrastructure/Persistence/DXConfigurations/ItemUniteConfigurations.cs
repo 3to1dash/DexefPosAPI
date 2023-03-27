@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ItemUniteConfiguration : IEntityTypeConfiguration<ItemUnite>
 {
-
-
     public void Configure(EntityTypeBuilder<ItemUnite> builder)
     {
         builder.HasNoKey();

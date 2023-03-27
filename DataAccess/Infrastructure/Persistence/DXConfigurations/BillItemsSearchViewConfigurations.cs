@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class BillItemsSearchViewConfiguration : IEntityTypeConfiguration<BillItemsSearchView>
 {
-
-
     public void Configure(EntityTypeBuilder<BillItemsSearchView> builder)
     {
         builder.HasNoKey();

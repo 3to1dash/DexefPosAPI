@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class EticketUserConfiguration : IEntityTypeConfiguration<EticketUser>
 {
-
-
     public void Configure(EntityTypeBuilder<EticketUser> builder)
     {
         builder.HasNoKey();

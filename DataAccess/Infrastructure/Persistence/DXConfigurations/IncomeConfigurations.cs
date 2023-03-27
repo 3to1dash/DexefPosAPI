@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class IncomeConfiguration : IEntityTypeConfiguration<Income>
 {
-
-
     public void Configure(EntityTypeBuilder<Income> builder)
     {
         builder.ToTable("Income");

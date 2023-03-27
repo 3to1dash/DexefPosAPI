@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PotVisitConfiguration : IEntityTypeConfiguration<PotVisit>
 {
-
-
     public void Configure(EntityTypeBuilder<PotVisit> builder)
     {
         builder.ToTable("Pot_Visits");

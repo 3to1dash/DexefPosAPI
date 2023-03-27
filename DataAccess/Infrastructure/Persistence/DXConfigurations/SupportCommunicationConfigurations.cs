@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SupportCommunicationConfiguration : IEntityTypeConfiguration<SupportCommunication>
 {
-
-
     public void Configure(EntityTypeBuilder<SupportCommunication> builder)
     {
         builder.ToTable("Support_Communication");

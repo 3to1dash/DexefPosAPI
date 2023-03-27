@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SupportProductConfiguration : IEntityTypeConfiguration<SupportProduct>
 {
-
-
     public void Configure(EntityTypeBuilder<SupportProduct> builder)
     {
         builder.ToTable("Support_Product");

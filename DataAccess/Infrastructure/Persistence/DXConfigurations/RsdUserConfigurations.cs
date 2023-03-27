@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class RsdUserConfiguration : IEntityTypeConfiguration<RsdUser>
 {
-
-
     public void Configure(EntityTypeBuilder<RsdUser> builder)
     {
         builder.ToTable("RSD_Users");

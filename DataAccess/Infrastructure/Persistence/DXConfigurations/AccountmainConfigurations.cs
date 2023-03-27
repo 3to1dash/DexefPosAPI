@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class AccountmainConfiguration : IEntityTypeConfiguration<Accountmain>
 {
-
-
     public void Configure(EntityTypeBuilder<Accountmain> builder)
     {
         builder.ToTable("Accountmain");
@@ -15,75 +13,91 @@ public class AccountmainConfiguration : IEntityTypeConfiguration<Accountmain>
         builder.ToTable(t => t.HasComment("كل التعاملات اللي بتحصل على الحسابات"));
 
 
-        builder.HasIndex(e => new { e.AccountId, e.Deleted, e.Updated }, "IX_Accountmain_AccountID_Deleted_Updated_2A5AB");
+        builder.HasIndex(e => new {e.AccountId, e.Deleted, e.Updated},
+            "IX_Accountmain_AccountID_Deleted_Updated_2A5AB");
 
-        builder.HasIndex(e => new { e.AccountId, e.Deleted, e.Updated }, "IX_Accountmain_AccountID_Deleted_Updated_3B4AF");
+        builder.HasIndex(e => new {e.AccountId, e.Deleted, e.Updated},
+            "IX_Accountmain_AccountID_Deleted_Updated_3B4AF");
 
-        builder.HasIndex(e => new { e.AccountId, e.Deleted, e.Updated, e.BranchId }, "IX_Accountmain_AccountID_Deleted_Updated_BranchID_3D42F");
+        builder.HasIndex(e => new {e.AccountId, e.Deleted, e.Updated, e.BranchId},
+            "IX_Accountmain_AccountID_Deleted_Updated_BranchID_3D42F");
 
-        builder.HasIndex(e => new { e.AccountId, e.Deleted, e.Updated, e.ItemId }, "IX_Accountmain_AccountID_Deleted_Updated_ItemID_C7C67");
+        builder.HasIndex(e => new {e.AccountId, e.Deleted, e.Updated, e.ItemId},
+            "IX_Accountmain_AccountID_Deleted_Updated_ItemID_C7C67");
 
-        builder.HasIndex(e => new { e.AccountId, e.Deleted, e.Updated, e.KindId }, "IX_Accountmain_AccountID_Deleted_Updated_KindID_CE5EC");
+        builder.HasIndex(e => new {e.AccountId, e.Deleted, e.Updated, e.KindId},
+            "IX_Accountmain_AccountID_Deleted_Updated_KindID_CE5EC");
 
-        builder.HasIndex(e => new { e.AccountId, e.Deleted, e.Updated, e.Dt }, "IX_Accountmain_AccountID_Deleted_Updated_dt_06524");
+        builder.HasIndex(e => new {e.AccountId, e.Deleted, e.Updated, e.Dt},
+            "IX_Accountmain_AccountID_Deleted_Updated_dt_06524");
 
-        builder.HasIndex(e => new { e.AccountId, e.Deleted, e.Updated, e.Dt }, "IX_Accountmain_AccountID_Deleted_Updated_dt_23BAD");
+        builder.HasIndex(e => new {e.AccountId, e.Deleted, e.Updated, e.Dt},
+            "IX_Accountmain_AccountID_Deleted_Updated_dt_23BAD");
 
-        builder.HasIndex(e => new { e.AccountId, e.Deleted, e.Updated, e.Dt }, "IX_Accountmain_AccountID_Deleted_Updated_dt_3D18C");
+        builder.HasIndex(e => new {e.AccountId, e.Deleted, e.Updated, e.Dt},
+            "IX_Accountmain_AccountID_Deleted_Updated_dt_3D18C");
 
-        builder.HasIndex(e => new { e.AccountId, e.TaskId }, "IX_Accountmain_AccountID_TaskID_7B173");
+        builder.HasIndex(e => new {e.AccountId, e.TaskId}, "IX_Accountmain_AccountID_TaskID_7B173");
 
-        builder.HasIndex(e => new { e.BranchId, e.Deleted, e.Updated, e.Dt }, "IX_Accountmain_BranchID_Deleted_Updated_dt_4B7A6");
+        builder.HasIndex(e => new {e.BranchId, e.Deleted, e.Updated, e.Dt},
+            "IX_Accountmain_BranchID_Deleted_Updated_dt_4B7A6");
 
         builder.HasIndex(e => e.BranchId, "IX_Accountmain_BranchID_EE54E");
 
-        builder.HasIndex(e => new { e.Deleted, e.DeletedBy, e.Updated }, "IX_Accountmain_Deleted_DeletedBy_Updated_A4B47");
+        builder.HasIndex(e => new {e.Deleted, e.DeletedBy, e.Updated},
+            "IX_Accountmain_Deleted_DeletedBy_Updated_A4B47");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated }, "IX_Accountmain_Deleted_Updated_0BA31");
+        builder.HasIndex(e => new {e.Deleted, e.Updated}, "IX_Accountmain_Deleted_Updated_0BA31");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated }, "IX_Accountmain_Deleted_Updated_1EB04");
+        builder.HasIndex(e => new {e.Deleted, e.Updated}, "IX_Accountmain_Deleted_Updated_1EB04");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated }, "IX_Accountmain_Deleted_Updated_704AA");
+        builder.HasIndex(e => new {e.Deleted, e.Updated}, "IX_Accountmain_Deleted_Updated_704AA");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated }, "IX_Accountmain_Deleted_Updated_7338D");
+        builder.HasIndex(e => new {e.Deleted, e.Updated}, "IX_Accountmain_Deleted_Updated_7338D");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated }, "IX_Accountmain_Deleted_Updated_7CB13");
+        builder.HasIndex(e => new {e.Deleted, e.Updated}, "IX_Accountmain_Deleted_Updated_7CB13");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated, e.AccountId }, "IX_Accountmain_Deleted_Updated_AccountID_6B917");
+        builder.HasIndex(e => new {e.Deleted, e.Updated, e.AccountId},
+            "IX_Accountmain_Deleted_Updated_AccountID_6B917");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated, e.BranchId }, "IX_Accountmain_Deleted_Updated_BranchID_55F1C");
+        builder.HasIndex(e => new {e.Deleted, e.Updated, e.BranchId}, "IX_Accountmain_Deleted_Updated_BranchID_55F1C");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated }, "IX_Accountmain_Deleted_Updated_C51AC");
+        builder.HasIndex(e => new {e.Deleted, e.Updated}, "IX_Accountmain_Deleted_Updated_C51AC");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated, e.ItemId }, "IX_Accountmain_Deleted_Updated_ItemID_739E0");
+        builder.HasIndex(e => new {e.Deleted, e.Updated, e.ItemId}, "IX_Accountmain_Deleted_Updated_ItemID_739E0");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated, e.Dealing }, "IX_Accountmain_Deleted_Updated_dealing_29961");
+        builder.HasIndex(e => new {e.Deleted, e.Updated, e.Dealing}, "IX_Accountmain_Deleted_Updated_dealing_29961");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated, e.Dt }, "IX_Accountmain_Deleted_Updated_dt_99610");
+        builder.HasIndex(e => new {e.Deleted, e.Updated, e.Dt}, "IX_Accountmain_Deleted_Updated_dt_99610");
 
         builder.HasIndex(e => e.TaskId, "IX_Accountmain_TaskID_A0B84");
 
         builder.HasIndex(e => e.TaskId, "IX_Accountmain_TaskID_A9AD6");
 
-        builder.HasIndex(e => new { e.TaskId, e.Deleted, e.Updated }, "IX_Accountmain_TaskID_Deleted_Updated_B2B2D");
+        builder.HasIndex(e => new {e.TaskId, e.Deleted, e.Updated}, "IX_Accountmain_TaskID_Deleted_Updated_B2B2D");
 
-        builder.HasIndex(e => new { e.TaskId, e.Updated }, "IX_Accountmain_TaskID_Updated_0D3C5");
+        builder.HasIndex(e => new {e.TaskId, e.Updated}, "IX_Accountmain_TaskID_Updated_0D3C5");
 
         builder.HasIndex(e => e.Dealing, "IX_Accountmain_dealing_3173D");
 
         builder.HasIndex(e => e.Dealing, "IX_Accountmain_dealing_A00CC");
 
-        builder.HasIndex(e => new { e.Dealing, e.Deleted, e.Updated }, "IX_Accountmain_dealing_Deleted_Updated_8E010");
+        builder.HasIndex(e => new {e.Dealing, e.Deleted, e.Updated}, "IX_Accountmain_dealing_Deleted_Updated_8E010");
 
         builder.HasIndex(e => e.Dealing, "IX_Accountmain_dealing_FC2B9");
 
-        builder.HasIndex(e => new { e.Dealing, e.ItemId }, "IX_Accountmain_dealing_ItemID_387A8");
+        builder.HasIndex(e => new {e.Dealing, e.ItemId}, "IX_Accountmain_dealing_ItemID_387A8");
 
         builder.HasIndex(e => e.Debit, "IX_Accountmain_debit_6C5E3");
 
         builder.HasIndex(e => e.Num, "IX_Accountmain_num_31251");
 
-        builder.HasIndex(e => new { e.AccountId, e.Dealing, e.BranchId, e.RegNum, e.TaskId, e.PeriodId, e.Deleted, e.Updated, e.ItemId, e.KindId }, "NonClusteredIndex-20200213-143818");
+        builder.HasIndex(
+            e => new
+            {
+                e.AccountId, e.Dealing, e.BranchId, e.RegNum, e.TaskId, e.PeriodId, e.Deleted, e.Updated, e.ItemId,
+                e.KindId
+            }, "NonClusteredIndex-20200213-143818");
 
         builder.HasIndex(e => e.ItemCostRow, "missing_index_1293_1292_Accountmain");
 

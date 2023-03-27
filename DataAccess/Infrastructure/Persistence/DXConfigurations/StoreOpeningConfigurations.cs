@@ -6,19 +6,17 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class StoreOpeningConfiguration : IEntityTypeConfiguration<StoreOpening>
 {
-
-
     public void Configure(EntityTypeBuilder<StoreOpening> builder)
     {
         builder.ToTable("StoreOpening");
 
-        builder.HasIndex(e => new { e.Dt, e.StoreId }, "IX_StoreOpening_DT_StoreID_AE07F");
+        builder.HasIndex(e => new {e.Dt, e.StoreId}, "IX_StoreOpening_DT_StoreID_AE07F");
 
         builder.HasIndex(e => e.TaskId, "IX_StoreOpening_TaskID_19F71");
 
-        builder.HasIndex(e => new { e.Prefix, e.BranchId }, "missing_index_1721_1720_StoreOpening");
+        builder.HasIndex(e => new {e.Prefix, e.BranchId}, "missing_index_1721_1720_StoreOpening");
 
-        builder.HasIndex(e => new { e.StoreId, e.Dt }, "missing_index_2005_2004_StoreOpening");
+        builder.HasIndex(e => new {e.StoreId, e.Dt}, "missing_index_2005_2004_StoreOpening");
 
         builder.Property(e => e.Id)
             .HasColumnType("numeric(18, 0)")

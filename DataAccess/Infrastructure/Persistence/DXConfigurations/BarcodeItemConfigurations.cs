@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class BarcodeItemConfiguration : IEntityTypeConfiguration<BarcodeItem>
 {
-
-
     public void Configure(EntityTypeBuilder<BarcodeItem> builder)
     {
         builder.ToTable("Barcode_item");

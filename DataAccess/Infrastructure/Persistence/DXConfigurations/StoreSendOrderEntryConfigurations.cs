@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class StoreSendOrderEntryConfiguration : IEntityTypeConfiguration<StoreSendOrderEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<StoreSendOrderEntry> builder)
     {
         builder.ToTable("StoreSendOrder_Entry");

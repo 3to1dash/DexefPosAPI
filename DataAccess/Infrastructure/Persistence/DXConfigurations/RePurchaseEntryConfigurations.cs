@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class RePurchaseEntryConfiguration : IEntityTypeConfiguration<RePurchaseEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<RePurchaseEntry> builder)
     {
         builder.ToTable("RePurchase_Entry");

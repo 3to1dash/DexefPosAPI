@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CrmPreVisitConfiguration : IEntityTypeConfiguration<CrmPreVisit>
 {
-
-
     public void Configure(EntityTypeBuilder<CrmPreVisit> builder)
     {
         builder.ToTable("Crm_PreVisit");

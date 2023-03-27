@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class LayoutConfiguration : IEntityTypeConfiguration<Layout>
 {
-
-
     public void Configure(EntityTypeBuilder<Layout> builder)
     {
         builder.ToTable("layout");

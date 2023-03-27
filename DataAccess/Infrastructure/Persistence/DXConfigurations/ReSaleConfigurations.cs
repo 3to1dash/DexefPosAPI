@@ -6,21 +6,20 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ReSaleConfiguration : IEntityTypeConfiguration<ReSale>
 {
-
-
     public void Configure(EntityTypeBuilder<ReSale> builder)
     {
         builder.ToTable("ReSale");
 
         builder.HasIndex(e => e.BranchId, "IX_ReSale_BranchID_844D8");
 
-        builder.HasIndex(e => new { e.CustId, e.ItemCount, e.SumBill, e.Dt }, "IX_ReSale_CustID_ItemCount_SumBill_DT_C76F3");
+        builder.HasIndex(e => new {e.CustId, e.ItemCount, e.SumBill, e.Dt},
+            "IX_ReSale_CustID_ItemCount_SumBill_DT_C76F3");
 
-        builder.HasIndex(e => new { e.StoreId, e.Dt }, "IX_ReSale_StoreID_DT_F3A39");
+        builder.HasIndex(e => new {e.StoreId, e.Dt}, "IX_ReSale_StoreID_DT_F3A39");
 
         builder.HasIndex(e => e.TaskId, "IX_ReSale_TaskID_D4727");
 
-        builder.HasIndex(e => new { e.Prefix, e.BranchId }, "missing_index_576_575_ReSale");
+        builder.HasIndex(e => new {e.Prefix, e.BranchId}, "missing_index_576_575_ReSale");
 
         builder.Property(e => e.Id)
             .HasColumnType("numeric(18, 0)")

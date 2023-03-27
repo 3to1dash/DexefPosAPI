@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class RTableConfiguration : IEntityTypeConfiguration<RTable>
 {
-
-
     public void Configure(EntityTypeBuilder<RTable> builder)
     {
         builder.ToTable("R_Tables");

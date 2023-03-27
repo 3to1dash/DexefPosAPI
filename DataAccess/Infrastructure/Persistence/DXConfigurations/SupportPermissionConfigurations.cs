@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SupportPermissionConfiguration : IEntityTypeConfiguration<SupportPermission>
 {
-
-
     public void Configure(EntityTypeBuilder<SupportPermission> builder)
     {
         builder.ToTable("Support_Permission");

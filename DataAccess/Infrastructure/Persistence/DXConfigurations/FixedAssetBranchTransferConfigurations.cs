@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FixedAssetBranchTransferConfiguration : IEntityTypeConfiguration<FixedAssetBranchTransfer>
 {
-
-
     public void Configure(EntityTypeBuilder<FixedAssetBranchTransfer> builder)
     {
         builder.ToTable("FixedAsset_BranchTransfer");

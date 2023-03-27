@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CustRatingNameConfiguration : IEntityTypeConfiguration<CustRatingName>
 {
-
-
     public void Configure(EntityTypeBuilder<CustRatingName> builder)
     {
         builder.HasNoKey();

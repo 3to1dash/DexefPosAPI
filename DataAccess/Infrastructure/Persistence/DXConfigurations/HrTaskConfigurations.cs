@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class HrTaskConfiguration : IEntityTypeConfiguration<HrTask>
 {
-
-
     public void Configure(EntityTypeBuilder<HrTask> builder)
     {
         builder.ToTable("HR_Tasks");

@@ -6,13 +6,12 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class BillApprovalConfiguration : IEntityTypeConfiguration<BillApproval>
 {
-
-
     public void Configure(EntityTypeBuilder<BillApproval> builder)
     {
         builder.ToTable("Bill_Approvals");
 
-        builder.HasIndex(e => new { e.TaskId, e.Dealing, e.WrittenBy, e.Answer, e.BranchId }, "NonClusteredIndex-20200311-134700");
+        builder.HasIndex(e => new {e.TaskId, e.Dealing, e.WrittenBy, e.Answer, e.BranchId},
+            "NonClusteredIndex-20200311-134700");
 
         builder.Property(e => e.Id).HasColumnName("ID");
 

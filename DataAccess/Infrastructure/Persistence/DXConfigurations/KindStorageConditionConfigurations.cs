@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindStorageConditionConfiguration : IEntityTypeConfiguration<KindStorageCondition>
 {
-
-
     public void Configure(EntityTypeBuilder<KindStorageCondition> builder)
     {
         builder.ToTable("Kind_StorageCondition");

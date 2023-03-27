@@ -5,9 +5,9 @@ namespace DataAccess.DataAccess;
 
 public class UpdateMethods : IUpdateMethods
 {
-    private readonly DxdbContext _dbContext;
+    private readonly IDbContext _dbContext;
 
-    public UpdateMethods(DxdbContext dbContext)
+    public UpdateMethods(IDbContext dbContext)
     {
         _dbContext = dbContext;
     }

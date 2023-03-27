@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyCheckRecievedConfiguration : IEntityTypeConfiguration<DailyCheckRecieved>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyCheckRecieved> builder)
     {
         builder.ToTable("Daily_CheckRecieved");

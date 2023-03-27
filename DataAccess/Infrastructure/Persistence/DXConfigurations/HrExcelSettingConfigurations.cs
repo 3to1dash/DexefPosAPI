@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class HrExcelSettingConfiguration : IEntityTypeConfiguration<HrExcelSetting>
 {
-
-
     public void Configure(EntityTypeBuilder<HrExcelSetting> builder)
     {
         builder.ToTable("HR_ExcelSetting");

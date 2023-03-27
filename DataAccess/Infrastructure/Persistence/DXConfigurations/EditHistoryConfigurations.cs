@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class EditHistoryConfiguration : IEntityTypeConfiguration<EditHistory>
 {
-
-
     public void Configure(EntityTypeBuilder<EditHistory> builder)
     {
         builder.ToTable("edit_history");

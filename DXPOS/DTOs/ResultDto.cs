@@ -5,7 +5,6 @@ public class ResultDto<T>
     public bool Success { get; set; }
     public ResultData<T> Data { get; set; }
     public List<Error> Errors { get; set; } = new();
-
 }
 
 public class ResultData<T>

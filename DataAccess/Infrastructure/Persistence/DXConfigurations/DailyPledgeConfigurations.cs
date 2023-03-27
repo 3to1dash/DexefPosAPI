@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyPledgeConfiguration : IEntityTypeConfiguration<DailyPledge>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyPledge> builder)
     {
         builder.ToTable("DailyPledge");

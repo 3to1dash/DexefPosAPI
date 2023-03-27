@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkDealingConfiguration : IEntityTypeConfiguration<WorkDealing>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkDealing> builder)
     {
         builder.HasNoKey();

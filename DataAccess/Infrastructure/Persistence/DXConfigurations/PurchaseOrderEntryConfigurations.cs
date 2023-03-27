@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PurchaseOrderEntryConfiguration : IEntityTypeConfiguration<PurchaseOrderEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<PurchaseOrderEntry> builder)
     {
         builder.ToTable("PurchaseOrder_Entry");

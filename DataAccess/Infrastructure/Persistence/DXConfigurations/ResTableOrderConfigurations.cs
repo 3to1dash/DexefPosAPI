@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ResTableOrderConfiguration : IEntityTypeConfiguration<ResTableOrder>
 {
-
-
     public void Configure(EntityTypeBuilder<ResTableOrder> builder)
     {
         builder.ToTable("ResTableOrder");

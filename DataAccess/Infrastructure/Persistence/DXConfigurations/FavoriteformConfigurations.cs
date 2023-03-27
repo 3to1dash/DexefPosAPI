@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FavoriteformConfiguration : IEntityTypeConfiguration<Favoriteform>
 {
-
-
     public void Configure(EntityTypeBuilder<Favoriteform> builder)
     {
         builder.HasNoKey();

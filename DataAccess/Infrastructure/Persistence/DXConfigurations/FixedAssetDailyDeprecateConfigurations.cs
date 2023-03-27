@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FixedAssetDailyDeprecateConfiguration : IEntityTypeConfiguration<FixedAssetDailyDeprecate>
 {
-
-
     public void Configure(EntityTypeBuilder<FixedAssetDailyDeprecate> builder)
     {
         builder.ToTable("FixedAsset_DailyDeprecate");

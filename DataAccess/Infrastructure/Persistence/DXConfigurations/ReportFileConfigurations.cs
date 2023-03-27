@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ReportFileConfiguration : IEntityTypeConfiguration<ReportFile>
 {
-
-
     public void Configure(EntityTypeBuilder<ReportFile> builder)
     {
         builder.ToTable("Report_Files");

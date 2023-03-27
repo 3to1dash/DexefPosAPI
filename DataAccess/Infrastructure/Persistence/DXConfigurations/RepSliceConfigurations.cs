@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class RepSliceConfiguration : IEntityTypeConfiguration<RepSlice>
 {
-
-
     public void Configure(EntityTypeBuilder<RepSlice> builder)
     {
         builder.ToTable("RepSlice");

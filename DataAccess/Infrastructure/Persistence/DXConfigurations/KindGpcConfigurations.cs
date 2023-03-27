@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindGpcConfiguration : IEntityTypeConfiguration<KindGpc>
 {
-
-
     public void Configure(EntityTypeBuilder<KindGpc> builder)
     {
         builder.ToTable("Kind_GPC");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SmssendingConfiguration : IEntityTypeConfiguration<Smssending>
 {
-
-
     public void Configure(EntityTypeBuilder<Smssending> builder)
     {
         builder.ToTable("SMSSending");

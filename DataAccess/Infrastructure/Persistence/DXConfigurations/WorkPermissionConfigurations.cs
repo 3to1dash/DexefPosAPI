@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkPermissionConfiguration : IEntityTypeConfiguration<WorkPermission>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkPermission> builder)
     {
         builder.ToTable("Work_Permission");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SaletempConfiguration : IEntityTypeConfiguration<Saletemp>
 {
-
-
     public void Configure(EntityTypeBuilder<Saletemp> builder)
     {
         builder.ToTable("saletemp");

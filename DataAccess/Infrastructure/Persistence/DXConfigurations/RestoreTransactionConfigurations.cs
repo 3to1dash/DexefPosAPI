@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class RestoreTransactionConfiguration : IEntityTypeConfiguration<RestoreTransaction>
 {
-
-
     public void Configure(EntityTypeBuilder<RestoreTransaction> builder)
     {
         builder.Property(e => e.Id).HasColumnName("id");

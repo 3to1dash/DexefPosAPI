@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class StoreOutEntryConfiguration : IEntityTypeConfiguration<StoreOutEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<StoreOutEntry> builder)
     {
         builder.ToTable("StoreOut_Entry");

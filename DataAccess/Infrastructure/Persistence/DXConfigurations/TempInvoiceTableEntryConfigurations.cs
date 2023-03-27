@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TempInvoiceTableEntryConfiguration : IEntityTypeConfiguration<TempInvoiceTableEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<TempInvoiceTableEntry> builder)
     {
         builder.HasNoKey();

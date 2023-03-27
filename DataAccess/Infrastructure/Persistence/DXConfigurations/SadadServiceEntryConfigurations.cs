@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SadadServiceEntryConfiguration : IEntityTypeConfiguration<SadadServiceEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<SadadServiceEntry> builder)
     {
         builder.ToTable("SadadService_Entry");

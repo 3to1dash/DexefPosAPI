@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class UserSettingConfiguration : IEntityTypeConfiguration<UserSetting>
 {
-
-
     public void Configure(EntityTypeBuilder<UserSetting> builder)
     {
         builder.ToTable("User_Settings");

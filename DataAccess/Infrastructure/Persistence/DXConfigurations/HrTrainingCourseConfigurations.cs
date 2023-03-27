@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class HrTrainingCourseConfiguration : IEntityTypeConfiguration<HrTrainingCourse>
 {
-
-
     public void Configure(EntityTypeBuilder<HrTrainingCourse> builder)
     {
         builder.ToTable("HR_TrainingCourse");

@@ -6,13 +6,11 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ReportConfiguration : IEntityTypeConfiguration<Report>
 {
-
-
     public void Configure(EntityTypeBuilder<Report> builder)
     {
         builder.HasIndex(e => e.IsVisible, "IX_Reports_IsVisible_A514D");
 
-        builder.HasIndex(e => new { e.IsVisible, e.ParentId }, "IX_Reports_IsVisible_ParentID_C28B0");
+        builder.HasIndex(e => new {e.IsVisible, e.ParentId}, "IX_Reports_IsVisible_ParentID_C28B0");
 
         builder.Property(e => e.Id).HasColumnName("ID");
 

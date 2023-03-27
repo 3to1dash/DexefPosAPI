@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PledgeConfiguration : IEntityTypeConfiguration<Pledge>
 {
-
-
     public void Configure(EntityTypeBuilder<Pledge> builder)
     {
         builder.Property(e => e.Id).HasColumnName("id");

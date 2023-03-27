@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class BillDeleteEntryConfiguration : IEntityTypeConfiguration<BillDeleteEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<BillDeleteEntry> builder)
     {
         builder.HasNoKey();

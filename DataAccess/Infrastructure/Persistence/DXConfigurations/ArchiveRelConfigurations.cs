@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ArchiveRelConfiguration : IEntityTypeConfiguration<ArchiveRel>
 {
-
-
     public void Configure(EntityTypeBuilder<ArchiveRel> builder)
     {
         builder.ToTable("archive_rel");

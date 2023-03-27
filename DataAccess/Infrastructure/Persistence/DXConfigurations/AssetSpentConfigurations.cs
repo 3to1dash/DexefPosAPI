@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class AssetSpentConfiguration : IEntityTypeConfiguration<AssetSpent>
 {
-
-
     public void Configure(EntityTypeBuilder<AssetSpent> builder)
     {
         builder.ToTable("AssetSpent");

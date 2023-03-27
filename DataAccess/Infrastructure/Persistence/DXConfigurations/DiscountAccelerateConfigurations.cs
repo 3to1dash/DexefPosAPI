@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DiscountAccelerateConfiguration : IEntityTypeConfiguration<DiscountAccelerate>
 {
-
-
     public void Configure(EntityTypeBuilder<DiscountAccelerate> builder)
     {
         builder.ToTable("discount_accelerate");

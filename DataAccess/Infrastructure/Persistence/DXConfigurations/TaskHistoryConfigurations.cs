@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TaskHistoryConfiguration : IEntityTypeConfiguration<TaskHistory>
 {
-
-
     public void Configure(EntityTypeBuilder<TaskHistory> builder)
     {
         builder.HasKey(e => e.TaskId)

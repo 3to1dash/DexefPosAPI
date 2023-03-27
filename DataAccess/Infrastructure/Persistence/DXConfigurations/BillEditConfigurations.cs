@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class BillEditConfiguration : IEntityTypeConfiguration<BillEdit>
 {
-
-
     public void Configure(EntityTypeBuilder<BillEdit> builder)
     {
         builder.ToTable("bill_edit");

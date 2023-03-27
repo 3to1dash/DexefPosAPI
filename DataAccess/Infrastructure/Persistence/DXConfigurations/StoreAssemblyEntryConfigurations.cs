@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class StoreAssemblyEntryConfiguration : IEntityTypeConfiguration<StoreAssemblyEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<StoreAssemblyEntry> builder)
     {
         builder.ToTable("StoreAssembly_Entry");

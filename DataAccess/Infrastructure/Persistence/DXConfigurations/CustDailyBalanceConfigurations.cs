@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CustDailyBalanceConfiguration : IEntityTypeConfiguration<CustDailyBalance>
 {
-
-
     public void Configure(EntityTypeBuilder<CustDailyBalance> builder)
     {
         builder.ToTable("Cust_DailyBalance");
@@ -18,19 +16,22 @@ public class CustDailyBalanceConfiguration : IEntityTypeConfiguration<CustDailyB
 
         builder.HasIndex(e => e.ForAdjust, "IX_Cust_DailyBalance_ForAdjust_9EE57");
 
-        builder.HasIndex(e => new { e.ForAdjust, e.BaseTaskId }, "IX_Cust_DailyBalance_ForAdjust_BaseTaskID_7C205");
+        builder.HasIndex(e => new {e.ForAdjust, e.BaseTaskId}, "IX_Cust_DailyBalance_ForAdjust_BaseTaskID_7C205");
 
-        builder.HasIndex(e => new { e.ForAdjust, e.CustId, e.BaseTaskId }, "IX_Cust_DailyBalance_ForAdjust_CustID_BaseTaskID_99A18");
+        builder.HasIndex(e => new {e.ForAdjust, e.CustId, e.BaseTaskId},
+            "IX_Cust_DailyBalance_ForAdjust_CustID_BaseTaskID_99A18");
 
-        builder.HasIndex(e => new { e.ForAdjust, e.CustId }, "IX_Cust_DailyBalance_ForAdjust_CustID_D6700");
+        builder.HasIndex(e => new {e.ForAdjust, e.CustId}, "IX_Cust_DailyBalance_ForAdjust_CustID_D6700");
 
-        builder.HasIndex(e => new { e.ForAdjust, e.IsTarget }, "IX_Cust_DailyBalance_ForAdjust_IsTarget_45AE3");
+        builder.HasIndex(e => new {e.ForAdjust, e.IsTarget}, "IX_Cust_DailyBalance_ForAdjust_IsTarget_45AE3");
 
-        builder.HasIndex(e => new { e.ForAdjust, e.IsTarget }, "IX_Cust_DailyBalance_ForAdjust_IsTarget_FDC80");
+        builder.HasIndex(e => new {e.ForAdjust, e.IsTarget}, "IX_Cust_DailyBalance_ForAdjust_IsTarget_FDC80");
 
-        builder.HasIndex(e => new { e.ForAdjust, e.IsTarget, e.TaskId }, "IX_Cust_DailyBalance_ForAdjust_IsTarget_TaskID_B6B2B");
+        builder.HasIndex(e => new {e.ForAdjust, e.IsTarget, e.TaskId},
+            "IX_Cust_DailyBalance_ForAdjust_IsTarget_TaskID_B6B2B");
 
-        builder.HasIndex(e => new { e.ForAdjust, e.IsTarget, e.TaskId }, "IX_Cust_DailyBalance_ForAdjust_IsTarget_TaskID_F49A7");
+        builder.HasIndex(e => new {e.ForAdjust, e.IsTarget, e.TaskId},
+            "IX_Cust_DailyBalance_ForAdjust_IsTarget_TaskID_F49A7");
 
         builder.Property(e => e.Id)
             .HasColumnType("numeric(18, 0)")

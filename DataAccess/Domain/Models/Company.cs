@@ -32,5 +32,4 @@ public class Company
     public virtual List<CompanyBranch> CompanyBranches { get; set; }
     public virtual List<CompanyTaxToken> CompanyTaxTokens { get; set; }
     public virtual CurrencyTable CurrencyTable { get; set; }
-
 }

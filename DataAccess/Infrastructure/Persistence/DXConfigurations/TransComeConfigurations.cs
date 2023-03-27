@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TransComeConfiguration : IEntityTypeConfiguration<TransCome>
 {
-
-
     public void Configure(EntityTypeBuilder<TransCome> builder)
     {
         builder.HasNoKey();

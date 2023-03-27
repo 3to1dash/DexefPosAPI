@@ -17,14 +17,14 @@ public class BasicDataController : ControllerBase
         [FromServices] BranchesData branchesData)
     {
         var branches = branchesData.GetUserBranches(true, userName)
-            .Select(b => new BranchDto 
+            .Select(b => new BranchDto
             {
                 Id = b.Id,
                 Num = b.Num,
                 Name = b.Name
             });
 
-        var resultGenerator = new ResultGenerator<IEnumerable<BranchDto>>(true, branches, new List<ErrorMessage>());
+        var resultGenerator = new ResultGenerator<IEnumerable<BranchDto>>(true, branches, new());
 
         return new JsonResult(resultGenerator.SelectingMethods());
     }
@@ -38,13 +38,13 @@ public class BasicDataController : ControllerBase
     {
         var stores = branchesData.GetBranchesStores(true, userName, branchesList)
             .Select(b => new StoreDto
-             {
-                 Id = b.Id,
-                 Num = b.Num,
-                 Name = b.Stock
+            {
+                Id = b.Id,
+                Num = b.Num,
+                Name = b.Stock
             });
 
-        var resultGenerator = new ResultGenerator<IEnumerable<StoreDto>>(true, stores, new List<ErrorMessage>());
+        var resultGenerator = new ResultGenerator<IEnumerable<StoreDto>>(true, stores, new());
 
         return new JsonResult(resultGenerator.SelectingMethods());
     }
@@ -67,7 +67,32 @@ public class BasicDataController : ControllerBase
                 TaxPerc = isSale ? b.SaleTax : b.PurchaseTax
             });
 
-        var resultGenerator = new ResultGenerator<IEnumerable<TaxesDto>>(true, stores, new List<ErrorMessage>());
+        var resultGenerator = new ResultGenerator<IEnumerable<TaxesDto>>(true, stores, new());
+
+        return new JsonResult(resultGenerator.SelectingMethods());
+    }
+
+    [HttpGet]
+    [Produces(typeof(ResultDto<TaskIdDto>))]
+    public async Task<IActionResult> GetTaskID(
+        [FromQuery] int cpu,
+        [FromServices] BasicData basicData)
+    {
+        var taskId = await basicData.GetTaskIdByCpu(cpu);
+
+        ResultGenerator<TaskIdDto> resultGenerator;
+
+        if (taskId == null)
+        {
+            resultGenerator = new(false, new(), new()
+            {
+                new() {Code = "500", Title = "Record not found", Message = "Can not fetch the record from the database"}
+            });
+        }
+        else
+        {
+            resultGenerator = new(true, new() {TaskID = taskId}, new());
+        }
 
         return new JsonResult(resultGenerator.SelectingMethods());
     }

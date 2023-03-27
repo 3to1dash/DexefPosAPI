@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SavedocConfiguration : IEntityTypeConfiguration<Savedoc>
 {
-
-
     public void Configure(EntityTypeBuilder<Savedoc> builder)
     {
         builder.HasNoKey();

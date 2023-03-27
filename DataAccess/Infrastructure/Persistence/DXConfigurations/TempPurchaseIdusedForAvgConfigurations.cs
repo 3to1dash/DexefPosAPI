@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TempPurchaseIdusedForAvgConfiguration : IEntityTypeConfiguration<TempPurchaseIdusedForAvg>
 {
-
-
     public void Configure(EntityTypeBuilder<TempPurchaseIdusedForAvg> builder)
     {
         builder.HasNoKey();

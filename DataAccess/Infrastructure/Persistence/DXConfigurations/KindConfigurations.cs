@@ -6,33 +6,31 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindConfiguration : IEntityTypeConfiguration<Kind>
 {
-
-
     public void Configure(EntityTypeBuilder<Kind> builder)
     {
         builder.ToTable("kind");
 
-        builder.HasIndex(e => new { e.ParentId, e.TypeIndex }, "IX_kind_ParentID_TypeIndex_1C92C");
+        builder.HasIndex(e => new {e.ParentId, e.TypeIndex}, "IX_kind_ParentID_TypeIndex_1C92C");
 
-        builder.HasIndex(e => new { e.ParentId, e.TypeIndex }, "IX_kind_ParentID_TypeIndex_2C36E");
+        builder.HasIndex(e => new {e.ParentId, e.TypeIndex}, "IX_kind_ParentID_TypeIndex_2C36E");
 
-        builder.HasIndex(e => new { e.TypeIndex, e.Active }, "IX_kind_TypeIndex_active_5A264");
+        builder.HasIndex(e => new {e.TypeIndex, e.Active}, "IX_kind_TypeIndex_active_5A264");
 
-        builder.HasIndex(e => new { e.TypeIndex, e.Active }, "IX_kind_TypeIndex_active_7B522");
+        builder.HasIndex(e => new {e.TypeIndex, e.Active}, "IX_kind_TypeIndex_active_7B522");
 
-        builder.HasIndex(e => new { e.TypeIndex, e.Optkind, e.Active }, "IX_kind_TypeIndex_optkind_active_52662");
+        builder.HasIndex(e => new {e.TypeIndex, e.Optkind, e.Active}, "IX_kind_TypeIndex_optkind_active_52662");
 
         builder.HasIndex(e => e.Optkind, "IX_kind_optkind_8DCA2");
 
-        builder.HasIndex(e => new { e.TypeIndex, e.Optkind, e.Code, e.VendorId }, "NonClusteredIndex-20200113-222411");
+        builder.HasIndex(e => new {e.TypeIndex, e.Optkind, e.Code, e.VendorId}, "NonClusteredIndex-20200113-222411");
 
-        builder.HasIndex(e => new { e.TypeIndex, e.Kindindex }, "missing_index_1139_1138_kind");
+        builder.HasIndex(e => new {e.TypeIndex, e.Kindindex}, "missing_index_1139_1138_kind");
 
-        builder.HasIndex(e => new { e.TypeIndex, e.Id }, "missing_index_395_394_kind");
+        builder.HasIndex(e => new {e.TypeIndex, e.Id}, "missing_index_395_394_kind");
 
-        builder.HasIndex(e => new { e.TypeIndex, e.VendorId, e.Active }, "missing_index_4082_4081_kind");
+        builder.HasIndex(e => new {e.TypeIndex, e.VendorId, e.Active}, "missing_index_4082_4081_kind");
 
-        builder.HasIndex(e => new { e.TypeIndex, e.Active, e.IsExp }, "missing_index_5256_5255_kind");
+        builder.HasIndex(e => new {e.TypeIndex, e.Active, e.IsExp}, "missing_index_5256_5255_kind");
 
         builder.Property(e => e.Id).HasColumnName("id");
 

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkItineraryEntryConfiguration : IEntityTypeConfiguration<WorkItineraryEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkItineraryEntry> builder)
     {
         builder.ToTable("Work_Itinerary_Entry");

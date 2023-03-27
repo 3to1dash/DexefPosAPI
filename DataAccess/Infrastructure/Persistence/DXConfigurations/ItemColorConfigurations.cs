@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ItemColorConfiguration : IEntityTypeConfiguration<ItemColor>
 {
-
-
     public void Configure(EntityTypeBuilder<ItemColor> builder)
     {
         builder.HasNoKey();

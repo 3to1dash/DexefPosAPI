@@ -6,43 +6,48 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyStorageConfiguration : IEntityTypeConfiguration<DailyStorage>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyStorage> builder)
     {
         builder.ToTable("DailyStorage");
 
-        builder.HasIndex(e => new { e.AccountId, e.BranchId, e.Deleted, e.Updated, e.Dt }, "IX_DailyStorage_AccountID_BranchID_Deleted_Updated_dt_47E57");
+        builder.HasIndex(e => new {e.AccountId, e.BranchId, e.Deleted, e.Updated, e.Dt},
+            "IX_DailyStorage_AccountID_BranchID_Deleted_Updated_dt_47E57");
 
-        builder.HasIndex(e => new { e.AccountId, e.Deleted, e.Updated, e.Dt, e.BranchId }, "IX_DailyStorage_AccountID_Deleted_Updated_dt_BranchID_960A7");
+        builder.HasIndex(e => new {e.AccountId, e.Deleted, e.Updated, e.Dt, e.BranchId},
+            "IX_DailyStorage_AccountID_Deleted_Updated_dt_BranchID_960A7");
 
-        builder.HasIndex(e => new { e.AccountId, e.WrittenBy, e.PeriodId, e.Deleted, e.Updated }, "IX_DailyStorage_AccountID_WrittenBy_PeriodID_Deleted_Updated_7C40C");
+        builder.HasIndex(e => new {e.AccountId, e.WrittenBy, e.PeriodId, e.Deleted, e.Updated},
+            "IX_DailyStorage_AccountID_WrittenBy_PeriodID_Deleted_Updated_7C40C");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated }, "IX_DailyStorage_Deleted_Updated_164F2");
+        builder.HasIndex(e => new {e.Deleted, e.Updated}, "IX_DailyStorage_Deleted_Updated_164F2");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated }, "IX_DailyStorage_Deleted_Updated_259FA");
+        builder.HasIndex(e => new {e.Deleted, e.Updated}, "IX_DailyStorage_Deleted_Updated_259FA");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated }, "IX_DailyStorage_Deleted_Updated_3791D");
+        builder.HasIndex(e => new {e.Deleted, e.Updated}, "IX_DailyStorage_Deleted_Updated_3791D");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated }, "IX_DailyStorage_Deleted_Updated_F7808");
+        builder.HasIndex(e => new {e.Deleted, e.Updated}, "IX_DailyStorage_Deleted_Updated_F7808");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated, e.Dt, e.AccountId, e.BranchId }, "IX_DailyStorage_Deleted_Updated_dt_AccountID_BranchID_91962");
+        builder.HasIndex(e => new {e.Deleted, e.Updated, e.Dt, e.AccountId, e.BranchId},
+            "IX_DailyStorage_Deleted_Updated_dt_AccountID_BranchID_91962");
 
         builder.HasIndex(e => e.TaskId, "IX_DailyStorage_TaskID_5F17A");
 
         builder.HasIndex(e => e.TaskId, "IX_DailyStorage_TaskID_AD534");
 
-        builder.HasIndex(e => new { e.WrittenBy, e.PeriodId, e.Deleted, e.Updated }, "IX_DailyStorage_WrittenBy_PeriodID_Deleted_Updated_F6EB6");
+        builder.HasIndex(e => new {e.WrittenBy, e.PeriodId, e.Deleted, e.Updated},
+            "IX_DailyStorage_WrittenBy_PeriodID_Deleted_Updated_F6EB6");
 
-        builder.HasIndex(e => new { e.WrittenBy, e.PeriodId, e.Deleted, e.Updated, e.Dealing }, "IX_DailyStorage_WrittenBy_PeriodID_Deleted_Updated_dealing_BFE38");
+        builder.HasIndex(e => new {e.WrittenBy, e.PeriodId, e.Deleted, e.Updated, e.Dealing},
+            "IX_DailyStorage_WrittenBy_PeriodID_Deleted_Updated_dealing_BFE38");
 
         builder.HasIndex(e => e.Dealing, "IX_DailyStorage_dealing_B2B1A");
 
-        builder.HasIndex(e => new { e.BranchId, e.WrittenBy, e.Deleted, e.Updated, e.Dt }, "missing_index_5402_5401_DailyStorage");
+        builder.HasIndex(e => new {e.BranchId, e.WrittenBy, e.Deleted, e.Updated, e.Dt},
+            "missing_index_5402_5401_DailyStorage");
 
-        builder.HasIndex(e => new { e.WrittenBy, e.Dt }, "missing_index_960_959_DailyStorage");
+        builder.HasIndex(e => new {e.WrittenBy, e.Dt}, "missing_index_960_959_DailyStorage");
 
-        builder.HasIndex(e => new { e.WrittenBy, e.Deleted, e.Updated, e.Dt }, "missing_index_962_961_DailyStorage");
+        builder.HasIndex(e => new {e.WrittenBy, e.Deleted, e.Updated, e.Dt}, "missing_index_962_961_DailyStorage");
 
         builder.Property(e => e.Id).HasColumnName("id");
 

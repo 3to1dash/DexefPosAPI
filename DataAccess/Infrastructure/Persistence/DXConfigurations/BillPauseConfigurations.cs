@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class BillPauseConfiguration : IEntityTypeConfiguration<BillPause>
 {
-
-
     public void Configure(EntityTypeBuilder<BillPause> builder)
     {
         builder.ToTable("BillPause");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SmsalertConfiguration : IEntityTypeConfiguration<Smsalert>
 {
-
-
     public void Configure(EntityTypeBuilder<Smsalert> builder)
     {
         builder.ToTable("SMSAlert");

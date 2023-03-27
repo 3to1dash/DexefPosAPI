@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TripAirportConfiguration : IEntityTypeConfiguration<TripAirport>
 {
-
-
     public void Configure(EntityTypeBuilder<TripAirport> builder)
     {
         builder.HasKey(e => e.Code);

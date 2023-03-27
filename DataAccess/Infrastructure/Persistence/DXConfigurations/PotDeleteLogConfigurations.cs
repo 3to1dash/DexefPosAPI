@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PotDeleteLogConfiguration : IEntityTypeConfiguration<PotDeleteLog>
 {
-
-
     public void Configure(EntityTypeBuilder<PotDeleteLog> builder)
     {
         builder.ToTable("Pot_deleteLog");

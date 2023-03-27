@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CpuConfiguration : IEntityTypeConfiguration<Cpu>
 {
-
-
     public void Configure(EntityTypeBuilder<Cpu> builder)
     {
         builder.ToTable("CPU");

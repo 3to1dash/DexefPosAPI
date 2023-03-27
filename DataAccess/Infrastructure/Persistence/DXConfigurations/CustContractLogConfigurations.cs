@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CustContractLogConfiguration : IEntityTypeConfiguration<CustContractLog>
 {
-
-
     public void Configure(EntityTypeBuilder<CustContractLog> builder)
     {
         builder.ToTable("Cust_Contract_Log");

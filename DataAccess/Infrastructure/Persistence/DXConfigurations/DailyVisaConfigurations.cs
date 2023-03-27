@@ -6,27 +6,27 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyVisaConfiguration : IEntityTypeConfiguration<DailyVisa>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyVisa> builder)
     {
         builder.ToTable("DailyVisa");
 
-        builder.HasIndex(e => new { e.AccountId, e.BranchId, e.Deleted, e.Updated, e.Dt }, "IX_DailyVisa_AccountID_BranchID_Deleted_Updated_dt_23936");
+        builder.HasIndex(e => new {e.AccountId, e.BranchId, e.Deleted, e.Updated, e.Dt},
+            "IX_DailyVisa_AccountID_BranchID_Deleted_Updated_dt_23936");
 
-        builder.HasIndex(e => new { e.AccountId, e.Deleted, e.Updated, e.Dt, e.BranchId }, "IX_DailyVisa_AccountID_Deleted_Updated_dt_BranchID_B342B");
+        builder.HasIndex(e => new {e.AccountId, e.Deleted, e.Updated, e.Dt, e.BranchId},
+            "IX_DailyVisa_AccountID_Deleted_Updated_dt_BranchID_B342B");
 
-        builder.HasIndex(e => new { e.AccountId, e.Dealing }, "IX_DailyVisa_AccountID_dealing_7D08F");
+        builder.HasIndex(e => new {e.AccountId, e.Dealing}, "IX_DailyVisa_AccountID_dealing_7D08F");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated }, "IX_DailyVisa_Deleted_Updated_9179B");
+        builder.HasIndex(e => new {e.Deleted, e.Updated}, "IX_DailyVisa_Deleted_Updated_9179B");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated }, "IX_DailyVisa_Deleted_Updated_B0B3A");
+        builder.HasIndex(e => new {e.Deleted, e.Updated}, "IX_DailyVisa_Deleted_Updated_B0B3A");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated }, "IX_DailyVisa_Deleted_Updated_F771B");
+        builder.HasIndex(e => new {e.Deleted, e.Updated}, "IX_DailyVisa_Deleted_Updated_F771B");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated, e.Dt }, "IX_DailyVisa_Deleted_Updated_dt_277FD");
+        builder.HasIndex(e => new {e.Deleted, e.Updated, e.Dt}, "IX_DailyVisa_Deleted_Updated_dt_277FD");
 
-        builder.HasIndex(e => new { e.TaskId, e.Deleted, e.Updated }, "IX_DailyVisa_TaskID_Deleted_Updated_A73DE");
+        builder.HasIndex(e => new {e.TaskId, e.Deleted, e.Updated}, "IX_DailyVisa_TaskID_Deleted_Updated_A73DE");
 
         builder.HasIndex(e => e.Dealing, "IX_DailyVisa_dealing_05C9F");
 

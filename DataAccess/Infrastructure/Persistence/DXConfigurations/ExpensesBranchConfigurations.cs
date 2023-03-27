@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ExpensesBranchConfiguration : IEntityTypeConfiguration<ExpensesBranch>
 {
-
-
     public void Configure(EntityTypeBuilder<ExpensesBranch> builder)
     {
         builder.ToTable("Expenses_Branches");

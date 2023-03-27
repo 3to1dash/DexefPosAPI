@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CurrencySaleConfiguration : IEntityTypeConfiguration<CurrencySale>
 {
-
-
     public void Configure(EntityTypeBuilder<CurrencySale> builder)
     {
         builder.ToTable("Currency_Sale");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WooOrderMapperConfiguration : IEntityTypeConfiguration<WooOrderMapper>
 {
-
-
     public void Configure(EntityTypeBuilder<WooOrderMapper> builder)
     {
         builder.ToTable("WooOrderMapper");

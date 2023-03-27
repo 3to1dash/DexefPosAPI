@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyAssetExpenseConfiguration : IEntityTypeConfiguration<DailyAssetExpense>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyAssetExpense> builder)
     {
         builder.Property(e => e.Id).HasColumnName("id");

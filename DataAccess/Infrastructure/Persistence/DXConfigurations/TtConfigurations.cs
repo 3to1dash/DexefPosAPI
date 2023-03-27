@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TtConfiguration : IEntityTypeConfiguration<Tt>
 {
-
-
     public void Configure(EntityTypeBuilder<Tt> builder)
     {
         builder.HasNoKey();

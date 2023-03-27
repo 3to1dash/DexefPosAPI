@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class AccountOperandConfiguration : IEntityTypeConfiguration<AccountOperand>
 {
-
-
     public void Configure(EntityTypeBuilder<AccountOperand> builder)
     {
         builder.HasKey(e => e.Operand);

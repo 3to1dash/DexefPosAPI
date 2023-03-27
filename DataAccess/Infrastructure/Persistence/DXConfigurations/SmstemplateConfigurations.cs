@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SmstemplateConfiguration : IEntityTypeConfiguration<Smstemplate>
 {
-
-
     public void Configure(EntityTypeBuilder<Smstemplate> builder)
     {
         builder.ToTable("SMSTemplate");

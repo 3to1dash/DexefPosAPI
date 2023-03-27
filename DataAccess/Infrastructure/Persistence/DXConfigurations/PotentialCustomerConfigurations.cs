@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PotentialCustomerConfiguration : IEntityTypeConfiguration<PotentialCustomer>
 {
-
-
     public void Configure(EntityTypeBuilder<PotentialCustomer> builder)
     {
         builder.ToTable("PotentialCustomer");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FixedAssetsMainConfiguration : IEntityTypeConfiguration<FixedAssetsMain>
 {
-
-
     public void Configure(EntityTypeBuilder<FixedAssetsMain> builder)
     {
         builder.ToTable("FixedAssetsMain");

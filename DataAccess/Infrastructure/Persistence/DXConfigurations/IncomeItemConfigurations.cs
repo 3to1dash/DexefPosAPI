@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class IncomeItemConfiguration : IEntityTypeConfiguration<IncomeItem>
 {
-
-
     public void Configure(EntityTypeBuilder<IncomeItem> builder)
     {
         builder.Property(e => e.Id).HasColumnName("id");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindGroupEquationConfiguration : IEntityTypeConfiguration<KindGroupEquation>
 {
-
-
     public void Configure(EntityTypeBuilder<KindGroupEquation> builder)
     {
         builder.ToTable("KindGroup_Equation");

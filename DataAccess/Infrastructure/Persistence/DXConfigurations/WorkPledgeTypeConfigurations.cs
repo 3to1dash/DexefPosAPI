@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkPledgeTypeConfiguration : IEntityTypeConfiguration<WorkPledgeType>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkPledgeType> builder)
     {
         builder.ToTable("Work_PledgeType");

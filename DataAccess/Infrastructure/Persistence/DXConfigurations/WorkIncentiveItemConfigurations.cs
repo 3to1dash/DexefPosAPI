@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkIncentiveItemConfiguration : IEntityTypeConfiguration<WorkIncentiveItem>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkIncentiveItem> builder)
     {
         builder.ToTable("work_IncentiveItem");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ShDailyMsgConfiguration : IEntityTypeConfiguration<ShDailyMsg>
 {
-
-
     public void Configure(EntityTypeBuilder<ShDailyMsg> builder)
     {
         builder.ToTable("Sh_DailyMsg");

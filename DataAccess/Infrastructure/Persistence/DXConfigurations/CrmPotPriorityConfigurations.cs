@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CrmPotPriorityConfiguration : IEntityTypeConfiguration<CrmPotPriority>
 {
-
-
     public void Configure(EntityTypeBuilder<CrmPotPriority> builder)
     {
         builder.ToTable("CRM_PotPriority");

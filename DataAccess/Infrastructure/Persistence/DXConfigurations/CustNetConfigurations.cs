@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CustNetConfiguration : IEntityTypeConfiguration<CustNet>
 {
-
-
     public void Configure(EntityTypeBuilder<CustNet> builder)
     {
         builder.ToTable("Cust_Net");

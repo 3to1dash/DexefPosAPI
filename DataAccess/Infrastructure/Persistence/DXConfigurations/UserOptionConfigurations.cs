@@ -6,29 +6,27 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class UserOptionConfiguration : IEntityTypeConfiguration<UserOption>
 {
-
-
     public void Configure(EntityTypeBuilder<UserOption> builder)
     {
         builder.HasNoKey();
 
         builder.ToTable("User_Option");
 
-        builder.HasIndex(e => new { e.Name, e.Permission, e.Adds }, "missing_index_10_9_user_option");
+        builder.HasIndex(e => new {e.Name, e.Permission, e.Adds}, "missing_index_10_9_user_option");
 
-        builder.HasIndex(e => new { e.Permission, e.Adds }, "missing_index_12_11_user_option");
+        builder.HasIndex(e => new {e.Permission, e.Adds}, "missing_index_12_11_user_option");
 
-        builder.HasIndex(e => new { e.Name, e.Permission, e.Prints }, "missing_index_160_159_user_option");
+        builder.HasIndex(e => new {e.Name, e.Permission, e.Prints}, "missing_index_160_159_user_option");
 
-        builder.HasIndex(e => new { e.Permission, e.Prints }, "missing_index_162_161_user_option");
+        builder.HasIndex(e => new {e.Permission, e.Prints}, "missing_index_162_161_user_option");
 
-        builder.HasIndex(e => new { e.Name, e.Permission, e.Edits }, "missing_index_164_163_user_option");
+        builder.HasIndex(e => new {e.Name, e.Permission, e.Edits}, "missing_index_164_163_user_option");
 
-        builder.HasIndex(e => new { e.Permission, e.Edits }, "missing_index_166_165_user_option");
+        builder.HasIndex(e => new {e.Permission, e.Edits}, "missing_index_166_165_user_option");
 
-        builder.HasIndex(e => new { e.Name, e.Permission, e.Searchs }, "missing_index_206_205_user_option");
+        builder.HasIndex(e => new {e.Name, e.Permission, e.Searchs}, "missing_index_206_205_user_option");
 
-        builder.HasIndex(e => new { e.Permission, e.Searchs }, "missing_index_208_207_user_option");
+        builder.HasIndex(e => new {e.Permission, e.Searchs}, "missing_index_208_207_user_option");
 
         builder.Property(e => e.Adds)
             .HasColumnName("adds")

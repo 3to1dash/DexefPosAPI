@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TaskMapResourceConfiguration : IEntityTypeConfiguration<TaskMapResource>
 {
-
-
     public void Configure(EntityTypeBuilder<TaskMapResource> builder)
     {
         builder.ToTable("TaskMap_Resources");

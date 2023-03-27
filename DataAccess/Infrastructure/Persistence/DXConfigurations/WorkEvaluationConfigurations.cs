@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkEvaluationConfiguration : IEntityTypeConfiguration<WorkEvaluation>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkEvaluation> builder)
     {
         builder.ToTable("Work_Evaluation");

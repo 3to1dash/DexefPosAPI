@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PreNameFieldConfiguration : IEntityTypeConfiguration<PreNameField>
 {
-
-
     public void Configure(EntityTypeBuilder<PreNameField> builder)
     {
         builder.Property(e => e.Id)

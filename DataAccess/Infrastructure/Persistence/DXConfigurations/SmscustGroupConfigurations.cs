@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SmscustGroupConfiguration : IEntityTypeConfiguration<SmscustGroup>
 {
-
-
     public void Configure(EntityTypeBuilder<SmscustGroup> builder)
     {
         builder.ToTable("SMSCustGroup");

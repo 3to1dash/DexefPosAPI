@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class AccountTransactionEntryConfiguration : IEntityTypeConfiguration<AccountTransactionEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<AccountTransactionEntry> builder)
     {
         builder.ToTable("AccountTransaction_Entry");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkUpgradeConfiguration : IEntityTypeConfiguration<WorkUpgrade>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkUpgrade> builder)
     {
         builder.ToTable("Work_Upgrade");

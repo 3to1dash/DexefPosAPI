@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CTenderDatumConfiguration : IEntityTypeConfiguration<CTenderDatum>
 {
-
-
     public void Configure(EntityTypeBuilder<CTenderDatum> builder)
     {
         builder.ToTable("C_TenderData");

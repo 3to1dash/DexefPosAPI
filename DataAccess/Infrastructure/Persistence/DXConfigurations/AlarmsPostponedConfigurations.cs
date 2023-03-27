@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class AlarmsPostponedConfiguration : IEntityTypeConfiguration<AlarmsPostponed>
 {
-
-
     public void Configure(EntityTypeBuilder<AlarmsPostponed> builder)
     {
         builder.ToTable("Alarms_Postponed");

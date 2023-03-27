@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindStyleColorConfiguration : IEntityTypeConfiguration<KindStyleColor>
 {
-
-
     public void Configure(EntityTypeBuilder<KindStyleColor> builder)
     {
         builder.ToTable("kind_StyleColor");

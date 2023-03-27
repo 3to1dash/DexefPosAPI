@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkMoveConfiguration : IEntityTypeConfiguration<WorkMove>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkMove> builder)
     {
         builder.ToTable("Work_Move");

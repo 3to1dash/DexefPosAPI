@@ -33,6 +33,5 @@ public class CurrencyTable
     public Guid Rowguid { get; set; }
     public string? CountryCode { get; set; }
 
-    [JsonIgnore]
-    public virtual List<CompanyBranch> CompanyBranches { get; set; }
+    [JsonIgnore] public virtual List<CompanyBranch> CompanyBranches { get; set; }
 }

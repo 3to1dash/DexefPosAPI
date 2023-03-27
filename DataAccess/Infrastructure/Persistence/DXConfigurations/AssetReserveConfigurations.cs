@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class AssetReserveConfiguration : IEntityTypeConfiguration<AssetReserve>
 {
-
-
     public void Configure(EntityTypeBuilder<AssetReserve> builder)
     {
         builder.ToTable("Asset_Reserve");

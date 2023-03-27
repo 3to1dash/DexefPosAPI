@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WooOrderFeeLineConfiguration : IEntityTypeConfiguration<WooOrderFeeLine>
 {
-
-
     public void Configure(EntityTypeBuilder<WooOrderFeeLine> builder)
     {
         builder.ToTable("WooOrderFeeLine");

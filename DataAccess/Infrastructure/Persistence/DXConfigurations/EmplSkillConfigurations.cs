@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class EmplSkillConfiguration : IEntityTypeConfiguration<EmplSkill>
 {
-
-
     public void Configure(EntityTypeBuilder<EmplSkill> builder)
     {
         builder.HasNoKey();

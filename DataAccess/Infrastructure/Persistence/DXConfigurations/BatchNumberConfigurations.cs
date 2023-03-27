@@ -6,13 +6,11 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class BatchNumberConfiguration : IEntityTypeConfiguration<BatchNumber>
 {
-
-
     public void Configure(EntityTypeBuilder<BatchNumber> builder)
     {
         builder.ToTable("Batch_number");
 
-        builder.HasIndex(e => new { e.ItemId, e.Operate }, "NonClusteredIndex-20211105-131634");
+        builder.HasIndex(e => new {e.ItemId, e.Operate}, "NonClusteredIndex-20211105-131634");
 
         builder.Property(e => e.Id)
             .HasColumnType("numeric(18, 0)")

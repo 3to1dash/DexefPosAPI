@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindDescriptionConfiguration : IEntityTypeConfiguration<KindDescription>
 {
-
-
     public void Configure(EntityTypeBuilder<KindDescription> builder)
     {
         builder.ToTable("Kind_Description");

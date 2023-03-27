@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PriceNameConfiguration : IEntityTypeConfiguration<PriceName>
 {
-
-
     public void Configure(EntityTypeBuilder<PriceName> builder)
     {
         builder.ToTable("price_name");

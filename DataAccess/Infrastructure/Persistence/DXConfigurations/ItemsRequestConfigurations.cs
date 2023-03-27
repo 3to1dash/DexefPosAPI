@@ -6,17 +6,15 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ItemsRequestConfiguration : IEntityTypeConfiguration<ItemsRequest>
 {
-
-
     public void Configure(EntityTypeBuilder<ItemsRequest> builder)
     {
         builder.ToTable("ItemsRequest");
 
         builder.HasIndex(e => e.Closed, "IX_ItemsRequest_Closed_F99D4");
 
-        builder.HasIndex(e => new { e.ParentTaskId, e.Dealing }, "IX_ItemsRequest_ParentTaskID_Dealing_E7414");
+        builder.HasIndex(e => new {e.ParentTaskId, e.Dealing}, "IX_ItemsRequest_ParentTaskID_Dealing_E7414");
 
-        builder.HasIndex(e => new { e.TargetBranchId, e.Closed }, "IX_ItemsRequest_TargetBranchID_Closed_62846");
+        builder.HasIndex(e => new {e.TargetBranchId, e.Closed}, "IX_ItemsRequest_TargetBranchID_Closed_62846");
 
         builder.HasIndex(e => e.TaskId, "IX_ItemsRequest_TaskID_D8FF3");
 

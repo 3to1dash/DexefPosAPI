@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ShBranchDailyActionConfiguration : IEntityTypeConfiguration<ShBranchDailyAction>
 {
-
-
     public void Configure(EntityTypeBuilder<ShBranchDailyAction> builder)
     {
         builder.ToTable("sh_BranchDailyAction");

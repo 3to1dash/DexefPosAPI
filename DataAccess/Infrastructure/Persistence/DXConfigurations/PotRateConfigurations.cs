@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PotRateConfiguration : IEntityTypeConfiguration<PotRate>
 {
-
-
     public void Configure(EntityTypeBuilder<PotRate> builder)
     {
         builder.ToTable("Pot_Rate");

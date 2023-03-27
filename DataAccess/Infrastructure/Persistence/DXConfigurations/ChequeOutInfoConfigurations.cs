@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ChequeOutInfoConfiguration : IEntityTypeConfiguration<ChequeOutInfo>
 {
-
-
     public void Configure(EntityTypeBuilder<ChequeOutInfo> builder)
     {
         builder.ToTable("Cheque_OutInfo");

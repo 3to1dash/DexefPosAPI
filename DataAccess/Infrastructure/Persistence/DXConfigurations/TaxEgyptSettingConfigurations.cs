@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TaxEgyptSettingConfiguration : IEntityTypeConfiguration<TaxEgyptSetting>
 {
-
-
     public void Configure(EntityTypeBuilder<TaxEgyptSetting> builder)
     {
         builder.ToTable("Tax_EgyptSetting");

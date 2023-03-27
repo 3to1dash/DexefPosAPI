@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TripExcelSettingConfiguration : IEntityTypeConfiguration<TripExcelSetting>
 {
-
-
     public void Configure(EntityTypeBuilder<TripExcelSetting> builder)
     {
         builder.ToTable("Trip_ExcelSettings");

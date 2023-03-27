@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CurrencyDiffEntryConfiguration : IEntityTypeConfiguration<CurrencyDiffEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<CurrencyDiffEntry> builder)
     {
         builder.ToTable("CurrencyDiff_Entry");

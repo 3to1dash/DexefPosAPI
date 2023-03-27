@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SupportExtraFieldConfiguration : IEntityTypeConfiguration<SupportExtraField>
 {
-
-
     public void Configure(EntityTypeBuilder<SupportExtraField> builder)
     {
         builder.ToTable("Support_ExtraField");

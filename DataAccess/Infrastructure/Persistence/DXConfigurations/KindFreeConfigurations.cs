@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindFreeConfiguration : IEntityTypeConfiguration<KindFree>
 {
-
-
     public void Configure(EntityTypeBuilder<KindFree> builder)
     {
         builder.ToTable("Kind_Free");

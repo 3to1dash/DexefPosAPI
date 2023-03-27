@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ReportCenterConfiguration : IEntityTypeConfiguration<ReportCenter>
 {
-
-
     public void Configure(EntityTypeBuilder<ReportCenter> builder)
     {
         builder.ToTable("ReportCenter");

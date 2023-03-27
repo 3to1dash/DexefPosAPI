@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class EmpDailyPayrollConfiguration : IEntityTypeConfiguration<EmpDailyPayroll>
 {
-
-
     public void Configure(EntityTypeBuilder<EmpDailyPayroll> builder)
     {
         builder.ToTable("Emp_DailyPayroll");

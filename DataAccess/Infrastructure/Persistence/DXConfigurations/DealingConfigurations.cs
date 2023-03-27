@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DealingConfiguration : IEntityTypeConfiguration<Dealing>
 {
-
-
     public void Configure(EntityTypeBuilder<Dealing> builder)
     {
         builder.ToTable("Dealing");

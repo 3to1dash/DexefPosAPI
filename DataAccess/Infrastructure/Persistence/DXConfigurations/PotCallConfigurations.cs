@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PotCallConfiguration : IEntityTypeConfiguration<PotCall>
 {
-
-
     public void Configure(EntityTypeBuilder<PotCall> builder)
     {
         builder.ToTable("Pot_Call");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkAbsentBalanceConfiguration : IEntityTypeConfiguration<WorkAbsentBalance>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkAbsentBalance> builder)
     {
         builder.ToTable("Work_AbsentBalance");

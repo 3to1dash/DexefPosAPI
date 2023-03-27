@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindImageConfiguration : IEntityTypeConfiguration<KindImage>
 {
-
-
     public void Configure(EntityTypeBuilder<KindImage> builder)
     {
         builder.ToTable("Kind_Image");

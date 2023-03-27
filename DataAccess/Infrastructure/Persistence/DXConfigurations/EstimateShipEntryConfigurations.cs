@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class EstimateShipEntryConfiguration : IEntityTypeConfiguration<EstimateShipEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<EstimateShipEntry> builder)
     {
         builder.ToTable("EstimateShipEntry");

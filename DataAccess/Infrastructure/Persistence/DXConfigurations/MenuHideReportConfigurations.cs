@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class MenuHideReportConfiguration : IEntityTypeConfiguration<MenuHideReport>
 {
-
-
     public void Configure(EntityTypeBuilder<MenuHideReport> builder)
     {
         builder.ToTable("Menu_HideReport");

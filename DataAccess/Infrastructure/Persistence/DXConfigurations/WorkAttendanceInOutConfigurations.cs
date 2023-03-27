@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkAttendanceInOutConfiguration : IEntityTypeConfiguration<WorkAttendanceInOut>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkAttendanceInOut> builder)
     {
         builder.ToTable("Work_Attendance_InOut");

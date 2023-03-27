@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailySerialConfiguration : IEntityTypeConfiguration<DailySerial>
 {
-
-
     public void Configure(EntityTypeBuilder<DailySerial> builder)
     {
         builder.ToTable("DailySerial");

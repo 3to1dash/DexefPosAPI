@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class OwnerConfiguration : IEntityTypeConfiguration<Owner>
 {
-
-
     public void Configure(EntityTypeBuilder<Owner> builder)
     {
         builder.HasNoKey();

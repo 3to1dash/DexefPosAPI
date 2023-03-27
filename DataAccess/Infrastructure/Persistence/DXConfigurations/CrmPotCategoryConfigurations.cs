@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CrmPotCategoryConfiguration : IEntityTypeConfiguration<CrmPotCategory>
 {
-
-
     public void Configure(EntityTypeBuilder<CrmPotCategory> builder)
     {
         builder.ToTable("CRM_PotCategory");

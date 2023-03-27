@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class GetStorageTransformConfiguration : IEntityTypeConfiguration<GetStorageTransform>
 {
-
-
     public void Configure(EntityTypeBuilder<GetStorageTransform> builder)
     {
         builder.HasNoKey();

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class MenuTileHomeConfiguration : IEntityTypeConfiguration<MenuTileHome>
 {
-
-
     public void Configure(EntityTypeBuilder<MenuTileHome> builder)
     {
         builder.ToTable("Menu_TileHome");

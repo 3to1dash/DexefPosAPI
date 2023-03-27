@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class InstallmentLogConfiguration : IEntityTypeConfiguration<InstallmentLog>
 {
-
-
     public void Configure(EntityTypeBuilder<InstallmentLog> builder)
     {
         builder.ToTable("Installment_Log");

@@ -6,19 +6,20 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class StorageTransformConfiguration : IEntityTypeConfiguration<StorageTransform>
 {
-
-
     public void Configure(EntityTypeBuilder<StorageTransform> builder)
     {
         builder.ToTable("Storage_Transform");
 
-        builder.HasIndex(e => new { e.BranchId, e.Dafter }, "IX_Storage_Transform_BranchID_Dafter_EFD75");
+        builder.HasIndex(e => new {e.BranchId, e.Dafter}, "IX_Storage_Transform_BranchID_Dafter_EFD75");
 
-        builder.HasIndex(e => new { e.BranchId, e.ToBranchId, e.Dt }, "IX_Storage_Transform_BranchID_ToBranchID_DT_0B462");
+        builder.HasIndex(e => new {e.BranchId, e.ToBranchId, e.Dt},
+            "IX_Storage_Transform_BranchID_ToBranchID_DT_0B462");
 
-        builder.HasIndex(e => new { e.BranchId, e.ToBranchId, e.Dt }, "IX_Storage_Transform_BranchID_ToBranchID_DT_6C58D");
+        builder.HasIndex(e => new {e.BranchId, e.ToBranchId, e.Dt},
+            "IX_Storage_Transform_BranchID_ToBranchID_DT_6C58D");
 
-        builder.HasIndex(e => new { e.BranchId, e.ToBranchId, e.Dt }, "IX_Storage_Transform_BranchID_ToBranchID_DT_B6011");
+        builder.HasIndex(e => new {e.BranchId, e.ToBranchId, e.Dt},
+            "IX_Storage_Transform_BranchID_ToBranchID_DT_B6011");
 
         builder.HasIndex(e => e.Dt, "IX_Storage_Transform_DT_1B914");
 

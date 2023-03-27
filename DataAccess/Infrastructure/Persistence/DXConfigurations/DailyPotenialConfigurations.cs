@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyPotenialConfiguration : IEntityTypeConfiguration<DailyPotenial>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyPotenial> builder)
     {
         builder.ToTable("Daily_Potenial");

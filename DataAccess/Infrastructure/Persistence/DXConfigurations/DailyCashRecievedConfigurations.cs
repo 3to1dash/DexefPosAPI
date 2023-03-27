@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyCashRecievedConfiguration : IEntityTypeConfiguration<DailyCashRecieved>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyCashRecieved> builder)
     {
         builder.ToTable("DailyCashRecieved");

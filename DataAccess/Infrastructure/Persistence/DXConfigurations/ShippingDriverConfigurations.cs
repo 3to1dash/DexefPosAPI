@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ShippingDriverConfiguration : IEntityTypeConfiguration<ShippingDriver>
 {
-
-
     public void Configure(EntityTypeBuilder<ShippingDriver> builder)
     {
         builder.Property(e => e.Id).HasColumnName("id");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class LangConfiguration : IEntityTypeConfiguration<Lang>
 {
-
-
     public void Configure(EntityTypeBuilder<Lang> builder)
     {
         builder.ToTable("Lang");

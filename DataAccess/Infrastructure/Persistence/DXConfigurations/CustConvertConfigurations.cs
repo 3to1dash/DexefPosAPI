@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CustConvertConfiguration : IEntityTypeConfiguration<CustConvert>
 {
-
-
     public void Configure(EntityTypeBuilder<CustConvert> builder)
     {
         builder.ToTable("Cust_Convert");

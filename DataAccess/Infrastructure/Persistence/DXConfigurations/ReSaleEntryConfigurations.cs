@@ -6,13 +6,11 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ReSaleEntryConfiguration : IEntityTypeConfiguration<ReSaleEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<ReSaleEntry> builder)
     {
         builder.ToTable("ReSale_Entry");
 
-        builder.HasIndex(e => new { e.ItemId, e.Dt }, "IX_ReSale_Entry_ItemID_Dt_6CE1D");
+        builder.HasIndex(e => new {e.ItemId, e.Dt}, "IX_ReSale_Entry_ItemID_Dt_6CE1D");
 
         builder.HasIndex(e => e.TaskId, "IX_ReSale_Entry_TaskID_697AA");
 

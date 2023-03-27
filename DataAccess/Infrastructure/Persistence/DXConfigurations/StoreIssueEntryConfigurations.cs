@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class StoreIssueEntryConfiguration : IEntityTypeConfiguration<StoreIssueEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<StoreIssueEntry> builder)
     {
         builder.ToTable("StoreIssue_Entry");

@@ -6,33 +6,33 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailycustConfiguration : IEntityTypeConfiguration<Dailycust>
 {
-
-
     public void Configure(EntityTypeBuilder<Dailycust> builder)
     {
         builder.ToTable("Dailycust");
 
-        builder.HasIndex(e => new { e.AccountId, e.BranchId, e.Deleted, e.Updated, e.Dt }, "IX_dailycust_AccountID_BranchID_Deleted_Updated_dt_5C599");
+        builder.HasIndex(e => new {e.AccountId, e.BranchId, e.Deleted, e.Updated, e.Dt},
+            "IX_dailycust_AccountID_BranchID_Deleted_Updated_dt_5C599");
 
-        builder.HasIndex(e => new { e.AccountId, e.Deleted, e.Updated }, "IX_dailycust_AccountID_Deleted_Updated_E3C9A");
+        builder.HasIndex(e => new {e.AccountId, e.Deleted, e.Updated}, "IX_dailycust_AccountID_Deleted_Updated_E3C9A");
 
-        builder.HasIndex(e => new { e.AccountId, e.Deleted, e.Updated }, "IX_dailycust_AccountID_Deleted_Updated_E6D89");
+        builder.HasIndex(e => new {e.AccountId, e.Deleted, e.Updated}, "IX_dailycust_AccountID_Deleted_Updated_E6D89");
 
-        builder.HasIndex(e => new { e.AccountId, e.Deleted, e.Updated, e.Dt }, "IX_dailycust_AccountID_Deleted_Updated_dt_8474A");
+        builder.HasIndex(e => new {e.AccountId, e.Deleted, e.Updated, e.Dt},
+            "IX_dailycust_AccountID_Deleted_Updated_dt_8474A");
 
-        builder.HasIndex(e => new { e.Currency, e.Deleted, e.Updated }, "IX_dailycust_Currency_Deleted_Updated_1775C");
+        builder.HasIndex(e => new {e.Currency, e.Deleted, e.Updated}, "IX_dailycust_Currency_Deleted_Updated_1775C");
 
-        builder.HasIndex(e => new { e.Currency, e.Deleted, e.Updated }, "IX_dailycust_Currency_Deleted_Updated_297F3");
+        builder.HasIndex(e => new {e.Currency, e.Deleted, e.Updated}, "IX_dailycust_Currency_Deleted_Updated_297F3");
 
-        builder.HasIndex(e => new { e.Currency, e.Deleted, e.Updated }, "IX_dailycust_Currency_Deleted_Updated_C01D0");
+        builder.HasIndex(e => new {e.Currency, e.Deleted, e.Updated}, "IX_dailycust_Currency_Deleted_Updated_C01D0");
 
         builder.HasIndex(e => e.Currency, "IX_dailycust_Currency_F98A4");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated }, "IX_dailycust_Deleted_Updated_50FCA");
+        builder.HasIndex(e => new {e.Deleted, e.Updated}, "IX_dailycust_Deleted_Updated_50FCA");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated }, "IX_dailycust_Deleted_Updated_66E64");
+        builder.HasIndex(e => new {e.Deleted, e.Updated}, "IX_dailycust_Deleted_Updated_66E64");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated, e.Dt }, "IX_dailycust_Deleted_Updated_dt_067C4");
+        builder.HasIndex(e => new {e.Deleted, e.Updated, e.Dt}, "IX_dailycust_Deleted_Updated_dt_067C4");
 
         builder.HasIndex(e => e.TaskId, "IX_dailycust_TaskID_76E84");
 

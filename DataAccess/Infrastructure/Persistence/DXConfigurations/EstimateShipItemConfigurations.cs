@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class EstimateShipItemConfiguration : IEntityTypeConfiguration<EstimateShipItem>
 {
-
-
     public void Configure(EntityTypeBuilder<EstimateShipItem> builder)
     {
         builder.Property(e => e.Id).HasColumnName("id");

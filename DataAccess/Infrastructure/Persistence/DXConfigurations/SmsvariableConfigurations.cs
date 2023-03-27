@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SmsvariableConfiguration : IEntityTypeConfiguration<Smsvariable>
 {
-
-
     public void Configure(EntityTypeBuilder<Smsvariable> builder)
     {
         builder.ToTable("SMSVariable");

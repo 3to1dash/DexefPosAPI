@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TripGdConfiguration : IEntityTypeConfiguration<TripGd>
 {
-
-
     public void Configure(EntityTypeBuilder<TripGd> builder)
     {
         builder.ToTable("Trip_GDS");

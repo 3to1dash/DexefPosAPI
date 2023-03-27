@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CustOpeningConfiguration : IEntityTypeConfiguration<CustOpening>
 {
-
-
     public void Configure(EntityTypeBuilder<CustOpening> builder)
     {
         builder.ToTable("CustOpening");

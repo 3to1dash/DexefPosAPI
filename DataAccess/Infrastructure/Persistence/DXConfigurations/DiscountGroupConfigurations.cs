@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DiscountGroupConfiguration : IEntityTypeConfiguration<DiscountGroup>
 {
-
-
     public void Configure(EntityTypeBuilder<DiscountGroup> builder)
     {
         builder.ToTable("DiscountGroup");

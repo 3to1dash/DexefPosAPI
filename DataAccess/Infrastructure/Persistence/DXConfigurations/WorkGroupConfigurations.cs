@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkGroupConfiguration : IEntityTypeConfiguration<WorkGroup>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkGroup> builder)
     {
         builder.ToTable("work_Group");

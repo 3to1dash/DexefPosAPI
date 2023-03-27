@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class BatchNumberTransferTempConfiguration : IEntityTypeConfiguration<BatchNumberTransferTemp>
 {
-
-
     public void Configure(EntityTypeBuilder<BatchNumberTransferTemp> builder)
     {
         builder.ToTable("Batch_number_TransferTemp");

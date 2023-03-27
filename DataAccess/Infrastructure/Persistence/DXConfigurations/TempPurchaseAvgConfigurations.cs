@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TempPurchaseAvgConfiguration : IEntityTypeConfiguration<TempPurchaseAvg>
 {
-
-
     public void Configure(EntityTypeBuilder<TempPurchaseAvg> builder)
     {
         builder.HasNoKey();
@@ -16,9 +14,10 @@ public class TempPurchaseAvgConfiguration : IEntityTypeConfiguration<TempPurchas
 
         builder.HasIndex(e => e.Id, "IX_Temp_PurchaseAVG_id_1AC50");
 
-        builder.HasIndex(e => new { e.Itemid, e.Dt, e.AvailableQty }, "IX_Temp_PurchaseAVG_itemid_dt_available_qty_96E72");
+        builder.HasIndex(e => new {e.Itemid, e.Dt, e.AvailableQty},
+            "IX_Temp_PurchaseAVG_itemid_dt_available_qty_96E72");
 
-        builder.HasIndex(e => new { e.Dt, e.AvailableQty }, "idx_temp_puchase_perf_opt");
+        builder.HasIndex(e => new {e.Dt, e.AvailableQty}, "idx_temp_puchase_perf_opt");
 
         builder.Property(e => e.AvailableQty)
             .HasColumnType("decimal(38, 12)")

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FoodlayoutConfiguration : IEntityTypeConfiguration<Foodlayout>
 {
-
-
     public void Configure(EntityTypeBuilder<Foodlayout> builder)
     {
         builder.ToTable("foodlayout");

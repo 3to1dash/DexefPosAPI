@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class RepManEntryConfiguration : IEntityTypeConfiguration<RepManEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<RepManEntry> builder)
     {
         builder.ToTable("RepMan_Entry");

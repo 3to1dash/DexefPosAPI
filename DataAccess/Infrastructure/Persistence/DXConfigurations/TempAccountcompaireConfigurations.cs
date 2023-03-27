@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TempAccountcompaireConfiguration : IEntityTypeConfiguration<TempAccountcompaire>
 {
-
-
     public void Configure(EntityTypeBuilder<TempAccountcompaire> builder)
     {
         builder.ToTable("temp_accountcompaire");

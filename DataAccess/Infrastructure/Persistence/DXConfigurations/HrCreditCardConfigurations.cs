@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class HrCreditCardConfiguration : IEntityTypeConfiguration<HrCreditCard>
 {
-
-
     public void Configure(EntityTypeBuilder<HrCreditCard> builder)
     {
         builder.ToTable("HR_CreditCards");

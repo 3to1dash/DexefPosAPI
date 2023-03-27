@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PosHallConfiguration : IEntityTypeConfiguration<PosHall>
 {
-
-
     public void Configure(EntityTypeBuilder<PosHall> builder)
     {
         builder.ToTable("PosHall");

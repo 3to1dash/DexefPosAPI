@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ReportTableDatumConfiguration : IEntityTypeConfiguration<ReportTableDatum>
 {
-
-
     public void Configure(EntityTypeBuilder<ReportTableDatum> builder)
     {
         builder.ToTable("Report_TableData");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkFingerLogConfiguration : IEntityTypeConfiguration<WorkFingerLog>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkFingerLog> builder)
     {
         builder.ToTable("Work_FingerLog");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TechniciansEntryConfiguration : IEntityTypeConfiguration<TechniciansEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<TechniciansEntry> builder)
     {
         builder.ToTable("TechniciansEntry");

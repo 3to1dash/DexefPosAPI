@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CostCenterEstimateConfiguration : IEntityTypeConfiguration<CostCenterEstimate>
 {
-
-
     public void Configure(EntityTypeBuilder<CostCenterEstimate> builder)
     {
         builder.ToTable("CostCenter_Estimate");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CurrencyRateConfiguration : IEntityTypeConfiguration<CurrencyRate>
 {
-
-
     public void Configure(EntityTypeBuilder<CurrencyRate> builder)
     {
         builder.ToTable("Currency_Rate");

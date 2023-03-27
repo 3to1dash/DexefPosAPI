@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkFileConfiguration : IEntityTypeConfiguration<WorkFile>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkFile> builder)
     {
         builder.ToTable("Work_Files");

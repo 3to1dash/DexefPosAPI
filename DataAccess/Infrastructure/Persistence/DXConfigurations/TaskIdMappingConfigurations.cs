@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TaskIdMappingConfiguration : IEntityTypeConfiguration<TaskIdMapping>
 {
-
-
     public void Configure(EntityTypeBuilder<TaskIdMapping> builder)
     {
         builder.ToTable("TaskID_Mapping");

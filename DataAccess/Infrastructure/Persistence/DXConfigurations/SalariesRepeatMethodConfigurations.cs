@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SalariesRepeatMethodConfiguration : IEntityTypeConfiguration<SalariesRepeatMethod>
 {
-
-
     public void Configure(EntityTypeBuilder<SalariesRepeatMethod> builder)
     {
         builder.ToTable("Salaries_RepeatMethods");

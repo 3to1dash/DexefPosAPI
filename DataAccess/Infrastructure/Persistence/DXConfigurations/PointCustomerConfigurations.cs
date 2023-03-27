@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PointCustomerConfiguration : IEntityTypeConfiguration<PointCustomer>
 {
-
-
     public void Configure(EntityTypeBuilder<PointCustomer> builder)
     {
         builder.ToTable("Point_Customer");

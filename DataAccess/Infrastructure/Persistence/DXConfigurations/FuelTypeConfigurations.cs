@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FuelTypeConfiguration : IEntityTypeConfiguration<FuelType>
 {
-
-
     public void Configure(EntityTypeBuilder<FuelType> builder)
     {
         builder.ToTable("FuelType");

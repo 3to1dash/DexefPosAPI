@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PrefrenceConfiguration : IEntityTypeConfiguration<Prefrence>
 {
-
-
     public void Configure(EntityTypeBuilder<Prefrence> builder)
     {
         builder.HasKey(e => e.Name);

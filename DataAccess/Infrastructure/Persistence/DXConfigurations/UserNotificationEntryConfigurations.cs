@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class UserNotificationEntryConfiguration : IEntityTypeConfiguration<UserNotificationEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<UserNotificationEntry> builder)
     {
         builder.ToTable("User_NotificationEntry");

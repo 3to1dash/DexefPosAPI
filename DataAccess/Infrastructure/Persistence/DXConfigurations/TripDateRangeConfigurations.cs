@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TripDateRangeConfiguration : IEntityTypeConfiguration<TripDateRange>
 {
-
-
     public void Configure(EntityTypeBuilder<TripDateRange> builder)
     {
         builder.ToTable("Trip_DateRange");

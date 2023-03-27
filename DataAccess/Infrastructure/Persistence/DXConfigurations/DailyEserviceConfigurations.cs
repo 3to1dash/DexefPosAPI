@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyEserviceConfiguration : IEntityTypeConfiguration<DailyEservice>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyEservice> builder)
     {
         builder.ToTable("Daily_EService");

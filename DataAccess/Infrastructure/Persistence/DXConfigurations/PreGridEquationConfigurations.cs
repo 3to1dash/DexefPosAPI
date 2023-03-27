@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PreGridEquationConfiguration : IEntityTypeConfiguration<PreGridEquation>
 {
-
-
     public void Configure(EntityTypeBuilder<PreGridEquation> builder)
     {
         builder.ToTable("PreGridEquation");

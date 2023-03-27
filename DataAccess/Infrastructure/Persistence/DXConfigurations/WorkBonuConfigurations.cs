@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkBonuConfiguration : IEntityTypeConfiguration<WorkBonu>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkBonu> builder)
     {
         builder.ToTable("Work_Bonus");

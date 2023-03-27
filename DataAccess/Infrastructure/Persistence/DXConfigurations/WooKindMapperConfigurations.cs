@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WooKindMapperConfiguration : IEntityTypeConfiguration<WooKindMapper>
 {
-
-
     public void Configure(EntityTypeBuilder<WooKindMapper> builder)
     {
         builder.ToTable("WooKindMapper");

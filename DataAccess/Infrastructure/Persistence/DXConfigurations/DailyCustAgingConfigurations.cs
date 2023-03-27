@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyCustAgingConfiguration : IEntityTypeConfiguration<DailyCustAging>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyCustAging> builder)
     {
         builder.ToTable("DailyCustAging");
@@ -18,21 +16,23 @@ public class DailyCustAgingConfiguration : IEntityTypeConfiguration<DailyCustAgi
 
         builder.HasIndex(e => e.CustId, "IX_DailyCustAging_CustID_89B0E");
 
-        builder.HasIndex(e => new { e.CustId, e.AgingPaid, e.NeedMoney }, "IX_DailyCustAging_CustID_AgingPaid_NeedMoney_DB164");
+        builder.HasIndex(e => new {e.CustId, e.AgingPaid, e.NeedMoney},
+            "IX_DailyCustAging_CustID_AgingPaid_NeedMoney_DB164");
 
-        builder.HasIndex(e => new { e.CustId, e.IsTarget }, "IX_DailyCustAging_CustID_IsTarget_BF177");
+        builder.HasIndex(e => new {e.CustId, e.IsTarget}, "IX_DailyCustAging_CustID_IsTarget_BF177");
 
-        builder.HasIndex(e => new { e.CustId, e.NeedMoney }, "IX_DailyCustAging_CustID_NeedMoney_0501F");
+        builder.HasIndex(e => new {e.CustId, e.NeedMoney}, "IX_DailyCustAging_CustID_NeedMoney_0501F");
 
-        builder.HasIndex(e => new { e.CustId, e.NeedMoney }, "IX_DailyCustAging_CustID_NeedMoney_19563");
+        builder.HasIndex(e => new {e.CustId, e.NeedMoney}, "IX_DailyCustAging_CustID_NeedMoney_19563");
 
-        builder.HasIndex(e => new { e.CustId, e.NeedMoney }, "IX_DailyCustAging_CustID_NeedMoney_BD030");
+        builder.HasIndex(e => new {e.CustId, e.NeedMoney}, "IX_DailyCustAging_CustID_NeedMoney_BD030");
 
-        builder.HasIndex(e => new { e.CustId, e.NeedMoney }, "IX_DailyCustAging_CustID_NeedMoney_F05B1");
+        builder.HasIndex(e => new {e.CustId, e.NeedMoney}, "IX_DailyCustAging_CustID_NeedMoney_F05B1");
 
-        builder.HasIndex(e => new { e.CustId, e.OpenBalance }, "IX_DailyCustAging_CustID_OpenBalance_894F6");
+        builder.HasIndex(e => new {e.CustId, e.OpenBalance}, "IX_DailyCustAging_CustID_OpenBalance_894F6");
 
-        builder.HasIndex(e => new { e.CustId, e.TaskId, e.InstallmentId }, "IX_DailyCustAging_CustID_TaskID_InstallmentID_86CFE");
+        builder.HasIndex(e => new {e.CustId, e.TaskId, e.InstallmentId},
+            "IX_DailyCustAging_CustID_TaskID_InstallmentID_86CFE");
 
         builder.HasIndex(e => e.IsTarget, "IX_DailyCustAging_IsTarget_6FF52");
 
@@ -40,17 +40,23 @@ public class DailyCustAgingConfiguration : IEntityTypeConfiguration<DailyCustAgi
 
         builder.HasIndex(e => e.IsTarget, "IX_DailyCustAging_IsTarget_F065F");
 
-        builder.HasIndex(e => new { e.IsTarget, e.InstallmentId, e.TaskId }, "IX_DailyCustAging_IsTarget_InstallmentID_TaskID_C07A0");
+        builder.HasIndex(e => new {e.IsTarget, e.InstallmentId, e.TaskId},
+            "IX_DailyCustAging_IsTarget_InstallmentID_TaskID_C07A0");
 
-        builder.HasIndex(e => new { e.IsTarget, e.RegNum, e.InstallmentId, e.TaskId }, "IX_DailyCustAging_IsTarget_RegNum_InstallmentID_TaskID_4BD72");
+        builder.HasIndex(e => new {e.IsTarget, e.RegNum, e.InstallmentId, e.TaskId},
+            "IX_DailyCustAging_IsTarget_RegNum_InstallmentID_TaskID_4BD72");
 
-        builder.HasIndex(e => new { e.IsTarget, e.TaskId, e.Dealing }, "IX_DailyCustAging_IsTarget_TaskID_Dealing_3BD84");
+        builder.HasIndex(e => new {e.IsTarget, e.TaskId, e.Dealing}, "IX_DailyCustAging_IsTarget_TaskID_Dealing_3BD84");
 
-        builder.HasIndex(e => new { e.IsTarget, e.TaskId, e.Dealing }, "IX_DailyCustAging_IsTarget_TaskID_Dealing_FEE40");
+        builder.HasIndex(e => new {e.IsTarget, e.TaskId, e.Dealing}, "IX_DailyCustAging_IsTarget_TaskID_Dealing_FEE40");
 
-        builder.HasIndex(e => new { e.TaskId, e.AgingPaid }, "IX_DailyCustAging_TaskID_AgingPaid_2ABFC");
+        builder.HasIndex(e => new {e.TaskId, e.AgingPaid}, "IX_DailyCustAging_TaskID_AgingPaid_2ABFC");
 
-        builder.HasIndex(e => new { e.BranchId, e.IsTarget, e.OpenBalance, e.NeedMoney, e.Dealing, e.ExprDt, e.RepId, e.InstallmentId }, "NonClusteredIndex-20200213-140035");
+        builder.HasIndex(
+            e => new
+            {
+                e.BranchId, e.IsTarget, e.OpenBalance, e.NeedMoney, e.Dealing, e.ExprDt, e.RepId, e.InstallmentId
+            }, "NonClusteredIndex-20200213-140035");
 
         builder.Property(e => e.Id).HasColumnName("id");
 

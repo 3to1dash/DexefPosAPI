@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class RentFormConfiguration : IEntityTypeConfiguration<RentForm>
 {
-
-
     public void Configure(EntityTypeBuilder<RentForm> builder)
     {
         builder.HasNoKey();

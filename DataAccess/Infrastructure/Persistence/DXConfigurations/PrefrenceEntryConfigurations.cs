@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PrefrenceEntryConfiguration : IEntityTypeConfiguration<PrefrenceEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<PrefrenceEntry> builder)
     {
         builder.ToTable("Prefrence_Entry");

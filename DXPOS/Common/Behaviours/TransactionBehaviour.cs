@@ -4,7 +4,7 @@ using MediatR;
 namespace DXPOS.Common.Behaviours;
 
 public class TransactionBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
-        where TRequest : IRequest<TResponse>
+    where TRequest : IRequest<TResponse>
 {
     private readonly DxdbContext _dbContext;
     private readonly ILogger<TransactionBehaviour<TRequest, TResponse>> _logger;
@@ -17,7 +17,8 @@ public class TransactionBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequ
         _logger = logger;
     }
 
-    public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
+    public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next,
+        CancellationToken cancellationToken)
     {
         try
         {

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class BuytempConfiguration : IEntityTypeConfiguration<Buytemp>
 {
-
-
     public void Configure(EntityTypeBuilder<Buytemp> builder)
     {
         builder.HasNoKey();

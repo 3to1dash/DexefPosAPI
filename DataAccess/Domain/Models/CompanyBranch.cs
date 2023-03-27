@@ -5,8 +5,7 @@ namespace DataAccess.Domain.Models;
 
 public class CompanyBranch
 {
-    [NotMapped]
-    private int? _companyId;
+    [NotMapped] private int? _companyId;
     public int Id { get; set; }
     public string Num { get; set; } = null!;
     public string? Name { get; set; }
@@ -53,8 +52,7 @@ public class CompanyBranch
     public byte[]? Logo { get; set; }
 
     public virtual List<KindStock> KindStocks { get; set; }
-    [JsonIgnore]
-    public virtual Company? Company { get; set; }
+    [JsonIgnore] public virtual Company? Company { get; set; }
     public virtual CurrencyTable? CountryNavigation { get; set; }
     public virtual List<TripAirLineCommission> TripAirLineCommissions { get; set; }
     public virtual List<TripCommission> TripCommissions { get; set; }

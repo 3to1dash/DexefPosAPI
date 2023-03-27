@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class UserAttentionConfiguration : IEntityTypeConfiguration<UserAttention>
 {
-
-
     public void Configure(EntityTypeBuilder<UserAttention> builder)
     {
         builder.ToTable("User_Attention");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FactoreGoConfiguration : IEntityTypeConfiguration<FactoreGo>
 {
-
-
     public void Configure(EntityTypeBuilder<FactoreGo> builder)
     {
         builder.ToTable("Factore_Go");

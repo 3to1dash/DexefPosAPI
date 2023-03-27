@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PotMailConfiguration : IEntityTypeConfiguration<PotMail>
 {
-
-
     public void Configure(EntityTypeBuilder<PotMail> builder)
     {
         builder.ToTable("Pot_Mail");

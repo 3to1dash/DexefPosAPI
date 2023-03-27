@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SmspatrolConfiguration : IEntityTypeConfiguration<Smspatrol>
 {
-
-
     public void Configure(EntityTypeBuilder<Smspatrol> builder)
     {
         builder.ToTable("SMSPatrol");

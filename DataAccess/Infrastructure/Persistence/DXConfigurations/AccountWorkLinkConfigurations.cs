@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class AccountWorkLinkConfiguration : IEntityTypeConfiguration<AccountWorkLink>
 {
-
-
     public void Configure(EntityTypeBuilder<AccountWorkLink> builder)
     {
         builder.ToTable("Account_WorkLink");

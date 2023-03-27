@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkPercentConfiguration : IEntityTypeConfiguration<WorkPercent>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkPercent> builder)
     {
         builder.ToTable("work_percent");

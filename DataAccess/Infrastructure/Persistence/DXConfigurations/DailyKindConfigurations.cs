@@ -6,19 +6,19 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyKindConfiguration : IEntityTypeConfiguration<DailyKind>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyKind> builder)
     {
         builder.ToTable("DailyKind");
 
-        builder.HasIndex(e => new { e.ItemId, e.Deleted, e.Updated, e.Dt }, "IX_DailyKind_ItemID_Deleted_Updated_dt_462A4");
+        builder.HasIndex(e => new {e.ItemId, e.Deleted, e.Updated, e.Dt},
+            "IX_DailyKind_ItemID_Deleted_Updated_dt_462A4");
 
-        builder.HasIndex(e => new { e.ItemId, e.Deleted, e.Updated, e.Dt }, "IX_DailyKind_ItemID_Deleted_Updated_dt_B7324");
+        builder.HasIndex(e => new {e.ItemId, e.Deleted, e.Updated, e.Dt},
+            "IX_DailyKind_ItemID_Deleted_Updated_dt_B7324");
 
         builder.HasIndex(e => e.ItemId, "IX_DailyKind_ItemID_E451C");
 
-        builder.HasIndex(e => new { e.ItemId, e.Dealing }, "IX_DailyKind_ItemID_dealing_1FC19");
+        builder.HasIndex(e => new {e.ItemId, e.Dealing}, "IX_DailyKind_ItemID_dealing_1FC19");
 
         builder.HasIndex(e => e.KindId, "IX_DailyKind_KindID_48C90");
 
@@ -28,7 +28,7 @@ public class DailyKindConfiguration : IEntityTypeConfiguration<DailyKind>
 
         builder.HasIndex(e => e.Dealing, "IX_DailyKind_dealing_06643");
 
-        builder.HasIndex(e => new { e.Num, e.Dealing, e.BranchId }, "IX_DailyKind_num_dealing_BranchID_2C438");
+        builder.HasIndex(e => new {e.Num, e.Dealing, e.BranchId}, "IX_DailyKind_num_dealing_BranchID_2C438");
 
         builder.Property(e => e.Id)
             .HasColumnType("numeric(18, 0)")

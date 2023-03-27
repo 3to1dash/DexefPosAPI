@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class InvoiceExpenseConfiguration : IEntityTypeConfiguration<InvoiceExpense>
 {
-
-
     public void Configure(EntityTypeBuilder<InvoiceExpense> builder)
     {
         builder.Property(e => e.Id).HasColumnName("id");

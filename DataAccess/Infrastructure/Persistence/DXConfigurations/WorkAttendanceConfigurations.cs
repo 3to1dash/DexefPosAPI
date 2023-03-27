@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkAttendanceConfiguration : IEntityTypeConfiguration<WorkAttendance>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkAttendance> builder)
     {
         builder.HasNoKey();

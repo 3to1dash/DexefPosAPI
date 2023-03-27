@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TripHomeConfiguration : IEntityTypeConfiguration<TripHome>
 {
-
-
     public void Configure(EntityTypeBuilder<TripHome> builder)
     {
         builder.HasNoKey();

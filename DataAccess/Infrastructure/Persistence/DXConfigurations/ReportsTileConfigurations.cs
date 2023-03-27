@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ReportsTileConfiguration : IEntityTypeConfiguration<ReportsTile>
 {
-
-
     public void Configure(EntityTypeBuilder<ReportsTile> builder)
     {
         builder.ToTable("Reports_Tile");

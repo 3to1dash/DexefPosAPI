@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PosPendingDeliveryConfiguration : IEntityTypeConfiguration<PosPendingDelivery>
 {
-
-
     public void Configure(EntityTypeBuilder<PosPendingDelivery> builder)
     {
         builder.ToTable("PosPendingDelivery");

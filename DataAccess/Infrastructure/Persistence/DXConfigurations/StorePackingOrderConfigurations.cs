@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class StorePackingOrderConfiguration : IEntityTypeConfiguration<StorePackingOrder>
 {
-
-
     public void Configure(EntityTypeBuilder<StorePackingOrder> builder)
     {
         builder.ToTable("StorePackingOrder");

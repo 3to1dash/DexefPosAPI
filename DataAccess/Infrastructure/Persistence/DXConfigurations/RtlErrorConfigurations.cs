@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class RtlErrorConfiguration : IEntityTypeConfiguration<RtlError>
 {
-
-
     public void Configure(EntityTypeBuilder<RtlError> builder)
     {
         builder.ToTable("RTL_Error");

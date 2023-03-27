@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DiscountQtySliceConfiguration : IEntityTypeConfiguration<DiscountQtySlice>
 {
-
-
     public void Configure(EntityTypeBuilder<DiscountQtySlice> builder)
     {
         builder.ToTable("DiscountQty_Slice");

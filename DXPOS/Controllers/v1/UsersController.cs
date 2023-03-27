@@ -1,8 +1,8 @@
 ﻿using DataAccess.Data;
-using DataAccess.Domain.Models;
 using DXPOS.DTOs;
 using DXPOS.Helpers;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace DXPOS.Controllers.v1;
 
@@ -12,22 +12,24 @@ namespace DXPOS.Controllers.v1;
 public class UsersController : ControllerBase
 {
     [HttpGet]
-    [Produces(typeof(ResultDto<IEnumerable<CompanyDto>>))]
+    [Produces(typeof(ResultDto<UserDto>))]
     public IActionResult GetUsersData(
         [FromQuery] string userName,
         [FromQuery] string password,
-        [FromServices] CompanyData companyData)
+        [FromServices] CompanyData companyData,
+        [FromServices] UsersData usersData)
     {
-        var isUserVerify = companyData.UserVerification(userName, password);
+        var isUserVerify = usersData.UserVerify(userName, password);
 
-        ResultGenerator<IEnumerable<CompanyDto>> resultGenerator;
+        ResultGenerator<UserDto> resultGenerator;
 
         if (!isUserVerify)
         {
-            resultGenerator = new ResultGenerator<IEnumerable<CompanyDto>>(false, new List<CompanyDto>(), new List<ErrorMessage>
-            {
-                new() { Code = "401", Message = "User is not authorized", Title = "Login error message"}
-            });
+            resultGenerator = new(false, new UserDto { Companies = new List<CompanyDto>(), Permissions = new List<UserPermissionDto>() } ,
+                new List<ErrorMessage>
+                {
+                    new() {Code = "401", Message = "User is not authorized", Title = "Login error message"}
+                });
 
             return new JsonResult(resultGenerator.SelectingMethods());
         }
@@ -55,7 +57,15 @@ public class UsersController : ControllerBase
             })
         });
 
-        resultGenerator = new ResultGenerator<IEnumerable<CompanyDto>>(true, companiesDto, new List<ErrorMessage>());
+        var privileges = usersData.GetUsersPrivileges(userName);
+        var permissionsDto = privileges.Select(p => new UserPermissionDto
+        {
+            PermissionID = p.PermissionId,
+            PermissionName = p.Name,
+            PermissionValue = p.EditorValue
+        });
+
+        resultGenerator = new(true, new UserDto { Companies = companiesDto, Permissions = permissionsDto }, new List<ErrorMessage>());
 
         return new JsonResult(resultGenerator.SelectingMethods());
     }

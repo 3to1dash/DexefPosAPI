@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ShMsgSaleAlarmConfiguration : IEntityTypeConfiguration<ShMsgSaleAlarm>
 {
-
-
     public void Configure(EntityTypeBuilder<ShMsgSaleAlarm> builder)
     {
         builder.ToTable("Sh_MsgSaleAlarm");

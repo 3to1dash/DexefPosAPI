@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkSolfaConfiguration : IEntityTypeConfiguration<WorkSolfa>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkSolfa> builder)
     {
         builder.ToTable("work_solfa");

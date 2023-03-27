@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class HrProctionPercConfiguration : IEntityTypeConfiguration<HrProctionPerc>
 {
-
-
     public void Configure(EntityTypeBuilder<HrProctionPerc> builder)
     {
         builder.ToTable("Hr_ProctionPerc");

@@ -20,8 +20,6 @@ public class KindStock
     public DateTime? Dt { get; set; }
     public Guid Rowguid { get; set; }
 
-    [NotMapped]
-    public virtual string Branch { get; set; }
-    [JsonIgnore]
-    public virtual CompanyBranch CompanyBranch { get; set; }      
+    [NotMapped] public virtual string Branch { get; set; }
+    [JsonIgnore] public virtual CompanyBranch CompanyBranch { get; set; }
 }

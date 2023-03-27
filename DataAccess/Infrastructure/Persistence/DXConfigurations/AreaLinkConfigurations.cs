@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class AreaLinkConfiguration : IEntityTypeConfiguration<AreaLink>
 {
-
-
     public void Configure(EntityTypeBuilder<AreaLink> builder)
     {
         builder.ToTable("Area_Link");

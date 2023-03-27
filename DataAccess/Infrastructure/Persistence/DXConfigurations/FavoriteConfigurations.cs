@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FavoriteConfiguration : IEntityTypeConfiguration<Favorite>
 {
-
-
     public void Configure(EntityTypeBuilder<Favorite> builder)
     {
         builder.HasNoKey();

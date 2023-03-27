@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ContractSubConfiguration : IEntityTypeConfiguration<ContractSub>
 {
-
-
     public void Configure(EntityTypeBuilder<ContractSub> builder)
     {
         builder.HasNoKey();

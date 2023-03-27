@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class HrAttendanceSettingConfiguration : IEntityTypeConfiguration<HrAttendanceSetting>
 {
-
-
     public void Configure(EntityTypeBuilder<HrAttendanceSetting> builder)
     {
         builder.ToTable("Hr_AttendanceSettings");

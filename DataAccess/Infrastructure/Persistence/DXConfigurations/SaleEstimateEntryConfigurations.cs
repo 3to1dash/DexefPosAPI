@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SaleEstimateEntryConfiguration : IEntityTypeConfiguration<SaleEstimateEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<SaleEstimateEntry> builder)
     {
         builder.ToTable("SaleEstimate_Entry");

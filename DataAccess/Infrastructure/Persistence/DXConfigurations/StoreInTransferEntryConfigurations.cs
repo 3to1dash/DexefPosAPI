@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class StoreInTransferEntryConfiguration : IEntityTypeConfiguration<StoreInTransferEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<StoreInTransferEntry> builder)
     {
         builder.ToTable("StoreInTransfer_Entry");

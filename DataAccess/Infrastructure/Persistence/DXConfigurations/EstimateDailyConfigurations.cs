@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class EstimateDailyConfiguration : IEntityTypeConfiguration<EstimateDaily>
 {
-
-
     public void Configure(EntityTypeBuilder<EstimateDaily> builder)
     {
         builder.ToTable("Estimate_Daily");

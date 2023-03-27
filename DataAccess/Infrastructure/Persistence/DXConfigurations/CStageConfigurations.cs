@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CStageConfiguration : IEntityTypeConfiguration<CStage>
 {
-
-
     public void Configure(EntityTypeBuilder<CStage> builder)
     {
         builder.HasNoKey();

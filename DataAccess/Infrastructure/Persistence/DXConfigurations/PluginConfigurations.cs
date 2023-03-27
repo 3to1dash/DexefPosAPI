@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PluginConfiguration : IEntityTypeConfiguration<Plugin>
 {
-
-
     public void Configure(EntityTypeBuilder<Plugin> builder)
     {
         builder.Property(e => e.Id).HasColumnName("ID");

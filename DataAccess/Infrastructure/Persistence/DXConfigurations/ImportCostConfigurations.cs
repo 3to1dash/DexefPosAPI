@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ImportCostConfiguration : IEntityTypeConfiguration<ImportCost>
 {
-
-
     public void Configure(EntityTypeBuilder<ImportCost> builder)
     {
         builder.ToTable("ImportCost");

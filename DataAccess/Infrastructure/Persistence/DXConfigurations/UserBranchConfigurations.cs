@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class UserBranchConfiguration : IEntityTypeConfiguration<UserBranch>
 {
-
-
     public void Configure(EntityTypeBuilder<UserBranch> builder)
     {
         builder.ToTable("User_Branch");

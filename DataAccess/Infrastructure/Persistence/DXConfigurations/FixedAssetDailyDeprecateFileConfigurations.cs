@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FixedAssetDailyDeprecateFileConfiguration : IEntityTypeConfiguration<FixedAssetDailyDeprecateFile>
 {
-
-
     public void Configure(EntityTypeBuilder<FixedAssetDailyDeprecateFile> builder)
     {
         builder.ToTable("FixedAsset_DailyDeprecate_Files");

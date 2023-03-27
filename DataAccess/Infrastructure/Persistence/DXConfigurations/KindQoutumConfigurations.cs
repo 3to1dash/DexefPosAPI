@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindQoutumConfiguration : IEntityTypeConfiguration<KindQoutum>
 {
-
-
     public void Configure(EntityTypeBuilder<KindQoutum> builder)
     {
         builder.ToTable("Kind_Qouta");

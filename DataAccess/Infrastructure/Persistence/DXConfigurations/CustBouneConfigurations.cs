@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CustBouneConfiguration : IEntityTypeConfiguration<CustBoune>
 {
-
-
     public void Configure(EntityTypeBuilder<CustBoune> builder)
     {
         builder.ToTable("cust_bounes");

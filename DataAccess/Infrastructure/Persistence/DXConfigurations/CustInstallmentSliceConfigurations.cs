@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CustInstallmentSliceConfiguration : IEntityTypeConfiguration<CustInstallmentSlice>
 {
-
-
     public void Configure(EntityTypeBuilder<CustInstallmentSlice> builder)
     {
         builder.ToTable("Cust_InstallmentSlice");

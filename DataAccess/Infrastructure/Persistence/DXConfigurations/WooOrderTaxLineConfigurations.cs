@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WooOrderTaxLineConfiguration : IEntityTypeConfiguration<WooOrderTaxLine>
 {
-
-
     public void Configure(EntityTypeBuilder<WooOrderTaxLine> builder)
     {
         builder.ToTable("WooOrderTaxLine");

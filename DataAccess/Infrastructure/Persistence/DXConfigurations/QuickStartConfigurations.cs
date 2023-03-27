@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class QuickStartConfiguration : IEntityTypeConfiguration<QuickStart>
 {
-
-
     public void Configure(EntityTypeBuilder<QuickStart> builder)
     {
         builder.ToTable("QuickStart");

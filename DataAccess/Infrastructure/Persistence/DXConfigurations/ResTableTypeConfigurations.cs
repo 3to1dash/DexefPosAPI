@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ResTableTypeConfiguration : IEntityTypeConfiguration<ResTableType>
 {
-
-
     public void Configure(EntityTypeBuilder<ResTableType> builder)
     {
         builder.Property(e => e.Id).HasColumnName("id");

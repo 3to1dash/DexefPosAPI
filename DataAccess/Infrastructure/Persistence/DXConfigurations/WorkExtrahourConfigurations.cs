@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkExtrahourConfiguration : IEntityTypeConfiguration<WorkExtrahour>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkExtrahour> builder)
     {
         builder.ToTable("work_extrahour");

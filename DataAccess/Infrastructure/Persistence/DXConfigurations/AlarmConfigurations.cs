@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class AlarmConfiguration : IEntityTypeConfiguration<Alarm>
 {
-
-
     public void Configure(EntityTypeBuilder<Alarm> builder)
     {
         builder.Property(e => e.Id).HasColumnName("ID");

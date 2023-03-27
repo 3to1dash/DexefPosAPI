@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ContCashrecieveConfiguration : IEntityTypeConfiguration<ContCashrecieve>
 {
-
-
     public void Configure(EntityTypeBuilder<ContCashrecieve> builder)
     {
         builder.HasNoKey();

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindActiveSubJectConfiguration : IEntityTypeConfiguration<KindActiveSubJect>
 {
-
-
     public void Configure(EntityTypeBuilder<KindActiveSubJect> builder)
     {
         builder.ToTable("Kind_ActiveSubJect");

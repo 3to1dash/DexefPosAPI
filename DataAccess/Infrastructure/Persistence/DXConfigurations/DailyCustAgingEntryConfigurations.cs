@@ -6,17 +6,16 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyCustAgingEntryConfiguration : IEntityTypeConfiguration<DailyCustAgingEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyCustAgingEntry> builder)
     {
         builder.ToTable("DailyCustAging_Entry");
 
         builder.HasIndex(e => e.ParentTaskId, "IX_DailyCustAging_Entry_ParentTaskID_71456");
 
-        builder.HasIndex(e => new { e.ParentTaskId, e.TaskId }, "IX_DailyCustAging_Entry_ParentTaskID_TaskID_4E6A8");
+        builder.HasIndex(e => new {e.ParentTaskId, e.TaskId}, "IX_DailyCustAging_Entry_ParentTaskID_TaskID_4E6A8");
 
-        builder.HasIndex(e => new { e.ParentTaskId, e.TaskId, e.InstallmentId }, "IX_DailyCustAging_Entry_ParentTaskID_TaskID_InstallmentID_9BC35");
+        builder.HasIndex(e => new {e.ParentTaskId, e.TaskId, e.InstallmentId},
+            "IX_DailyCustAging_Entry_ParentTaskID_TaskID_InstallmentID_9BC35");
 
         builder.HasIndex(e => e.TaskId, "IX_DailyCustAging_Entry_TaskID_A4D36");
 

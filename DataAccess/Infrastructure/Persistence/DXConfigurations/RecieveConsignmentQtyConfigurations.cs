@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class RecieveConsignmentQtyConfiguration : IEntityTypeConfiguration<RecieveConsignmentQty>
 {
-
-
     public void Configure(EntityTypeBuilder<RecieveConsignmentQty> builder)
     {
         builder.ToTable("RecieveConsignment_Qty");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CalendarEventGeneratorConfiguration : IEntityTypeConfiguration<CalendarEventGenerator>
 {
-
-
     public void Configure(EntityTypeBuilder<CalendarEventGenerator> builder)
     {
         builder.ToTable("Calendar_EventGenerator");

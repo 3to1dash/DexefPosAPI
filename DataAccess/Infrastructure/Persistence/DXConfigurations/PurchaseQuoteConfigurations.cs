@@ -6,25 +6,24 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PurchaseQuoteConfiguration : IEntityTypeConfiguration<PurchaseQuote>
 {
-
-
     public void Configure(EntityTypeBuilder<PurchaseQuote> builder)
     {
         builder.ToTable("PurchaseQuote");
 
         builder.HasIndex(e => e.BranchId, "IX_PurchaseQuote_BranchID_86F2B");
 
-        builder.HasIndex(e => new { e.Dt, e.StoreId }, "IX_PurchaseQuote_DT_StoreID_B835C");
+        builder.HasIndex(e => new {e.Dt, e.StoreId}, "IX_PurchaseQuote_DT_StoreID_B835C");
 
-        builder.HasIndex(e => new { e.Dt, e.StoreId }, "IX_PurchaseQuote_DT_StoreID_F43DC");
+        builder.HasIndex(e => new {e.Dt, e.StoreId}, "IX_PurchaseQuote_DT_StoreID_F43DC");
 
-        builder.HasIndex(e => new { e.Prefix, e.Num, e.BranchId, e.TaskId }, "IX_PurchaseQuote_Prefix_Num_BranchID_TaskID_5CCF4");
+        builder.HasIndex(e => new {e.Prefix, e.Num, e.BranchId, e.TaskId},
+            "IX_PurchaseQuote_Prefix_Num_BranchID_TaskID_5CCF4");
 
-        builder.HasIndex(e => new { e.Ship, e.TaskId }, "IX_PurchaseQuote_Ship_TaskID_0B7F1");
+        builder.HasIndex(e => new {e.Ship, e.TaskId}, "IX_PurchaseQuote_Ship_TaskID_0B7F1");
 
         builder.HasIndex(e => e.TaskId, "IX_PurchaseQuote_TaskID_93BDF");
 
-        builder.HasIndex(e => new { e.Prefix, e.BranchId }, "missing_index_444_443_PurchaseQuote");
+        builder.HasIndex(e => new {e.Prefix, e.BranchId}, "missing_index_444_443_PurchaseQuote");
 
         builder.Property(e => e.Id)
             .HasColumnType("numeric(18, 0)")

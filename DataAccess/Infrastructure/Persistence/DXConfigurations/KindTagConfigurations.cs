@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindTagConfiguration : IEntityTypeConfiguration<KindTag>
 {
-
-
     public void Configure(EntityTypeBuilder<KindTag> builder)
     {
         builder.ToTable("Kind_Tags");

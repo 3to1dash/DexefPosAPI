@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class HrVacationTypeConfiguration : IEntityTypeConfiguration<HrVacationType>
 {
-
-
     public void Configure(EntityTypeBuilder<HrVacationType> builder)
     {
         builder.ToTable("Hr_VacationType");

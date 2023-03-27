@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SalariesCalcAlertConfiguration : IEntityTypeConfiguration<SalariesCalcAlert>
 {
-
-
     public void Configure(EntityTypeBuilder<SalariesCalcAlert> builder)
     {
         builder.ToTable("SalariesCalc_Alert");

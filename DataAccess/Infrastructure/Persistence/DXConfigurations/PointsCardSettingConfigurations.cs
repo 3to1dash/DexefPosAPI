@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PointsCardSettingConfiguration : IEntityTypeConfiguration<PointsCardSetting>
 {
-
-
     public void Configure(EntityTypeBuilder<PointsCardSetting> builder)
     {
         builder.ToTable("Points_CardSetting");

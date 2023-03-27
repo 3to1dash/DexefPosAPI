@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WooOrderBillingConfiguration : IEntityTypeConfiguration<WooOrderBilling>
 {
-
-
     public void Configure(EntityTypeBuilder<WooOrderBilling> builder)
     {
         builder.ToTable("WooOrderBilling");

@@ -6,13 +6,11 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class UsersLogConfiguration : IEntityTypeConfiguration<UsersLog>
 {
-
-
     public void Configure(EntityTypeBuilder<UsersLog> builder)
     {
         builder.ToTable("Users_Log");
 
-        builder.HasIndex(e => new { e.UserName, e.LogIn, e.LogOut }, "NonClusteredIndex-20200304-142436");
+        builder.HasIndex(e => new {e.UserName, e.LogIn, e.LogOut}, "NonClusteredIndex-20200304-142436");
 
         builder.Property(e => e.Id).HasColumnName("ID");
 

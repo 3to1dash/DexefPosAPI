@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TodayDateConfiguration : IEntityTypeConfiguration<TodayDate>
 {
-
-
     public void Configure(EntityTypeBuilder<TodayDate> builder)
     {
         builder.HasKey(e => e.Dt);

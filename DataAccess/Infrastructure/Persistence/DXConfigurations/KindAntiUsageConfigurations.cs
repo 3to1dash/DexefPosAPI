@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindAntiUsageConfiguration : IEntityTypeConfiguration<KindAntiUsage>
 {
-
-
     public void Configure(EntityTypeBuilder<KindAntiUsage> builder)
     {
         builder.ToTable("Kind_AntiUsage");

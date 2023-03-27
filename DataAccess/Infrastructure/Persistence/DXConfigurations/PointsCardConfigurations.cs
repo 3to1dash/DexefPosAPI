@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PointsCardConfiguration : IEntityTypeConfiguration<PointsCard>
 {
-
-
     public void Configure(EntityTypeBuilder<PointsCard> builder)
     {
         builder.HasKey(e => e.CardNumber)

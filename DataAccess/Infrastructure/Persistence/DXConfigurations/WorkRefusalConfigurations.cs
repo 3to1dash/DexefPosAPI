@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkRefusalConfiguration : IEntityTypeConfiguration<WorkRefusal>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkRefusal> builder)
     {
         builder.ToTable("Work_Refusal");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ExtraItemConfiguration : IEntityTypeConfiguration<ExtraItem>
 {
-
-
     public void Configure(EntityTypeBuilder<ExtraItem> builder)
     {
         builder.ToTable("ExtraItem");

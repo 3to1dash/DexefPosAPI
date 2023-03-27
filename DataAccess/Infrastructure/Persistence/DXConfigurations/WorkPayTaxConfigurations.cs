@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkPayTaxConfiguration : IEntityTypeConfiguration<WorkPayTax>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkPayTax> builder)
     {
         builder.ToTable("Work_payTax");

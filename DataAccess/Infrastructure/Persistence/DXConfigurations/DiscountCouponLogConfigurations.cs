@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DiscountCouponLogConfiguration : IEntityTypeConfiguration<DiscountCouponLog>
 {
-
-
     public void Configure(EntityTypeBuilder<DiscountCouponLog> builder)
     {
         builder.HasKey(e => e.CouponId);

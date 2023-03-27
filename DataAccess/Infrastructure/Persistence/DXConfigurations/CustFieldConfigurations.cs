@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CustFieldConfiguration : IEntityTypeConfiguration<CustField>
 {
-
-
     public void Configure(EntityTypeBuilder<CustField> builder)
     {
         builder.ToTable("cust_Field");

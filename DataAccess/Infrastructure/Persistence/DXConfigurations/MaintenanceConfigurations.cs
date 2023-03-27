@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class MaintenanceConfiguration : IEntityTypeConfiguration<Maintenance>
 {
-
-
     public void Configure(EntityTypeBuilder<Maintenance> builder)
     {
         builder.ToTable("Maintenance");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PreferenceConfiguration : IEntityTypeConfiguration<Preference>
 {
-
-
     public void Configure(EntityTypeBuilder<Preference> builder)
     {
         builder.ToTable("Preference");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyCheckpaidConfiguration : IEntityTypeConfiguration<DailyCheckpaid>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyCheckpaid> builder)
     {
         builder.ToTable("daily_checkpaid");

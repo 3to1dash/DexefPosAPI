@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class AttendanceLogConfiguration : IEntityTypeConfiguration<AttendanceLog>
 {
-
-
     public void Configure(EntityTypeBuilder<AttendanceLog> builder)
     {
         builder.ToTable("AttendanceLog");

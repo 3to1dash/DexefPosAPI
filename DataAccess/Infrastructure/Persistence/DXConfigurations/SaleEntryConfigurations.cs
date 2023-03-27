@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SaleEntryConfiguration : IEntityTypeConfiguration<SaleEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<SaleEntry> builder)
     {
         builder.ToTable("Sale_Entry");
@@ -16,19 +14,19 @@ public class SaleEntryConfiguration : IEntityTypeConfiguration<SaleEntry>
 
         builder.HasIndex(e => e.ItemId, "IX_Sale_Entry_ItemID_C4F0A");
 
-        builder.HasIndex(e => new { e.ItemId, e.Dt }, "IX_Sale_Entry_ItemID_Dt_52DB5");
+        builder.HasIndex(e => new {e.ItemId, e.Dt}, "IX_Sale_Entry_ItemID_Dt_52DB5");
 
-        builder.HasIndex(e => new { e.ItemId, e.Dt }, "IX_Sale_Entry_ItemID_Dt_587F4");
+        builder.HasIndex(e => new {e.ItemId, e.Dt}, "IX_Sale_Entry_ItemID_Dt_587F4");
 
-        builder.HasIndex(e => new { e.Num, e.BranchId }, "IX_Sale_Entry_Num_BranchID_016B9");
+        builder.HasIndex(e => new {e.Num, e.BranchId}, "IX_Sale_Entry_Num_BranchID_016B9");
 
         builder.HasIndex(e => e.TaskId, "IX_Sale_Entry_TaskID_3D337");
 
-        builder.HasIndex(e => new { e.BranchId, e.VendorId, e.Dt }, "missing_index_1398_1397_Sale_Entry");
+        builder.HasIndex(e => new {e.BranchId, e.VendorId, e.Dt}, "missing_index_1398_1397_Sale_Entry");
 
-        builder.HasIndex(e => new { e.BranchId, e.Dt }, "missing_index_2629_2628_Sale_Entry");
+        builder.HasIndex(e => new {e.BranchId, e.Dt}, "missing_index_2629_2628_Sale_Entry");
 
-        builder.HasIndex(e => new { e.BranchId, e.Dt }, "missing_index_3993_3992_Sale_Entry");
+        builder.HasIndex(e => new {e.BranchId, e.Dt}, "missing_index_3993_3992_Sale_Entry");
 
         builder.Property(e => e.Id).HasColumnName("id");
 

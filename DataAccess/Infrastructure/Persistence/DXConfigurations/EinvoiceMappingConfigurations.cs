@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class EinvoiceMappingConfiguration : IEntityTypeConfiguration<EinvoiceMapping>
 {
-
-
     public void Configure(EntityTypeBuilder<EinvoiceMapping> builder)
     {
         builder.ToTable("EInvoice_Mapping");

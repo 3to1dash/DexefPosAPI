@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TripDirectionTypeConfiguration : IEntityTypeConfiguration<TripDirectionType>
 {
-
-
     public void Configure(EntityTypeBuilder<TripDirectionType> builder)
     {
         builder.ToTable("Trip_Direction_Type");

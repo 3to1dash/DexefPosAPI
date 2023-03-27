@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CustCallConfiguration : IEntityTypeConfiguration<CustCall>
 {
-
-
     public void Configure(EntityTypeBuilder<CustCall> builder)
     {
         builder.Property(e => e.Id).HasColumnName("ID");

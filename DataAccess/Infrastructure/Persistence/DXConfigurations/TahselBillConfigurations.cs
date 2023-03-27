@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TahselBillConfiguration : IEntityTypeConfiguration<TahselBill>
 {
-
-
     public void Configure(EntityTypeBuilder<TahselBill> builder)
     {
         builder.ToTable("tahsel_bill");
