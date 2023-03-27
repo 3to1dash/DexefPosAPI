@@ -1,7 +1,6 @@
 ﻿using DataAccess.Domain.Models;
 using DataAccess.Helpers;
 using DataAccess.IDataAccess;
-using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
 
 namespace DataAccess.Data;
@@ -60,5 +59,16 @@ public class UsersData
         var usersPrivileges = user.Join(privilegeEntries, u => u.PrivilegeId, p => p.PrivilegeId, (_, entry) => entry);
 
         return usersPrivileges;
+    }
+
+    public UsersPrivilege? GetPermissionLastUpdate(string userName)
+    {
+        var user = GetUserByUserName(userName);
+        if (user == null) return null;
+
+        var usersPermissions = _loadMethods.LoadMultiple<UsersPrivilege>(false);
+
+        var permissionLastUpdated = usersPermissions.FirstOrDefault(p => p.Id == user.PrivilegeId);
+        return permissionLastUpdated;
     }
 }
