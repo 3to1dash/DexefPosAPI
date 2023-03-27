@@ -69,4 +69,28 @@ public class UsersController : ControllerBase
 
         return new JsonResult(resultGenerator.SelectingMethods());
     }
+    [HttpGet]
+    [Produces(typeof(ResultDto<IEnumerable<UsersPrivilegesDto>>))]
+    public IActionResult GetPermissionLastUpdate(
+        [FromQuery] string user_name,
+        [FromQuery] string? lang,
+        [FromServices] UsersData usersData,
+        [FromQuery] string? user_type = "")
+    {
+        var Permission = usersData.GetPermissionLastUpdate(user_name).Select<UsersPrivilege, UsersPrivilegesDto>(p => new UsersPrivilegesDto
+        {
+            UpdatedAt = p.LstUpdate ?? p.Dt,
+            CreatedAt = p.Dt
+        }
+        );
+
+        var resultGenerator = new ResultGenerator<IEnumerable<UsersPrivilegesDto>>(true, Permission, new List<ErrorMessage>());
+
+        return new JsonResult(resultGenerator.SelectingMethods());
+
+
+
+    }
+
+
 }
