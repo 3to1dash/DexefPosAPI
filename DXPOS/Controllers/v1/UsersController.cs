@@ -19,7 +19,6 @@ public class UsersController : ControllerBase
         [FromServices] UsersData usersData)
     {
         var isUserVerify = usersData.UserVerify(userName, password);
-        isUserVerify = true;
 
         ResultGenerator<UserDto> resultGenerator;
 

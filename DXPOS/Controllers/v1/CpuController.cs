@@ -18,7 +18,7 @@ public class CpuController : Controller
             Pcnumber = cpuData.GetPcNumber() + 1,
         };
         var resultGenerator = new ResultGenerator<CurrentPcDto>(true, currentPc, new List<ErrorMessage>());
-        return new JsonResult(resultGenerator.SelectingMethods());
+        return new JsonResult(resultGenerator.Generate());
     }
     [HttpPost]
     public IActionResult AddCpu(
