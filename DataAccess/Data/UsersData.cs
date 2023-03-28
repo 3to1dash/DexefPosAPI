@@ -45,16 +45,17 @@ public class UsersData
             return MD5UserPasswordVerification.VerifyMd5Hash(md5Hash, password, user.Passward ?? "") &&
                    password != user.Passward;
         }
-        catch (Exception e)
+        catch (Exception)
         {
             return false;
         }
     }
 
-    public IEnumerable<UsersPrivilegesEntry> GetUsersPrivileges(string userName)
+    public IEnumerable<UsersPrivilegesEntry> GetUsersPermissions(string userName)
     {
         var user = _loadMethods.GetQueryable<User>().Where(u => u.Name == userName);
-        var privilegeEntries = _loadMethods.GetQueryable<UsersPrivilegesEntry>();
+        var privilegeEntries = _loadMethods.GetQueryable<UsersPrivilegesEntry>()
+            .Where(p => p.Permission != null && AppStatics.UserSelectedPermissions.Contains(p.Permission));
 
         var usersPrivileges = user.Join(privilegeEntries, u => u.PrivilegeId, p => p.PrivilegeId, (_, entry) => entry);
 

@@ -17,8 +17,8 @@ public class CpuController : Controller
         {
             MaxNum = cpuData.GetPcNumber() + 1,
         };
-        var resultGenerator = new ResultGenerator<MaxNumCpuDto>(true, maxNumCpu, new List<ErrorMessage>());
-        return new JsonResult(resultGenerator.SelectingMethods());
+        var resultGenerator = new ResultGenerator<CurrentPcDto>(true, currentPc, new List<ErrorMessage>());
+        return new JsonResult(resultGenerator.Generate());
     }
     [HttpPost]
     public IActionResult AddCpu(

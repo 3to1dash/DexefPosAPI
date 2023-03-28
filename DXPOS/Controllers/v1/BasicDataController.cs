@@ -26,7 +26,7 @@ public class BasicDataController : ControllerBase
 
         var resultGenerator = new ResultGenerator<IEnumerable<BranchDto>>(true, branches, new());
 
-        return new JsonResult(resultGenerator.SelectingMethods());
+        return new JsonResult(resultGenerator.Generate());
     }
 
     [HttpGet]
@@ -46,7 +46,7 @@ public class BasicDataController : ControllerBase
 
         var resultGenerator = new ResultGenerator<IEnumerable<StoreDto>>(true, stores, new());
 
-        return new JsonResult(resultGenerator.SelectingMethods());
+        return new JsonResult(resultGenerator.Generate());
     }
 
     [HttpGet]
@@ -69,7 +69,7 @@ public class BasicDataController : ControllerBase
 
         var resultGenerator = new ResultGenerator<IEnumerable<TaxesDto>>(true, stores, new());
 
-        return new JsonResult(resultGenerator.SelectingMethods());
+        return new JsonResult(resultGenerator.Generate());
     }
 
     [HttpGet]
@@ -94,6 +94,6 @@ public class BasicDataController : ControllerBase
             resultGenerator = new(true, new() {TaskID = taskId}, new());
         }
 
-        return new JsonResult(resultGenerator.SelectingMethods());
+        return new JsonResult(resultGenerator.Generate());
     }
 }

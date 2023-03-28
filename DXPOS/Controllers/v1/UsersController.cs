@@ -2,7 +2,6 @@
 using DXPOS.DTOs;
 using DXPOS.Helpers;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
 
 namespace DXPOS.Controllers.v1;
 
@@ -31,7 +30,7 @@ public class UsersController : ControllerBase
                     new() {Code = "401", Message = "User is not authorized", Title = "Login error message"}
                 });
 
-            return new JsonResult(resultGenerator.SelectingMethods());
+            return new JsonResult(resultGenerator.Generate());
         }
 
         var companies = companyData.GetCompanies(userName);
@@ -57,17 +56,21 @@ public class UsersController : ControllerBase
             })
         });
 
-        var privileges = usersData.GetUsersPrivileges(userName);
+        var privileges = usersData.GetUsersPermissions(userName);
         var permissionsDto = privileges.Select(p => new UserPermissionDto
         {
             PermissionID = p.PermissionId,
-            PermissionName = p.Name,
+            PermissionName = p.Permission,
             PermissionValue = p.EditorValue
         });
 
-        resultGenerator = new(true, new UserDto { Companies = companiesDto, Permissions = permissionsDto }, new List<ErrorMessage>());
+        resultGenerator = new ResultGenerator<UserDto>(
+            true,
+            new UserDto { Companies = companiesDto, Permissions = permissionsDto },
+            new List<ErrorMessage>()
+            );
 
-        return new JsonResult(resultGenerator.SelectingMethods());
+        return new JsonResult(resultGenerator.Generate());
     }
 
     [HttpGet]
@@ -86,6 +89,6 @@ public class UsersController : ControllerBase
 
         var resultGenerator = new ResultGenerator<UsersPermissionLastUpdatedDto>(true, usersPermissionLastUpdatedDto, new List<ErrorMessage>());
 
-        return new JsonResult(resultGenerator.SelectingMethods());
+        return new JsonResult(resultGenerator.Generate());
     }
 }
