@@ -28,6 +28,7 @@ public static class ServiceCollectionExtension
         service.AddScoped<UsersData>();
         service.AddScoped<CompanyData>();
         service.AddScoped<BasicData>();
+        service.AddScoped<CpuData>();
         return service;
     }
 }
