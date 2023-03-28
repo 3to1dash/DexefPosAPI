@@ -13,20 +13,39 @@ public class CpuController : Controller
     public IActionResult GetCpuNum(
         [FromServices] CpuData cpuData)
     {
-        CurrentPcDto currentPc = new()
+        MaxNumCpuDto maxNumCpu = new()
         {
-            Pcnumber = cpuData.GetPcNumber() + 1,
+            MaxNum = cpuData.GetPcNumber() + 1,
         };
-        var resultGenerator = new ResultGenerator<CurrentPcDto>(true, currentPc, new List<ErrorMessage>());
+        var resultGenerator = new ResultGenerator<MaxNumCpuDto>(true, maxNumCpu, new List<ErrorMessage>());
         return new JsonResult(resultGenerator.SelectingMethods());
     }
     [HttpPost]
     public IActionResult AddCpu(
          [FromQuery] int cpuNum
-       , [FromQuery] int cpuName
+       , [FromQuery] string cpuName
+       , [FromServices] CpuData cpuData
        )
     {
+        try
+        {
+            cpuData.AddCpu(cpuNum, cpuName);
+            return Ok("Done");
 
-        return Ok();
+        }
+        catch (Exception e)
+        {
+            return Ok("not");
+        }
+
+
+        //CpuDto cpuDto = new CpuDto()
+        //{
+        //    Id = id
+        //};
+
+        //var resultGenerator = new ResultGenerator<CpuDto>(true, cpuDto, new List<ErrorMessage>());
+        //return new JsonResult(resultGenerator.SelectingMethods());
+
     }
 }
