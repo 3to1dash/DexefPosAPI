@@ -21,15 +21,22 @@ public class CpuData
         return pcNum;
     }
 
-    public void AddCpu(int cpuNum, string cpuName)
+    public async Task<int> AddCpu(int cpuNum, string cpuName)
     {
         CurrentPc pc = new()
         {
             Pcnumber = cpuNum,
             PcName = cpuName
         };
-        _addMethods.AddSingleAsync(pc);
-        _saveChangesMethods.Save();
+
+        await _addMethods.AddSingleAsync(pc);
+        await _saveChangesMethods.Save();
+        return pc.Id;
+    }
+    public int GetIdByCpuNum()
+    {
+
+        throw new NotImplementedException();
     }
 
 

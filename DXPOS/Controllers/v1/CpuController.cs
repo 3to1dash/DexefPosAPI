@@ -13,30 +13,39 @@ public class CpuController : Controller
     public IActionResult GetCpuNum(
         [FromServices] CpuData cpuData)
     {
-        MaxNumCpuDto maxNumCpu = new()
+        MaxNumCpuDto maxNumCpuDto = new()
         {
             MaxNum = cpuData.GetPcNumber() + 1,
         };
-        var resultGenerator = new ResultGenerator<CurrentPcDto>(true, currentPc, new List<ErrorMessage>());
+        var resultGenerator = new ResultGenerator<MaxNumCpuDto>(true, maxNumCpuDto, new List<ErrorMessage>());
         return new JsonResult(resultGenerator.Generate());
     }
     [HttpPost]
-    public IActionResult AddCpu(
+    public async Task<IActionResult> AddCpu(
          [FromQuery] int cpuNum
        , [FromQuery] string cpuName
        , [FromServices] CpuData cpuData
        )
     {
+        ResultGenerator<CpuDto> resultGenerator;
         try
         {
-            cpuData.AddCpu(cpuNum, cpuName);
-            return Ok("Done");
-
+            var id = await cpuData.AddCpu(cpuNum, cpuName);
+            CpuDto cpuDto = new()
+            {
+                Id = id
+            };
+            resultGenerator = new ResultGenerator<CpuDto>(true, cpuDto, new List<ErrorMessage>());
         }
         catch (Exception e)
         {
-            return Ok("not");
+            resultGenerator = new ResultGenerator<CpuDto>(false, new CpuDto(), new List<ErrorMessage>
+            {
+                new ErrorMessage() { Message = e.Message }
+            });
         }
+
+        return new JsonResult(resultGenerator.Generate());
 
 
         //CpuDto cpuDto = new CpuDto()
