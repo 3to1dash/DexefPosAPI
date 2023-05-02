@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class StoreConvertEntryConfiguration : IEntityTypeConfiguration<StoreConvertEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<StoreConvertEntry> builder)
     {
         builder.ToTable("StoreConvert_Entry");

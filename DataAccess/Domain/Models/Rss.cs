@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Rss
+public class Rss
 {
     public decimal Id { get; set; }
     public string? Object { get; set; }

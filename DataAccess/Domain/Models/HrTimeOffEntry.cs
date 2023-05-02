@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class HrTimeOffEntry
+public class HrTimeOffEntry
 {
     public int Id { get; set; }
     public int? TimeOffId { get; set; }

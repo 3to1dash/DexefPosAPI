@@ -6,33 +6,32 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PurchaseConfiguration : IEntityTypeConfiguration<Purchase>
 {
-
-
     public void Configure(EntityTypeBuilder<Purchase> builder)
     {
         builder.ToTable("Purchase");
 
         builder.HasIndex(e => e.BranchId, "IX_Purchase_BranchID_20C4F");
 
-        builder.HasIndex(e => new { e.CustId, e.ItemCount, e.SumBill, e.Dt }, "IX_Purchase_CustID_ItemCount_SumBill_DT_F3826");
+        builder.HasIndex(e => new {e.CustId, e.ItemCount, e.SumBill, e.Dt},
+            "IX_Purchase_CustID_ItemCount_SumBill_DT_F3826");
 
-        builder.HasIndex(e => new { e.Dt, e.StoreId }, "IX_Purchase_DT_StoreID_6F416");
+        builder.HasIndex(e => new {e.Dt, e.StoreId}, "IX_Purchase_DT_StoreID_6F416");
 
-        builder.HasIndex(e => new { e.StoreId, e.Dt }, "IX_Purchase_StoreID_DT_2A128");
+        builder.HasIndex(e => new {e.StoreId, e.Dt}, "IX_Purchase_StoreID_DT_2A128");
 
         builder.HasIndex(e => e.TaskId, "IX_Purchase_TaskID_0D0E8");
 
         builder.HasIndex(e => e.TaskId, "IX_Purchase_TaskID_4E01D");
 
-        builder.HasIndex(e => new { e.Dt, e.StoreId, e.Ship }, "missing_index_1479_1478_Purchase");
+        builder.HasIndex(e => new {e.Dt, e.StoreId, e.Ship}, "missing_index_1479_1478_Purchase");
 
-        builder.HasIndex(e => new { e.Prefix, e.BranchId }, "missing_index_202_201_Purchase");
+        builder.HasIndex(e => new {e.Prefix, e.BranchId}, "missing_index_202_201_Purchase");
 
-        builder.HasIndex(e => new { e.StoreId, e.Dt }, "missing_index_258_257_Purchase");
+        builder.HasIndex(e => new {e.StoreId, e.Dt}, "missing_index_258_257_Purchase");
 
-        builder.HasIndex(e => new { e.Prefix, e.Num, e.BranchId, e.TaskId }, "missing_index_284_283_Purchase");
+        builder.HasIndex(e => new {e.Prefix, e.Num, e.BranchId, e.TaskId}, "missing_index_284_283_Purchase");
 
-        builder.HasIndex(e => new { e.BranchId, e.Dt }, "missing_index_413_412_Purchase");
+        builder.HasIndex(e => new {e.BranchId, e.Dt}, "missing_index_413_412_Purchase");
 
         builder.Property(e => e.Id)
             .HasColumnType("numeric(18, 0)")

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class CalendarEventGenerator
+public class CalendarEventGenerator
 {
     public long Id { get; set; }
     public string? Subject { get; set; }

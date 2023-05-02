@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FrmlayoutConfiguration : IEntityTypeConfiguration<Frmlayout>
 {
-
-
     public void Configure(EntityTypeBuilder<Frmlayout> builder)
     {
         builder.HasNoKey();

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PaidBillConfiguration : IEntityTypeConfiguration<PaidBill>
 {
-
-
     public void Configure(EntityTypeBuilder<PaidBill> builder)
     {
         builder.HasNoKey();

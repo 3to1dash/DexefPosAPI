@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Phoneindex
+public class Phoneindex
 {
     public decimal? Num { get; set; }
     public string? Name { get; set; }

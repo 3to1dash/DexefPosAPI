@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class CustDefault
+public class CustDefault
 {
     public int Id { get; set; }
     public bool? Area { get; set; }

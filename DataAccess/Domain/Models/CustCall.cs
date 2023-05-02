@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class CustCall
+public class CustCall
 {
     public int Id { get; set; }
     public int? CustId { get; set; }

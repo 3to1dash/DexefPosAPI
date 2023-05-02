@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class WorkPayTax
+public class WorkPayTax
 {
     public decimal Id { get; set; }
     public decimal? BranchId { get; set; }

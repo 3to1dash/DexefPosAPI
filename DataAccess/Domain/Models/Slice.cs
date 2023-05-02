@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Slice
+public class Slice
 {
     public decimal Id { get; set; }
     public int? Num { get; set; }

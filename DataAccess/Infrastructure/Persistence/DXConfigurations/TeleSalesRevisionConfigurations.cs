@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TeleSalesRevisionConfiguration : IEntityTypeConfiguration<TeleSalesRevision>
 {
-
-
     public void Configure(EntityTypeBuilder<TeleSalesRevision> builder)
     {
         builder.ToTable("TeleSales_revision");

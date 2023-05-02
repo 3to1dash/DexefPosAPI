@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TaxesDatConfiguration : IEntityTypeConfiguration<TaxesDat>
 {
-
-
     public void Configure(EntityTypeBuilder<TaxesDat> builder)
     {
         builder.ToTable("TaxesDAT");

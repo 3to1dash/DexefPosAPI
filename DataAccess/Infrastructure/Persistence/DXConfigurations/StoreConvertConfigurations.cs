@@ -6,25 +6,24 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class StoreConvertConfiguration : IEntityTypeConfiguration<StoreConvert>
 {
-
-
     public void Configure(EntityTypeBuilder<StoreConvert> builder)
     {
         builder.ToTable("StoreConvert");
 
         builder.HasIndex(e => e.BranchId, "IX_StoreConvert_BranchID_A259D");
 
-        builder.HasIndex(e => new { e.Dt, e.StoreId }, "IX_StoreConvert_DT_StoreID_412DD");
+        builder.HasIndex(e => new {e.Dt, e.StoreId}, "IX_StoreConvert_DT_StoreID_412DD");
 
-        builder.HasIndex(e => new { e.Dt, e.StoreId }, "IX_StoreConvert_DT_StoreID_D0589");
+        builder.HasIndex(e => new {e.Dt, e.StoreId}, "IX_StoreConvert_DT_StoreID_D0589");
 
-        builder.HasIndex(e => new { e.Prefix, e.BranchId }, "IX_StoreConvert_Prefix_BranchID_3BE40");
+        builder.HasIndex(e => new {e.Prefix, e.BranchId}, "IX_StoreConvert_Prefix_BranchID_3BE40");
 
-        builder.HasIndex(e => new { e.Prefix, e.Num, e.BranchId, e.TaskId }, "IX_StoreConvert_Prefix_Num_BranchID_TaskID_E68B8");
+        builder.HasIndex(e => new {e.Prefix, e.Num, e.BranchId, e.TaskId},
+            "IX_StoreConvert_Prefix_Num_BranchID_TaskID_E68B8");
 
         builder.HasIndex(e => e.TaskId, "IX_StoreConvert_TaskID_C5691");
 
-        builder.HasIndex(e => new { e.TaskId, e.CustId }, "IX_StoreConvert_TaskID_CustID_0909F");
+        builder.HasIndex(e => new {e.TaskId, e.CustId}, "IX_StoreConvert_TaskID_CustID_0909F");
 
         builder.Property(e => e.Id)
             .HasColumnType("numeric(18, 0)")

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FactoreOutConfiguration : IEntityTypeConfiguration<FactoreOut>
 {
-
-
     public void Configure(EntityTypeBuilder<FactoreOut> builder)
     {
         builder.ToTable("FactoreOut");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class OnlineUserConfiguration : IEntityTypeConfiguration<OnlineUser>
 {
-
-
     public void Configure(EntityTypeBuilder<OnlineUser> builder)
     {
         builder.ToTable("OnlineUser");

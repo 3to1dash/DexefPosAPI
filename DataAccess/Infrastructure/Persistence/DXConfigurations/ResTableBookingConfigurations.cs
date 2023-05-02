@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ResTableBookingConfiguration : IEntityTypeConfiguration<ResTableBooking>
 {
-
-
     public void Configure(EntityTypeBuilder<ResTableBooking> builder)
     {
         builder.ToTable("ResTableBooking");

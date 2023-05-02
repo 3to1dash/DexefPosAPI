@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyPointConfiguration : IEntityTypeConfiguration<DailyPoint>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyPoint> builder)
     {
         builder.Property(e => e.Id).HasColumnName("id");

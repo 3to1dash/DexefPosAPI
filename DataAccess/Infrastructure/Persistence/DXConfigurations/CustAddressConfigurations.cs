@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CustAddressConfiguration : IEntityTypeConfiguration<CustAddress>
 {
-
-
     public void Configure(EntityTypeBuilder<CustAddress> builder)
     {
         builder.ToTable("Cust_Address");

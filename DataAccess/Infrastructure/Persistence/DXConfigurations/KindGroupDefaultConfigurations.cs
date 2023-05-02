@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindGroupDefaultConfiguration : IEntityTypeConfiguration<KindGroupDefault>
 {
-
-
     public void Configure(EntityTypeBuilder<KindGroupDefault> builder)
     {
         builder.ToTable("KindGroup_Default");

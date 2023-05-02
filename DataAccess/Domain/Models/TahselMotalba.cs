@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TahselMotalba
+public class TahselMotalba
 {
     public decimal Id { get; set; }
     public decimal? Motalbaid { get; set; }

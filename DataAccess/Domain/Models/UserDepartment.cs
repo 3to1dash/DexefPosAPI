@@ -1,12 +1,7 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class UserDepartment
+public class UserDepartment
 {
-    public UserDepartment()
-    {
-        Users = new HashSet<User>();
-    }
-
     public int Id { get; set; }
     public int? BranchId { get; set; }
     public int? Num { get; set; }
@@ -17,5 +12,5 @@ public partial class UserDepartment
     public string? Manager { get; set; }
     public Guid Rowguid { get; set; }
 
-    public virtual ICollection<User> Users { get; set; }
+    public virtual List<User> Users { get; set; }
 }

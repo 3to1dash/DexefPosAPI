@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CurrentPcConfiguration : IEntityTypeConfiguration<CurrentPc>
 {
-
-
     public void Configure(EntityTypeBuilder<CurrentPc> builder)
     {
         builder.ToTable("CurrentPC");

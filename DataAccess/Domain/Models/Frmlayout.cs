@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Frmlayout
+public class Frmlayout
 {
     public string? Frmtext { get; set; }
     public string? Frmcolor { get; set; }

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class UniteCodeConfiguration : IEntityTypeConfiguration<UniteCode>
 {
-
-
     public void Configure(EntityTypeBuilder<UniteCode> builder)
     {
         builder.HasKey(e => e.Code)

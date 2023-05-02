@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class UsersPrivilegesEntry
+public class UsersPrivilegesEntry
 {
     public int MyId { get; set; }
     public int? PermissionId { get; set; }

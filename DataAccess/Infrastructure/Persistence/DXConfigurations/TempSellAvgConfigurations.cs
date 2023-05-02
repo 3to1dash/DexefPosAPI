@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TempSellAvgConfiguration : IEntityTypeConfiguration<TempSellAvg>
 {
-
-
     public void Configure(EntityTypeBuilder<TempSellAvg> builder)
     {
         builder.HasNoKey();
@@ -18,7 +16,7 @@ public class TempSellAvgConfiguration : IEntityTypeConfiguration<TempSellAvg>
 
         builder.HasIndex(e => e.SellId, "IX_Temp_SellAVG_SellId_D4CAC");
 
-        builder.HasIndex(e => new { e.Itemid, e.TaskId, e.NewCost }, "IX_Temp_SellAVG_itemid_TaskID_NewCost_6681B");
+        builder.HasIndex(e => new {e.Itemid, e.TaskId, e.NewCost}, "IX_Temp_SellAVG_itemid_TaskID_NewCost_6681B");
 
         builder.Property(e => e.Dt)
             .HasColumnType("datetime")

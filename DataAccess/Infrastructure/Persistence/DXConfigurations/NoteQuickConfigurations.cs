@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class NoteQuickConfiguration : IEntityTypeConfiguration<NoteQuick>
 {
-
-
     public void Configure(EntityTypeBuilder<NoteQuick> builder)
     {
         builder.ToTable("NoteQuick");

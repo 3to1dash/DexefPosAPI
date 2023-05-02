@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class CustDealing
+public class CustDealing
 {
     public long Id { get; set; }
     public int? Branchid { get; set; }

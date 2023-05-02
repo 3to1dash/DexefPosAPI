@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SupportStatusConfiguration : IEntityTypeConfiguration<SupportStatus>
 {
-
-
     public void Configure(EntityTypeBuilder<SupportStatus> builder)
     {
         builder.ToTable("Support_Status");

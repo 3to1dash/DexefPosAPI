@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyQuotumConfiguration : IEntityTypeConfiguration<DailyQuotum>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyQuotum> builder)
     {
         builder.ToTable("daily_quota");

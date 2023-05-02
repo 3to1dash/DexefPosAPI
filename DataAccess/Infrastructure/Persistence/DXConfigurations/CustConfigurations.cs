@@ -6,15 +6,13 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CustConfiguration : IEntityTypeConfiguration<Cust>
 {
-
-
     public void Configure(EntityTypeBuilder<Cust> builder)
     {
         builder.ToTable("Cust");
 
-        builder.HasIndex(e => new { e.BranchId, e.TypeIndex, e.Kind }, "IX_Cust_BranchID_TypeIndex_kind_C12EF");
+        builder.HasIndex(e => new {e.BranchId, e.TypeIndex, e.Kind}, "IX_Cust_BranchID_TypeIndex_kind_C12EF");
 
-        builder.HasIndex(e => new { e.OpeningBalance, e.TaskId }, "IX_Cust_OpeningBalance_TaskID_7D700");
+        builder.HasIndex(e => new {e.OpeningBalance, e.TaskId}, "IX_Cust_OpeningBalance_TaskID_7D700");
 
         builder.HasIndex(e => e.Txt1, "IX_Cust_Txt1_2C3E4");
 
@@ -26,27 +24,29 @@ public class CustConfiguration : IEntityTypeConfiguration<Cust>
 
         builder.HasIndex(e => e.Txt5, "IX_Cust_Txt5_E763F");
 
-        builder.HasIndex(e => new { e.TypeIndex, e.ParentId, e.Active, e.BranchId }, "IX_Cust_TypeIndex_ParentID_active_BranchID_B02F7");
+        builder.HasIndex(e => new {e.TypeIndex, e.ParentId, e.Active, e.BranchId},
+            "IX_Cust_TypeIndex_ParentID_active_BranchID_B02F7");
 
-        builder.HasIndex(e => new { e.TypeIndex, e.Active }, "IX_Cust_TypeIndex_active_924A3");
+        builder.HasIndex(e => new {e.TypeIndex, e.Active}, "IX_Cust_TypeIndex_active_924A3");
 
-        builder.HasIndex(e => new { e.TypeIndex, e.Active, e.BranchId }, "IX_Cust_TypeIndex_active_BranchID_0740A");
+        builder.HasIndex(e => new {e.TypeIndex, e.Active, e.BranchId}, "IX_Cust_TypeIndex_active_BranchID_0740A");
 
-        builder.HasIndex(e => new { e.TypeIndex, e.Active, e.BranchId }, "IX_Cust_TypeIndex_active_BranchID_623BD");
+        builder.HasIndex(e => new {e.TypeIndex, e.Active, e.BranchId}, "IX_Cust_TypeIndex_active_BranchID_623BD");
 
-        builder.HasIndex(e => new { e.TypeIndex, e.Active, e.BranchId, e.Kind }, "IX_Cust_TypeIndex_active_BranchID_kind_E1A08");
+        builder.HasIndex(e => new {e.TypeIndex, e.Active, e.BranchId, e.Kind},
+            "IX_Cust_TypeIndex_active_BranchID_kind_E1A08");
 
-        builder.HasIndex(e => new { e.TypeIndex, e.Active }, "IX_Cust_TypeIndex_active_D5D3A");
+        builder.HasIndex(e => new {e.TypeIndex, e.Active}, "IX_Cust_TypeIndex_active_D5D3A");
 
-        builder.HasIndex(e => new { e.TypeIndex, e.Active, e.Kind }, "IX_Cust_TypeIndex_active_kind_CAAC3");
+        builder.HasIndex(e => new {e.TypeIndex, e.Active, e.Kind}, "IX_Cust_TypeIndex_active_kind_CAAC3");
 
-        builder.HasIndex(e => new { e.TypeIndex, e.Num, e.BranchId }, "IX_Cust_TypeIndex_num_BranchID_2939C");
+        builder.HasIndex(e => new {e.TypeIndex, e.Num, e.BranchId}, "IX_Cust_TypeIndex_num_BranchID_2939C");
 
         builder.HasIndex(e => e.Accountid, "IX_Cust_accountid_5025F");
 
-        builder.HasIndex(e => new { e.Active, e.Kind }, "IX_Cust_active_kind_DB02D");
+        builder.HasIndex(e => new {e.Active, e.Kind}, "IX_Cust_active_kind_DB02D");
 
-        builder.HasIndex(e => new { e.Balance, e.CreditLimit }, "IX_Cust_balance_CreditLimit_10384");
+        builder.HasIndex(e => new {e.Balance, e.CreditLimit}, "IX_Cust_balance_CreditLimit_10384");
 
         builder.HasIndex(e => e.Dt, "IX_Cust_dt_06127");
 

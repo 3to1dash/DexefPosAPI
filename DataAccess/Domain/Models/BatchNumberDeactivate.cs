@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class BatchNumberDeactivate
+public class BatchNumberDeactivate
 {
     public int Id { get; set; }
     public int? ItemId { get; set; }

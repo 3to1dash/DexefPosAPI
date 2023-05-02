@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyworkHiConfiguration : IEntityTypeConfiguration<DailyworkHi>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyworkHi> builder)
     {
         builder.ToTable("dailywork_his");

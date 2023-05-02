@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WooOrderMetumConfiguration : IEntityTypeConfiguration<WooOrderMetum>
 {
-
-
     public void Configure(EntityTypeBuilder<WooOrderMetum> builder)
     {
         builder.HasIndex(e => e.WooOrderFeeLineid, "IX_WooOrderMeta_WooOrderFeeLineid");

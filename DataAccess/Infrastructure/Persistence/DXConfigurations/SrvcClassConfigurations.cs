@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SrvcClassConfiguration : IEntityTypeConfiguration<SrvcClass>
 {
-
-
     public void Configure(EntityTypeBuilder<SrvcClass> builder)
     {
         builder.ToTable("Srvc_Class");

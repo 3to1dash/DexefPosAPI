@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class YearFinancialMasterConfiguration : IEntityTypeConfiguration<YearFinancialMaster>
 {
-
-
     public void Configure(EntityTypeBuilder<YearFinancialMaster> builder)
     {
         builder.ToTable("YearFinancial_Master");

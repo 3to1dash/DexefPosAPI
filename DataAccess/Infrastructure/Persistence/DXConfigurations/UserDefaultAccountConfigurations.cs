@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class UserDefaultAccountConfiguration : IEntityTypeConfiguration<UserDefaultAccount>
 {
-
-
     public void Configure(EntityTypeBuilder<UserDefaultAccount> builder)
     {
         builder.HasNoKey();

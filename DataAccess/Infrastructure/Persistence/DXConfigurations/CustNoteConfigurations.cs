@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CustNoteConfiguration : IEntityTypeConfiguration<CustNote>
 {
-
-
     public void Configure(EntityTypeBuilder<CustNote> builder)
     {
         builder.ToTable("CustNote");

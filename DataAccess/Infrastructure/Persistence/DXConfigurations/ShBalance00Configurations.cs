@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ShBalance00Configuration : IEntityTypeConfiguration<ShBalance00>
 {
-
-
     public void Configure(EntityTypeBuilder<ShBalance00> builder)
     {
         builder.ToTable("Sh_Balance00");

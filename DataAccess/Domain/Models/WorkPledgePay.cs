@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class WorkPledgePay
+public class WorkPledgePay
 {
     public int Id { get; set; }
     public int? BranchId { get; set; }

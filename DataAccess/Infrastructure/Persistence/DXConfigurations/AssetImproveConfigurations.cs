@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class AssetImproveConfiguration : IEntityTypeConfiguration<AssetImprove>
 {
-
-
     public void Configure(EntityTypeBuilder<AssetImprove> builder)
     {
         builder.ToTable("asset_improve");

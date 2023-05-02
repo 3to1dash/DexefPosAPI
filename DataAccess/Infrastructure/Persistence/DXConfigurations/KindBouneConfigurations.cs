@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindBouneConfiguration : IEntityTypeConfiguration<KindBoune>
 {
-
-
     public void Configure(EntityTypeBuilder<KindBoune> builder)
     {
         builder.ToTable("Kind_Bounes");

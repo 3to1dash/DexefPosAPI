@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PurchaseQuoteRecieveConfiguration : IEntityTypeConfiguration<PurchaseQuoteRecieve>
 {
-
-
     public void Configure(EntityTypeBuilder<PurchaseQuoteRecieve> builder)
     {
         builder.ToTable("PurchaseQuoteRecieve");

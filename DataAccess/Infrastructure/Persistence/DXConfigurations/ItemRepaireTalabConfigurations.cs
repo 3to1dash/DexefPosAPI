@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ItemRepaireTalabConfiguration : IEntityTypeConfiguration<ItemRepaireTalab>
 {
-
-
     public void Configure(EntityTypeBuilder<ItemRepaireTalab> builder)
     {
         builder.ToTable("Item_Repaire_talab");

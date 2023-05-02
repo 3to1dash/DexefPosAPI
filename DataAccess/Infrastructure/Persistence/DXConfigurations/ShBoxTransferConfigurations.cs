@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ShBoxTransferConfiguration : IEntityTypeConfiguration<ShBoxTransfer>
 {
-
-
     public void Configure(EntityTypeBuilder<ShBoxTransfer> builder)
     {
         builder.ToTable("Sh_BoxTransfer");

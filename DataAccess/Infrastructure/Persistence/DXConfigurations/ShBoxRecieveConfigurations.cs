@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ShBoxRecieveConfiguration : IEntityTypeConfiguration<ShBoxRecieve>
 {
-
-
     public void Configure(EntityTypeBuilder<ShBoxRecieve> builder)
     {
         builder.ToTable("Sh_BoxRecieve");

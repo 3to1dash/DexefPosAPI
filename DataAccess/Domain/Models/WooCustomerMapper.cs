@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class WooCustomerMapper
+public class WooCustomerMapper
 {
     public int Id { get; set; }
     public int? RemoteId { get; set; }

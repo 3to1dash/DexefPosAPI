@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class WooSetting
+public class WooSetting
 {
     public int Id { get; set; }
     public string PropertyName { get; set; } = null!;

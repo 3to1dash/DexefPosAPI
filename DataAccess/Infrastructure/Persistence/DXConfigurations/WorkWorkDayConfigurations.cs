@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkWorkDayConfiguration : IEntityTypeConfiguration<WorkWorkDay>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkWorkDay> builder)
     {
         builder.ToTable("Work_WorkDays");

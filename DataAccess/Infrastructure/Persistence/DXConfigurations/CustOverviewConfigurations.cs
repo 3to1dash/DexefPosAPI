@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CustOverviewConfiguration : IEntityTypeConfiguration<CustOverview>
 {
-
-
     public void Configure(EntityTypeBuilder<CustOverview> builder)
     {
         builder.HasNoKey();

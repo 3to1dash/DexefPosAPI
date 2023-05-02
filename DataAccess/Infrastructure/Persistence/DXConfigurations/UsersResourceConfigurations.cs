@@ -6,13 +6,11 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class UsersResourceConfiguration : IEntityTypeConfiguration<UsersResource>
 {
-
-
     public void Configure(EntityTypeBuilder<UsersResource> builder)
     {
         builder.ToTable("Users_Resources");
 
-        builder.HasIndex(e => new { e.UserName, e.Module }, "NonClusteredIndex-20200304-120552");
+        builder.HasIndex(e => new {e.UserName, e.Module}, "NonClusteredIndex-20200304-120552");
 
         builder.Property(e => e.Id).HasColumnName("ID");
 

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class StorageSendMoneyConfiguration : IEntityTypeConfiguration<StorageSendMoney>
 {
-
-
     public void Configure(EntityTypeBuilder<StorageSendMoney> builder)
     {
         builder.ToTable("Storage_SendMoney");

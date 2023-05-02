@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ContCashpaidConfiguration : IEntityTypeConfiguration<ContCashpaid>
 {
-
-
     public void Configure(EntityTypeBuilder<ContCashpaid> builder)
     {
         builder.HasNoKey();

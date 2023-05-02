@@ -1,12 +1,7 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Taxes
+public class Taxes
 {
-    public Taxes()
-    {
-        TripTickets = new HashSet<TripTicket>();
-    }
-
     public int Id { get; set; }
     public int? Num { get; set; }
     public string? Name { get; set; }
@@ -31,5 +26,5 @@ public partial class Taxes
 
     public virtual TaxesGroup? CategoryNavigation { get; set; }
     public virtual TaxesSubGroup? SubCategoryNavigation { get; set; }
-    public virtual ICollection<TripTicket> TripTickets { get; set; }
+    public virtual List<TripTicket> TripTickets { get; set; }
 }

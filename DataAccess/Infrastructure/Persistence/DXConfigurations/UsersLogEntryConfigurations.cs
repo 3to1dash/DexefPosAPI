@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class UsersLogEntryConfiguration : IEntityTypeConfiguration<UsersLogEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<UsersLogEntry> builder)
     {
         builder.ToTable("Users_LogEntry");

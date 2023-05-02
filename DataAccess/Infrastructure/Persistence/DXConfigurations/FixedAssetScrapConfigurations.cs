@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FixedAssetScrapConfiguration : IEntityTypeConfiguration<FixedAssetScrap>
 {
-
-
     public void Configure(EntityTypeBuilder<FixedAssetScrap> builder)
     {
         builder.ToTable("FixedAsset_Scrap");

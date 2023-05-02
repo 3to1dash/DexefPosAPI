@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CyclePermissionConfiguration : IEntityTypeConfiguration<CyclePermission>
 {
-
-
     public void Configure(EntityTypeBuilder<CyclePermission> builder)
     {
         builder.ToTable("cycle_Permission");

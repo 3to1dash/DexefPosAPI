@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CompanyActivityConfiguration : IEntityTypeConfiguration<CompanyActivity>
 {
-
-
     public void Configure(EntityTypeBuilder<CompanyActivity> builder)
     {
         builder.HasKey(e => e.Code)

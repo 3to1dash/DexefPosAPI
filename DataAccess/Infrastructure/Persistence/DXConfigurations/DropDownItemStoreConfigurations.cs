@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DropDownItemStoreConfiguration : IEntityTypeConfiguration<DropDownItemStore>
 {
-
-
     public void Configure(EntityTypeBuilder<DropDownItemStore> builder)
     {
         builder.HasNoKey();

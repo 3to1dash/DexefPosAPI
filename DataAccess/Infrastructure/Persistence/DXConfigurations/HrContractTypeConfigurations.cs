@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class HrContractTypeConfiguration : IEntityTypeConfiguration<HrContractType>
 {
-
-
     public void Configure(EntityTypeBuilder<HrContractType> builder)
     {
         builder.ToTable("Hr_ContractTypes");

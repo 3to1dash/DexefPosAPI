@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WooCustomerMapperConfiguration : IEntityTypeConfiguration<WooCustomerMapper>
 {
-
-
     public void Configure(EntityTypeBuilder<WooCustomerMapper> builder)
     {
         builder.ToTable("WooCustomerMapper");

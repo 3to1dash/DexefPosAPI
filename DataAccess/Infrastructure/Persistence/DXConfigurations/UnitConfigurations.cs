@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class UnitConfiguration : IEntityTypeConfiguration<Unit>
 {
-
-
     public void Configure(EntityTypeBuilder<Unit> builder)
     {
         builder.Property(e => e.Id).HasColumnName("id");

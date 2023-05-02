@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class SrvcClass
+public class SrvcClass
 {
     public decimal Id { get; set; }
     public decimal? ParentId { get; set; }

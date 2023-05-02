@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SyncConfiguration : IEntityTypeConfiguration<Sync>
 {
-
-
     public void Configure(EntityTypeBuilder<Sync> builder)
     {
         builder.ToTable("Sync");

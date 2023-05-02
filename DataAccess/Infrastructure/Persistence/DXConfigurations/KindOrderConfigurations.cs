@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindOrderConfiguration : IEntityTypeConfiguration<KindOrder>
 {
-
-
     public void Configure(EntityTypeBuilder<KindOrder> builder)
     {
         builder.ToTable("Kind_Order");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class InvoiceExpensesLogConfiguration : IEntityTypeConfiguration<InvoiceExpensesLog>
 {
-
-
     public void Configure(EntityTypeBuilder<InvoiceExpensesLog> builder)
     {
         builder.ToTable("InvoiceExpenses_Log");

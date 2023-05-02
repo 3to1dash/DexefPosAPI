@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class PurchaseOrderQty
+public class PurchaseOrderQty
 {
     public decimal Id { get; set; }
     public int? BranchId { get; set; }

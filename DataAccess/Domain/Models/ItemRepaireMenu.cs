@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class ItemRepaireMenu
+public class ItemRepaireMenu
 {
     public decimal Id { get; set; }
     public string? Name { get; set; }

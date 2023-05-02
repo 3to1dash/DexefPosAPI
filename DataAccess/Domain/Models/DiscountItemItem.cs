@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class DiscountItemItem
+public class DiscountItemItem
 {
     public long Id { get; set; }
     public int? DiscountId { get; set; }

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WooTaxItemConfiguration : IEntityTypeConfiguration<WooTaxItem>
 {
-
-
     public void Configure(EntityTypeBuilder<WooTaxItem> builder)
     {
         builder.ToTable("WooTaxItem");

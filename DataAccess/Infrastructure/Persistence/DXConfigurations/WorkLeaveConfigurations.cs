@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkLeaveConfiguration : IEntityTypeConfiguration<WorkLeave>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkLeave> builder)
     {
         builder.ToTable("Work_Leave");

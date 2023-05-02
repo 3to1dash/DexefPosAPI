@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ItemReviewConfiguration : IEntityTypeConfiguration<ItemReview>
 {
-
-
     public void Configure(EntityTypeBuilder<ItemReview> builder)
     {
         builder.HasNoKey();

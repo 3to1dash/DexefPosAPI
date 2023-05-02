@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TripStatus
+public class TripStatus
 {
     public string Id { get; set; } = null!;
     public string? Name { get; set; }

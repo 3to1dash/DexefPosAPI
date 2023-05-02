@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class ChequeInInfo
+public class ChequeInInfo
 {
     public int Id { get; set; }
     public string? Ctype { get; set; }

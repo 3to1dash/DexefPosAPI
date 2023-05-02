@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailygaConfiguration : IEntityTypeConfiguration<Dailyga>
 {
-
-
     public void Configure(EntityTypeBuilder<Dailyga> builder)
     {
         builder.ToTable("dailygas");

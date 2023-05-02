@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class HrTimeOffPolicyConfiguration : IEntityTypeConfiguration<HrTimeOffPolicy>
 {
-
-
     public void Configure(EntityTypeBuilder<HrTimeOffPolicy> builder)
     {
         builder.ToTable("Hr_TimeOffPolicy");

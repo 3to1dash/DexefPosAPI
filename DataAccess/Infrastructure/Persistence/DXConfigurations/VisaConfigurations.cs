@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class VisaConfiguration : IEntityTypeConfiguration<Visa>
 {
-
-
     public void Configure(EntityTypeBuilder<Visa> builder)
     {
         builder.ToTable("Visa");

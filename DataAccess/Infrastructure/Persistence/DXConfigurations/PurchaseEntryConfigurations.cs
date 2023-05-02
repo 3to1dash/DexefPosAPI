@@ -6,15 +6,13 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PurchaseEntryConfiguration : IEntityTypeConfiguration<PurchaseEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<PurchaseEntry> builder)
     {
         builder.ToTable("Purchase_Entry");
 
         builder.HasIndex(e => e.ItemId, "IX_Purchase_Entry_ItemID_8335E");
 
-        builder.HasIndex(e => new { e.ItemId, e.Dt }, "IX_Purchase_Entry_ItemID_Dt_28C50");
+        builder.HasIndex(e => new {e.ItemId, e.Dt}, "IX_Purchase_Entry_ItemID_Dt_28C50");
 
         builder.HasIndex(e => e.TaskId, "IX_Purchase_Entry_TaskID_A6C73");
 

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Menu
+public class Menu
 {
     public int Id { get; set; }
     public bool? ShowSeperate { get; set; }

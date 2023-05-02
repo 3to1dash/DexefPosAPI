@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ShBoxSettingConfiguration : IEntityTypeConfiguration<ShBoxSetting>
 {
-
-
     public void Configure(EntityTypeBuilder<ShBoxSetting> builder)
     {
         builder.ToTable("Sh_BoxSetting");

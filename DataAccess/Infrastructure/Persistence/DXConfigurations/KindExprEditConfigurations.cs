@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindExprEditConfiguration : IEntityTypeConfiguration<KindExprEdit>
 {
-
-
     public void Configure(EntityTypeBuilder<KindExprEdit> builder)
     {
         builder.ToTable("kind_exprEdit");

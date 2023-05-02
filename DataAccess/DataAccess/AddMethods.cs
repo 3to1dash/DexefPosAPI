@@ -5,9 +5,9 @@ namespace DataAccess.DataAccess;
 
 public class AddMethods : IAddMethods
 {
-    private readonly DxdbContext _dbContext;
+    private readonly IDbContext _dbContext;
 
-    public AddMethods(DxdbContext dbContext)
+    public AddMethods(IDbContext dbContext)
     {
         _dbContext = dbContext;
     }
@@ -19,7 +19,7 @@ public class AddMethods : IAddMethods
     }
 
     public async Task<TEntity> AddSingleAsync<TEntity>(
-        TEntity entity, 
+        TEntity entity,
         CancellationToken cancellationToken = default) where TEntity : class
     {
         await _dbContext.Set<TEntity>().AddAsync(entity, cancellationToken).ConfigureAwait(false);

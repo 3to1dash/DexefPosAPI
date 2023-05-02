@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class WooKindMapper
+public class WooKindMapper
 {
     public long Id { get; set; }
     public long LocalId { get; set; }

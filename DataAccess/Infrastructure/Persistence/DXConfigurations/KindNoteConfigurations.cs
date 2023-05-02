@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindNoteConfiguration : IEntityTypeConfiguration<KindNote>
 {
-
-
     public void Configure(EntityTypeBuilder<KindNote> builder)
     {
         builder.ToTable("Kind_Note");

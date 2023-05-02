@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkConfiguration : IEntityTypeConfiguration<Work>
 {
-
-
     public void Configure(EntityTypeBuilder<Work> builder)
     {
         builder.ToTable(t => t.HasComment("اسماء و بيانات الموظفين"));

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class AssetDestroyConfiguration : IEntityTypeConfiguration<AssetDestroy>
 {
-
-
     public void Configure(EntityTypeBuilder<AssetDestroy> builder)
     {
         builder.ToTable("Asset_Destroy");

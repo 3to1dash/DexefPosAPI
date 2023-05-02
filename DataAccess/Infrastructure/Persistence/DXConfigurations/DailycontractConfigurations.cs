@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailycontractConfiguration : IEntityTypeConfiguration<Dailycontract>
 {
-
-
     public void Configure(EntityTypeBuilder<Dailycontract> builder)
     {
         builder.HasNoKey();

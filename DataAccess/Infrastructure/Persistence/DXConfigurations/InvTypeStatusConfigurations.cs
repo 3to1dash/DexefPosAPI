@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class InvTypeStatusConfiguration : IEntityTypeConfiguration<InvTypeStatus>
 {
-
-
     public void Configure(EntityTypeBuilder<InvTypeStatus> builder)
     {
         builder.ToTable("InvType_Status", "Inv");

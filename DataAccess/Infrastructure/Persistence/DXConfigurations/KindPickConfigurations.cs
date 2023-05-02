@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindPickConfiguration : IEntityTypeConfiguration<KindPick>
 {
-
-
     public void Configure(EntityTypeBuilder<KindPick> builder)
     {
         builder.ToTable("Kind_Pick");

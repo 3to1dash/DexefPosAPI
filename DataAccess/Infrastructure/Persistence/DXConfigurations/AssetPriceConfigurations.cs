@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class AssetPriceConfiguration : IEntityTypeConfiguration<AssetPrice>
 {
-
-
     public void Configure(EntityTypeBuilder<AssetPrice> builder)
     {
         builder.ToTable("Asset_Price");

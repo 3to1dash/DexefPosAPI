@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ShBoxOpeningConfiguration : IEntityTypeConfiguration<ShBoxOpening>
 {
-
-
     public void Configure(EntityTypeBuilder<ShBoxOpening> builder)
     {
         builder.ToTable("Sh_BoxOpening");

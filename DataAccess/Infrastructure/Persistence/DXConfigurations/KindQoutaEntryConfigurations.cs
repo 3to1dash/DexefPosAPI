@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindQoutaEntryConfiguration : IEntityTypeConfiguration<KindQoutaEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<KindQoutaEntry> builder)
     {
         builder.ToTable("Kind_QoutaEntry");

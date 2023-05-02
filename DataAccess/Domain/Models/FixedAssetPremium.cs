@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class FixedAssetPremium
+public class FixedAssetPremium
 {
     public int Id { get; set; }
     public int? DepreciationId { get; set; }

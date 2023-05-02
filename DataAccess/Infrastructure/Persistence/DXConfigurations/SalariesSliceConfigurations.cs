@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SalariesSliceConfiguration : IEntityTypeConfiguration<SalariesSlice>
 {
-
-
     public void Configure(EntityTypeBuilder<SalariesSlice> builder)
     {
         builder.ToTable("Salaries_Slice");

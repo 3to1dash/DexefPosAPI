@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WTempattendanceConfiguration : IEntityTypeConfiguration<WTempattendance>
 {
-
-
     public void Configure(EntityTypeBuilder<WTempattendance> builder)
     {
         builder.ToTable("w_tempattendance");

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class KindOpt
+public class KindOpt
 {
     public decimal Id { get; set; }
     public bool? Active { get; set; }

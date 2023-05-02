@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class AreaConfiguration : IEntityTypeConfiguration<Area>
 {
-
-
     public void Configure(EntityTypeBuilder<Area> builder)
     {
         builder.ToTable("Area");

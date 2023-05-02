@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class StoreRecieveEntryConfiguration : IEntityTypeConfiguration<StoreRecieveEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<StoreRecieveEntry> builder)
     {
         builder.ToTable("StoreRecieve_Entry");

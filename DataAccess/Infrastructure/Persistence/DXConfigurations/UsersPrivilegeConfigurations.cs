@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class UsersPrivilegeConfiguration : IEntityTypeConfiguration<UsersPrivilege>
 {
-
-
     public void Configure(EntityTypeBuilder<UsersPrivilege> builder)
     {
         builder.ToTable("Users_Privileges");

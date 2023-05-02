@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class StoreAdjustmentConfiguration : IEntityTypeConfiguration<StoreAdjustment>
 {
-
-
     public void Configure(EntityTypeBuilder<StoreAdjustment> builder)
     {
         builder.ToTable("StoreAdjustment");

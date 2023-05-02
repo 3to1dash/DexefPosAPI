@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TransGoConfiguration : IEntityTypeConfiguration<TransGo>
 {
-
-
     public void Configure(EntityTypeBuilder<TransGo> builder)
     {
         builder.HasNoKey();

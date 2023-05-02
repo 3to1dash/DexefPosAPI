@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class CustDonation
+public class CustDonation
 {
     public int CustId { get; set; }
     public bool? Active { get; set; }

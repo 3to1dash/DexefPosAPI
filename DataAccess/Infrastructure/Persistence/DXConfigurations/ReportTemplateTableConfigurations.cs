@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ReportTemplateTableConfiguration : IEntityTypeConfiguration<ReportTemplateTable>
 {
-
-
     public void Configure(EntityTypeBuilder<ReportTemplateTable> builder)
     {
         builder.HasKey(e => e.TableName);

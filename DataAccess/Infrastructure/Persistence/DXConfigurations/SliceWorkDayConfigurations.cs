@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SliceWorkDayConfiguration : IEntityTypeConfiguration<SliceWorkDay>
 {
-
-
     public void Configure(EntityTypeBuilder<SliceWorkDay> builder)
     {
         builder.ToTable("Slice_WorkDays");

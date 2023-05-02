@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyItemExtraConfiguration : IEntityTypeConfiguration<DailyItemExtra>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyItemExtra> builder)
     {
         builder.ToTable("DailyItemExtra");

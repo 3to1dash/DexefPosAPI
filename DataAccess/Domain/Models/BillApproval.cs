@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class BillApproval
+public class BillApproval
 {
     public int Id { get; set; }
     public decimal? TaskId { get; set; }

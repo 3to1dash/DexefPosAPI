@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class MenuConfiguration : IEntityTypeConfiguration<Menu>
 {
-
-
     public void Configure(EntityTypeBuilder<Menu> builder)
     {
         builder.ToTable("Menu");

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class MyTable
+public class MyTable
 {
     public decimal? RowId { get; set; }
     public byte[]? Pic { get; set; }

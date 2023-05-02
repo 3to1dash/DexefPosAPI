@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FixedAssetAreaFileConfiguration : IEntityTypeConfiguration<FixedAssetAreaFile>
 {
-
-
     public void Configure(EntityTypeBuilder<FixedAssetAreaFile> builder)
     {
         builder.ToTable("FixedAssetArea_Files");

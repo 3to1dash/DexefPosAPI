@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class RpsItem
+public class RpsItem
 {
     public int Id { get; set; }
     public string? Code { get; set; }

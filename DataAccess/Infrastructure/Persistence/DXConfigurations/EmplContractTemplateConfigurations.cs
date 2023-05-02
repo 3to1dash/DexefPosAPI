@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class EmplContractTemplateConfiguration : IEntityTypeConfiguration<EmplContractTemplate>
 {
-
-
     public void Configure(EntityTypeBuilder<EmplContractTemplate> builder)
     {
         builder.HasNoKey();

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class AccountTypeConfiguration : IEntityTypeConfiguration<AccountType>
 {
-
-
     public void Configure(EntityTypeBuilder<AccountType> builder)
     {
         builder.ToTable("AccountType");

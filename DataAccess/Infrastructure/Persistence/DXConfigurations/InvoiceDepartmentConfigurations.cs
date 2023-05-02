@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class InvoiceDepartmentConfiguration : IEntityTypeConfiguration<InvoiceDepartment>
 {
-
-
     public void Configure(EntityTypeBuilder<InvoiceDepartment> builder)
     {
         builder.ToTable("InvoiceDepartment");

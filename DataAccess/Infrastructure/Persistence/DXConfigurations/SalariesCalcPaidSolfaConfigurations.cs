@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SalariesCalcPaidSolfaConfiguration : IEntityTypeConfiguration<SalariesCalcPaidSolfa>
 {
-
-
     public void Configure(EntityTypeBuilder<SalariesCalcPaidSolfa> builder)
     {
         builder.ToTable("SalariesCalc_PaidSolfa");

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class DailyChequeOut
+public class DailyChequeOut
 {
     public long Id { get; set; }
     public int? BranchId { get; set; }

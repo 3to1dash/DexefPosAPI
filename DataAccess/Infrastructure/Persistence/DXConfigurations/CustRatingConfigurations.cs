@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CustRatingConfiguration : IEntityTypeConfiguration<CustRating>
 {
-
-
     public void Configure(EntityTypeBuilder<CustRating> builder)
     {
         builder.ToTable("Cust_Rating");

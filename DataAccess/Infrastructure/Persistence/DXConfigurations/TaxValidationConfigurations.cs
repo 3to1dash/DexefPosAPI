@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TaxValidationConfiguration : IEntityTypeConfiguration<TaxValidation>
 {
-
-
     public void Configure(EntityTypeBuilder<TaxValidation> builder)
     {
         builder.ToTable("TaxValidation");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TranslateConfiguration : IEntityTypeConfiguration<Translate>
 {
-
-
     public void Configure(EntityTypeBuilder<Translate> builder)
     {
         builder.ToTable("Translate");

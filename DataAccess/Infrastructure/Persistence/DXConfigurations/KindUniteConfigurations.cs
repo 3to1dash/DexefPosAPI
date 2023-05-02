@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindUniteConfiguration : IEntityTypeConfiguration<KindUnite>
 {
-
-
     public void Configure(EntityTypeBuilder<KindUnite> builder)
     {
         builder.HasKey(e => e.MyId);
@@ -20,13 +18,13 @@ public class KindUniteConfiguration : IEntityTypeConfiguration<KindUnite>
 
         builder.HasIndex(e => e.Levels, "IX_Kind_Unite_levels_AE53D");
 
-        builder.HasIndex(e => new { e.Sale, e.Levels }, "IX_Kind_Unite_sale_levels_D9686");
+        builder.HasIndex(e => new {e.Sale, e.Levels}, "IX_Kind_Unite_sale_levels_D9686");
 
         builder.HasIndex(e => e.Unite, "IX_Kind_Unite_unite_BF448");
 
-        builder.HasIndex(e => new { e.KindId, e.Code, e.Unite, e.Currency, e.Qty }, "NonClusteredIndex-20200113-222314");
+        builder.HasIndex(e => new {e.KindId, e.Code, e.Unite, e.Currency, e.Qty}, "NonClusteredIndex-20200113-222314");
 
-        builder.HasIndex(e => new { e.Levels, e.Code }, "missing_index_4107_4106_Kind_Unite");
+        builder.HasIndex(e => new {e.Levels, e.Code}, "missing_index_4107_4106_Kind_Unite");
 
         builder.Property(e => e.MyId)
             .HasColumnType("numeric(18, 0)")

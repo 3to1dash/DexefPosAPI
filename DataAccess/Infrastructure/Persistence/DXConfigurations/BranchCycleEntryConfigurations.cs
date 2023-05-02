@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class BranchCycleEntryConfiguration : IEntityTypeConfiguration<BranchCycleEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<BranchCycleEntry> builder)
     {
         builder.ToTable("BranchCycle_Entry");

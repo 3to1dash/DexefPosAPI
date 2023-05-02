@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class BillItemsSearchView
+public class BillItemsSearchView
 {
     public decimal? QtyIn { get; set; }
     public decimal? QtyOut { get; set; }

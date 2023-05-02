@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class KindAntiUsage
+public class KindAntiUsage
 {
     public decimal Id { get; set; }
     public int? Code { get; set; }

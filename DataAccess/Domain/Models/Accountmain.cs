@@ -1,9 +1,9 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
 /// <summary>
 /// كل التعاملات اللي بتحصل على الحسابات
 /// </summary>
-public partial class Accountmain
+public class Accountmain
 {
     public long Id { get; set; }
     public DateTime? Dt { get; set; }

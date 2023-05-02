@@ -1,14 +1,7 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TaxesGroup
+public class TaxesGroup
 {
-    public TaxesGroup()
-    {
-        Taxes = new HashSet<Taxes>();
-        TaxesDats = new HashSet<TaxesDat>();
-        TaxesSubGroups = new HashSet<TaxesSubGroup>();
-    }
-
     public string Code { get; set; } = null!;
     public string? EnName { get; set; }
     public string? ArName { get; set; }
@@ -22,7 +15,7 @@ public partial class TaxesGroup
     public bool? Active { get; set; }
     public bool? IsDefault { get; set; }
 
-    public virtual ICollection<Taxes> Taxes { get; set; }
-    public virtual ICollection<TaxesDat> TaxesDats { get; set; }
-    public virtual ICollection<TaxesSubGroup> TaxesSubGroups { get; set; }
+    public virtual List<Taxes> Taxes { get; set; }
+    public virtual List<TaxesDat> TaxesDats { get; set; }
+    public virtual List<TaxesSubGroup> TaxesSubGroups { get; set; }
 }

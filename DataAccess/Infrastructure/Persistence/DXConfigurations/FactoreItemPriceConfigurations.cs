@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FactoreItemPriceConfiguration : IEntityTypeConfiguration<FactoreItemPrice>
 {
-
-
     public void Configure(EntityTypeBuilder<FactoreItemPrice> builder)
     {
         builder.ToTable("Factore_ItemPrice");

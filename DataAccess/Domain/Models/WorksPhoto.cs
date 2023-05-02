@@ -1,9 +1,9 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
 /// <summary>
 /// صور الموظفين
 /// </summary>
-public partial class WorksPhoto
+public class WorksPhoto
 {
     public decimal Id { get; set; }
     public int? WorkId { get; set; }

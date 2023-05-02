@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ChequeOpeningOutConfiguration : IEntityTypeConfiguration<ChequeOpeningOut>
 {
-
-
     public void Configure(EntityTypeBuilder<ChequeOpeningOut> builder)
     {
         builder.ToTable("Cheque_OpeningOut");

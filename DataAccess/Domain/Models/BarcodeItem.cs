@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class BarcodeItem
+public class BarcodeItem
 {
     public decimal Id { get; set; }
     public string? Code { get; set; }

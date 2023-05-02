@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FoodMealConfiguration : IEntityTypeConfiguration<FoodMeal>
 {
-
-
     public void Configure(EntityTypeBuilder<FoodMeal> builder)
     {
         builder.HasNoKey();

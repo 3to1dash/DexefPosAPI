@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindAssemblyConfiguration : IEntityTypeConfiguration<KindAssembly>
 {
-
-
     public void Configure(EntityTypeBuilder<KindAssembly> builder)
     {
         builder.ToTable("kind_Assembly");

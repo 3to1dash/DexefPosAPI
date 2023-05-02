@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class CashLog
+public class CashLog
 {
     public long Id { get; set; }
     public decimal? TaskId { get; set; }

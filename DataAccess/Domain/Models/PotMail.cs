@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class PotMail
+public class PotMail
 {
     public decimal Id { get; set; }
     public decimal? Custid { get; set; }

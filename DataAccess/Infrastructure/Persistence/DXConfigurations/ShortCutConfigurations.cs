@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ShortCutConfiguration : IEntityTypeConfiguration<ShortCut>
 {
-
-
     public void Configure(EntityTypeBuilder<ShortCut> builder)
     {
         builder.HasNoKey();

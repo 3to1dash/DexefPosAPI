@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class NethistoryConfiguration : IEntityTypeConfiguration<Nethistory>
 {
-
-
     public void Configure(EntityTypeBuilder<Nethistory> builder)
     {
         builder.ToTable("nethistory");

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class SalariesPayEntry
+public class SalariesPayEntry
 {
     public decimal Id { get; set; }
     public decimal? BranchId { get; set; }

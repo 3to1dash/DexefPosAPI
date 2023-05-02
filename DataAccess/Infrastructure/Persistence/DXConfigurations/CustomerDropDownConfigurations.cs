@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CustomerDropDownConfiguration : IEntityTypeConfiguration<CustomerDropDown>
 {
-
-
     public void Configure(EntityTypeBuilder<CustomerDropDown> builder)
     {
         builder.HasNoKey();

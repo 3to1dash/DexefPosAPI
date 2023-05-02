@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class WorkAbsent
+public class WorkAbsent
 {
     public decimal Id { get; set; }
     public int? Workid { get; set; }

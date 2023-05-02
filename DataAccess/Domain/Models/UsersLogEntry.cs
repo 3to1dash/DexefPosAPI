@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class UsersLogEntry
+public class UsersLogEntry
 {
     public long Id { get; set; }
     public long? LogInId { get; set; }

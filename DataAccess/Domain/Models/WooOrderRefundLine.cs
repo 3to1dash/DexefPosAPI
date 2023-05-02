@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class WooOrderRefundLine
+public class WooOrderRefundLine
 {
     public decimal Id { get; set; }
     public string Reason { get; set; } = null!;

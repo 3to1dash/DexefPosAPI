@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TempProcessdatum
+public class TempProcessdatum
 {
     public long? Itemid { get; set; }
     public long? SellId { get; set; }

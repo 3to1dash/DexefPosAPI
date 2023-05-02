@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FixedAssetPremiumConfiguration : IEntityTypeConfiguration<FixedAssetPremium>
 {
-
-
     public void Configure(EntityTypeBuilder<FixedAssetPremium> builder)
     {
         builder.ToTable("FixedAsset_Premium");

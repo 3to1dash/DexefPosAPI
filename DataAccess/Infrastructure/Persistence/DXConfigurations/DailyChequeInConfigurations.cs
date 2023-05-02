@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyChequeInConfiguration : IEntityTypeConfiguration<DailyChequeIn>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyChequeIn> builder)
     {
         builder.ToTable("Daily_ChequeIn");

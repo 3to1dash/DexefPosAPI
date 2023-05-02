@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PreNameFieldsListConfiguration : IEntityTypeConfiguration<PreNameFieldsList>
 {
-
-
     public void Configure(EntityTypeBuilder<PreNameFieldsList> builder)
     {
         builder.ToTable("PreNameFields_List");

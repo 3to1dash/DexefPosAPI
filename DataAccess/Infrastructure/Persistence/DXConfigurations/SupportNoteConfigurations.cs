@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SupportNoteConfiguration : IEntityTypeConfiguration<SupportNote>
 {
-
-
     public void Configure(EntityTypeBuilder<SupportNote> builder)
     {
         builder.ToTable("Support_Note");

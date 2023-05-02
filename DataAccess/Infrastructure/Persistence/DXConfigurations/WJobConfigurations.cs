@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WJobConfiguration : IEntityTypeConfiguration<WJob>
 {
-
-
     public void Configure(EntityTypeBuilder<WJob> builder)
     {
         builder.ToTable("w_Job");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TaxEgyptHomeConfiguration : IEntityTypeConfiguration<TaxEgyptHome>
 {
-
-
     public void Configure(EntityTypeBuilder<TaxEgyptHome> builder)
     {
         builder.ToTable("Tax_EgyptHome");

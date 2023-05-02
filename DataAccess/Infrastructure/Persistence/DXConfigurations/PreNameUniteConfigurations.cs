@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PreNameUniteConfiguration : IEntityTypeConfiguration<PreNameUnite>
 {
-
-
     public void Configure(EntityTypeBuilder<PreNameUnite> builder)
     {
         builder.ToTable("PreNameUnite");

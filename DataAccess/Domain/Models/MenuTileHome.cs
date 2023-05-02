@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class MenuTileHome
+public class MenuTileHome
 {
     public int Id { get; set; }
     public string? Frm { get; set; }

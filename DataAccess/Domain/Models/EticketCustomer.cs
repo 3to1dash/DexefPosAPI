@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class EticketCustomer
+public class EticketCustomer
 {
     public int Id { get; set; }
     public string? Num { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Tip
+public class Tip
 {
     public string? ArName { get; set; }
     public string? EnName { get; set; }

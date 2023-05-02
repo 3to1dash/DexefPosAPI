@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class MotalabaConfiguration : IEntityTypeConfiguration<Motalaba>
 {
-
-
     public void Configure(EntityTypeBuilder<Motalaba> builder)
     {
         builder.ToTable("Motalaba");

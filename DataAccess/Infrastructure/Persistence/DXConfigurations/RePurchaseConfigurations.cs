@@ -6,37 +6,40 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class RePurchaseConfiguration : IEntityTypeConfiguration<RePurchase>
 {
-
-
     public void Configure(EntityTypeBuilder<RePurchase> builder)
     {
         builder.ToTable("RePurchase");
 
         builder.HasIndex(e => e.BranchId, "IX_RePurchase_BranchID_481A9");
 
-        builder.HasIndex(e => new { e.Prefix, e.Num, e.BranchId, e.TaskId }, "IX_RePurchase_Prefix_Num_BranchID_TaskID_3D8A1");
+        builder.HasIndex(e => new {e.Prefix, e.Num, e.BranchId, e.TaskId},
+            "IX_RePurchase_Prefix_Num_BranchID_TaskID_3D8A1");
 
         builder.HasIndex(e => e.TaskId, "IX_RePurchase_TaskID_CD049");
 
-        builder.HasIndex(e => new { e.WrittenBy, e.BillNum, e.Dt, e.StoreId }, "IX_RePurchase_WrittenBy_BillNum_DT_StoreID_456EC");
+        builder.HasIndex(e => new {e.WrittenBy, e.BillNum, e.Dt, e.StoreId},
+            "IX_RePurchase_WrittenBy_BillNum_DT_StoreID_456EC");
 
-        builder.HasIndex(e => new { e.WrittenBy, e.BillNum, e.Dt, e.StoreId }, "IX_RePurchase_WrittenBy_BillNum_DT_StoreID_8A8DE");
+        builder.HasIndex(e => new {e.WrittenBy, e.BillNum, e.Dt, e.StoreId},
+            "IX_RePurchase_WrittenBy_BillNum_DT_StoreID_8A8DE");
 
-        builder.HasIndex(e => new { e.WrittenBy, e.Dt, e.StoreId }, "IX_RePurchase_WrittenBy_DT_StoreID_50AF1");
+        builder.HasIndex(e => new {e.WrittenBy, e.Dt, e.StoreId}, "IX_RePurchase_WrittenBy_DT_StoreID_50AF1");
 
-        builder.HasIndex(e => new { e.WrittenBy, e.Dt, e.StoreId }, "IX_RePurchase_WrittenBy_DT_StoreID_7F2E7");
+        builder.HasIndex(e => new {e.WrittenBy, e.Dt, e.StoreId}, "IX_RePurchase_WrittenBy_DT_StoreID_7F2E7");
 
-        builder.HasIndex(e => new { e.WrittenBy, e.Dt, e.StoreId }, "IX_RePurchase_WrittenBy_DT_StoreID_9EE5A");
+        builder.HasIndex(e => new {e.WrittenBy, e.Dt, e.StoreId}, "IX_RePurchase_WrittenBy_DT_StoreID_9EE5A");
 
-        builder.HasIndex(e => new { e.WrittenBy, e.Dt, e.StoreId, e.Ship }, "IX_RePurchase_WrittenBy_DT_StoreID_Ship_3FEEE");
+        builder.HasIndex(e => new {e.WrittenBy, e.Dt, e.StoreId, e.Ship},
+            "IX_RePurchase_WrittenBy_DT_StoreID_Ship_3FEEE");
 
-        builder.HasIndex(e => new { e.WrittenBy, e.Dt, e.StoreId, e.Ship }, "IX_RePurchase_WrittenBy_DT_StoreID_Ship_78CB8");
+        builder.HasIndex(e => new {e.WrittenBy, e.Dt, e.StoreId, e.Ship},
+            "IX_RePurchase_WrittenBy_DT_StoreID_Ship_78CB8");
 
-        builder.HasIndex(e => new { e.Prefix, e.BranchId }, "missing_index_123_122_RePurchase");
+        builder.HasIndex(e => new {e.Prefix, e.BranchId}, "missing_index_123_122_RePurchase");
 
-        builder.HasIndex(e => new { e.StoreId, e.Dt, e.Ship }, "missing_index_462_461_RePurchase");
+        builder.HasIndex(e => new {e.StoreId, e.Dt, e.Ship}, "missing_index_462_461_RePurchase");
 
-        builder.HasIndex(e => new { e.Dt, e.StoreId, e.Ship }, "missing_index_464_463_RePurchase");
+        builder.HasIndex(e => new {e.Dt, e.StoreId, e.Ship}, "missing_index_464_463_RePurchase");
 
         builder.Property(e => e.Id)
             .HasColumnType("numeric(18, 0)")

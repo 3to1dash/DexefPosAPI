@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class UserPropertyConfiguration : IEntityTypeConfiguration<UserProperty>
 {
-
-
     public void Configure(EntityTypeBuilder<UserProperty> builder)
     {
         builder.ToTable("User_Properties");

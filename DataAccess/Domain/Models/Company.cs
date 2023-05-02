@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Company
+public class Company
 {
     public int Id { get; set; }
     public string? Name { get; set; }
@@ -32,5 +32,4 @@ public partial class Company
     public virtual List<CompanyBranch> CompanyBranches { get; set; }
     public virtual List<CompanyTaxToken> CompanyTaxTokens { get; set; }
     public virtual CurrencyTable CurrencyTable { get; set; }
-
 }

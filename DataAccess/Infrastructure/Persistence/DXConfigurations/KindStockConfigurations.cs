@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindStockConfiguration : IEntityTypeConfiguration<KindStock>
 {
-
-
     public void Configure(EntityTypeBuilder<KindStock> builder)
     {
         builder.ToTable("kind_stock");

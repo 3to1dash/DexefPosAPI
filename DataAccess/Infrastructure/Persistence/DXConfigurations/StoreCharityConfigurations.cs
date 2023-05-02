@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class StoreCharityConfiguration : IEntityTypeConfiguration<StoreCharity>
 {
-
-
     public void Configure(EntityTypeBuilder<StoreCharity> builder)
     {
         builder.ToTable("StoreCharity");

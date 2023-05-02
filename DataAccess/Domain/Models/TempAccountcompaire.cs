@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TempAccountcompaire
+public class TempAccountcompaire
 {
     public decimal Id { get; set; }
     public string? Name { get; set; }

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ItemRepaireDoneConfiguration : IEntityTypeConfiguration<ItemRepaireDone>
 {
-
-
     public void Configure(EntityTypeBuilder<ItemRepaireDone> builder)
     {
         builder.ToTable("item_repaire_done");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkVocConfiguration : IEntityTypeConfiguration<WorkVoc>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkVoc> builder)
     {
         builder.HasNoKey();

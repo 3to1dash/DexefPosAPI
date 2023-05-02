@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PaymentTermConfiguration : IEntityTypeConfiguration<PaymentTerm>
 {
-
-
     public void Configure(EntityTypeBuilder<PaymentTerm> builder)
     {
         builder.Property(e => e.Id).HasColumnName("id");

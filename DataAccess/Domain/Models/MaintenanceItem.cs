@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class MaintenanceItem
+public class MaintenanceItem
 {
     public int Id { get; set; }
     public string? Prefix { get; set; }

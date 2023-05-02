@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SliceRepresentConfiguration : IEntityTypeConfiguration<SliceRepresent>
 {
-
-
     public void Configure(EntityTypeBuilder<SliceRepresent> builder)
     {
         builder.ToTable("Slice_represent");

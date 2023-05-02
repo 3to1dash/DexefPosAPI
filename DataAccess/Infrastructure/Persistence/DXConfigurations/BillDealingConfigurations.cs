@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class BillDealingConfiguration : IEntityTypeConfiguration<BillDealing>
 {
-
-
     public void Configure(EntityTypeBuilder<BillDealing> builder)
     {
         builder.HasNoKey();

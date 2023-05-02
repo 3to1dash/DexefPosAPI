@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class ShortCut
+public class ShortCut
 {
     public string? Name { get; set; }
     public bool? Ctrl { get; set; }

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailydatConfiguration : IEntityTypeConfiguration<Dailydat>
 {
-
-
     public void Configure(EntityTypeBuilder<Dailydat> builder)
     {
         builder.HasNoKey();

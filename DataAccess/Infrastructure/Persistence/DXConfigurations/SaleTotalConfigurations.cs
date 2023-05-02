@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SaleTotalConfiguration : IEntityTypeConfiguration<SaleTotal>
 {
-
-
     public void Configure(EntityTypeBuilder<SaleTotal> builder)
     {
         builder.ToTable("sale_total");

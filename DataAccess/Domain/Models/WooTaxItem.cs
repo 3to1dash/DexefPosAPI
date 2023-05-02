@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class WooTaxItem
+public class WooTaxItem
 {
     public decimal Id { get; set; }
     public decimal? Total { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class CustRatingName
+public class CustRatingName
 {
     public string? Name1 { get; set; }
     public string? Name2 { get; set; }

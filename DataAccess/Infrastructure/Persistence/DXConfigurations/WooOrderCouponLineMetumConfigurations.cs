@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WooOrderCouponLineMetumConfiguration : IEntityTypeConfiguration<WooOrderCouponLineMetum>
 {
-
-
     public void Configure(EntityTypeBuilder<WooOrderCouponLineMetum> builder)
     {
         builder.HasIndex(e => e.WooOrderCouponLineid, "IX_WooOrderCouponLineMeta_WooOrderCouponLineid");

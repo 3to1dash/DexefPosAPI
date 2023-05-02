@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ReSalePaymentConfiguration : IEntityTypeConfiguration<ReSalePayment>
 {
-
-
     public void Configure(EntityTypeBuilder<ReSalePayment> builder)
     {
         builder.ToTable("ReSale_Payment");

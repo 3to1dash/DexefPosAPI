@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class AssetRentAppointmentConfiguration : IEntityTypeConfiguration<AssetRentAppointment>
 {
-
-
     public void Configure(EntityTypeBuilder<AssetRentAppointment> builder)
     {
         builder.HasNoKey();

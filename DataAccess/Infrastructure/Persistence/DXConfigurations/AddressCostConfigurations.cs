@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class AddressCostConfiguration : IEntityTypeConfiguration<AddressCost>
 {
-
-
     public void Configure(EntityTypeBuilder<AddressCost> builder)
     {
         builder.ToTable("Address_Cost");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class MostvisitedConfiguration : IEntityTypeConfiguration<Mostvisited>
 {
-
-
     public void Configure(EntityTypeBuilder<Mostvisited> builder)
     {
         builder.ToTable("mostvisited");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ReturnConsignmentConfiguration : IEntityTypeConfiguration<ReturnConsignment>
 {
-
-
     public void Configure(EntityTypeBuilder<ReturnConsignment> builder)
     {
         builder.ToTable("ReturnConsignment");

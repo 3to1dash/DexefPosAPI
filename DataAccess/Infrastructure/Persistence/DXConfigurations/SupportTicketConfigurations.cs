@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SupportTicketConfiguration : IEntityTypeConfiguration<SupportTicket>
 {
-
-
     public void Configure(EntityTypeBuilder<SupportTicket> builder)
     {
         builder.ToTable("Support_Ticket");

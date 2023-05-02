@@ -1,12 +1,7 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Prefrence
+public class Prefrence
 {
-    public Prefrence()
-    {
-        PrefrenceEntries = new HashSet<PrefrenceEntry>();
-    }
-
     public decimal Id { get; set; }
     public string Name { get; set; } = null!;
     public string? Deal { get; set; }
@@ -16,5 +11,5 @@ public partial class Prefrence
     public string? Txt2 { get; set; }
     public Guid Rowguid { get; set; }
 
-    public virtual ICollection<PrefrenceEntry> PrefrenceEntries { get; set; }
+    public virtual List<PrefrenceEntry> PrefrenceEntries { get; set; }
 }

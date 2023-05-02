@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class ColName
+public class ColName
 {
     public long Id { get; set; }
     public string? TableName { get; set; }

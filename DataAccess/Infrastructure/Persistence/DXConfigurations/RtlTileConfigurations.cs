@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class RtlTileConfiguration : IEntityTypeConfiguration<RtlTile>
 {
-
-
     public void Configure(EntityTypeBuilder<RtlTile> builder)
     {
         builder.HasKey(e => e.Ar);

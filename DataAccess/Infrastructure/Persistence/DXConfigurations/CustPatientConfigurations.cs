@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CustPatientConfiguration : IEntityTypeConfiguration<CustPatient>
 {
-
-
     public void Configure(EntityTypeBuilder<CustPatient> builder)
     {
         builder.ToTable("Cust_patient");

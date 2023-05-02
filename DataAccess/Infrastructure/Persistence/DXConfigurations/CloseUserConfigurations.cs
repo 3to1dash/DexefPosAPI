@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CloseUserConfiguration : IEntityTypeConfiguration<CloseUser>
 {
-
-
     public void Configure(EntityTypeBuilder<CloseUser> builder)
     {
         builder.ToTable("Close_User");

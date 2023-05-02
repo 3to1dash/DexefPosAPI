@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class EmplLoanConfiguration : IEntityTypeConfiguration<EmplLoan>
 {
-
-
     public void Configure(EntityTypeBuilder<EmplLoan> builder)
     {
         builder.ToTable("Empl_Loan");

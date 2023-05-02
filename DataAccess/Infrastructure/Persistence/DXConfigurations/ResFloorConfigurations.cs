@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ResFloorConfiguration : IEntityTypeConfiguration<ResFloor>
 {
-
-
     public void Configure(EntityTypeBuilder<ResFloor> builder)
     {
         builder.ToTable("ResFloor");

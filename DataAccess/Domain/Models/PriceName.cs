@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class PriceName
+public class PriceName
 {
     public decimal Id { get; set; }
     public string? Price1 { get; set; }

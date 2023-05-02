@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class BarcodeScale
+public class BarcodeScale
 {
     public int Id { get; set; }
     public bool? UseScaleBarcode { get; set; }

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindScientificConfiguration : IEntityTypeConfiguration<KindScientific>
 {
-
-
     public void Configure(EntityTypeBuilder<KindScientific> builder)
     {
         builder.ToTable("Kind_Scientific");

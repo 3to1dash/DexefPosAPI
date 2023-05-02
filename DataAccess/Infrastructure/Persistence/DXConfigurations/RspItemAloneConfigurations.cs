@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class RspItemAloneConfiguration : IEntityTypeConfiguration<RspItemAlone>
 {
-
-
     public void Configure(EntityTypeBuilder<RspItemAlone> builder)
     {
         builder.HasNoKey();

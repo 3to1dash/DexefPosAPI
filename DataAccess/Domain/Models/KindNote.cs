@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class KindNote
+public class KindNote
 {
     public decimal Id { get; set; }
     public string? Dealing { get; set; }

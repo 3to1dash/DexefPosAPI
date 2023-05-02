@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ResTransactionLogConfiguration : IEntityTypeConfiguration<ResTransactionLog>
 {
-
-
     public void Configure(EntityTypeBuilder<ResTransactionLog> builder)
     {
         builder.ToTable("ResTransactionLog");

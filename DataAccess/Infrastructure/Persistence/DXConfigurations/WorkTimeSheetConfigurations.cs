@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkTimeSheetConfiguration : IEntityTypeConfiguration<WorkTimeSheet>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkTimeSheet> builder)
     {
         builder.ToTable("Work_TimeSheet");

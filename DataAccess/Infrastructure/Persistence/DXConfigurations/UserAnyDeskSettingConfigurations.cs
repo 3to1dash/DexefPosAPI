@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class UserAnyDeskSettingConfiguration : IEntityTypeConfiguration<UserAnyDeskSetting>
 {
-
-
     public void Configure(EntityTypeBuilder<UserAnyDeskSetting> builder)
     {
         builder.ToTable("User_AnyDeskSetting");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ShMsgSaleConfiguration : IEntityTypeConfiguration<ShMsgSale>
 {
-
-
     public void Configure(EntityTypeBuilder<ShMsgSale> builder)
     {
         builder.ToTable("Sh_MsgSale");

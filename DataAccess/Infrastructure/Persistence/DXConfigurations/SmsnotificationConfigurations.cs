@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SmsnotificationConfiguration : IEntityTypeConfiguration<Smsnotification>
 {
-
-
     public void Configure(EntityTypeBuilder<Smsnotification> builder)
     {
         builder.ToTable("SMSNotification");

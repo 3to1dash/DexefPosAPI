@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PointCustConfiguration : IEntityTypeConfiguration<PointCust>
 {
-
-
     public void Configure(EntityTypeBuilder<PointCust> builder)
     {
         builder.ToTable("Point_Cust");

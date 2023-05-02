@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WooCategoryMapperConfiguration : IEntityTypeConfiguration<WooCategoryMapper>
 {
-
-
     public void Configure(EntityTypeBuilder<WooCategoryMapper> builder)
     {
         builder.ToTable("WooCategoryMapper");

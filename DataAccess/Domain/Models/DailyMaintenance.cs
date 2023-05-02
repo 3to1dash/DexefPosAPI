@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class DailyMaintenance
+public class DailyMaintenance
 {
     public int Id { get; set; }
     public DateTime? Dt { get; set; }

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyFixedAssetConfiguration : IEntityTypeConfiguration<DailyFixedAsset>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyFixedAsset> builder)
     {
         builder.ToTable("DailyFixedAsset");

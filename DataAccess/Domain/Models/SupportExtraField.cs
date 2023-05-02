@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class SupportExtraField
+public class SupportExtraField
 {
     public decimal Id { get; set; }
     public string? Txt1 { get; set; }

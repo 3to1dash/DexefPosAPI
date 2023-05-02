@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class AccountMonthlyConfiguration : IEntityTypeConfiguration<AccountMonthly>
 {
-
-
     public void Configure(EntityTypeBuilder<AccountMonthly> builder)
     {
         builder.HasNoKey();

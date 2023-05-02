@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class RsdBillMappingConfiguration : IEntityTypeConfiguration<RsdBillMapping>
 {
-
-
     public void Configure(EntityTypeBuilder<RsdBillMapping> builder)
     {
         builder.ToTable("RSD_BillMapping");

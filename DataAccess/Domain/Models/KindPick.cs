@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class KindPick
+public class KindPick
 {
     public long Id { get; set; }
     public int? KindId { get; set; }

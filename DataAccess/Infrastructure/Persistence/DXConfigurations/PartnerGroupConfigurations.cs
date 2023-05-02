@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PartnerGroupConfiguration : IEntityTypeConfiguration<PartnerGroup>
 {
-
-
     public void Configure(EntityTypeBuilder<PartnerGroup> builder)
     {
         builder.ToTable("Partner_Group");

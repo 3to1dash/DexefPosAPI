@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class DailyCustAgingEntry
+public class DailyCustAgingEntry
 {
     public long Id { get; set; }
     public decimal? ParentTaskId { get; set; }

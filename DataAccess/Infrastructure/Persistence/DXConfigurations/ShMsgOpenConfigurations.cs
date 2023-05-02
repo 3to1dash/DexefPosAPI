@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ShMsgOpenConfiguration : IEntityTypeConfiguration<ShMsgOpen>
 {
-
-
     public void Configure(EntityTypeBuilder<ShMsgOpen> builder)
     {
         builder.ToTable("Sh_MsgOpen");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CustDefaultConfiguration : IEntityTypeConfiguration<CustDefault>
 {
-
-
     public void Configure(EntityTypeBuilder<CustDefault> builder)
     {
         builder.ToTable("Cust_default");

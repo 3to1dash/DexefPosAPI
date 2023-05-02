@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FactoreMachineConfiguration : IEntityTypeConfiguration<FactoreMachine>
 {
-
-
     public void Configure(EntityTypeBuilder<FactoreMachine> builder)
     {
         builder.ToTable("Factore_machine");

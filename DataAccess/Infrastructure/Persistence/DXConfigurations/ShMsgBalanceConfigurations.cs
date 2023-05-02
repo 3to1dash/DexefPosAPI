@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ShMsgBalanceConfiguration : IEntityTypeConfiguration<ShMsgBalance>
 {
-
-
     public void Configure(EntityTypeBuilder<ShMsgBalance> builder)
     {
         builder.ToTable("Sh_MsgBalance");

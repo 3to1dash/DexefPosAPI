@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class BadgetMaster
+public class BadgetMaster
 {
     public int Id { get; set; }
     public int? Code { get; set; }

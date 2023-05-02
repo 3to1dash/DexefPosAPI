@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TempConvertConfiguration : IEntityTypeConfiguration<TempConvert>
 {
-
-
     public void Configure(EntityTypeBuilder<TempConvert> builder)
     {
         builder.HasNoKey();

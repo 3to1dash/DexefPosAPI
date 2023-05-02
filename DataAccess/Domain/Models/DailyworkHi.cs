@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class DailyworkHi
+public class DailyworkHi
 {
     public decimal Id { get; set; }
     public decimal? Workid { get; set; }

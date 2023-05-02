@@ -6,43 +6,45 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyBankConfiguration : IEntityTypeConfiguration<DailyBank>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyBank> builder)
     {
         builder.ToTable("DailyBank");
 
-        builder.HasIndex(e => new { e.AccountId, e.BranchId, e.Deleted, e.Updated, e.Dt }, "IX_DailyBank_AccountID_BranchID_Deleted_Updated_dt_DC880");
+        builder.HasIndex(e => new {e.AccountId, e.BranchId, e.Deleted, e.Updated, e.Dt},
+            "IX_DailyBank_AccountID_BranchID_Deleted_Updated_dt_DC880");
 
-        builder.HasIndex(e => new { e.AccountId, e.Deleted, e.Updated }, "IX_DailyBank_AccountID_Deleted_Updated_0FC67");
+        builder.HasIndex(e => new {e.AccountId, e.Deleted, e.Updated}, "IX_DailyBank_AccountID_Deleted_Updated_0FC67");
 
-        builder.HasIndex(e => new { e.AccountId, e.Deleted, e.Updated, e.Dt, e.BranchId }, "IX_DailyBank_AccountID_Deleted_Updated_dt_BranchID_CB5D6");
+        builder.HasIndex(e => new {e.AccountId, e.Deleted, e.Updated, e.Dt, e.BranchId},
+            "IX_DailyBank_AccountID_Deleted_Updated_dt_BranchID_CB5D6");
 
-        builder.HasIndex(e => new { e.AccountId, e.TaskId }, "IX_DailyBank_AccountID_TaskID_94897");
+        builder.HasIndex(e => new {e.AccountId, e.TaskId}, "IX_DailyBank_AccountID_TaskID_94897");
 
-        builder.HasIndex(e => new { e.AccountId, e.Dealing }, "IX_DailyBank_AccountID_dealing_9E9FD");
+        builder.HasIndex(e => new {e.AccountId, e.Dealing}, "IX_DailyBank_AccountID_dealing_9E9FD");
 
-        builder.HasIndex(e => new { e.BranchId, e.RegNum, e.TaskId }, "IX_DailyBank_BranchID_RegNum_TaskID_49C3F");
+        builder.HasIndex(e => new {e.BranchId, e.RegNum, e.TaskId}, "IX_DailyBank_BranchID_RegNum_TaskID_49C3F");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated }, "IX_DailyBank_Deleted_Updated_26D2C");
+        builder.HasIndex(e => new {e.Deleted, e.Updated}, "IX_DailyBank_Deleted_Updated_26D2C");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated }, "IX_DailyBank_Deleted_Updated_8F564");
+        builder.HasIndex(e => new {e.Deleted, e.Updated}, "IX_DailyBank_Deleted_Updated_8F564");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated }, "IX_DailyBank_Deleted_Updated_AC7F7");
+        builder.HasIndex(e => new {e.Deleted, e.Updated}, "IX_DailyBank_Deleted_Updated_AC7F7");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated }, "IX_DailyBank_Deleted_Updated_BC004");
+        builder.HasIndex(e => new {e.Deleted, e.Updated}, "IX_DailyBank_Deleted_Updated_BC004");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated, e.Dt }, "IX_DailyBank_Deleted_Updated_dt_08175");
+        builder.HasIndex(e => new {e.Deleted, e.Updated, e.Dt}, "IX_DailyBank_Deleted_Updated_dt_08175");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated, e.Dt, e.AccountId, e.BranchId }, "IX_DailyBank_Deleted_Updated_dt_AccountID_BranchID_04E7D");
+        builder.HasIndex(e => new {e.Deleted, e.Updated, e.Dt, e.AccountId, e.BranchId},
+            "IX_DailyBank_Deleted_Updated_dt_AccountID_BranchID_04E7D");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated, e.Dt }, "IX_DailyBank_Deleted_Updated_dt_CD375");
+        builder.HasIndex(e => new {e.Deleted, e.Updated, e.Dt}, "IX_DailyBank_Deleted_Updated_dt_CD375");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated, e.Dt, e.Currency }, "IX_DailyBank_Deleted_Updated_dt_Currency_D8B4B");
+        builder.HasIndex(e => new {e.Deleted, e.Updated, e.Dt, e.Currency},
+            "IX_DailyBank_Deleted_Updated_dt_Currency_D8B4B");
 
-        builder.HasIndex(e => new { e.Deleted, e.Updated, e.Dt }, "IX_DailyBank_Deleted_Updated_dt_D8EC8");
+        builder.HasIndex(e => new {e.Deleted, e.Updated, e.Dt}, "IX_DailyBank_Deleted_Updated_dt_D8EC8");
 
-        builder.HasIndex(e => new { e.TaskId, e.Deleted, e.Updated }, "IX_DailyBank_TaskID_Deleted_Updated_61969");
+        builder.HasIndex(e => new {e.TaskId, e.Deleted, e.Updated}, "IX_DailyBank_TaskID_Deleted_Updated_61969");
 
         builder.HasIndex(e => e.Dealing, "IX_DailyBank_dealing_EADBE");
 

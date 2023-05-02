@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FixedAssetExpenseConfiguration : IEntityTypeConfiguration<FixedAssetExpense>
 {
-
-
     public void Configure(EntityTypeBuilder<FixedAssetExpense> builder)
     {
         builder.Property(e => e.Id).HasColumnName("id");

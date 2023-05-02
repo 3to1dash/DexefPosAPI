@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class ExpensesBranch
+public class ExpensesBranch
 {
     public int Id { get; set; }
     public int? ExpensesD { get; set; }

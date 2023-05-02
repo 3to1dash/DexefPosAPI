@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindDrugConfiguration : IEntityTypeConfiguration<KindDrug>
 {
-
-
     public void Configure(EntityTypeBuilder<KindDrug> builder)
     {
         builder.ToTable("Kind_Drugs");

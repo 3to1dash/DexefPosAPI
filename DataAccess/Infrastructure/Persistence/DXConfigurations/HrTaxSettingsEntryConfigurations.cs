@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class HrTaxSettingsEntryConfiguration : IEntityTypeConfiguration<HrTaxSettingsEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<HrTaxSettingsEntry> builder)
     {
         builder.ToTable("HR_TaxSettings_Entry");

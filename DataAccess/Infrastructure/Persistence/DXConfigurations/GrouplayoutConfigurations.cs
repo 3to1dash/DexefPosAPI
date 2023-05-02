@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class GrouplayoutConfiguration : IEntityTypeConfiguration<Grouplayout>
 {
-
-
     public void Configure(EntityTypeBuilder<Grouplayout> builder)
     {
         builder.HasNoKey();

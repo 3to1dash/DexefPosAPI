@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SalariesEntryConfiguration : IEntityTypeConfiguration<SalariesEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<SalariesEntry> builder)
     {
         builder.HasNoKey();

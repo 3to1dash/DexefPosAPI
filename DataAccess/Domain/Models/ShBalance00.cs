@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class ShBalance00
+public class ShBalance00
 {
     public decimal Id { get; set; }
     public decimal? CustId { get; set; }

@@ -6,17 +6,15 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TripUserConfiguration : IEntityTypeConfiguration<TripUser>
 {
-
-
     public void Configure(EntityTypeBuilder<TripUser> builder)
     {
         builder.ToTable("Trip_Users");
 
-        builder.HasIndex(e => new { e.BranchId, e.TripGdsId }, "IX_Trip_Users_BranchID_ProvidorID_ABA06");
+        builder.HasIndex(e => new {e.BranchId, e.TripGdsId}, "IX_Trip_Users_BranchID_ProvidorID_ABA06");
 
         builder.HasIndex(e => e.TripGdsId, "IX_Trip_Users_Trip_GdsId_9A8FE");
 
-        builder.HasIndex(e => new { e.UserName, e.TripGdsId }, "IX_Trip_Users_UserName_ProvidorID_20D12");
+        builder.HasIndex(e => new {e.UserName, e.TripGdsId}, "IX_Trip_Users_UserName_ProvidorID_20D12");
 
         builder.Property(e => e.Id).HasColumnName("id");
 

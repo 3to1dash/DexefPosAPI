@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Dbversion
+public class Dbversion
 {
     public decimal CurrentVer { get; set; }
     public Guid Rowguid { get; set; }

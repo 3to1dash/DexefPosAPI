@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class GetExpense
+public class GetExpense
 {
     public int Id { get; set; }
     public DateTime? Dt { get; set; }

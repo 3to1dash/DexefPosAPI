@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class RKitchenConfiguration : IEntityTypeConfiguration<RKitchen>
 {
-
-
     public void Configure(EntityTypeBuilder<RKitchen> builder)
     {
         builder.ToTable("R_Kitchen");

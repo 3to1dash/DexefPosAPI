@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyuserConfiguration : IEntityTypeConfiguration<Dailyuser>
 {
-
-
     public void Configure(EntityTypeBuilder<Dailyuser> builder)
     {
         builder.ToTable("dailyuser");

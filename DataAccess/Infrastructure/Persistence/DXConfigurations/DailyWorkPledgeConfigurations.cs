@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyWorkPledgeConfiguration : IEntityTypeConfiguration<DailyWorkPledge>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyWorkPledge> builder)
     {
         builder.Property(e => e.Id).HasColumnName("id");

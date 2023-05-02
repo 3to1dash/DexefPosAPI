@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class InvoicePrefixConfiguration : IEntityTypeConfiguration<InvoicePrefix>
 {
-
-
     public void Configure(EntityTypeBuilder<InvoicePrefix> builder)
     {
         builder.ToTable("Invoice_Prefix");

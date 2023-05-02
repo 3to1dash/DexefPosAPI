@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Smsalert
+public class Smsalert
 {
     public int Id { get; set; }
     public int? Smsid { get; set; }

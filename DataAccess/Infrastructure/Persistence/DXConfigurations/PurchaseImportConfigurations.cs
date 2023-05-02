@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PurchaseImportConfiguration : IEntityTypeConfiguration<PurchaseImport>
 {
-
-
     public void Configure(EntityTypeBuilder<PurchaseImport> builder)
     {
         builder.ToTable("PurchaseImport");

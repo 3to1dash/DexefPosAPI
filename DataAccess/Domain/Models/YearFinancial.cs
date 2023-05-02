@@ -1,12 +1,7 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class YearFinancial
+public class YearFinancial
 {
-    public YearFinancial()
-    {
-        YearFinancialRoles = new HashSet<YearFinancialRole>();
-    }
-
     public int Id { get; set; }
     public int? PeriodState { get; set; }
     public string? Caption { get; set; }
@@ -23,5 +18,5 @@ public partial class YearFinancial
     public bool? CanEditAfterClose { get; set; }
 
     public virtual YearFinancialMaster? Master { get; set; }
-    public virtual ICollection<YearFinancialRole> YearFinancialRoles { get; set; }
+    public virtual List<YearFinancialRole> YearFinancialRoles { get; set; }
 }

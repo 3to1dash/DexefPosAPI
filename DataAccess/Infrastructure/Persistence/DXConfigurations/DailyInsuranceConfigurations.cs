@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyInsuranceConfiguration : IEntityTypeConfiguration<DailyInsurance>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyInsurance> builder)
     {
         builder.ToTable("DailyInsurance");

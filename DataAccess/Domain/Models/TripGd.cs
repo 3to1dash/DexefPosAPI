@@ -1,14 +1,7 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TripGd
+public class TripGd
 {
-    public TripGd()
-    {
-        TripContracts = new HashSet<TripContract>();
-        TripTickets = new HashSet<TripTicket>();
-        TripUsers = new HashSet<TripUser>();
-    }
-
     public int Id { get; set; }
     public int? BranchId { get; set; }
     public string? Name { get; set; }
@@ -27,7 +20,7 @@ public partial class TripGd
     public bool? IsCommIncludeTax { get; set; }
     public bool? IsaddCommission { get; set; }
 
-    public virtual ICollection<TripContract> TripContracts { get; set; }
-    public virtual ICollection<TripTicket> TripTickets { get; set; }
-    public virtual ICollection<TripUser> TripUsers { get; set; }
+    public virtual List<TripContract> TripContracts { get; set; }
+    public virtual List<TripTicket> TripTickets { get; set; }
+    public virtual List<TripUser> TripUsers { get; set; }
 }

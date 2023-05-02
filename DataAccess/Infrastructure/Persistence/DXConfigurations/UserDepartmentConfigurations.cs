@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class UserDepartmentConfiguration : IEntityTypeConfiguration<UserDepartment>
 {
-
-
     public void Configure(EntityTypeBuilder<UserDepartment> builder)
     {
         builder.ToTable("User_Department");

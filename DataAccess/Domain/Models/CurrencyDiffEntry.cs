@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class CurrencyDiffEntry
+public class CurrencyDiffEntry
 {
     public decimal Id { get; set; }
     public int? AccountId { get; set; }

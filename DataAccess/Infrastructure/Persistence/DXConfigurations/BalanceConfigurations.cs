@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class BalanceConfiguration : IEntityTypeConfiguration<Balance>
 {
-
-
     public void Configure(EntityTypeBuilder<Balance> builder)
     {
         builder.HasNoKey();

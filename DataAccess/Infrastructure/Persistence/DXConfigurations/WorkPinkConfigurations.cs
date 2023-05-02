@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkPinkConfiguration : IEntityTypeConfiguration<WorkPink>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkPink> builder)
     {
         builder.ToTable("work_pinks");

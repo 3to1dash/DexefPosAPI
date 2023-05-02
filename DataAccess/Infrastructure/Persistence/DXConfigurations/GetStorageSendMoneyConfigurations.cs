@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class GetStorageSendMoneyConfiguration : IEntityTypeConfiguration<GetStorageSendMoney>
 {
-
-
     public void Configure(EntityTypeBuilder<GetStorageSendMoney> builder)
     {
         builder.HasNoKey();

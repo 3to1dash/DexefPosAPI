@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class StoreItemIdStyle
+public class StoreItemIdStyle
 {
     public int Id { get; set; }
     public int? ColorId { get; set; }

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class BarcodeQrConfiguration : IEntityTypeConfiguration<BarcodeQr>
 {
-
-
     public void Configure(EntityTypeBuilder<BarcodeQr> builder)
     {
         builder.ToTable("BarcodeQR");

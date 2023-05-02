@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FactoreComeConfiguration : IEntityTypeConfiguration<FactoreCome>
 {
-
-
     public void Configure(EntityTypeBuilder<FactoreCome> builder)
     {
         builder.ToTable("Factore_Come");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TipConfiguration : IEntityTypeConfiguration<Tip>
 {
-
-
     public void Configure(EntityTypeBuilder<Tip> builder)
     {
         builder.HasNoKey();

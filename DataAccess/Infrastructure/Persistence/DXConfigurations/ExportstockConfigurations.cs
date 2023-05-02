@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ExportstockConfiguration : IEntityTypeConfiguration<Exportstock>
 {
-
-
     public void Configure(EntityTypeBuilder<Exportstock> builder)
     {
         builder.ToTable("exportstock");

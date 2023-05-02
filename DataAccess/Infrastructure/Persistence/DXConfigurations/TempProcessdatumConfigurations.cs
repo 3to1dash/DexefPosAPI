@@ -6,15 +6,15 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TempProcessdatumConfiguration : IEntityTypeConfiguration<TempProcessdatum>
 {
-
-
     public void Configure(EntityTypeBuilder<TempProcessdatum> builder)
     {
         builder.HasNoKey();
 
         builder.ToTable("temp_processdata");
 
-        builder.HasIndex(e => new { e.Itemid, e.SellId, e.PurchaseId, e.OrgSellQty, e.SettledSellQty, e.RemainingQtyinPurId }, "ClusteredIndex-20200520-233822")
+        builder.HasIndex(
+                e => new {e.Itemid, e.SellId, e.PurchaseId, e.OrgSellQty, e.SettledSellQty, e.RemainingQtyinPurId},
+                "ClusteredIndex-20200520-233822")
             .IsClustered();
 
         builder.HasIndex(e => e.SellId, "IX_temp_processdata_SellId_82B98");

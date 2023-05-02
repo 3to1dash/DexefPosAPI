@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ImportorderConfiguration : IEntityTypeConfiguration<Importorder>
 {
-
-
     public void Configure(EntityTypeBuilder<Importorder> builder)
     {
         builder.ToTable("importorder");

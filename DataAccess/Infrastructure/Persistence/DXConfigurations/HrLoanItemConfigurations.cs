@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class HrLoanItemConfiguration : IEntityTypeConfiguration<HrLoanItem>
 {
-
-
     public void Configure(EntityTypeBuilder<HrLoanItem> builder)
     {
         builder.ToTable("Hr_LoanItems");

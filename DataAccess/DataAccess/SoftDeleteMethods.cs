@@ -8,9 +8,9 @@ namespace DataAccess.DataAccess;
 
 public class SoftDeleteMethods : ISoftDeleteMethods
 {
-    private readonly DxdbContext _dbContext;
+    private readonly IDbContext _dbContext;
 
-    public SoftDeleteMethods(DxdbContext dbContext)
+    public SoftDeleteMethods(IDbContext dbContext)
     {
         _dbContext = dbContext;
     }
@@ -35,9 +35,10 @@ public class SoftDeleteMethods : ISoftDeleteMethods
     }
 
     public async Task<int> SoftDeleteSingleOrRangeAsync<TEntity>(
-        Expression<Func<TEntity, bool>> filterExpression, 
+        Expression<Func<TEntity, bool>> filterExpression,
         Expression<Func<SetPropertyCalls<TEntity>, SetPropertyCalls<TEntity>>> setPropertyCalls) where TEntity : class
     {
-        return await _dbContext.Set<TEntity>().Where(filterExpression).ExecuteUpdateAsync(setPropertyCalls).ConfigureAwait(false);
+        return await _dbContext.Set<TEntity>().Where(filterExpression).ExecuteUpdateAsync(setPropertyCalls)
+            .ConfigureAwait(false);
     }
 }

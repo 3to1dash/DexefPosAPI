@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Saletemp
+public class Saletemp
 {
     public DateTime? Dt { get; set; }
     public decimal? Dafter { get; set; }

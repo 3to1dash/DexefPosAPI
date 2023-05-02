@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class PotGroup
+public class PotGroup
 {
     public decimal Id { get; set; }
     public decimal? Num { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class SalaryCalcLog
+public class SalaryCalcLog
 {
     public decimal Id { get; set; }
     public int? WorkId { get; set; }

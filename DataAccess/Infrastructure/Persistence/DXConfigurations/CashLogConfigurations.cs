@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CashLogConfiguration : IEntityTypeConfiguration<CashLog>
 {
-
-
     public void Configure(EntityTypeBuilder<CashLog> builder)
     {
         builder.ToTable("Cash_Log");

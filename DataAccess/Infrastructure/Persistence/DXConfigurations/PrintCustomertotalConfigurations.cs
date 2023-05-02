@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PrintCustomertotalConfiguration : IEntityTypeConfiguration<PrintCustomertotal>
 {
-
-
     public void Configure(EntityTypeBuilder<PrintCustomertotal> builder)
     {
         builder.HasNoKey();

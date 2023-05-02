@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FactoreInConfiguration : IEntityTypeConfiguration<FactoreIn>
 {
-
-
     public void Configure(EntityTypeBuilder<FactoreIn> builder)
     {
         builder.ToTable("FactoreIN");

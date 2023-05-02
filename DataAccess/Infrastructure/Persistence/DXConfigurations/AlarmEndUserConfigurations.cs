@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class AlarmEndUserConfiguration : IEntityTypeConfiguration<AlarmEndUser>
 {
-
-
     public void Configure(EntityTypeBuilder<AlarmEndUser> builder)
     {
         builder.ToTable("Alarm_EndUser");

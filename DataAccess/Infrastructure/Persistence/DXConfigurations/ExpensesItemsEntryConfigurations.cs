@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ExpensesItemsEntryConfiguration : IEntityTypeConfiguration<ExpensesItemsEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<ExpensesItemsEntry> builder)
     {
         builder.ToTable("ExpensesItems_Entry");

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class PaymentLog
+public class PaymentLog
 {
     public long Id { get; set; }
     public string? Dealing { get; set; }

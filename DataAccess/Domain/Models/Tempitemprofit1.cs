@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Tempitemprofit1
+public class Tempitemprofit1
 {
     public decimal? Kindcost { get; set; }
     public decimal? Kindcost1 { get; set; }

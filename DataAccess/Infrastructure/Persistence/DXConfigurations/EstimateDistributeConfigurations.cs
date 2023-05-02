@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class EstimateDistributeConfiguration : IEntityTypeConfiguration<EstimateDistribute>
 {
-
-
     public void Configure(EntityTypeBuilder<EstimateDistribute> builder)
     {
         builder.ToTable("Estimate_Distribute");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CStageEntryConfiguration : IEntityTypeConfiguration<CStageEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<CStageEntry> builder)
     {
         builder.ToTable("C_Stage_Entry");

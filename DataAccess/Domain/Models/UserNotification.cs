@@ -1,13 +1,7 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class UserNotification
+public class UserNotification
 {
-    public UserNotification()
-    {
-        UserNotificationEntries = new HashSet<UserNotificationEntry>();
-        Users = new HashSet<User>();
-    }
-
     public int Id { get; set; }
     public string? Name { get; set; }
     public bool? UseStores { get; set; }
@@ -18,6 +12,6 @@ public partial class UserNotification
     public bool? UseHr { get; set; }
     public Guid Rowguid { get; set; }
 
-    public virtual ICollection<UserNotificationEntry> UserNotificationEntries { get; set; }
-    public virtual ICollection<User> Users { get; set; }
+    public virtual List<UserNotificationEntry> UserNotificationEntries { get; set; }
+    public virtual List<User> Users { get; set; }
 }

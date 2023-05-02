@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TripIatumConfiguration : IEntityTypeConfiguration<TripIatum>
 {
-
-
     public void Configure(EntityTypeBuilder<TripIatum> builder)
     {
         builder.ToTable("Trip_IATA");

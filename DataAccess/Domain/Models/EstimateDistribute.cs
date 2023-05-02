@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class EstimateDistribute
+public class EstimateDistribute
 {
     public decimal Id { get; set; }
     public decimal? ShipId { get; set; }

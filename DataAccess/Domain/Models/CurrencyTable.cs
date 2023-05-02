@@ -1,8 +1,8 @@
-﻿using System.Text.Json.Serialization;
+using System.Text.Json.Serialization;
 
 namespace DataAccess.Domain.Models;
 
-public partial class CurrencyTable
+public class CurrencyTable
 {
     public decimal Id { get; set; }
     public string? ArNameCountry { get; set; }
@@ -33,6 +33,5 @@ public partial class CurrencyTable
     public Guid Rowguid { get; set; }
     public string? CountryCode { get; set; }
 
-    [JsonIgnore]
-    public virtual List<CompanyBranch> CompanyBranches { get; set; }
+    [JsonIgnore] public virtual List<CompanyBranch> CompanyBranches { get; set; }
 }

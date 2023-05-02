@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class EstimateDealingConfiguration : IEntityTypeConfiguration<EstimateDealing>
 {
-
-
     public void Configure(EntityTypeBuilder<EstimateDealing> builder)
     {
         builder.ToTable("Estimate_dealing");

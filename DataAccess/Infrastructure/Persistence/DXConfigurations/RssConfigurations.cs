@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class RssConfiguration : IEntityTypeConfiguration<Rss>
 {
-
-
     public void Configure(EntityTypeBuilder<Rss> builder)
     {
         builder.ToTable("RSS");

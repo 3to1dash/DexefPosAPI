@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PriceScannerNewsConfiguration : IEntityTypeConfiguration<PriceScannerNews>
 {
-
-
     public void Configure(EntityTypeBuilder<PriceScannerNews> builder)
     {
         builder.ToTable("PriceScanner_News");

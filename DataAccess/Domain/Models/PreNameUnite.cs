@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class PreNameUnite
+public class PreNameUnite
 {
     public decimal Id { get; set; }
     public string? Unite { get; set; }

@@ -25,7 +25,8 @@ public class ConfigureSwaggerGenOptions : IConfigureOptions<SwaggerGenOptions>
     {
         var info = new OpenApiInfo()
         {
-            Title = $"{this.GetType().Assembly.GetCustomAttribute<AssemblyProductAttribute>()?.Product} {description.ApiVersion}",
+            Title =
+                $"{this.GetType().Assembly.GetCustomAttribute<AssemblyProductAttribute>()?.Product} {description.ApiVersion}",
             Version = description.ApiVersion.ToString(),
             Description = description.IsDeprecated
                 ? $"{this.GetType().Assembly.GetCustomAttribute<AssemblyDescriptionAttribute>()?.Description} - DEPRECATED"

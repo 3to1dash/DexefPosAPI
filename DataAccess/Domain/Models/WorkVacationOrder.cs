@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class WorkVacationOrder
+public class WorkVacationOrder
 {
     public int Id { get; set; }
     public decimal? Num { get; set; }

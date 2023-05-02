@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class DailyBatchNumber
+public class DailyBatchNumber
 {
     public long Id { get; set; }
     public int? OperateId { get; set; }

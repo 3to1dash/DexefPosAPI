@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TripItineraryTypeConfiguration : IEntityTypeConfiguration<TripItineraryType>
 {
-
-
     public void Configure(EntityTypeBuilder<TripItineraryType> builder)
     {
         builder.ToTable("Trip_Itinerary_Type");

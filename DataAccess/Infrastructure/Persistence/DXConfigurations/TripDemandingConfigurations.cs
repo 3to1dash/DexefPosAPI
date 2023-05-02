@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TripDemandingConfiguration : IEntityTypeConfiguration<TripDemanding>
 {
-
-
     public void Configure(EntityTypeBuilder<TripDemanding> builder)
     {
         builder.ToTable("Trip_Demanding");

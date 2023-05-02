@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class EmplHiringConfiguration : IEntityTypeConfiguration<EmplHiring>
 {
-
-
     public void Configure(EntityTypeBuilder<EmplHiring> builder)
     {
         builder.ToTable("Empl_Hiring");

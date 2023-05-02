@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class UserPaymentMethodConfiguration : IEntityTypeConfiguration<UserPaymentMethod>
 {
-
-
     public void Configure(EntityTypeBuilder<UserPaymentMethod> builder)
     {
         builder.ToTable("User_PaymentMethod");

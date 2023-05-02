@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class SaleConfirmEntry
+public class SaleConfirmEntry
 {
     public decimal Id { get; set; }
     public int? BillIndex { get; set; }

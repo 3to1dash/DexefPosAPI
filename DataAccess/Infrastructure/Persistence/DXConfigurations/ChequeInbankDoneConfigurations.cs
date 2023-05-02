@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ChequeInbankDoneConfiguration : IEntityTypeConfiguration<ChequeInbankDone>
 {
-
-
     public void Configure(EntityTypeBuilder<ChequeInbankDone> builder)
     {
         builder.ToTable("Cheque_INBankDone");

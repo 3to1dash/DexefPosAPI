@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class HrJobInfoConfiguration : IEntityTypeConfiguration<HrJobInfo>
 {
-
-
     public void Configure(EntityTypeBuilder<HrJobInfo> builder)
     {
         builder.ToTable("HR_JobInfo");

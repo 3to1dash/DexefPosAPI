@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ReportCenterShortcutConfiguration : IEntityTypeConfiguration<ReportCenterShortcut>
 {
-
-
     public void Configure(EntityTypeBuilder<ReportCenterShortcut> builder)
     {
         builder.ToTable("ReportCenter_Shortcut");

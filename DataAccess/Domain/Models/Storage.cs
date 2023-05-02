@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Storage
+public class Storage
 {
     public int Id { get; set; }
     public DateTime? Dt { get; set; }

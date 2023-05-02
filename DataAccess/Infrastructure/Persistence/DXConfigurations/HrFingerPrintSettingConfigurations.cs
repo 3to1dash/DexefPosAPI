@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class HrFingerPrintSettingConfiguration : IEntityTypeConfiguration<HrFingerPrintSetting>
 {
-
-
     public void Configure(EntityTypeBuilder<HrFingerPrintSetting> builder)
     {
         builder.ToTable("HR_FingerPrintSetting");

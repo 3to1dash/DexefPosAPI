@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkUsedEserviceConfiguration : IEntityTypeConfiguration<WorkUsedEservice>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkUsedEservice> builder)
     {
         builder.ToTable("Work_UsedEService");

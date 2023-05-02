@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Estimate
+public class Estimate
 {
     public int Id { get; set; }
     public string? Prefex { get; set; }

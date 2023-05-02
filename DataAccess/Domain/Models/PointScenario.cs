@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class PointScenario
+public class PointScenario
 {
     public decimal Id { get; set; }
     public bool? IsItem { get; set; }

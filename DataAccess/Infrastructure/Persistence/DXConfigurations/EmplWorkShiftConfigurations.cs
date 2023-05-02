@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class EmplWorkShiftConfiguration : IEntityTypeConfiguration<EmplWorkShift>
 {
-
-
     public void Configure(EntityTypeBuilder<EmplWorkShift> builder)
     {
         builder.ToTable("Empl_WorkShift");

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Sync
+public class Sync
 {
     public int Id { get; set; }
     public bool? Chk { get; set; }

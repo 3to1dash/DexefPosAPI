@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class CompanyTaxToken
+public class CompanyTaxToken
 {
     public int Id { get; set; }
     public int? CompanyId { get; set; }

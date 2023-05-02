@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CompanyTaxTokenConfiguration : IEntityTypeConfiguration<CompanyTaxToken>
 {
-
-
     public void Configure(EntityTypeBuilder<CompanyTaxToken> builder)
     {
         builder.ToTable("Company_TaxToken");

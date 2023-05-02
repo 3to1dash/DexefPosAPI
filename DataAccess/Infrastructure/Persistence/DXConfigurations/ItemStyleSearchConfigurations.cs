@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ItemStyleSearchConfiguration : IEntityTypeConfiguration<ItemStyleSearch>
 {
-
-
     public void Configure(EntityTypeBuilder<ItemStyleSearch> builder)
     {
         builder.HasNoKey();

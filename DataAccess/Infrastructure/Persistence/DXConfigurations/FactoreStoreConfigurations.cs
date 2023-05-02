@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FactoreStoreConfiguration : IEntityTypeConfiguration<FactoreStore>
 {
-
-
     public void Configure(EntityTypeBuilder<FactoreStore> builder)
     {
         builder.ToTable("Factore_Store");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class RpsAccountConfiguration : IEntityTypeConfiguration<RpsAccount>
 {
-
-
     public void Configure(EntityTypeBuilder<RpsAccount> builder)
     {
         builder.HasNoKey();

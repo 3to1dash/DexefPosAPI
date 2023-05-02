@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ColNameConfiguration : IEntityTypeConfiguration<ColName>
 {
-
-
     public void Configure(EntityTypeBuilder<ColName> builder)
     {
         builder.Property(e => e.Id).HasColumnName("ID");

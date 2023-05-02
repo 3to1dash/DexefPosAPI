@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class AlarmListConfiguration : IEntityTypeConfiguration<AlarmList>
 {
-
-
     public void Configure(EntityTypeBuilder<AlarmList> builder)
     {
         builder.HasKey(e => e.FiedName);

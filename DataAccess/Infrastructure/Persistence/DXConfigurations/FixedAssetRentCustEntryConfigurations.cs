@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FixedAssetRentCustEntryConfiguration : IEntityTypeConfiguration<FixedAssetRentCustEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<FixedAssetRentCustEntry> builder)
     {
         builder.HasNoKey();

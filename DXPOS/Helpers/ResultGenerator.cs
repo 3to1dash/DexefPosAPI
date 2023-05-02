@@ -15,90 +15,19 @@ public class ResultGenerator<T>
         _errorMessages = errorMessages;
     }
 
-    public ResultDto<T> AddingMethods()
+    public ResultDto<T> Generate()
     {
         var Result = new ResultDto<T>
         {
             Success = _success,
             Data = new ResultData<T>()
             {
-                IsAdded = true,
-                IsDeleted = false,
-                IsSelected = false,
-                IsUpdated = false,
-                SubData = _data,
-                Kind = typeof(T).ToString(),
+                InnerData = _data,
+                Type = typeof(T).ToString(),
             },
             Errors = new List<Error>()
             {
-                new Error() { Domain = "", Messages = _errorMessages}
-            }
-        };
-
-        return Result;
-    }
-
-    public ResultDto<T> DeletingMethods()
-    {
-        var Result = new ResultDto<T>
-        {
-            Success = _success,
-            Data = new ResultData<T>()
-            {
-                IsAdded = false,
-                IsDeleted = true,
-                IsSelected = false,
-                IsUpdated = false,
-                SubData = _data,
-                Kind = typeof(T).ToString(),
-            },
-            Errors = new List<Error>()
-            {
-                new Error() { Domain = "", Messages = _errorMessages}
-            }
-        };
-
-        return Result;
-    }
-    public ResultDto<T> UpdatingMethods()
-    {
-        var Result = new ResultDto<T>
-        {
-            Success = _success,
-            Data = new ResultData<T>()
-            {
-                IsAdded = false,
-                IsDeleted = false,
-                IsSelected = false,
-                IsUpdated = true,
-                SubData = _data,
-                Kind = typeof(T).ToString(),
-            },
-            Errors = new List<Error>()
-            {
-                new Error() { Domain = "", Messages = _errorMessages}
-            }
-        };
-
-        return Result;
-    }
-    public ResultDto<T> SelectingMethods()
-    {
-        var Result = new ResultDto<T>
-        {
-            Success = _success,
-            Data = new ResultData<T>()
-            {
-                IsAdded = false,
-                IsDeleted = false,
-                IsSelected = true,
-                IsUpdated = false,
-                SubData = _data,
-                Kind = typeof(T).ToString(),
-            },
-            Errors = new List<Error>()
-            {
-                new Error() { Domain = "", Messages = _errorMessages}
+                new() {Domain = "", Messages = _errorMessages}
             }
         };
 

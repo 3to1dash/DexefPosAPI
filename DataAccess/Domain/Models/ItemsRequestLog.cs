@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class ItemsRequestLog
+public class ItemsRequestLog
 {
     public long Id { get; set; }
     public decimal? DealingTaskId { get; set; }

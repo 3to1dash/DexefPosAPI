@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ItemSizeConfiguration : IEntityTypeConfiguration<ItemSize>
 {
-
-
     public void Configure(EntityTypeBuilder<ItemSize> builder)
     {
         builder.HasNoKey();

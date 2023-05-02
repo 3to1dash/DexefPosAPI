@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ShMsgSpentConfiguration : IEntityTypeConfiguration<ShMsgSpent>
 {
-
-
     public void Configure(EntityTypeBuilder<ShMsgSpent> builder)
     {
         builder.ToTable("Sh_MsgSpent");

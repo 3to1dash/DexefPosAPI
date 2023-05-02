@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SmserrorConfiguration : IEntityTypeConfiguration<Smserror>
 {
-
-
     public void Configure(EntityTypeBuilder<Smserror> builder)
     {
         builder.ToTable("SMSError");

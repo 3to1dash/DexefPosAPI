@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class QuickStart
+public class QuickStart
 {
     public int Id { get; set; }
     public int? ParentId { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class RsdBillMappingEntry
+public class RsdBillMappingEntry
 {
     public int Id { get; set; }
     public int? MappingId { get; set; }

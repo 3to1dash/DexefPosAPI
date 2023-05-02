@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class InvoiceMustSaveConfiguration : IEntityTypeConfiguration<InvoiceMustSave>
 {
-
-
     public void Configure(EntityTypeBuilder<InvoiceMustSave> builder)
     {
         builder.ToTable("Invoice_MustSave");

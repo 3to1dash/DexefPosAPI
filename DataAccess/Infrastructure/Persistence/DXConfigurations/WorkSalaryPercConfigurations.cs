@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkSalaryPercConfiguration : IEntityTypeConfiguration<WorkSalaryPerc>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkSalaryPerc> builder)
     {
         builder.ToTable("Work_SalaryPerc");

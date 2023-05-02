@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class GetStorageTransform
+public class GetStorageTransform
 {
     public string? FromBranch { get; set; }
     public string? ToBranch { get; set; }

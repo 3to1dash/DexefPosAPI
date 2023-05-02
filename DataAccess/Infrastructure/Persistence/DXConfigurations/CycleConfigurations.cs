@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CycleConfiguration : IEntityTypeConfiguration<Cycle>
 {
-
-
     public void Configure(EntityTypeBuilder<Cycle> builder)
     {
         builder.ToTable("cycle");

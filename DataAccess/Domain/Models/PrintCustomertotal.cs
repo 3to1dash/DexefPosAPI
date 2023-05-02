@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class PrintCustomertotal
+public class PrintCustomertotal
 {
     public decimal? Id { get; set; }
     public string? Code { get; set; }

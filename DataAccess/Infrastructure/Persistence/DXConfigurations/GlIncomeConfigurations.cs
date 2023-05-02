@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class GlIncomeConfiguration : IEntityTypeConfiguration<GlIncome>
 {
-
-
     public void Configure(EntityTypeBuilder<GlIncome> builder)
     {
         builder.ToTable("GL_income");

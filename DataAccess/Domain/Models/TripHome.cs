@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TripHome
+public class TripHome
 {
     public decimal? Id { get; set; }
     public string? Status { get; set; }

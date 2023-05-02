@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class ResTableBookingEntry
+public class ResTableBookingEntry
 {
     public int Id { get; set; }
     public int? BookingId { get; set; }

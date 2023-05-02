@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TempInhanddataAvgConfiguration : IEntityTypeConfiguration<TempInhanddataAvg>
 {
-
-
     public void Configure(EntityTypeBuilder<TempInhanddataAvg> builder)
     {
         builder.HasNoKey();

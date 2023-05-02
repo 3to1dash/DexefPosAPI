@@ -6,51 +6,50 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SaleConfiguration : IEntityTypeConfiguration<Sale>
 {
-
-
     public void Configure(EntityTypeBuilder<Sale> builder)
     {
         builder.ToTable("Sale");
 
-        builder.HasIndex(e => new { e.BillNum, e.Dt, e.StoreId }, "IX_Sale_BillNum_DT_StoreID_1E702");
+        builder.HasIndex(e => new {e.BillNum, e.Dt, e.StoreId}, "IX_Sale_BillNum_DT_StoreID_1E702");
 
-        builder.HasIndex(e => new { e.BillNum, e.Dt, e.StoreId }, "IX_Sale_BillNum_DT_StoreID_DECAD");
+        builder.HasIndex(e => new {e.BillNum, e.Dt, e.StoreId}, "IX_Sale_BillNum_DT_StoreID_DECAD");
 
         builder.HasIndex(e => e.BranchId, "IX_Sale_BranchID_CF62F");
 
-        builder.HasIndex(e => new { e.BranchId, e.Dt, e.SumBill }, "IX_Sale_BranchID_DT_SumBill_B5126");
+        builder.HasIndex(e => new {e.BranchId, e.Dt, e.SumBill}, "IX_Sale_BranchID_DT_SumBill_B5126");
 
-        builder.HasIndex(e => new { e.CustId, e.ItemCount, e.SumBill, e.Dt }, "IX_Sale_CustID_ItemCount_SumBill_DT_CE6A3");
+        builder.HasIndex(e => new {e.CustId, e.ItemCount, e.SumBill, e.Dt},
+            "IX_Sale_CustID_ItemCount_SumBill_DT_CE6A3");
 
-        builder.HasIndex(e => new { e.StoreId, e.BillNum, e.Dt }, "IX_Sale_StoreID_BillNum_DT_A5122");
+        builder.HasIndex(e => new {e.StoreId, e.BillNum, e.Dt}, "IX_Sale_StoreID_BillNum_DT_A5122");
 
-        builder.HasIndex(e => new { e.StoreId, e.Dt }, "IX_Sale_StoreID_DT_30965");
+        builder.HasIndex(e => new {e.StoreId, e.Dt}, "IX_Sale_StoreID_DT_30965");
 
-        builder.HasIndex(e => new { e.StoreId, e.Dt }, "IX_Sale_StoreID_DT_4FB39");
+        builder.HasIndex(e => new {e.StoreId, e.Dt}, "IX_Sale_StoreID_DT_4FB39");
 
-        builder.HasIndex(e => new { e.StoreId, e.Dt }, "IX_Sale_StoreID_DT_CB570");
+        builder.HasIndex(e => new {e.StoreId, e.Dt}, "IX_Sale_StoreID_DT_CB570");
 
-        builder.HasIndex(e => new { e.StoreId, e.WrittenBy, e.Dt }, "IX_Sale_StoreID_WrittenBy_DT_C1DF9");
+        builder.HasIndex(e => new {e.StoreId, e.WrittenBy, e.Dt}, "IX_Sale_StoreID_WrittenBy_DT_C1DF9");
 
-        builder.HasIndex(e => new { e.StoreId, e.WrittenBy, e.Dt }, "IX_Sale_StoreID_WrittenBy_DT_D79DB");
+        builder.HasIndex(e => new {e.StoreId, e.WrittenBy, e.Dt}, "IX_Sale_StoreID_WrittenBy_DT_D79DB");
 
-        builder.HasIndex(e => new { e.TaskId, e.CustId }, "IX_Sale_TaskID_CustID_A3DC4");
+        builder.HasIndex(e => new {e.TaskId, e.CustId}, "IX_Sale_TaskID_CustID_A3DC4");
 
         builder.HasIndex(e => e.TaskId, "IX_Sale_TaskID_DB112");
 
         builder.HasIndex(e => e.TaskId, "IX_Sale_TaskID_F98C6");
 
-        builder.HasIndex(e => new { e.Prefix, e.BranchId }, "missing_index_18_17_Sale");
+        builder.HasIndex(e => new {e.Prefix, e.BranchId}, "missing_index_18_17_Sale");
 
-        builder.HasIndex(e => new { e.BranchId, e.Dt, e.TaskId }, "missing_index_4065_4064_Sale");
+        builder.HasIndex(e => new {e.BranchId, e.Dt, e.TaskId}, "missing_index_4065_4064_Sale");
 
-        builder.HasIndex(e => new { e.Dt, e.StoreId, e.Ship }, "missing_index_4156_4155_Sale");
+        builder.HasIndex(e => new {e.Dt, e.StoreId, e.Ship}, "missing_index_4156_4155_Sale");
 
-        builder.HasIndex(e => new { e.StoreId, e.Dt }, "missing_index_4288_4287_Sale");
+        builder.HasIndex(e => new {e.StoreId, e.Dt}, "missing_index_4288_4287_Sale");
 
-        builder.HasIndex(e => new { e.Dt, e.StoreId, e.WrittenBy }, "missing_index_5398_5397_Sale");
+        builder.HasIndex(e => new {e.Dt, e.StoreId, e.WrittenBy}, "missing_index_5398_5397_Sale");
 
-        builder.HasIndex(e => new { e.Prefix, e.Num, e.BranchId }, "missing_index_71_70_Sale");
+        builder.HasIndex(e => new {e.Prefix, e.Num, e.BranchId}, "missing_index_71_70_Sale");
 
         builder.Property(e => e.Id)
             .HasColumnType("numeric(18, 0)")

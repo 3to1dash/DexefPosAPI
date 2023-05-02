@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class DailySerial
+public class DailySerial
 {
     public decimal Id { get; set; }
     public long? ItemId { get; set; }

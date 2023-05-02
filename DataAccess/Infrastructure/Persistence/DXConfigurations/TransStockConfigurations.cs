@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TransStockConfiguration : IEntityTypeConfiguration<TransStock>
 {
-
-
     public void Configure(EntityTypeBuilder<TransStock> builder)
     {
         builder.HasNoKey();

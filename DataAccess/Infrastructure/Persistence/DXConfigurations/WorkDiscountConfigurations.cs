@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkDiscountConfiguration : IEntityTypeConfiguration<WorkDiscount>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkDiscount> builder)
     {
         builder.ToTable("Work_Discount");

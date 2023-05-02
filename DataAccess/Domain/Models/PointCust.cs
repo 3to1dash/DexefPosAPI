@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class PointCust
+public class PointCust
 {
     public decimal Id { get; set; }
     public string? Num { get; set; }

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class UnitsEntryConfiguration : IEntityTypeConfiguration<UnitsEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<UnitsEntry> builder)
     {
         builder.ToTable("UnitsEntry");

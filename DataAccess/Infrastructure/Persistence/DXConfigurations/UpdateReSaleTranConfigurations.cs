@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class UpdateReSaleTranConfiguration : IEntityTypeConfiguration<UpdateReSaleTran>
 {
-
-
     public void Configure(EntityTypeBuilder<UpdateReSaleTran> builder)
     {
         builder.HasNoKey();

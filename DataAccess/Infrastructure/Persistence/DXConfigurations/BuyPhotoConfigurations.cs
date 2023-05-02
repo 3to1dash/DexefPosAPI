@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class BuyPhotoConfiguration : IEntityTypeConfiguration<BuyPhoto>
 {
-
-
     public void Configure(EntityTypeBuilder<BuyPhoto> builder)
     {
         builder.HasNoKey();

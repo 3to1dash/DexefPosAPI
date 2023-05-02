@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class PaidBill
+public class PaidBill
 {
     public decimal? Num { get; set; }
     public decimal? Regnum { get; set; }

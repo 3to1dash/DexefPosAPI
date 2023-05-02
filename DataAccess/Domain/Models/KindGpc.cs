@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class KindGpc
+public class KindGpc
 {
     public string Id { get; set; } = null!;
     public string? ParentId { get; set; }

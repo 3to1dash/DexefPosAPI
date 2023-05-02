@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class GetStorageSendMoney
+public class GetStorageSendMoney
 {
     public string? FromBranch { get; set; }
     public string? ToBranch { get; set; }

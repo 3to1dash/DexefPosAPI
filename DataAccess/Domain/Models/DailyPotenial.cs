@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class DailyPotenial
+public class DailyPotenial
 {
     public decimal Id { get; set; }
     public decimal? TicketId { get; set; }

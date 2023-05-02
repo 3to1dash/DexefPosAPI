@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class EmplTransactionConfiguration : IEntityTypeConfiguration<EmplTransaction>
 {
-
-
     public void Configure(EntityTypeBuilder<EmplTransaction> builder)
     {
         builder.ToTable("Empl_Transaction");

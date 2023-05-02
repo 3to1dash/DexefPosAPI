@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class UserSetting
+public class UserSetting
 {
     public decimal Id { get; set; }
     public string? UserName { get; set; }

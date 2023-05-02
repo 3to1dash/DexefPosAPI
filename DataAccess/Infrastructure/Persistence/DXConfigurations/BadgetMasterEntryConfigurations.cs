@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class BadgetMasterEntryConfiguration : IEntityTypeConfiguration<BadgetMasterEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<BadgetMasterEntry> builder)
     {
         builder.ToTable("Badget_MasterEntry");

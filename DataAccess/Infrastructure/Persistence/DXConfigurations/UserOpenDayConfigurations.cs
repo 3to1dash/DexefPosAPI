@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class UserOpenDayConfiguration : IEntityTypeConfiguration<UserOpenDay>
 {
-
-
     public void Configure(EntityTypeBuilder<UserOpenDay> builder)
     {
         builder.ToTable("UserOpenDay");

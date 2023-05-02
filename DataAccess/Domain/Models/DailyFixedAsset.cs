@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class DailyFixedAsset
+public class DailyFixedAsset
 {
     public long Id { get; set; }
     public long? BranchId { get; set; }

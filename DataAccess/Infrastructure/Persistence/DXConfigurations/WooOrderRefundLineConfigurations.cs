@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WooOrderRefundLineConfiguration : IEntityTypeConfiguration<WooOrderRefundLine>
 {
-
-
     public void Configure(EntityTypeBuilder<WooOrderRefundLine> builder)
     {
         builder.ToTable("WooOrderRefundLine");

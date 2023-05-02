@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class HrDocumentConfiguration : IEntityTypeConfiguration<HrDocument>
 {
-
-
     public void Configure(EntityTypeBuilder<HrDocument> builder)
     {
         builder.ToTable("HR_Documents");

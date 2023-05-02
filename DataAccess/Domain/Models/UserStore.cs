@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class UserStore
+public class UserStore
 {
     public int Id { get; set; }
     public string? Name { get; set; }

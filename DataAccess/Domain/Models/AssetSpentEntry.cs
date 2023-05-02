@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class AssetSpentEntry
+public class AssetSpentEntry
 {
     public int Id { get; set; }
     public int? Dafter { get; set; }

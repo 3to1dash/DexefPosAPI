@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SalaryLevelConfiguration : IEntityTypeConfiguration<SalaryLevel>
 {
-
-
     public void Configure(EntityTypeBuilder<SalaryLevel> builder)
     {
         builder.ToTable("Salary_Levels");

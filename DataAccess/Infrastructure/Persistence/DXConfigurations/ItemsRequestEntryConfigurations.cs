@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ItemsRequestEntryConfiguration : IEntityTypeConfiguration<ItemsRequestEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<ItemsRequestEntry> builder)
     {
         builder.ToTable("ItemsRequest_Entry");

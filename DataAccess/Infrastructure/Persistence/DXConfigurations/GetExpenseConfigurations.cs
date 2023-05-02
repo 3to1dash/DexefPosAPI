@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class GetExpenseConfiguration : IEntityTypeConfiguration<GetExpense>
 {
-
-
     public void Configure(EntityTypeBuilder<GetExpense> builder)
     {
         builder.HasNoKey();

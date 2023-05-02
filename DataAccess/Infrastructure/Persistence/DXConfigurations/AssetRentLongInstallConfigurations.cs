@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class AssetRentLongInstallConfiguration : IEntityTypeConfiguration<AssetRentLongInstall>
 {
-
-
     public void Configure(EntityTypeBuilder<AssetRentLongInstall> builder)
     {
         builder.ToTable("AssetRentLong_Install");

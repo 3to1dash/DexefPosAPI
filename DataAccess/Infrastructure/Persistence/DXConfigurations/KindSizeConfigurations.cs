@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindSizeConfiguration : IEntityTypeConfiguration<KindSize>
 {
-
-
     public void Configure(EntityTypeBuilder<KindSize> builder)
     {
         builder.ToTable("kind_Size");

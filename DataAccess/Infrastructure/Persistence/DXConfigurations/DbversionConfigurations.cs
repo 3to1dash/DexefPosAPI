@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DbversionConfiguration : IEntityTypeConfiguration<Dbversion>
 {
-
-
     public void Configure(EntityTypeBuilder<Dbversion> builder)
     {
         builder.HasKey(e => e.CurrentVer);

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DeliveryManConfiguration : IEntityTypeConfiguration<DeliveryMan>
 {
-
-
     public void Configure(EntityTypeBuilder<DeliveryMan> builder)
     {
         builder.ToTable("DeliveryMan");

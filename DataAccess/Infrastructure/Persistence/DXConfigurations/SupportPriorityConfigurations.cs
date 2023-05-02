@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SupportPriorityConfiguration : IEntityTypeConfiguration<SupportPriority>
 {
-
-
     public void Configure(EntityTypeBuilder<SupportPriority> builder)
     {
         builder.ToTable("Support_Priority");

@@ -11,7 +11,11 @@ public static class ServiceCollectionExtension
 {
     public static IServiceCollection AddDataAccessServices(this IServiceCollection service)
     {
-        service.AddDbContext<DxdbContext>(opts =>
+        service.AddDbContext<IDbContext, DxdbContext>(opts =>
+        {
+            opts.ConfigureWarnings(w => w.Ignore(SqlServerEventId.DecimalTypeKeyWarning));
+        });
+        service.AddDbContext<IDbContext, DXDBFilesContext>(opts =>
         {
             opts.ConfigureWarnings(w => w.Ignore(SqlServerEventId.DecimalTypeKeyWarning));
         });
@@ -19,6 +23,7 @@ public static class ServiceCollectionExtension
         service.AddScoped<IAddMethods, AddMethods>();
         service.AddScoped<IUpdateMethods, UpdateMethods>();
         service.AddScoped<ISoftDeleteMethods, SoftDeleteMethods>();
+        service.AddScoped<ISaveChangesMethods, SaveChangesMethods>();
         service.AddScoped<BranchesData>();
         service.AddScoped<UsersData>();
         service.AddScoped<CompanyData>();

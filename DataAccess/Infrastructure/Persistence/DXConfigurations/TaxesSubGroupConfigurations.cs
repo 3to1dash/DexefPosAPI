@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TaxesSubGroupConfiguration : IEntityTypeConfiguration<TaxesSubGroup>
 {
-
-
     public void Configure(EntityTypeBuilder<TaxesSubGroup> builder)
     {
         builder.HasKey(e => e.Code);

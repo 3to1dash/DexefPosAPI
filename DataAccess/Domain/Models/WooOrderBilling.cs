@@ -1,12 +1,7 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class WooOrderBilling
+public class WooOrderBilling
 {
-    public WooOrderBilling()
-    {
-        WooOrders = new HashSet<WooOrder>();
-    }
-
     public int Id { get; set; }
     public string FirstName { get; set; } = null!;
     public string LastName { get; set; } = null!;
@@ -20,5 +15,5 @@ public partial class WooOrderBilling
     public string Email { get; set; } = null!;
     public string Phone { get; set; } = null!;
 
-    public virtual ICollection<WooOrder> WooOrders { get; set; }
+    public virtual List<WooOrder> WooOrders { get; set; }
 }

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FixedAssetDepreciationConfiguration : IEntityTypeConfiguration<FixedAssetDepreciation>
 {
-
-
     public void Configure(EntityTypeBuilder<FixedAssetDepreciation> builder)
     {
         builder.ToTable("FixedAsset_Depreciation");

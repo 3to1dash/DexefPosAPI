@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class MailTemplateConfiguration : IEntityTypeConfiguration<MailTemplate>
 {
-
-
     public void Configure(EntityTypeBuilder<MailTemplate> builder)
     {
         builder.ToTable("MailTemplate");

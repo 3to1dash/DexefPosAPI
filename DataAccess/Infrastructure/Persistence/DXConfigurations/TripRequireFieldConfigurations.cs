@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TripRequireFieldConfiguration : IEntityTypeConfiguration<TripRequireField>
 {
-
-
     public void Configure(EntityTypeBuilder<TripRequireField> builder)
     {
         builder.ToTable("Trip_RequireFields");

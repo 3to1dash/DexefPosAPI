@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TaxesAdjustConfiguration : IEntityTypeConfiguration<TaxesAdjust>
 {
-
-
     public void Configure(EntityTypeBuilder<TaxesAdjust> builder)
     {
         builder.ToTable("Taxes_Adjust");

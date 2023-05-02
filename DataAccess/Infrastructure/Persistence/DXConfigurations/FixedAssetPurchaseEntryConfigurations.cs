@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FixedAssetPurchaseEntryConfiguration : IEntityTypeConfiguration<FixedAssetPurchaseEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<FixedAssetPurchaseEntry> builder)
     {
         builder.ToTable("FixedAssetPurchase_Entry");

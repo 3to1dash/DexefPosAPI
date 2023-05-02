@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SrvcRecieveConfiguration : IEntityTypeConfiguration<SrvcRecieve>
 {
-
-
     public void Configure(EntityTypeBuilder<SrvcRecieve> builder)
     {
         builder.ToTable("Srvc_Recieve");

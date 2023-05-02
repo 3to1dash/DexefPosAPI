@@ -1,12 +1,7 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class HrWorkTime
+public class HrWorkTime
 {
-    public HrWorkTime()
-    {
-        Users = new HashSet<User>();
-    }
-
     public int Id { get; set; }
     public int? Num { get; set; }
     public string? ArName { get; set; }
@@ -23,5 +18,5 @@ public partial class HrWorkTime
     public string? Notes { get; set; }
     public Guid Rowguid { get; set; }
 
-    public virtual ICollection<User> Users { get; set; }
+    public virtual List<User> Users { get; set; }
 }

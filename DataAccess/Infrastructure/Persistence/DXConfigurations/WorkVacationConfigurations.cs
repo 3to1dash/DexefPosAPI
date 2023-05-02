@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkVacationConfiguration : IEntityTypeConfiguration<WorkVacation>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkVacation> builder)
     {
         builder.ToTable("Work_Vacation");

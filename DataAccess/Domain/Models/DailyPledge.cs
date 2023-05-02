@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class DailyPledge
+public class DailyPledge
 {
     public long Id { get; set; }
     public DateTime? Dt { get; set; }

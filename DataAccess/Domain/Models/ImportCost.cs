@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class ImportCost
+public class ImportCost
 {
     public decimal Id { get; set; }
     public string? FileNo { get; set; }

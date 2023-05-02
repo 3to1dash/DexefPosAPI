@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FixedAssetRecalcConfiguration : IEntityTypeConfiguration<FixedAssetRecalc>
 {
-
-
     public void Configure(EntityTypeBuilder<FixedAssetRecalc> builder)
     {
         builder.HasNoKey();

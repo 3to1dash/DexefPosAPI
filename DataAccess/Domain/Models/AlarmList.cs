@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class AlarmList
+public class AlarmList
 {
     public long Id { get; set; }
     public int? RowIndex { get; set; }

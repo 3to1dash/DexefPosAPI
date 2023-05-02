@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class FixedAssetDailyDeprecateFile
+public class FixedAssetDailyDeprecateFile
 {
     public long Id { get; set; }
     public string? ArName { get; set; }

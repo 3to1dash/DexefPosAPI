@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkPledgePayConfiguration : IEntityTypeConfiguration<WorkPledgePay>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkPledgePay> builder)
     {
         builder.ToTable("Work_PledgePay");

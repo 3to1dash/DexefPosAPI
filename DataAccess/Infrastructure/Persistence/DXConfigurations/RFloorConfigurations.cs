@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class RFloorConfiguration : IEntityTypeConfiguration<RFloor>
 {
-
-
     public void Configure(EntityTypeBuilder<RFloor> builder)
     {
         builder.ToTable("R_Floor");

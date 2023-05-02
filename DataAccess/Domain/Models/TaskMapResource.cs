@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TaskMapResource
+public class TaskMapResource
 {
     public int Id { get; set; }
     public int? IdSort { get; set; }

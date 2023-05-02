@@ -6,15 +6,14 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TempSellConfiguration : IEntityTypeConfiguration<TempSell>
 {
-
-
     public void Configure(EntityTypeBuilder<TempSell> builder)
     {
         builder.HasNoKey();
 
         builder.ToTable("temp_sell");
 
-        builder.HasIndex(e => new { e.Id, e.Itemid, e.Dt, e.Trancode, e.Qty, e.Itemcost }, "ClusteredIndex-20200520-233935")
+        builder.HasIndex(e => new {e.Id, e.Itemid, e.Dt, e.Trancode, e.Qty, e.Itemcost},
+                "ClusteredIndex-20200520-233935")
             .IsClustered();
 
         builder.Property(e => e.Dt)

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class UserNotificationEntry
+public class UserNotificationEntry
 {
     public long Id { get; set; }
     public int? NotificationId { get; set; }

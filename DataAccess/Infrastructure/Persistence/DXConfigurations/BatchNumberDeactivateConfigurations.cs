@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class BatchNumberDeactivateConfiguration : IEntityTypeConfiguration<BatchNumberDeactivate>
 {
-
-
     public void Configure(EntityTypeBuilder<BatchNumberDeactivate> builder)
     {
         builder.ToTable("Batch_NumberDeactivate");

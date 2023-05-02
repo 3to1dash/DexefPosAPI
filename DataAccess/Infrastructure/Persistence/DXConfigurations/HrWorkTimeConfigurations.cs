@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class HrWorkTimeConfiguration : IEntityTypeConfiguration<HrWorkTime>
 {
-
-
     public void Configure(EntityTypeBuilder<HrWorkTime> builder)
     {
         builder.ToTable("Hr_WorkTime");

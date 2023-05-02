@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ShippingFuelConfiguration : IEntityTypeConfiguration<ShippingFuel>
 {
-
-
     public void Configure(EntityTypeBuilder<ShippingFuel> builder)
     {
         builder.ToTable("ShippingFuel");

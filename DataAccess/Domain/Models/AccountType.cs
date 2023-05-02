@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class AccountType
+public class AccountType
 {
     public int Id { get; set; }
     public int? ParentId { get; set; }

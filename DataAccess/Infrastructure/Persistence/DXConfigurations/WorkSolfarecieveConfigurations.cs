@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkSolfarecieveConfiguration : IEntityTypeConfiguration<WorkSolfarecieve>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkSolfarecieve> builder)
     {
         builder.ToTable("work_solfarecieve");

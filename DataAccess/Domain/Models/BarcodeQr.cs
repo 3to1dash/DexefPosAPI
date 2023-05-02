@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class BarcodeQr
+public class BarcodeQr
 {
     public int Id { get; set; }
     public bool? Active { get; set; }

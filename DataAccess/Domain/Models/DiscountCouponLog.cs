@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class DiscountCouponLog
+public class DiscountCouponLog
 {
     public int CouponId { get; set; }
     public int? ParentId { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class HrAsset
+public class HrAsset
 {
     public int Id { get; set; }
     public int? EmplId { get; set; }

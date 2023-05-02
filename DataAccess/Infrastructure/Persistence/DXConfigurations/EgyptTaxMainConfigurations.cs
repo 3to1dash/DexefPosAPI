@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class EgyptTaxMainConfiguration : IEntityTypeConfiguration<EgyptTaxMain>
 {
-
-
     public void Configure(EntityTypeBuilder<EgyptTaxMain> builder)
     {
         builder.ToTable("EgyptTaxMain");

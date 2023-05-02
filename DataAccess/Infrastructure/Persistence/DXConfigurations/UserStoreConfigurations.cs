@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class UserStoreConfiguration : IEntityTypeConfiguration<UserStore>
 {
-
-
     public void Configure(EntityTypeBuilder<UserStore> builder)
     {
         builder.ToTable("User_Stores");

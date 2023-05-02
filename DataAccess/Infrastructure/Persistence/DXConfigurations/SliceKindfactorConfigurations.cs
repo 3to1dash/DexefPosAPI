@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SliceKindfactorConfiguration : IEntityTypeConfiguration<SliceKindfactor>
 {
-
-
     public void Configure(EntityTypeBuilder<SliceKindfactor> builder)
     {
         builder.ToTable("Slice_kindfactor");

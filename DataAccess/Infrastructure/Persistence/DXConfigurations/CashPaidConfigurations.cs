@@ -6,15 +6,13 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CashPaidConfiguration : IEntityTypeConfiguration<CashPaid>
 {
-
-
     public void Configure(EntityTypeBuilder<CashPaid> builder)
     {
         builder.ToTable("Cash_Paid");
 
         builder.HasIndex(e => e.BranchId, "IX_Cash_Paid_BranchID_D3A02");
 
-        builder.HasIndex(e => new { e.Dafter, e.BranchId }, "IX_Cash_Paid_Dafter_BranchID_2B748");
+        builder.HasIndex(e => new {e.Dafter, e.BranchId}, "IX_Cash_Paid_Dafter_BranchID_2B748");
 
         builder.HasIndex(e => e.TaskId, "IX_Cash_Paid_TaskID_AC1E1");
 

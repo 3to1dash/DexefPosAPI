@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class FixedAssetRentCust
+public class FixedAssetRentCust
 {
     public int Id { get; set; }
     public string? Dafter { get; set; }

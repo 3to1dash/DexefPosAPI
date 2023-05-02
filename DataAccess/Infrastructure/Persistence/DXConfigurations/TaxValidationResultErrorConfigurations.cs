@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TaxValidationResultErrorConfiguration : IEntityTypeConfiguration<TaxValidationResultError>
 {
-
-
     public void Configure(EntityTypeBuilder<TaxValidationResultError> builder)
     {
         builder.Property(e => e.Id).HasColumnName("id");

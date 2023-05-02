@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Tt
+public class Tt
 {
     public int? Id { get; set; }
 }

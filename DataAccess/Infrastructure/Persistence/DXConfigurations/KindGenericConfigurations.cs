@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindGenericConfiguration : IEntityTypeConfiguration<KindGeneric>
 {
-
-
     public void Configure(EntityTypeBuilder<KindGeneric> builder)
     {
         builder.ToTable("kind_generic");

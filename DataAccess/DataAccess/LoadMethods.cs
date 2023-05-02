@@ -1,15 +1,15 @@
 ﻿using DataAccess.IDataAccess;
+using DataAccess.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
-using DataAccess.Infrastructure.Persistence;
 
 namespace DataAccess.DataAccess;
 
 public class LoadMethods : ILoadMethods
 {
-    private readonly DxdbContext _dbContext;
+    private readonly IDbContext _dbContext;
 
-    public LoadMethods(DxdbContext dbContext)
+    public LoadMethods(IDbContext dbContext)
     {
         _dbContext = dbContext;
     }
@@ -87,6 +87,7 @@ public class LoadMethods : ILoadMethods
         {
             queryable = queryable.AsNoTracking();
         }
+
         return queryable;
     }
 }

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TodayDate
+public class TodayDate
 {
     public DateTime Dt { get; set; }
     public DateTime? Hijri { get; set; }

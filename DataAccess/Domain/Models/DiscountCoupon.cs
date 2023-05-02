@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class DiscountCoupon
+public class DiscountCoupon
 {
     public decimal Id { get; set; }
     public int? Num { get; set; }

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DealingTableNameConfiguration : IEntityTypeConfiguration<DealingTableName>
 {
-
-
     public void Configure(EntityTypeBuilder<DealingTableName> builder)
     {
         builder.HasKey(e => e.TableName)

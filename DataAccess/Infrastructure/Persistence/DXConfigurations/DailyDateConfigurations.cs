@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyDateConfiguration : IEntityTypeConfiguration<DailyDate>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyDate> builder)
     {
         builder.ToTable("dailyDates");

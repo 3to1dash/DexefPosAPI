@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CTenderStateConfiguration : IEntityTypeConfiguration<CTenderState>
 {
-
-
     public void Configure(EntityTypeBuilder<CTenderState> builder)
     {
         builder.ToTable("C_TenderState");

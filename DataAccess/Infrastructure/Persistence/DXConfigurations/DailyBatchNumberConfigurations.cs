@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyBatchNumberConfiguration : IEntityTypeConfiguration<DailyBatchNumber>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyBatchNumber> builder)
     {
         builder.ToTable("Daily_BatchNumber");

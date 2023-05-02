@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DiscountCashConfiguration : IEntityTypeConfiguration<DiscountCash>
 {
-
-
     public void Configure(EntityTypeBuilder<DiscountCash> builder)
     {
         builder.ToTable("DiscountCash");

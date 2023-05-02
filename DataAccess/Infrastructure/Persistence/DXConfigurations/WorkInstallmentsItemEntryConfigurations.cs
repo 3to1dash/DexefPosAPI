@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkInstallmentsItemEntryConfiguration : IEntityTypeConfiguration<WorkInstallmentsItemEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkInstallmentsItemEntry> builder)
     {
         builder.ToTable("Work_installments_ItemEntry");

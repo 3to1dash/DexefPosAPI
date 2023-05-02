@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class HrPayrollScheduleConfiguration : IEntityTypeConfiguration<HrPayrollSchedule>
 {
-
-
     public void Configure(EntityTypeBuilder<HrPayrollSchedule> builder)
     {
         builder.ToTable("Hr_PayrollSchedule");

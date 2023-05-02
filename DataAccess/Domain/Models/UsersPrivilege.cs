@@ -1,13 +1,7 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class UsersPrivilege
+public class UsersPrivilege
 {
-    public UsersPrivilege()
-    {
-        Users = new HashSet<User>();
-        UsersPrivilegesEntries = new HashSet<UsersPrivilegesEntry>();
-    }
-
     public int Id { get; set; }
     public string? Name { get; set; }
     public bool? IsAdmin { get; set; }
@@ -18,6 +12,6 @@ public partial class UsersPrivilege
     public bool? Active { get; set; }
     public Guid Rowguid { get; set; }
 
-    public virtual ICollection<User> Users { get; set; }
-    public virtual ICollection<UsersPrivilegesEntry> UsersPrivilegesEntries { get; set; }
+    public virtual List<User> Users { get; set; }
+    public virtual List<UsersPrivilegesEntry> UsersPrivilegesEntries { get; set; }
 }

@@ -6,15 +6,14 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class SaleQouteConfiguration : IEntityTypeConfiguration<SaleQoute>
 {
-
-
     public void Configure(EntityTypeBuilder<SaleQoute> builder)
     {
         builder.ToTable("SaleQoute");
 
-        builder.HasIndex(e => new { e.CustId, e.ItemCount, e.SumBill, e.Dt }, "IX_SaleQoute_CustID_ItemCount_SumBill_DT_2CADC");
+        builder.HasIndex(e => new {e.CustId, e.ItemCount, e.SumBill, e.Dt},
+            "IX_SaleQoute_CustID_ItemCount_SumBill_DT_2CADC");
 
-        builder.HasIndex(e => new { e.Prefix, e.BranchId }, "IX_SaleQoute_Prefix_BranchID_F2792");
+        builder.HasIndex(e => new {e.Prefix, e.BranchId}, "IX_SaleQoute_Prefix_BranchID_F2792");
 
         builder.Property(e => e.Id)
             .HasColumnType("numeric(18, 0)")

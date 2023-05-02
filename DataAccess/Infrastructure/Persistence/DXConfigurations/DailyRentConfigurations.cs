@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DailyRentConfiguration : IEntityTypeConfiguration<DailyRent>
 {
-
-
     public void Configure(EntityTypeBuilder<DailyRent> builder)
     {
         builder.ToTable("DailyRent");

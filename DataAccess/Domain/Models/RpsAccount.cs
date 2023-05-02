@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class RpsAccount
+public class RpsAccount
 {
     public int Id { get; set; }
     public decimal? Num { get; set; }

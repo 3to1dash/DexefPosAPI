@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class KindLocalConfiguration : IEntityTypeConfiguration<KindLocal>
 {
-
-
     public void Configure(EntityTypeBuilder<KindLocal> builder)
     {
         builder.ToTable("Kind_Local");

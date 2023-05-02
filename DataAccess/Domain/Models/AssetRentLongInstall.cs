@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class AssetRentLongInstall
+public class AssetRentLongInstall
 {
     public decimal Id { get; set; }
     public DateTime? Dt { get; set; }

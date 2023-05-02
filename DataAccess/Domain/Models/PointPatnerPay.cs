@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class PointPatnerPay
+public class PointPatnerPay
 {
     public int Id { get; set; }
     public decimal? TaskId { get; set; }

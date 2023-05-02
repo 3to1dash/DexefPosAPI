@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography;
-using DataAccess.Domain.Models;
-using DataAccess.Helpers;
+﻿using DataAccess.Domain.Models;
 using DataAccess.IDataAccess;
 using Microsoft.EntityFrameworkCore;
 
@@ -31,34 +29,35 @@ public class CompanyData
             case "*":
             case "":
                 var AllCompaniesQueryable = from company in companiesWithCurrencies
-                                            join branch in branchesWithStores on company.Id equals branch.CompanyId into gj
-                                            let a = gj.DefaultIfEmpty()
-                                            select new Company
-                                            {
-                                                Id = company.Id,
-                                                Name = company.Name,
-                                                Field = company.Field,
-                                                Phone = company.Phone,
-                                                CurrencyTable = company.CurrencyTable,
-                                                CompanyBranches = a.ToList()
-                                            };
+                    join branch in branchesWithStores on company.Id equals branch.CompanyId into gj
+                    let a = gj.DefaultIfEmpty()
+                    select new Company
+                    {
+                        Id = company.Id,
+                        Name = company.Name,
+                        Field = company.Field,
+                        Phone = company.Phone,
+                        CurrencyTable = company.CurrencyTable,
+                        CompanyBranches = a.ToList()
+                    };
 
                 return AllCompaniesQueryable.ToList();
             default:
                 var branchesIds = userBranchesResource.Split(',').Select(int.Parse);
 
                 var companiesQueryable = from company in companiesWithCurrencies
-                                         join branch in branchesWithStores.Where(b => branchesIds.Contains(b.Id)) on company.Id equals branch.CompanyId into gj
-                                         let a = gj.DefaultIfEmpty()
-                                         select new Company
-                                         {
-                                             Id = company.Id,
-                                             Name = company.Name,
-                                             Field = company.Field,
-                                             Phone = company.Phone,
-                                             CurrencyTable = company.CurrencyTable,
-                                             CompanyBranches = a.ToList()
-                                         };
+                    join branch in branchesWithStores.Where(b => branchesIds.Contains(b.Id)) on company.Id equals branch
+                        .CompanyId into gj
+                    let a = gj.DefaultIfEmpty()
+                    select new Company
+                    {
+                        Id = company.Id,
+                        Name = company.Name,
+                        Field = company.Field,
+                        Phone = company.Phone,
+                        CurrencyTable = company.CurrencyTable,
+                        CompanyBranches = a.ToList()
+                    };
 
                 return companiesQueryable.ToList();
         }

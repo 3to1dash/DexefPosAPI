@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CrmPotStatisticConfiguration : IEntityTypeConfiguration<CrmPotStatistic>
 {
-
-
     public void Configure(EntityTypeBuilder<CrmPotStatistic> builder)
     {
         builder.ToTable("CRM_PotStatistics");

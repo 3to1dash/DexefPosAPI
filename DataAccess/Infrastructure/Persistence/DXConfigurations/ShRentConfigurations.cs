@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ShRentConfiguration : IEntityTypeConfiguration<ShRent>
 {
-
-
     public void Configure(EntityTypeBuilder<ShRent> builder)
     {
         builder.ToTable("Sh_Rent");

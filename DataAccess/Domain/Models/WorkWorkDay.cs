@@ -1,9 +1,9 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
 /// <summary>
 /// ايام العمل الرسمية للموظفين
 /// </summary>
-public partial class WorkWorkDay
+public class WorkWorkDay
 {
     public decimal Id { get; set; }
     public decimal? WorkId { get; set; }

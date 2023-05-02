@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TaskMapDependencyConfiguration : IEntityTypeConfiguration<TaskMapDependency>
 {
-
-
     public void Configure(EntityTypeBuilder<TaskMapDependency> builder)
     {
         builder.ToTable("TaskMap_Dependencies");

@@ -1,8 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DataAccess.Domain.Models;
 
-public partial class Currency
+public class Currency
 {
     public decimal Id { get; set; }
     public string? Num { get; set; }

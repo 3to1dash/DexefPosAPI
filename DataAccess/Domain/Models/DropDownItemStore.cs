@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class DropDownItemStore
+public class DropDownItemStore
 {
     public int Id { get; set; }
     public int? KindId { get; set; }

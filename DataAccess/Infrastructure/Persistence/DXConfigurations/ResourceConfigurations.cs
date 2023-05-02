@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class ResourceConfiguration : IEntityTypeConfiguration<Resource>
 {
-
-
     public void Configure(EntityTypeBuilder<Resource> builder)
     {
         builder.HasKey(e => e.UniqueId);

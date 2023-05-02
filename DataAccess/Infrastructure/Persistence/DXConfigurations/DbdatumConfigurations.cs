@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class DbdatumConfiguration : IEntityTypeConfiguration<Dbdatum>
 {
-
-
     public void Configure(EntityTypeBuilder<Dbdatum> builder)
     {
         builder.ToTable("DBData");

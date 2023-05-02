@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class PointsSliceConfiguration : IEntityTypeConfiguration<PointsSlice>
 {
-
-
     public void Configure(EntityTypeBuilder<PointsSlice> builder)
     {
         builder.ToTable("Points_Slice");

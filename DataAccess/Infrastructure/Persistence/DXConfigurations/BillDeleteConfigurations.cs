@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class BillDeleteConfiguration : IEntityTypeConfiguration<BillDelete>
 {
-
-
     public void Configure(EntityTypeBuilder<BillDelete> builder)
     {
         builder.ToTable("bill_delete");

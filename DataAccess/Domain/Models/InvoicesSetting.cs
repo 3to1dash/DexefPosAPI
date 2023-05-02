@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class InvoicesSetting
+public class InvoicesSetting
 {
     public int Id { get; set; }
     public int? InvoiceId { get; set; }

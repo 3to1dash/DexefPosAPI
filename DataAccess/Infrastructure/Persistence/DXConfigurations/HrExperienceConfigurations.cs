@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class HrExperienceConfiguration : IEntityTypeConfiguration<HrExperience>
 {
-
-
     public void Configure(EntityTypeBuilder<HrExperience> builder)
     {
         builder.ToTable("HR_Experience");

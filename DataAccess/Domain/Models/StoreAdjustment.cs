@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class StoreAdjustment
+public class StoreAdjustment
 {
     public decimal Id { get; set; }
     public bool? IsCredit { get; set; }

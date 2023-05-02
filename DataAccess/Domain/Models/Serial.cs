@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class Serial
+public class Serial
 {
     public long Id { get; set; }
     public int? ItemId { get; set; }

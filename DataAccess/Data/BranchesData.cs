@@ -1,6 +1,5 @@
 ﻿using DataAccess.Domain.Models;
 using DataAccess.IDataAccess;
- 
 using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Data;

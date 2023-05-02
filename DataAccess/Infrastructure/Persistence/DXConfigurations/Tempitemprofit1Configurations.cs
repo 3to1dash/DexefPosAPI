@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class Tempitemprofit1Configuration : IEntityTypeConfiguration<Tempitemprofit1>
 {
-
-
     public void Configure(EntityTypeBuilder<Tempitemprofit1> builder)
     {
         builder.HasNoKey();

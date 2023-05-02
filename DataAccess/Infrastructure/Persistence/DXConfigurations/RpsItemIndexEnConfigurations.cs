@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class RpsItemIndexEnConfiguration : IEntityTypeConfiguration<RpsItemIndexEn>
 {
-
-
     public void Configure(EntityTypeBuilder<RpsItemIndexEn> builder)
     {
         builder.HasNoKey();

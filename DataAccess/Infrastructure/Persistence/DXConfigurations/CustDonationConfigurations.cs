@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class CustDonationConfiguration : IEntityTypeConfiguration<CustDonation>
 {
-
-
     public void Configure(EntityTypeBuilder<CustDonation> builder)
     {
         builder.HasKey(e => e.CustId);

@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class ItemColor
+public class ItemColor
 {
     public int? KindId { get; set; }
     public int Id { get; set; }

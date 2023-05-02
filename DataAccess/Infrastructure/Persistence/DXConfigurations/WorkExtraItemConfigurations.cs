@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkExtraItemConfiguration : IEntityTypeConfiguration<WorkExtraItem>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkExtraItem> builder)
     {
         builder.ToTable("work_ExtraItem");

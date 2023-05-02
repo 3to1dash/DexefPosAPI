@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class AssetRentResourceConfiguration : IEntityTypeConfiguration<AssetRentResource>
 {
-
-
     public void Configure(EntityTypeBuilder<AssetRentResource> builder)
     {
         builder.HasNoKey();

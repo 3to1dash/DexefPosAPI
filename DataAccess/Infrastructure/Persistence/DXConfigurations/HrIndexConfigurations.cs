@@ -6,13 +6,11 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class HrIndexConfiguration : IEntityTypeConfiguration<HrIndex>
 {
-
-
     public void Configure(EntityTypeBuilder<HrIndex> builder)
     {
         builder.ToTable("HR_Index");
 
-        builder.HasIndex(e => new { e.Active, e.IndexType, e.Writtenby }, "NonClusteredIndex-20200630-130251");
+        builder.HasIndex(e => new {e.Active, e.IndexType, e.Writtenby}, "NonClusteredIndex-20200630-130251");
 
         builder.Property(e => e.Id).HasColumnName("id");
 

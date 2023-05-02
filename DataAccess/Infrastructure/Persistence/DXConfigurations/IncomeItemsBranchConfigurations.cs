@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class IncomeItemsBranchConfiguration : IEntityTypeConfiguration<IncomeItemsBranch>
 {
-
-
     public void Configure(EntityTypeBuilder<IncomeItemsBranch> builder)
     {
         builder.ToTable("IncomeItems_Branches");

@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WooOrderCouponLineConfiguration : IEntityTypeConfiguration<WooOrderCouponLine>
 {
-
-
     public void Configure(EntityTypeBuilder<WooOrderCouponLine> builder)
     {
         builder.ToTable("WooOrderCouponLine");

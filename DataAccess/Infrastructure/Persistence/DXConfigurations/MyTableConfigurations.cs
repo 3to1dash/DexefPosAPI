@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class MyTableConfiguration : IEntityTypeConfiguration<MyTable>
 {
-
-
     public void Configure(EntityTypeBuilder<MyTable> builder)
     {
         builder.HasNoKey();

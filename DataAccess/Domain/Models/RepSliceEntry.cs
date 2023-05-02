@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class RepSliceEntry
+public class RepSliceEntry
 {
     public int Id { get; set; }
     public int? SliceId { get; set; }

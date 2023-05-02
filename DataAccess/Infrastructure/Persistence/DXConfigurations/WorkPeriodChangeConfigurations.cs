@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkPeriodChangeConfiguration : IEntityTypeConfiguration<WorkPeriodChange>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkPeriodChange> builder)
     {
         builder.ToTable("Work_PeriodChange");

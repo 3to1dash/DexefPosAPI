@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class TempError01Configuration : IEntityTypeConfiguration<TempError01>
 {
-
-
     public void Configure(EntityTypeBuilder<TempError01> builder)
     {
         builder.HasNoKey();

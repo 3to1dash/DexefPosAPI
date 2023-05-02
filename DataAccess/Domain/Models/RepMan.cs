@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class RepMan
+public class RepMan
 {
     public int Id { get; set; }
     public int? BranchId { get; set; }

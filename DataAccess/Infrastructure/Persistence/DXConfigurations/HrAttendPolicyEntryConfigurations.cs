@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class HrAttendPolicyEntryConfiguration : IEntityTypeConfiguration<HrAttendPolicyEntry>
 {
-
-
     public void Configure(EntityTypeBuilder<HrAttendPolicyEntry> builder)
     {
         builder.ToTable("Hr_AttendPolicy_Entry");

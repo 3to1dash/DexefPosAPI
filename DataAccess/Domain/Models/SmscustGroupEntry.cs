@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class SmscustGroupEntry
+public class SmscustGroupEntry
 {
     public int Id { get; set; }
     public int? ParentId { get; set; }

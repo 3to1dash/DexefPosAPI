@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class FixedAssetSaleConfiguration : IEntityTypeConfiguration<FixedAssetSale>
 {
-
-
     public void Configure(EntityTypeBuilder<FixedAssetSale> builder)
     {
         builder.ToTable("FixedAssetSale");

@@ -1,12 +1,7 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class TripUser
+public class TripUser
 {
-    public TripUser()
-    {
-        TripTickets = new HashSet<TripTicket>();
-    }
-
     public int Id { get; set; }
     public int? BranchId { get; set; }
     public string? Name { get; set; }
@@ -28,5 +23,5 @@ public partial class TripUser
     public virtual CompanyBranch? Branch { get; set; }
     public virtual Cust? Cust { get; set; }
     public virtual TripGd? TripGds { get; set; }
-    public virtual ICollection<TripTicket> TripTickets { get; set; }
+    public virtual List<TripTicket> TripTickets { get; set; }
 }

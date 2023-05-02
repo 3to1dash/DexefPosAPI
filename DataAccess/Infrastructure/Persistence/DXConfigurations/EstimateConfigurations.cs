@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class EstimateConfiguration : IEntityTypeConfiguration<Estimate>
 {
-
-
     public void Configure(EntityTypeBuilder<Estimate> builder)
     {
         builder.ToTable("Estimate");

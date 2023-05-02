@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class StoreTransactionTypeConfiguration : IEntityTypeConfiguration<StoreTransactionType>
 {
-
-
     public void Configure(EntityTypeBuilder<StoreTransactionType> builder)
     {
         builder.ToTable("StoreTransactionType");

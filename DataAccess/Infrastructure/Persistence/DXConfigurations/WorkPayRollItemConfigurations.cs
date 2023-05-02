@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WorkPayRollItemConfiguration : IEntityTypeConfiguration<WorkPayRollItem>
 {
-
-
     public void Configure(EntityTypeBuilder<WorkPayRollItem> builder)
     {
         builder.ToTable("Work_PayRollItems");

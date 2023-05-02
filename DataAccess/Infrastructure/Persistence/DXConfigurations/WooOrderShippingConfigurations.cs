@@ -6,8 +6,6 @@ namespace DataAccess.Infrastructure.Persistence.DXConfigurations;
 
 public class WooOrderShippingConfiguration : IEntityTypeConfiguration<WooOrderShipping>
 {
-
-
     public void Configure(EntityTypeBuilder<WooOrderShipping> builder)
     {
         builder.ToTable("WooOrderShipping");

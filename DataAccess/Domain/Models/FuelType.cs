@@ -1,6 +1,6 @@
-﻿namespace DataAccess.Domain.Models;
+namespace DataAccess.Domain.Models;
 
-public partial class FuelType
+public class FuelType
 {
     public int Id { get; set; }
     public string? Name { get; set; }
