@@ -27,8 +27,9 @@ public static class ServiceCollectionExtension
         service.AddScoped<BranchesData>();
         service.AddScoped<UsersData>();
         service.AddScoped<CompanyData>();
-        service.AddScoped<BasicData>();
-        service.AddScoped<CpuData>();
+        service.AddScoped<CurrencyData>();
+        service.AddScoped<AccountMainData>();
+        service.AddScoped<ItemSearchData>();
         return service;
     }
 }

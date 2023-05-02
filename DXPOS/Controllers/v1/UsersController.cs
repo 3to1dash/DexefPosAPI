@@ -47,9 +47,9 @@ public class UsersController : ControllerBase
                 Name = b.Name,
                 Stores = b.KindStocks.Select(s => new StoreDto
                 {
-                    Id = s.Id,
-                    Num = s.Num,
-                    Name = s.Stock
+                    Id    = s.Id,
+                    Num   = s.Num,
+                    Name  = s.Stock
                 })
             })
         });

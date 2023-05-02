@@ -2,13 +2,13 @@ namespace DataAccess.Domain.Models;
 
 public class ItemSearch
 {
-    public int? Id { get; set; }
+    public int Id { get; set; }
     public int? StoreId { get; set; }
     public int? KindId { get; set; }
     public DateTime? Dt { get; set; }
-    public int? ParentId { get; set; }
+    public int ParentId { get; set; }
     public int? TypeIndex { get; set; }
-    public int? Optkind { get; set; }
+    public int Optkind { get; set; }
     public string? ArName { get; set; }
     public string? EnName { get; set; }
     public string? FrName { get; set; }
