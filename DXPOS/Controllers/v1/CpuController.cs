@@ -4,28 +4,32 @@ using DXPOS.Helpers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DXPOS.Controllers.v1;
+
 [ApiController]
 [ApiVersion("1")]
 [Route("v{version:apiVersion}/[controller]/[action]")]
-public class CpuController : Controller
+public class CpuController : ControllerBase
 {
     [HttpGet]
+    [Produces(typeof(ResultDto<MaxNumCpuDto>))]
     public IActionResult GetCpuNum(
         [FromServices] CpuData cpuData)
     {
         MaxNumCpuDto maxNumCpuDto = new()
         {
-            MaxNum = cpuData.GetPcNumber() + 1,
+            MaxNum = cpuData.GetPcNumber(),
         };
-        var resultGenerator = new ResultGenerator<MaxNumCpuDto>(true, maxNumCpuDto, new List<ErrorMessage>());
+
+        var resultGenerator = new ResultGenerator<MaxNumCpuDto>(true, maxNumCpuDto, new ErrorMessage());
         return new JsonResult(resultGenerator.Generate());
     }
+
     [HttpPost]
+    [Produces(typeof(ResultDto<CpuDto>))]
     public async Task<IActionResult> AddCpu(
-         [FromQuery] int cpuNum
-       , [FromQuery] string cpuName
-       , [FromServices] CpuData cpuData
-       )
+         [FromQuery] int cpuNum,
+         [FromQuery] string cpuName,
+         [FromServices] CpuData cpuData)
     {
         ResultGenerator<CpuDto> resultGenerator;
         try
@@ -35,26 +39,17 @@ public class CpuController : Controller
             {
                 Id = id
             };
-            resultGenerator = new ResultGenerator<CpuDto>(true, cpuDto, new List<ErrorMessage>());
+
+            resultGenerator = new ResultGenerator<CpuDto>(true, cpuDto, new ErrorMessage());
         }
         catch (Exception e)
         {
-            resultGenerator = new ResultGenerator<CpuDto>(false, new CpuDto(), new List<ErrorMessage>
+            resultGenerator = new ResultGenerator<CpuDto>(false, new CpuDto(), new ErrorMessage
             {
-                new ErrorMessage() { Message = e.Message }
+                Message = e.Message
             });
         }
 
         return new JsonResult(resultGenerator.Generate());
-
-
-        //CpuDto cpuDto = new CpuDto()
-        //{
-        //    Id = id
-        //};
-
-        //var resultGenerator = new ResultGenerator<CpuDto>(true, cpuDto, new List<ErrorMessage>());
-        //return new JsonResult(resultGenerator.SelectingMethods());
-
     }
 }

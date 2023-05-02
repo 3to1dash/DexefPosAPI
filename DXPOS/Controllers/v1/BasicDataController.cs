@@ -24,7 +24,7 @@ public class BasicDataController : ControllerBase
                 Name = b.Name
             });
 
-        var resultGenerator = new ResultGenerator<IEnumerable<BranchDto>>(true, branches, new());
+        var resultGenerator = new ResultGenerator<IEnumerable<BranchDto>>(true, branches, new ErrorMessage());
 
         return new JsonResult(resultGenerator.Generate());
     }
@@ -44,7 +44,7 @@ public class BasicDataController : ControllerBase
                 Name = b.Stock
             });
 
-        var resultGenerator = new ResultGenerator<IEnumerable<StoreDto>>(true, stores, new());
+        var resultGenerator = new ResultGenerator<IEnumerable<StoreDto>>(true, stores, new ErrorMessage());
 
         return new JsonResult(resultGenerator.Generate());
     }
@@ -67,7 +67,7 @@ public class BasicDataController : ControllerBase
                 TaxPerc = isSale ? b.SaleTax : b.PurchaseTax
             });
 
-        var resultGenerator = new ResultGenerator<IEnumerable<TaxesDto>>(true, stores, new());
+        var resultGenerator = new ResultGenerator<IEnumerable<TaxesDto>>(true, stores, new ErrorMessage());
 
         return new JsonResult(resultGenerator.Generate());
     }
@@ -84,14 +84,16 @@ public class BasicDataController : ControllerBase
 
         if (taskId == null)
         {
-            resultGenerator = new(false, new(), new()
+            resultGenerator = new ResultGenerator<TaskIdDto>(false, new TaskIdDto(), new ErrorMessage
             {
-                new() {Code = "500", Title = "Record not found", Message = "Can not fetch the record from the database"}
+                Code = "500",
+                Title = "Record not found",
+                Message = "Can not fetch the record from the database"
             });
         }
         else
         {
-            resultGenerator = new(true, new() {TaskID = taskId}, new());
+            resultGenerator = new ResultGenerator<TaskIdDto>(true, new TaskIdDto { TaskID = taskId }, new ErrorMessage());
         }
 
         return new JsonResult(resultGenerator.Generate());

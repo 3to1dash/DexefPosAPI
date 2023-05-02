@@ -6,13 +6,13 @@ public class ResultGenerator<T>
 {
     private readonly bool _success;
     private readonly T _data;
-    private readonly List<ErrorMessage> _errorMessages;
+    private readonly ErrorMessage _errorMessages;
 
-    public ResultGenerator(bool success, T data, List<ErrorMessage> errorMessages)
+    public ResultGenerator(bool success, T data, ErrorMessage errorMessage)
     {
         _success = success;
         _data = data;
-        _errorMessages = errorMessages;
+        _errorMessages = errorMessage;
     }
 
     public ResultDto<T> Generate()
@@ -20,15 +20,8 @@ public class ResultGenerator<T>
         var Result = new ResultDto<T>
         {
             Success = _success,
-            Data = new ResultData<T>()
-            {
-                InnerData = _data,
-                Type = typeof(T).ToString(),
-            },
-            Errors = new List<Error>()
-            {
-                new() {Domain = "", Messages = _errorMessages}
-            }
+            Data = _data,
+            ErrorMessage = _errorMessages
         };
 
         return Result;

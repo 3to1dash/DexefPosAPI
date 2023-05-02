@@ -24,11 +24,9 @@ public class UsersController : ControllerBase
 
         if (!isUserVerify)
         {
-            resultGenerator = new(false, new UserDto { Companies = new List<CompanyDto>(), Permissions = new List<UserPermissionDto>() },
-                new List<ErrorMessage>
-                {
-                    new() {Code = "401", Message = "User is not authorized", Title = "Login error message"}
-                });
+            resultGenerator = new ResultGenerator<UserDto>(false,
+                new UserDto { Companies = new List<CompanyDto>(), Permissions = new List<UserPermissionDto>() },
+                new ErrorMessage { Code = "401", Message = "User is not authorized", Title = "Login error message" });
 
             return new JsonResult(resultGenerator.Generate());
         }
@@ -67,8 +65,7 @@ public class UsersController : ControllerBase
         resultGenerator = new ResultGenerator<UserDto>(
             true,
             new UserDto { Companies = companiesDto, Permissions = permissionsDto },
-            new List<ErrorMessage>()
-            );
+            new ErrorMessage());
 
         return new JsonResult(resultGenerator.Generate());
     }
@@ -87,7 +84,8 @@ public class UsersController : ControllerBase
             CreatedAt = permission?.Dt
         };
 
-        var resultGenerator = new ResultGenerator<UsersPermissionLastUpdatedDto>(true, usersPermissionLastUpdatedDto, new List<ErrorMessage>());
+        var resultGenerator = new ResultGenerator<UsersPermissionLastUpdatedDto>(true,
+            usersPermissionLastUpdatedDto, new ErrorMessage());
 
         return new JsonResult(resultGenerator.Generate());
     }
