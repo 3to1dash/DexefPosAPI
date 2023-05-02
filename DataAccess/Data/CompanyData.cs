@@ -9,12 +9,10 @@ namespace DataAccess.Data;
 public class CompanyData
 {
     private readonly ILoadMethods _loadMethods;
-
     public CompanyData(ILoadMethods loadMethods)
     {
         _loadMethods = loadMethods;
     }
-
     public List<Company> GetCompanies(string userName)
     {
         var userBranchesResource =
@@ -65,14 +63,12 @@ public class CompanyData
                 return companiesQueryable.ToList();
         }
     }
-
     public bool UserVerification(string userName, string password)
     {
         var md5Hash = MD5.Create();
         var user = _loadMethods.LoadSingle<User>(false, u => u.Name == userName);
         if (user == null)
             return false;
-
         return MD5UserPasswordVerification.VerifyMd5Hash(md5Hash, password, user.Passward ?? "") && password != user.Passward;
     }
 }

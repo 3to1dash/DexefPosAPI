@@ -1,10 +1,12 @@
-﻿namespace DataAccess.Domain.Models;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace DataAccess.Domain.Models;
 
 public partial class Currency
 {
     public decimal Id { get; set; }
     public string? Num { get; set; }
-    public string? Name { get; set; }
+    public string Name { get; set; }
     public decimal? Value { get; set; }
     public bool? Active { get; set; }
     public string? LocalCurrency { get; set; }
@@ -21,4 +23,7 @@ public partial class Currency
     public decimal? AvgPrice { get; set; }
     public bool? SubOne { get; set; }
     public Guid Rowguid { get; set; }
+    [NotMapped]
+    public decimal? LocalRate => SubOne == true ? 1 / Value : Value;
+
 }
