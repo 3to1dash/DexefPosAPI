@@ -1,9 +1,9 @@
-﻿using DataAccess.Domain.Models;
+﻿using System.Security.Cryptography;
+using DataAccess.Domain.Models;
 using DataAccess.Helpers;
 using DataAccess.IDataAccess;
-using System.Security.Cryptography;
 
-namespace DataAccess.Data;
+namespace BL.Data;
 
 public class UsersData
 {
@@ -14,23 +14,9 @@ public class UsersData
         _loadMethods = loadMethods;
     }
 
-    public List<User> GetAllUsers()
-    {
-        return _loadMethods.LoadMultiple<User>(true, e => e.Type == "SA");
-    }
-
     public User? GetUserByUserName(string userName)
     {
         return _loadMethods.LoadSingle<User>(asNoTracking: true, e => e.Name == userName);
-    }
-
-    public UsersResource? GetUserResourceByModule(string userName, string module)
-    {
-        var userResources = _loadMethods.LoadSingle<UsersResource>(
-            asNoTracking: true,
-            u => u.UserName == userName && u.Module == module);
-
-        return userResources;
     }
 
     public bool UserVerify(string userName, string password)

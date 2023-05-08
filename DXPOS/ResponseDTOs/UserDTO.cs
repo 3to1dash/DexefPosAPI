@@ -1,12 +1,12 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace DXPOS.DTOs;
+namespace DXPOS.ResponseDTOs;
 
 public class UserDto
 {
-    [JsonPropertyName("Companies")] 
+    [JsonPropertyName("Companies")]
     public IEnumerable<CompanyDto> Companies { get; set; }
-    [JsonPropertyName("Permissions")] 
+    [JsonPropertyName("Permissions")]
     public IEnumerable<UserPermissionDto> Permissions { get; set; }
 
 }

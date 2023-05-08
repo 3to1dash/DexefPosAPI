@@ -108,10 +108,25 @@ public class Cust
     public string? PostalNumber { get; set; }
     public decimal? CurrencyId { get; set; }
 
-    [NotMapped] public virtual List<CustAddress> CustAddresses { get; set; }
-    [NotMapped] public virtual List<TripContract> TripContracts { get; set; }
-    [NotMapped] public virtual List<TripIatum> TripIata { get; set; }
-    [NotMapped] public virtual List<TripTicket> TripTicketCusts { get; set; }
-    [NotMapped] public virtual List<TripTicket> TripTicketVendors { get; set; }
-    [NotMapped] public virtual List<TripUser> TripUsers { get; set; }
+    [NotMapped]
+    public decimal TotalBalance { get; set; }
+    [NotMapped]
+    public string GrpName { get; set; }
+    [NotMapped]
+    public decimal TaxPerc { get; set; }
+    [NotMapped]
+    public string? TaxName { get; set; }
+
+    [NotMapped]
+    public virtual List<CustAddress> CustAddresses { get; set; }
+    [NotMapped]
+    public virtual List<TripContract> TripContracts { get; set; }
+    [NotMapped]
+    public virtual List<TripIatum> TripIata { get; set; }
+    [NotMapped]
+    public virtual List<TripTicket> TripTicketCusts { get; set; }
+    [NotMapped]
+    public virtual List<TripTicket> TripTicketVendors { get; set; }
+    [NotMapped]
+    public virtual List<TripUser> TripUsers { get; set; }
 }

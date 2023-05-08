@@ -1,4 +1,4 @@
-﻿namespace DXPOS.DTOs;
+﻿namespace DXPOS.ResponseDTOs;
 
 public class ResultDto<T>
 {

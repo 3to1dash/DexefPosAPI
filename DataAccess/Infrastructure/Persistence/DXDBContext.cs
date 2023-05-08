@@ -10,6 +10,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Net.Http.Headers;
 using System.IdentityModel.Tokens.Jwt;
+using System.Runtime.CompilerServices;
 using System.Security.Claims;
 using System.Text;
 using Unit = DataAccess.Domain.Models.Unit;
@@ -71,6 +72,12 @@ public class DxdbContext : DbContext, IDbContext
         }
 
         base.OnConfiguring(optionsBuilder);
+    }
+
+    public IQueryable<T> ExecuteRawSql<T>(string sql, object[] parameters)
+    {
+        var x = FormattableStringFactory.Create(sql, parameters);
+        return Database.SqlQuery<T>(x);
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

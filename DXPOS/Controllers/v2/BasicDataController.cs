@@ -1,4 +1,4 @@
-﻿using DataAccess.Data;
+﻿using BL.Data;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DXPOS.Controllers.v2;

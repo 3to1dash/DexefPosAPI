@@ -1,11 +1,11 @@
-﻿using DataAccess.Data;
+﻿using BL.Data;
 using DataAccess.DataAccess;
 using DataAccess.IDataAccess;
 using DataAccess.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace DataAccess;
+namespace BL;
 
 public static class ServiceCollectionExtension
 {
@@ -27,9 +27,8 @@ public static class ServiceCollectionExtension
         service.AddScoped<BranchesData>();
         service.AddScoped<UsersData>();
         service.AddScoped<CompanyData>();
-        service.AddScoped<CurrencyData>();
-        service.AddScoped<AccountMainData>();
-        service.AddScoped<ItemSearchData>();
+        service.AddScoped<BasicData>();
+        service.AddScoped<CustomerData>();
         return service;
     }
 }

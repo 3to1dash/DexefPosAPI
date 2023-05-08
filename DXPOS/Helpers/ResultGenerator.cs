@@ -1,4 +1,4 @@
-﻿using DXPOS.DTOs;
+﻿using DXPOS.ResponseDTOs;
 
 namespace DXPOS.Helpers;
 

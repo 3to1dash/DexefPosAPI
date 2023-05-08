@@ -26,4 +26,6 @@ public interface ILoadMethods
 
     Task<TEntity?> LoadSingleAsync<TEntity>(bool asNoTracking, Expression<Func<TEntity, bool>> filterExpression,
         CancellationToken cancellationToken = default) where TEntity : class;
+
+    IQueryable<T> ExecuteRawSql<T>(string sql, object[] parameters);
 }

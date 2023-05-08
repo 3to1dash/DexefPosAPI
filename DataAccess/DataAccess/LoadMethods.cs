@@ -90,4 +90,9 @@ public class LoadMethods : ILoadMethods
 
         return queryable;
     }
+
+    public IQueryable<T> ExecuteRawSql<T>(string sql, object[] parameters)
+    {
+        return _dbContext.ExecuteRawSql<T>(sql, parameters);
+    }
 }

@@ -1,4 +1,3 @@
-using DataAccess;
 using Microsoft.AspNetCore.Mvc;
 using DXPOS.Extensions;
 using DXPOS.Swagger;
@@ -9,6 +8,7 @@ using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using BL;
 
 var builder = WebApplication.CreateBuilder(args);
 var configurations = builder.Configuration;

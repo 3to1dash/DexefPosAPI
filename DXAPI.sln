@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DXPOS", "DXPOS\DXPOS.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{0A368A3E-85C3-4FA7-AAF3-C8F70384B6CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{9073AE4A-5D69-4095-B69E-335958CD84B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0A368A3E-85C3-4FA7-AAF3-C8F70384B6CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A368A3E-85C3-4FA7-AAF3-C8F70384B6CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A368A3E-85C3-4FA7-AAF3-C8F70384B6CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9073AE4A-5D69-4095-B69E-335958CD84B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9073AE4A-5D69-4095-B69E-335958CD84B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9073AE4A-5D69-4095-B69E-335958CD84B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9073AE4A-5D69-4095-B69E-335958CD84B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

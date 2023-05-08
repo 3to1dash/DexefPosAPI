@@ -1,6 +1,6 @@
-﻿using DataAccess.Data;
-using DXPOS.DTOs;
+﻿using BL.Data;
 using DXPOS.Helpers;
+using DXPOS.ResponseDTOs;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DXPOS.Controllers.v1;
@@ -47,9 +47,9 @@ public class UsersController : ControllerBase
                 Name = b.Name,
                 Stores = b.KindStocks.Select(s => new StoreDto
                 {
-                    Id    = s.Id,
-                    Num   = s.Num,
-                    Name  = s.Stock
+                    Id = s.Id,
+                    Num = s.Num,
+                    Name = s.Stock
                 })
             })
         });

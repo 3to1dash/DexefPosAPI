@@ -1,8 +1,10 @@
-﻿using DataAccess.Domain.Models;
+﻿using System.Security.Cryptography;
+using DataAccess.Domain.Models;
+using DataAccess.Helpers;
 using DataAccess.IDataAccess;
 using Microsoft.EntityFrameworkCore;
 
-namespace DataAccess.Data;
+namespace BL.Data;
 
 public class CompanyData
 {

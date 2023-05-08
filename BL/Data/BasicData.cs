@@ -1,8 +1,8 @@
-﻿using System.Globalization;
-using DataAccess.Domain.Models;
+﻿using DataAccess.Domain.Models;
 using DataAccess.IDataAccess;
+using System.Globalization;
 
-namespace DataAccess.Data;
+namespace BL.Data;
 
 public class BasicData
 {
@@ -20,7 +20,7 @@ public class BasicData
         _saveChangesMethods = saveChangesMethods;
     }
 
-    public async Task<double?> GetTaskIdByCpu(int cpu)
+    public async Task<decimal?> GetTaskIdByCpu(int cpu)
     {
         var bid = 86 + cpu;
 
@@ -29,20 +29,20 @@ public class BasicData
                     $"{n.TaskId:0.################################################################}".Split('.')[1]))
             .DefaultIfEmpty().Max();
 
-        var mostRightDigit = (int) (num % 10);
+        var mostRightDigit = (int)(num % 10);
         if (mostRightDigit == 9) num += 2;
         else num += 1;
 
         var taskId = (num / Math.Pow(10.0, num.ToString(CultureInfo.CurrentCulture).Length)) + bid;
 
-        var taskHistory = new TaskHistory {Cpu = cpu, Num = null, TaskId = (decimal) taskId};
+        var taskHistory = new TaskHistory { Cpu = cpu, Num = null, TaskId = (decimal)taskId };
 
         _addMethods.AddSingle(taskHistory);
 
         try
         {
             var _ = await _saveChangesMethods.Save();
-            return taskId;
+            return taskHistory.TaskId;
         }
         catch (Exception)
         {

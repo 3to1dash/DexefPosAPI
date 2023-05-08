@@ -23,7 +23,4 @@ public class Currency
     public decimal? AvgPrice { get; set; }
     public bool? SubOne { get; set; }
     public Guid Rowguid { get; set; }
-    [NotMapped]
-    public decimal? LocalRate => SubOne == true ? 1 / Value : Value;
-
 }

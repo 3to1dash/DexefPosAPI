@@ -1,8 +1,10 @@
 ﻿using DataAccess.Domain;
+using DataAccess.Domain.FilesModels;
 using DataAccess.Infrastructure.Persistence.DXFilesConfigurations;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
@@ -10,8 +12,6 @@ using Microsoft.Net.Http.Headers;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using DataAccess.Domain.FilesModels;
-using Microsoft.EntityFrameworkCore.Storage;
 
 namespace DataAccess.Infrastructure.Persistence;
 
@@ -315,4 +315,9 @@ public class DXDBFilesContext : DbContext, IDbContext
     public virtual DbSet<WorkVacationGroup> WorkVacationGroups { get; set; } = null!;
 
     #endregion
+
+    public IQueryable<T> ExecuteRawSql<T>(string sql, object[] parameters)
+    {
+        return Database.SqlQueryRaw<T>(sql, parameters);
+    }
 }

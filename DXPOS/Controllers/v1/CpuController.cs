@@ -1,6 +1,6 @@
-﻿using DataAccess.Data;
-using DXPOS.DTOs;
+﻿using BL.Data;
 using DXPOS.Helpers;
+using DXPOS.ResponseDTOs;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DXPOS.Controllers.v1;

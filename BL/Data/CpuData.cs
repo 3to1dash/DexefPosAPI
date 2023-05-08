@@ -1,7 +1,7 @@
 ﻿using DataAccess.Domain.Models;
 using DataAccess.IDataAccess;
 
-namespace DataAccess.Data;
+namespace BL.Data;
 
 public class CpuData
 {
